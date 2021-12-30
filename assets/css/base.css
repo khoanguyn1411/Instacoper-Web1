@@ -1,0 +1,15 @@
+:root {
+    --primary-color: rgb(0, 0, 0);
+    --secondary-color: rgb(216, 81, 81);
+    --lightgray-color: #CCCCCC;
+    --green-color: #8D8D8D;
+    
+    --text-fontStyle_1: none;
+    --text-fontStyle_2: none;
+    --text-fontSize-: 24px;
+    --text-fontSize: 24px;
+
+    --primary-fontFammily: 'Source Sans Pro', sans-serif;
+}
+/* Font chữ */
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap');

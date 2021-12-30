@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/base.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:600&display=swap" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/a81368914c.js"></script>
+    <title>Document</title>
+</head>
+<body>
+   <div id="main">
+        <div id="header" >
+            <img src="/assets/img/Product1.png" alt="" id="logo" >
+            <div class="searhvia" onclick="firstFocus()">
+                <i class="fas fa-search" style="color: black;"></i>
+                <input type="text" placeholder="Tìm kiếm" id="searchValue">
+            </div>
+            <i class="fas fa-user" id="user">
+                
+            </i>
+            <i class="fas fa-cart-plus" id="cart">
+                <ul class="subcart">
+                    <li></li>
+                    <li><button type="button" class="subcart-button" id="cart-btn">Giỏ hàng </button>
+                        <button type="button" class="subcart-button" id="pay-btn">Thanh toán </button>
+                    </li>
+                </ul>
+            </i>
+        </div>
+        <div style="height: 80px;"></div>
+        <div id="nav">
+                <i class="fas fa-bars" id="portfolio-bar"> &nbsp; Danh mục sản phẩm</i>
+            <ul class="nav">
+                <li>
+                    <a href="">Trang Chủ</a>
+                </li>
+                <li>
+                    Sản phẩm 
+                    <ul class="subnav">
+                        <li>
+
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    Blog
+                    <ul class="subnav">
+                        <li>
+
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    FAQs
+                    <ul class="subnav">
+                        <li>
+
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href=""><b>Về chúng tôi</b></a>
+                </li>
+                
+            </ul>
+        </div>
+<hr>
+        <div id="banner">
+        
+        </div>
+        
+        <div id="content">
+
+        </div>
+        
+        <div id="sldier">
+        
+        </div>
+        
+        <div id="footer">
+            <div class="contact">
+                <div class="contact-info">
+                    <div class="text-info">
+                     <table id="table-info">
+                         <thead>
+                             <td><a href="">Trang chủ</a></td>
+                             <td>Thông tin liên hệ</td>
+                             <td>Hỗ trợ khách hàng</td>
+                         </thead>
+                       <tr>
+                           <td><a href="">Sản phẩm</a></td>
+                           <td>Số 669 Quốc lộ 1, khu phố 3</td>
+                           <td>Hướng dẫn mua hàng</td>
+                       </tr>
+                       <tr>
+                           <td><a href="">Blogs</a></td>
+                           <td>phường Linh Xuân, quận Thủ Đức</td>
+                           <td>Hướng dẫn thanh toán</td>
+                       </tr>
+                       <tr>
+                           <td> <a href="">FAQs</a></td>
+                           <td></td>
+                           <td>Chính sách bảo mật</td>
+                       </tr>
+                       <tr>
+                           <td><a href="">Về chúng tôi</a></td>
+                           <td>Thành phố Hồ Chí Minh</td>
+                           <td>Chính sách đổi trả</td>
+                       </tr>
+                       <tr>
+                           <td></td>
+                           <td>Email: support@instacoper.com</td>
+                           <td style="font-weight: lighter;">Giao hàng & Vận chuyển</td>
+                       </tr>
+                       <tr>
+                        <td></td>
+                        <td>Hotline: 0123456789</td>
+                        <td></td>
+                    </tr>
+                     </table>
+                    
+                     
+                    </div>
+                <div class="contact-form">
+                    <p>Đăng ký nhận thông tin mới nhất!</p>
+                    <input type="text" id="email-input" placeholder="Nhập Email của bạn tại đây">
+                    <button type="submit">Đăng ký ngay!</button>
+                </div>
+                </div>
+                <hr>
+                <div class="payment-info">
+                    <p style="color: white;">Hỗ trợ thanh toán</p>
+                    <div id="hpayment-img">
+                        <img src="/assets/img/mastercard.svg" alt="">
+                        <img src="assets/img/Visapay.svg" alt="">
+                        <img src="assets/img/momo.svg" alt="">
+                        <img src="assets/img/VNpay.svg" alt="">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+   </div>
+</body>
+<script>
+    function firstFocus(){
+        document.getElementById("searchValue").focus();
+    }
+</script>
+</html>
