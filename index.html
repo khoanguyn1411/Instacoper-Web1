@@ -7,9 +7,13 @@
     <link rel="stylesheet" href="assets/css/base.css">
     <link rel="stylesheet" href="assets/css/main.css">
     <link href="https://fonts.googleapis.com/css?family=Poppins:600&display=swap" rel="stylesheet">
-	<script src="https://kit.fontawesome.com/a81368914c.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/a81368914c.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="/js/dropdownSubitem.js"></script>
     <title>Document</title>
 </head>
+
 <body>
    <div id="main">
         <div id="header" >
@@ -21,50 +25,120 @@
             <i class="fas fa-user" id="user">
                 
             </i>
-            <i class="fas fa-cart-plus" id="cart">
-                <ul class="subcart">
-                    <li></li>
-                    <li><button type="button" class="subcart-button" id="cart-btn">Giỏ hàng </button>
-                        <button type="button" class="subcart-button" id="pay-btn">Thanh toán </button>
+            <i class="fas fa-cart-plus" id="cart" onclick="dropdowncart()">
+                <ul class="subcart" id="subcart">
+                    <li>
+                        <div class="cartlayout">
+                            <div class="productcart">
+                                <div class="productcart-shoes">
+                                    <img src="/assets/img/jordanXanh.jpg" alt="" srcset="" id="giaydemo1">
+                                </div>
+                                <div class="productcart-info">
+                                    <h3>Nike Jordan</h3>
+                                    <p>Giày nam</p>
+                                    <p>Size: 40</p>
+                                    <h5>2.649.000đ</h5>
+                                </div>
+                            </div>
+                            <i class="fas fa-times-circle" style="color:var(--secondary-color)"></i>
+                        </div>
+                        <div class="cart-btn">
+                            <button type="button" class="subcart-button" id="cart-btn">Giỏ hàng </button>
+                            <button type="button" class="subcart-button" id="pay-btn">Thanh toán </button>
+                        </div>
                     </li>
+                 
                 </ul>
             </i>
         </div>
-        <div style="height: 80px;"></div>
         <div id="nav">
-                <i class="fas fa-bars" id="portfolio-bar"> &nbsp; Danh mục sản phẩm</i>
-            <ul class="nav">
+                <i class="fas fa-bars" id="portfolio-bar" onclick="openNav()"> &nbsp; Danh mục sản phẩm</i>
+                <div id="mySidebar" class="sidebar">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+                    <button class="dropdown-btn">
+                        <i class="fa fa-caret-down"></i>
+                        Thương hiệu   
+                      </button>
+                    <div class="dropdown-container">
+                        <a href="#">Nike</a>
+                        <a href="#">Adidas</a>
+                        <a href="#">Jordan</a>
+                      </div>
+                    <a href="#">Khuyến mãi</a>
+                    <a href="#">Hàng mới về</a>
+                    <a href="#">Bán chạy nhất</a>
+                    <a href="#">Sneaker nữ</a>
+                    <a href="#">Phụ kiện</a>
+                  </div>               
+            <ul class="nav" id="mynav">
                 <li>
                     <a href="">Trang Chủ</a>
                 </li>
                 <li>
-                    Sản phẩm 
-                    <ul class="subnav">
-                        <li>
-
-                        </li>
-                    </ul>
+                    <div class="subnav">
+                        <a href="">Sản phẩm <i class="fas fa-chevron-down"></i> </a>
+                        <div class="subnav-content">
+                            <div class="thirnav">
+                                <a href="#"><i class="fas fa-caret-right"></i> Thương hiệu</a>
+                                <div class="thirdnav-content">
+                                    <a href="#"><i class="fas fa-caret-right"></i> Nike</a>
+                                    <a href="#"><i class="fas fa-caret-right"></i> Adidas</a>
+                                    <a href="#"><i class="fas fa-caret-right"></i> Jordan</a>
+                                </div>
+                            </div>
+                            <a href="#"><i class="fas fa-caret-right"></i> Khuyến mãi</a>
+                            <a href="#"><i class="fas fa-caret-right"></i> Hàng mới về</a>
+                            <a href="#"><i class="fas fa-caret-right"></i> Bán chạy nhất</a>
+                            <a href="#"><i class="fas fa-caret-right"></i> Sneaker nam</a>
+                            <a href="#"><i class="fas fa-caret-right"></i> Sneaker nữ</a>
+                            <a href="#"><i class="fas fa-caret-right"></i> Phụ kiện</a>
+                          </div>
+                    </div>                    
                 </li>
                 <li>
-                    Blog
-                    <ul class="subnav">
-                        <li>
-
-                        </li>
-                    </ul>
+                    <div class="subnav">
+                        <a href="">Blog <i class="fas fa-chevron-down"></i></a>
+                        <div class="subnav-content">
+                            <a href="#"><i class="fas fa-caret-right"></i> Chủ đề</a>
+                            <a href="#"><i class="fas fa-caret-right"></i> Blog mới nhất</a>
+                            <a href="#"><i class="fas fa-caret-right"></i> Xem nhiều nhất</a>
+                          </div>
+                    </div>
                 </li>
                 <li>
-                    FAQs
-                    <ul class="subnav">
-                        <li>
-
-                        </li>
-                    </ul>
+                    <div class="subnav">
+                        <a href="">FAQ <i class="fas fa-chevron-down"></i></a>
+                        <div class="subnav-content">
+                            <div class="thirnav">
+                                <a href="#"><i class="fas fa-caret-right"></i> Hỗ trợ khách hàng</a>
+                                <div class="thirdnav-content">
+                                    <a href="#"><i class="fas fa-caret-right"></i> Hướng dẫn mua hàng</a>
+                                    <a href="#"><i class="fas fa-caret-right"></i> Hướng dẫn thanh toán</a>
+                                    <a href="#"><i class="fas fa-caret-right"></i> Giao hàng & vận chuyển</a>
+                                    <a href="#"><i class="fas fa-caret-right"></i> Hướng dẫn chọn size</a>
+                                    <a href="#"><i class="fas fa-caret-right"></i> Theo dõi đơn hàng</a>
+                                </div>
+                            </div>
+                            <div class="thirnav">
+                                <a href="#"><i class="fas fa-caret-right"></i> Chính sách</a>
+                                <div class="thirdnav-content">
+                                    <a href="#"><i class="fas fa-caret-right"></i> Chính sách bảo mật</a>
+                                    <a href="#"><i class="fas fa-caret-right"></i> Chính sách đổi trả</a>
+                                    <a href="#"><i class="fas fa-caret-right"></i> Cam kết & Bảo hành</a>
+                                </div>
+                            </div>
+                            <a href="#"><i class="fas fa-caret-right"></i> Liên hệ</a>
+                          </div>
+                    </div>
                 </li>
                 <li>
-                    <a href=""><b>Về chúng tôi</b></a>
+                    <div class="subnav">
+                        <a href=""> Về chúng tôi</a>            
+                    </div>
                 </li>
-                
+                <!-- <li>
+                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+                </li> -->
             </ul>
         </div>
 <hr>
@@ -84,11 +158,11 @@
             <div class="contact">
                 <div class="contact-info">
                     <div class="text-info">
-                     <table id="table-info">
+                     <table class="table-info">
                          <thead>
-                             <td><a href="">Trang chủ</a></td>
-                             <td>Thông tin liên hệ</td>
-                             <td>Hỗ trợ khách hàng</td>
+                             <td><a href=""><b>Trang chủ</b></a></td>
+                             <td><b>Thông tin liên hệ</b></td>
+                             <td><b>Hỗ trợ khách hàng</b></td>
                          </thead>
                        <tr>
                            <td><a href="">Sản phẩm</a></td>
@@ -113,7 +187,7 @@
                        <tr>
                            <td></td>
                            <td>Email: support@instacoper.com</td>
-                           <td style="font-weight: lighter;">Giao hàng & Vận chuyển</td>
+                           <td>Giao hàng & Vận chuyển</td>
                        </tr>
                        <tr>
                         <td></td>
@@ -124,16 +198,16 @@
                     
                      
                     </div>
-                <div class="contact-form">
+                <form class="contact-form">
                     <p>Đăng ký nhận thông tin mới nhất!</p>
-                    <input type="text" id="email-input" placeholder="Nhập Email của bạn tại đây">
+                    <input type="text" id="email-input" required placeholder="Nhập Email của bạn tại đây">
                     <button type="submit">Đăng ký ngay!</button>
-                </div>
+                </form>
                 </div>
                 <hr>
                 <div class="payment-info">
-                    <p style="color: white;">Hỗ trợ thanh toán</p>
-                    <div id="hpayment-img">
+                    <p>Hỗ trợ thanh toán</p>
+                    <div id="payment-img">
                         <img src="/assets/img/mastercard.svg" alt="">
                         <img src="assets/img/Visapay.svg" alt="">
                         <img src="assets/img/momo.svg" alt="">
@@ -149,5 +223,10 @@
     function firstFocus(){
         document.getElementById("searchValue").focus();
     }
+    
+
 </script>
+<script src="js/header.js"></script>
+<script src="js/danhmucSP.js"></script>
+
 </html>
