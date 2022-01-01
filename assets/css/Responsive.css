@@ -1,0 +1,81 @@
+/* Mobile: width <739px */
+@media only screen and (max-width: 46.1875em) {
+   
+}
+
+/* Tablet: width >= 740px  and <1024px*/
+@media only screen and (min-width: 46.25em) and (max-width: 63.9375em) {
+  
+}
+/* Tablet & Mobile: width <1024px*/
+@media only screen and (max-width: 63.9375em) {
+    #footer{
+
+        height: 60em;
+        background-color: var(--primary-color); 
+    
+    }
+    #footer>.contact{
+       
+        padding: 8% 5% 2% 5%;
+    
+    }
+    #footer>.contact>.contact-info{
+        display: inline-block;
+    }
+    #footer>.contact>.contact-info>.text-info{
+        width: 100%;
+        display: block;
+    }
+    #footer>.contact>.contact-info>.text-info>.footernav{
+        display: flex;
+        flex-direction: column;
+        color: white;
+        width: 70%;
+        margin-bottom: 2em;
+    }
+    #footer>.contact>.contact-info>.text-info>.footernav a{
+        color: white;
+        font-weight: 200;
+        text-decoration: none;
+        margin-bottom: 0.5em;
+    }
+    #footer>.contact>.contact-info>.text-info>.footernav p{
+        font-weight: 200;
+        margin-bottom: 0.5em;
+    }
+    #footer>.contact>.contact-info>.contact-form{
+        display: flex;
+        flex-direction: column;
+        margin-top: 3%;
+        color: white;
+    }
+    #footer>.contact>.contact-info>.contact-form> input{
+        height: 30%;
+        width: 300px;
+        margin-bottom: 2%;
+    }
+    #footer>.contact>.contact-info>.contact-form> button{
+        height: 30%;
+        color: white;
+        background-color: red;
+    }
+    hr{
+        display: none;
+    }
+    #footer>.contact>.payment-info{
+        margin-top: 5%;
+        text-align: center;
+    }
+    #footer>.contact>.payment-info>p{
+        margin-bottom: 2%;
+        color: rgb(255, 255, 255);
+    }
+    #footer>.contact>.payment-info>#payment-img>img{
+        margin-top: 5%;
+        margin-inline-end: 2%;
+        justify-content: space-between;
+        height: 20%;
+        width: 20%;
+    }
+}
