@@ -1,0 +1,730 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/base.css">
+    <link rel="stylesheet" href="assets/css/product.css">
+    <link rel="stylesheet" href="assets/css/radio.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    
+    <link href="https://fonts.googleapis.com/css?family=Poppins:600&display=swap" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/a81368914c.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;400&display=swap" rel="stylesheet">
+    
+    
+    
+    <title>Document</title>
+</head>
+
+
+<body>
+    <div id="header" style="z-index: 500;">
+        <img src="/assets/img/Product1.png" alt="" id="logo" >
+        <div class="searhvia" onclick="firstFocus()">
+            <i class="fas fa-search" style="color: black;"></i>
+            <input type="text" placeholder="Tìm kiếm" id="searchValue">
+        </div>
+        <i class="fas fa-user" id="user">
+            
+        </i>
+        <i class="fas fa-cart-plus" id="cart">
+            <ul class="subcart">
+                <li></li>
+                <li><button type="button" class="subcart-button" id="cart-btn">Giỏ hàng </button>
+                    <button type="button" class="subcart-button" id="pay-btn">Thanh toán </button>
+                </li>
+            </ul>
+        </i>
+    </div>
+
+
+    <div class="content">
+        <div style="height: 80px;"></div>
+        <div id="nav">
+                <i class="fas fa-bars" id="portfolio-bar"> &nbsp; Danh mục sản phẩm</i>
+            <ul class="nav">
+                <li>
+                    <a href="">Trang Chủ</a>
+                </li>
+                <li>
+                    Sản phẩm 
+                    <ul class="subnav">
+                        <li>
+    
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    Blog
+                    <ul class="subnav">
+                        <li>
+    
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    FAQs
+                    <ul class="subnav">
+                        <li>
+    
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href=""><b>Về chúng tôi</b></a>
+                </li>
+                
+            </ul>
+        </div>
+
+        <div class="top-side">
+            <div class="top-side-main">
+                <div class="top-content-left-spacing"></div>
+                <div class="top-content-left">
+                    <div class="wrapper">
+                        <input type="radio" name = "cate" id = "allPro" checked>
+                        <label for = "allPro">Tất cả</label>
+    
+                        <input type="radio" name = "cate" id = "newPro">
+                        <label for = "newPro">Sản phẩm mới</label>
+    
+                        <input type="radio" name = "cate" id = "topSale">
+                        <label for = "topSale">Bán chạy nhất</label>
+    
+                        <input type="radio" name = "cate" id = "skeakerNam">
+                        <label for = "skeakerNam">Sneaker Nam</label>
+    
+                        <input type="radio" name = "cate" id = "skeakerNu">
+                        <label for = "skeakerNu">Sneaker Nữ</label>
+    
+                        <input type="radio" name = "cate" id = "nike">
+                        <label for = "nike">Nike</label>
+    
+                        <input type="radio" name = "cate" id = "adidas">
+                        <label for = "adidas">Adidas</label>
+    
+                        <input type="radio" name = "cate" id = "converse">
+                        <label for = "converse">Converse</label>
+    
+                        <!-- <input type="radio" name = "cate" id = "VANS">
+                        <label for = "VANS">VANS</label>
+    
+                        <input type="radio" name = "cate" id = "newBal">
+                        <label for = "newBal">New Balance</label>
+    
+                        <input type="radio" name = "cate" id = "MLB">
+                        <label for = "MLB">MLB</label> -->
+                    </div>
+                   
+                    
+                </div>
+
+                <div class="top-content-right-spacing"></div>
+
+                <div class="top-content-right">
+                    <div id="sort-by">
+                        <img src="assets/img/down_arrow.svg">
+                        <div>Sắp xếp theo</div>
+                        <ul class="sort-by-type" id="sbt">
+                            <li>Giá: Thấp - Cao</li>
+                            <li>Giá: Cao - Thấp</li>
+                        </ul>
+                    </div>
+                    
+                    <div id="filter">
+                        <img src="assets/img/filter.png">
+                        <div id="hiddenFilter">Ẩn bộ lọc</div>
+                    </div>
+                 
+                    <script> 
+                        btns = document.getElementById("filter");
+                        btnSort = document.getElementById("sort-by");
+
+                        btns.addEventListener("click", function () {
+
+                            var displayFilter = document.getElementById("lsm");
+                            var mainside = document.getElementById("ms");
+                            var spr = document.getElementById("spr");
+                            var xemThem = document.getElementById("xemThem");
+                            var width = screen.width;
+                            if(displayFilter.style.display === "none"){
+                                mainside.style.width = "75%";
+                                mainside.style.marginLeft = "0px";
+                                mainside.style.height = "1100px";
+                                displayFilter.style.display = "block";
+                                spr.style.display = "block";
+                                xemThem.style.borderLeft = "0.75px";
+                            }
+                            else {
+                                displayFilter.style.display ="none";
+                                mainside.style.width = "97%";
+                                mainside.style.height = "1300px";
+                                mainside.style.marginLeft = "38px";
+                                spr.style.display = "none";
+                                xemThem.style.borderLeft = "0px";
+                            }
+                            
+                       });
+
+                       btnSort.addEventListener("click", function () {
+                            var displaySort = document.getElementById("sbt");
+                            if(displaySort.style.display === "none"){
+                                displaySort.style.display = "block";
+                            }
+                            else {
+                                displaySort.style.display ="none";
+                                }
+                            });
+                   </script>
+                    
+                    <!-- <script> 
+                        
+                        function reportWindowSize() {
+                            var width = window.innerHeight;
+                            var displayFilter = document.getElementById("lsm");
+                            var spr = document.getElementById("spr");
+                            var mainside = document.getElementById("ms");
+                            var item = document.getElementsByClassName("item");
+                            if(width<520){
+                                displayFilter.style.display = 'none';
+                            }
+
+                            else{
+                                displayFilter.style.display = 'block';
+
+                            }
+                        }
+                        window.onresize = reportWindowSize;
+                   </script> -->
+                </div>
+
+
+            </div>
+        </div>
+    
+        <div class="left-side" id="lsm">
+            <div class = "left-side-main">
+                <div class="nhanhieu">
+                    <div class="head-left">
+                        <div class="title">Nhãn hiệu</div>
+                        <img class="img-title" src="assets/img/down_arrow.svg">
+                    </div>
+                    <div class="chk-thuonghieu">
+                        <input type="checkbox" id="chkNike">
+                        <label for="chkNike">Nike</label>
+
+                        <input type="checkbox" id="chkadidas">
+                        <label for="chkadidas">Adidas</label>
+
+                        <input type="checkbox" id="chkConverse">
+                        <label for="chkConverse">Converse</label>
+
+                        <input type="checkbox" id="chkVANS">
+                        <label for="chkVANS">VANS</label>
+
+                        <input type="checkbox" id="chkNewBalance">
+                        <label for="chkNewBalance">New Balance</label>
+
+                        <input type="checkbox" id="chkMLB">
+                        <label for="chkMLB">MLB</label>
+
+                        <input type="checkbox" id="chkPuma">
+                        <label for="chkPuma">Puma</label>
+
+                        <input type="checkbox" id="chkAsics">
+                        <label for="chkAsics">Asics</label>
+
+                        <input type="checkbox" id="chkSkechers">
+                        <label for="chkSkechers">Skechers</label>
+
+                    </div>
+                    <div class="bottom-left"></div>
+
+                </div>
+
+                <div class="khoanggia">
+                    <div class="head-left">
+                        <div class="title">Khoảng giá</div>
+                        <img class="img-title" src="assets/img/down_arrow.svg">
+                    </div>
+                    <div class="rangslider-content">
+                        <div class="rangeslider-price">
+                            <div class="progress"></div>
+                        </div>
+                        <div class="range-input">
+                            <input type="range" class="range-min" min="0" max="5000000" value="0" step="200000">    
+                            <input type="range" class="range-max" min="0" max="5000000" value="50000000" step="200000">    
+                        </div>  
+                        <div class="rangeslider-inputnum">
+                            <div class="output-num">
+                                <input readonly placeholder="0 ₫"></input>
+                                <div class="seperate">-</div>
+                                <input readonly placeholder="5.000.000 ₫"></input>
+                            </div>
+                    </div>
+                    <div class="bottom-left" style="width: 100%;"></div>
+                    </div>
+                </div>
+                <script src="js/rangeslider.js"></script>
+
+                <div class="size">  
+                    <div class="head-left">
+                        <div class="title">Size</div>
+                        <img class="img-title" src="assets/img/down_arrow.svg">
+                       
+                    </div>
+                    <div class="content-size">
+                        <input type="checkbox" class="chk-size" id="s35">
+                        <label for = "s35">35</label>
+
+                        <input type="checkbox" class="chk-size" id="s36">
+                        <label for = "s36">36</label>
+
+                        <input type="checkbox" class="chk-size" id="s37">
+                        <label for = "s37">37</label>
+
+                        <input type="checkbox" class="chk-size" id="s38">
+                        <label for = "s38">38</label>
+
+                        <input type="checkbox" class="chk-size" id="s39">
+                        <label for = "s39">39</label>
+
+                        <input type="checkbox" class="chk-size" id="s40">
+                        <label for = "s40">40</label>
+
+                        <input type="checkbox" class="chk-size" id="s41">
+                        <label for = "s41">41</label>
+
+                        <input type="checkbox" class="chk-size" id="s42">
+                        <label for = "s42">42</label>
+
+                        <input type="checkbox" class="chk-size" id="s43">
+                        <label for = "s43">43</label>
+
+                        <input type="checkbox" class="chk-size" id="s44">
+                        <label for = "s44">44</label>
+
+                        <input type="checkbox" class="chk-size" id="s45">
+                        <label for = "s45">45</label>
+
+                        <input type="checkbox" class="chk-size" id="s46">
+                        <label for = "s46">46</label>
+
+                        <input type="checkbox" class="chk-size" id="s47">
+                        <label for = "s47">47</label>
+
+                        <input type="checkbox" class="chk-size" id="s47">
+                        <label for = "s47">48</label>
+
+                        <input type="checkbox" class="chk-size" id="s48">
+                        <label for = "s48">49</label>
+
+                        <input type="checkbox" class="chk-size" id="s49">
+                        <label for = "s49">50</label>
+
+                    </div>
+                    <div class="bottom-left" ></div>
+                   
+                </div>
+
+                <div class="gioitinh">
+                    <div class="head-left">
+                        <div class="title">Giới tính</div>
+                        <img class="img-title" src="assets/img/down_arrow.svg">
+                    </div>
+                    <div class="content-gender">
+                        <div class="chk-thuonghieu">
+                            <input type="checkbox" id="chkNam">
+                            <label for="chkNam">Nam</label>
+            
+                            <input type="checkbox" id="chkNu">
+                            <label for="chkNu">Nữ</label>
+            
+                            <input type="checkbox" id="chkTreEm">
+                            <label for="chkTreEm">Trẻ em</label>
+                        
+                        </div>
+                        <div class="bottom-left" style="width: 100%;"></div>
+
+                    </div>
+                    
+                    
+                </div>
+
+                
+            </div>
+        </div>
+    
+        <div class="main-side" id="ms">
+            <div class="seperate" id="spr"></div>
+            <div class="product-shopping">
+                <div class="content-product">
+                    
+                    <div class="item">
+                        <div class="img">
+                            <img src="assets/img/shoes/1.png">
+                        </div>
+                        <div class="text">
+                            <div class="title">Bestseller</div>
+                            <div class="name">Nike Air Force 1 Low</div>
+                            <div class="gender">Giày nam</div>
+                            <div class="price">
+                                <div class="aft-price">2.649.000₫</div>
+                            </div>
+                            <div class="discount"></div>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="img">
+                            <img src="assets/img/shoes/2.png">
+                        </div>
+                        <div class="text">
+                            <div class="name">Nike Air Max 90</div>
+                            <div class="gender">Giày nam</div>
+                            <div class="price">4.109.000₫</div>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="img">
+                            <img src="assets/img/shoes/3.png">
+                        </div>
+                        <div class="text">
+                            <div class="title">Bestseller</div>
+                            <div class="name">Nike Air Max 95</div>
+                            <div class="gender">Giày nữ</div>
+                            <div class="price">
+                                <div class="aft-price">4.751.099₫</div>
+                                <div class="pre-price">4.275.989₫</div>
+
+                            </div>
+                            <div class="sale">10% off</div>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="img">
+                            <img src="assets/img/shoes/Hình 3.1.png">
+                        </div>
+                        <div class="text">
+                            <div class="title">Sản phẩm mới</div>
+                            <div class="name">Jordan Zoom Separate PF</div>
+                            <div class="gender">Giày nam</div>
+                            <div class="price">
+                                <div class="aft-price">4.751.099₫</div>
+                                <div class="pre-price">4.275.989₫</div>
+                            </div>
+                            <div class="sale">10% off</div>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="img">
+                            <img src="assets/img/shoes/4.png">
+                        </div>
+                        <div class="text">
+                            <div class="name">Nike Air Zoom Pegasus 38</div>
+                            <div class="gender">Giày nữ</div>
+                            <div class="price">3.519.000₫</div>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="img">
+                            <img src="assets/img/shoes/5.png">
+                        </div>
+                        <div class="text">
+                            <div class="title">Bestseller</div>
+                            <div class="name">Adidas Continental 80</div>
+                            <div class="gender">Giày nam</div>
+                            <div class="price">
+                                <div class="aft-price">2.699.000₫</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="img">
+                            <img src="assets/img/shoes/6.png">
+                        </div>
+                        <div class="text">
+                            <div class="name">Adidas NMD R1</div>
+                            <div class="gender">Giày nam</div>
+                            <div class="price">
+                                <div class="aft-price">3.330.000₫</div>
+                                <div class="pre-price">3.700.000₫</div>
+                            </div>
+                            <div class="sale">10% off</div>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="img">
+                            <img src="assets/img/shoes/7.png">
+                        </div>
+                        <div class="text">
+                            <div class="name">Adidas Forum Exhibit Low</div>
+                            <div class="gender">Giày nữ</div>
+                            <div class="price">2.450.000đ</div>
+                            <div class="sale">15% off</div>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="img">
+                            <img src="assets/img/shoes/8.png">
+                        </div>
+                        <div class="text">
+                            <div class="name">Adidas ZX 2K Boost Pure</div>
+                            <div class="gender">Giày nữ</div>
+                            <div class="price">
+                                <div class="aft-price">3.145.0000₫</div>
+                                <div class="pre-price"> 3.700.000₫</div>
+                            </div>
+                            <div class="sale">15% off</div>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="img">
+                            <img src="assets/img/shoes/9.png">
+                        </div>
+                        <div class="text">
+                            <div class="name">Adidas Ultraboost 21</div>
+                            <div class="gender">Giày nam</div>
+                            <div class="price">4.999.000₫</div>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="img">
+                            <img src="assets/img/shoes/10.png">
+                        </div>
+                        <div class="text">
+                            <div class="title">Bestseller</div>
+                            <div class="name">Converse Chuck Taylor Classic</div>
+                            <div class="gender">Giày nam</div>
+                            <div class="price">1.450.000₫</div>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="img">
+                            <img src="assets/img/shoes/11.png">
+                        </div>
+                        <div class="text">
+                            <div class="title">Bestseller</div>
+                            <div class="name">Nike Air Force 1 Low</div>
+                            <div class="gender">Giày nam</div>
+                            <div class="price">
+                                <div class="aft-price">1.330.000₫</div>
+                                <div class="pre-price"> 1.900.000₫</div>
+                            </div>
+                            <div class="sale">30% off</div>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="img">
+                            <img src="assets/img/shoes/12.png">
+                        </div>
+                        <div class="text">
+                            <div class="name">Converse x Keith Haring Run Star Hike High-Top</div>
+                            <div class="gender">Giày nữ</div>
+                            <div class="price">2.499.000₫</div>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="img">
+                            <img src="assets/img/shoes/13.png">
+                        </div>
+                        <div class="text">
+                            <div class="title">Sản phẩm mới</div>
+                            <div class="name">Converse Chuck 70 Pride</div>
+                            <div class="gender">Giày nữ</div>
+                            <div class="price">
+                                <div class="aft-price">3.145.000₫</div>
+                                <div class="pre-price">3.700.000₫</div>
+                            </div>
+                            <div class="sale">15% off</div>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="img">
+                            <img src="assets/img/shoes/14.png">
+                        </div>
+                        <div class="text">
+                            <div class="name">Chuck Taylor All Star Renew Canvas</div>
+                            <div class="gender">Giày nam</div>
+                            <div class="price">4.999.000₫</div>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="img">
+                            <img src="assets/img/shoes/15.png">
+                        </div>
+                        <div class="text">
+                            <div class="title">Bestseller</div>
+                            <div class="name">VANS Old Skool Classic</div>
+                            <div class="gender">Giày nam</div>
+                            <div class="price">1.490.000₫</div>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="img">
+                            <img src="assets/img/shoes/16.png">
+                        </div>
+                        <div class="text">
+                            <div class="name">VANS Vault OG Classic Slip On Checkerboard/Off White</div>
+                            <div class="gender">Giày nam</div>
+                            <div class="price">
+                                <div class="aft-price">2.340.000₫</div>
+                                <div class="pre-price">2.600.000₫</div>
+                            </div>
+                            <div class="sale">10% off</div>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="img">
+                            <img src="assets/img/shoes/17.png">
+                        </div>
+                        <div class="text">
+                            <div class="name">VANS Vault OG Authentic LX Chili Pepper Red</div>
+                            <div class="gender">Giày nữ</div>
+                            <div class="price">2.450.000₫</div>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="img">
+                            <img src="assets/img/shoes/18.png">
+                        </div>
+                        <div class="text">
+                            <div class="title">Sản phẩm mới</div>
+                            <div class="name">VANS Flame SK8-HI Reissue</div>
+                            <div class="gender">Giày nam</div>
+                            <div class="price">1.900.000₫</div>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="img">
+                            <img src="assets/img/shoes/20.png">
+                        </div>
+                        <div class="text">
+                            <div class="name">VANS Era Packing Tape Black</div>
+                            <div class="gender">Giày nữ</div>
+                            <div class="price">1.800.000đ</div>
+                        </div>
+                    </div>
+
+                    
+
+               
+                
+                </div>
+                <script> 
+                 btns = document.getElementsByClassName("img");
+                 for (var i = 0; i < btns.length; i++) {
+                 btns[i].addEventListener("click", function () {
+                    window.location = "detail-product.html";
+                });
+            }
+            </script>
+               
+                
+            </div>
+
+            <div class="watchmore" id="xemThem">
+                <div class="">Xem thêm</div>
+                
+            </div>
+           
+    
+        </div>
+        
+    
+    
+    </div>
+
+
+</body>
+
+<footer>
+    
+    <div id="footer">
+        <div class="contact">
+            <div class="contact-info">
+                <div class="text-info">
+                 <table id="table-info">
+                     <thead>
+                         <td><a href="">Trang chủ</a></td>
+                         <td>Thông tin liên hệ</td>
+                         <td>Hỗ trợ khách hàng</td>
+                     </thead>
+                   <tr>
+                       <td><a href="">Sản phẩm</a></td>
+                       <td>Số 669 Quốc lộ 1, khu phố 3</td>
+                       <td>Hướng dẫn mua hàng</td>
+                   </tr>
+                   <tr>
+                       <td><a href="">Blogs</a></td>
+                       <td>phường Linh Xuân, quận Thủ Đức</td>
+                       <td>Hướng dẫn thanh toán</td>
+                   </tr>
+                   <tr>
+                       <td> <a href="">FAQs</a></td>
+                       <td></td>
+                       <td>Chính sách bảo mật</td>
+                   </tr>
+                   <tr>
+                       <td><a href="">Về chúng tôi</a></td>
+                       <td>Thành phố Hồ Chí Minh</td>
+                       <td>Chính sách đổi trả</td>
+                   </tr>
+                   <tr>
+                       <td></td>
+                       <td>Email: support@instacoper.com</td>
+                       <td style="font-weight: lighter;">Giao hàng & Vận chuyển</td>
+                   </tr>
+                   <tr>
+                    <td></td>
+                    <td>Hotline: 0123456789</td>
+                    <td></td>
+                </tr>
+                 </table>
+                
+                 
+                </div>
+            <div class="contact-form">
+                <p>Đăng ký nhận thông tin mới nhất!</p>
+                <input type="text" id="email-input" placeholder="Nhập Email của bạn tại đây">
+                <button type="submit">Đăng ký ngay!</button>
+            </div>
+            </div>
+            <hr>
+            <div class="payment-info">
+                <p style="color: white;">Hỗ trợ thanh toán</p>
+                <div id="hpayment-img">
+                    <img src="/assets/img/mastercard.svg" alt="">
+                    <img src="assets/img/Visapay.svg" alt="">
+                    <img src="assets/img/momo.svg" alt="">
+                    <img src="assets/img/VNpay.svg" alt="">
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+</html>

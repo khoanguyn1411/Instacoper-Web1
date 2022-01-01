@@ -1,0 +1,134 @@
+
+
+label{
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.top-content-left input {
+    display: none;
+}
+.top-content-left label{
+    position: relative;
+    border: 1px solid rgba(188, 188, 188, 1);
+    font-size: 14px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-right: 7px;
+    padding-left: 7px;
+    background-color: rgba(250, 251, 251, 1);
+    border-radius: 3px;
+    margin-right: 5px;
+    
+}
+
+.top-content-left input:checked + label{
+    background-color: #F54253;
+    color: white;
+    border: 1px solid #F54253;
+    -webkit-box-shadow: 2px 2px 2px #666;
+    -moz-box-shadow: 2px 2px 2px #666;
+    box-shadow: 2px 2px 2px #666;
+}
+
+
+
+
+.chk-thuonghieu input + label{
+    display: block;
+    margin: 3px 4px 4px 0px;
+    font-size: 15px;
+    margin-top: 5px;
+
+}
+
+.chk-thuonghieu input{
+    display: none;
+}
+
+.chk-thuonghieu input + label:before{
+    content: "\220E";
+    border: 1px solid rgba(188, 188, 188, 1);
+    border-radius: 1px;
+    display: inline-block;
+    margin-right: 8px;
+    vertical-align: bottom;
+    color: transparent;
+    font-size: 12px;
+    padding-left: 4px;
+    padding-right: 4px;
+    padding-bottom: 2px;
+    border-radius: 3px;
+}
+
+.chk-thuonghieu input:checked + label:before{
+    background-color:#F54253;
+    color: white;
+    font-size: 12px;
+    border: 1px solid #F54253
+}
+
+.content-size input {
+    display: none;
+}
+
+.content-size label{
+    position: relative;
+    border: 1px solid rgba(188, 188, 188, 1);
+    font-size: 16px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-right: 7px;
+    padding-left: 7px;
+    background-color: rgba(250, 251, 251, 1);
+    border-radius: 3px;
+    margin-right: 5px;
+    font-weight: bold;
+}
+
+.content-size input:checked + label{
+    background-color: #F54253;
+    color: white;
+    border: 1px solid #F54253;
+    -webkit-box-shadow: 2px 2px 2px #666;
+    -moz-box-shadow: 2px 2px 2px #666;
+    box-shadow: 2px 2px 2px #666;
+}
+
+
+.content-size-detail{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 5px;
+
+}
+.content-size-detail input{
+    display: none;
+}
+
+
+.content-size-detail label{
+    position: relative;
+    border: 1px solid rgba(188, 188, 188, 1);
+    font-size: 16px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+
+    width:85px;
+    display: inline-block;
+    
+    background-color: rgba(250, 251, 251, 1);
+    border-radius: 3px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.content-size-detail input:checked + label{
+    background-color: #F54253;
+    color: white;
+    border: 1px solid #F54253;
+    -webkit-box-shadow: 2px 2px 2px #666;
+    -moz-box-shadow: 2px 2px 2px #666;
+    box-shadow: 2px 2px 2px #666;
+}
+
+
