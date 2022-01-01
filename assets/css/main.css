@@ -83,6 +83,8 @@ html{
     position: relative;
     cursor: pointer;
 }
+
+
  .subcart{  
     width: 400px; 
     --height: 300px;
@@ -229,7 +231,7 @@ html{
     color: #f1f1f1;
   }
   .active {
-    background-color: green;
+    background-color: var(--secondary-color);
     color: white;
   }
   
@@ -328,12 +330,53 @@ html{
  
 
 #banner{
-   background-color: antiquewhite; 
-   min-height: 500px;
+
 }
 
 #content{
-    
+    padding: 2% 2% 5% 5%;    
+    background-color: antiquewhite; 
+    min-height: 400px;
+}
+/* BreadScrumb */
+ul.breadcrumb {
+    list-style: none;
+  }
+  ul.breadcrumb li {
+    display: inline;
+    font-size: 1rem;
+    font-weight: 800;
+  }
+  ul.breadcrumb li::after {
+    display: inline;
+    font-size: 1rem;
+  }
+  ul.breadcrumb li+li:before {
+    padding: 8px;
+    color: black;
+    content: "\003e";
+  }
+  ul.breadcrumb li a {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: 500;
+  }
+  ul.breadcrumb li a:hover {
+    color: var(--secondary-color);
+    text-decoration: underline;
+  }
+/* BreadScrumb */
+.FAQs-content{
+    padding: 2% 0 2% 0;
+}
+.FAQs-content p{
+    padding: 1% 0 1% 0;
+}
+.FAQs-content li{
+    margin-inline-start: 2%;
+}
+.video-SizeGuide{
+  padding: 1% 0 2% 0;
 }
 #sldier{
     
@@ -346,7 +389,7 @@ html{
 }
 #footer>.contact{
    
-    padding: 8% 5% 2% 5%;
+    padding: 8% 6% 2% 6%;
 
 
 }
@@ -356,49 +399,42 @@ html{
 }
 #footer>.contact>.contact-info>.text-info{
     display: flex;
-    width: 55%;
+    width: 70%;
 }
-#footer>.contact>.contact-info>.text-info>table{
-    
-    padding-left: 0px;
-    margin-bottom: 5%;
-    width: 100%;
+#footer>.contact>.contact-info>.text-info>.footernav{
+    display: flex;
+    flex-direction: column;
     color: white;
-    border-collapse: collapse;
-    
+    width: 70%;
 }
-.table-info{
-    overflow: hidden;
-
-}
-.table-info thead{
-    font-weight: 700;
-    margin-right: 40px;
-}
-.table-info thead td{
-    font-weight: 700;
-}
-.table-info tr td{
-    padding-bottom: 1%;
+#footer>.contact>.contact-info>.text-info>.footernav a{
+    color: white;
     font-weight: 200;
- }
-.table-info a{
-   text-decoration: none;
-   color: white;
+    text-decoration: none;
+}
+#footer>.contact>.contact-info>.text-info>.footernav p{
+    font-weight: 200;
 }
 #footer>.contact>.contact-info>.contact-form{
     display: flex;
     flex-direction: column;
     margin-top: 3%;
+    margin-bottom: 5%;
+    color: white;
+}
+#footer>.footernav>p{
     color: white;
 }
 #footer>.contact>.contact-info>.contact-form> input{
-    height: 20%;
-    width: 300px;
-    margin-bottom: 2%;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    height: 3em;
+    width: 400px;
+    
+ 
 }
 #footer>.contact>.contact-info>.contact-form> button{
-    height: 20%;
+    height: 3em;
     color: white;
     background-color: red;
 }
