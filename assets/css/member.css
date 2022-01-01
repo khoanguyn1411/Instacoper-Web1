@@ -1,0 +1,201 @@
+
+
+
+/* CSS cho phần đoạn văn */
+.main-content{
+    width: 100%;
+    height: inherit;
+}
+
+.main-content-wrapper p1{
+    font-weight: 600;
+    font-size: 30px;
+}
+
+.main-content-wrapper p{
+    margin-top: 10px;
+    text-align: justify;
+    font-weight: 500;
+    font-size: 16px;
+
+}
+
+/* CSS cho image content */
+
+.image-content{
+    width: 100%;
+    height: inherit;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.image-content img{
+    width: 50%;
+    height: 100%;
+}
+
+/* CSS cho member */
+
+.member-content{
+    width: 100%;
+    height: 500px;
+    padding-bottom: 20px;
+}
+.member-content > div{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.member-content > div:last-child{
+    justify-content: space-between;
+    height: 100%;
+}
+
+.team-members .member{
+    width: 18.5%;
+    height: 385px;
+    -webkit-box-shadow: 1px 1px 5px rgb(0 0 0 / 0.4);
+    -moz-box-shadow: 1px 1px 5px rgb(0 0 0 / 0.4);
+    box-shadow: 1px 1px 5px rgb(0 0 0 / 0.4);
+    margin-top: 20px;
+
+}
+
+.team-members .member .member-thumb{
+    height: 210px;
+    width: 100%;
+    position: relative;
+}
+
+.team-members .member .member-thumb >img{
+    width: 100%;
+    height: inherit;
+
+}
+
+
+
+
+.team-members .member .member-position{
+    width: 100%;
+    height: 40px;
+    bottom: -10%;
+    position: absolute ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.team-members .member .member-position > div{
+    background-color: #F54253;
+    height: 70%;
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Playfair Display', serif;
+    font-weight: 900;
+    color: white;
+    font-size: 14px;
+}
+
+
+.team-members .member .member-name{
+    margin-top: 25px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.team-members .member .member-name > p{
+    font-family: 'Playfair Display', serif;
+    font-weight: bold;
+}
+
+
+.team-members .member .member-des > p{
+    font-size: 12px;
+    text-align: justify;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+}
+
+
+
+@media only screen and (max-width: 46.1875em){
+
+    .wrapper{
+        width: 100%;
+    }
+
+    .main-content{
+        padding: 0px 20px;
+        width: 100%;
+    }
+
+
+        
+    .member-content{
+        width: 100%;
+        height: inherit;
+        display: inline-block;
+}
+
+    .member-content > div:last-child{
+        display: block;
+        justify-content: space-between;
+        padding: 0px 40px;
+    }
+
+    
+    .team-members .member{
+        width: 18.5%;
+        height: 50%;
+        -webkit-box-shadow: none;
+        -moz-box-shadow:  none;
+        box-shadow:  none;
+        margin-top: 20px;
+    
+    }
+
+    .member-content > div:last-child .member{
+        display: block;
+        float: left;
+        width: 50%;
+        height: 320px;
+    }
+
+    .team-members .member .member-thumb{
+        position: relative;
+        width: 100%;
+        padding-top: 100%;
+        height: 0;
+    
+    }
+
+    .team-members .member .member-thumb >img{
+        position: absolute;
+        height: 100%;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        padding: 5px;
+    
+    }
+
+    .team-members .member .member-position > div{
+        font-size: 10px;
+    }
+    
+    
+    .team-members .member .member-des > p{
+        font-size: 8px;
+    }
+   
+}
