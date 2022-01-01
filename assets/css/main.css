@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap');
+
 /*
 Vị trí (X,Y,Z)
 Kích thước size - (width, height)
@@ -16,6 +18,9 @@ html{
     overflow-y: scroll;
     font-family: var(--primary-fontFammily);
 }
+#main{
+    transition: margin-left .5s;
+}
 #header{
     width: 100%;
     --height: 80px;
@@ -25,6 +30,7 @@ html{
     background-color: var(--primary-color);
     color: white;
     position: fixed;
+    transition: top 0.3s; /* Transition effect when sliding down (and up) */
     
 }
 #logo{
@@ -75,42 +81,73 @@ html{
     }
 #cart{
     position: relative;
+    cursor: pointer;
 }
-#cart> .subcart {  
+ .subcart{  
     width: 400px; 
+    --height: 300px;
     position: absolute;
     background: white;
-    transform: translateX(-100%) translateY(20%);
+    transform: translateX(-100%) translateY(35%);
     border-radius: 5px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); 
+    font-family: var(--primary-fontFammily);
+    display: none;
 }
-#cart:hover> .subcart >li{ 
-    display: inline-block;
-}
+.show {display: inline-block;}
+
 #cart> .subcart >li {
     list-style: none;
     line-height: 40px;
-    padding: 0 auto 0 auto;
-    display: none;
-    transform: translateX(45%);
+    padding: 5%;
 }
-#cart .subcart> li> button{
-    
-    width: 100px;
+#cart>.subcart>li>.cart-btn{
+    display: flex;
+    justify-content: space-between;
+}
+#cart>.subcart>li>.cart-btn> button{ 
+    margin-top: 5%;
+    transform: translateY(10%);
+    width: 50%;
     height: 50px;
     border: 1px solid black;
     border-radius: 50px;
+
 }
-#cart .subcart> li> button::after{
-    content: " ";
-    background-color: black;
+.subcart>li>.cartlayout{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: #000;
+}
+.subcart>li>.cartlayout>.productcart{
+    display: flex;
+    flex-direction: row;
+    width: 160%;
+    color: #000;
+}
+.subcart>li>.cartlayout>.productcart>.productcart-info>p{
+    font-weight: 500;
+    color: var(--primary-color);
+    margin-inline-start: 8%;
+
+}
+.subcart>li>.cartlayout>.productcart>.productcart-info>h5{
+    margin-inline-start: 5%;
+}
+#giaydemo1{
+    height: 70px;
+    width: 100px;
+
 }
 #cart-btn{
-    
+    background-color: white;
     
 }
 #pay-btn{
-    
+    background-color: var(--primary-color);
+    color: white;
+
     
 }
 #nav{
@@ -133,12 +170,87 @@ html{
     border-radius: 5px;
     cursor: pointer;
 }
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.4s;
+    padding-top: 60px;
+  }
+  
+  .sidebar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: ease-in 0.1s;
+  }
+  
+  .sidebar a:hover {
+    color: #f1f1f1;
+  }
+  
+  .sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  @media screen and (max-height: 450px) {
+    .sidebar {padding-top: 15px;}
+    .sidebar a {font-size: 18px;}
+    
+  }
+  
+  /* Style the sidenav links and the dropdown button */
+    .dropdown-btn {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 22px;
+    color: #818181;
+    display: block;
+    border: none;
+    background: none;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    outline: none;
+  }
+  
+  /* On mouse-over */
+ .dropdown-btn:hover {
+    color: #f1f1f1;
+  }
+  .active {
+    background-color: green;
+    color: white;
+  }
+  
+  /* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
+  .dropdown-container {
+    display: none;
+    background-color: #262626;
+    padding-left: 8px;
+  }
+  
+  /* Optional: Style the caret down icon */
+  .fa-caret-down {
+    float: right;
+    padding-right: 8px;
+  }
+  /* ////Class Nav Chữ///// */
 #nav> .nav{
     margin-inline-start: 5%;
     display: flex;
     flex-direction: row;
-    width: 45%;
-
+    width: 60%;
 }
 #nav .nav li{
     margin-inline-end: 10%;
@@ -148,10 +260,73 @@ html{
 }
 #nav .nav li a{ 
     text-decoration: none;
-    font-weight: 700;
-    color: #000;
-    
+    font-weight: 500;
+    color: #000;   
 }
+#nav .nav li .icon  {
+    display: none;
+  }
+  #nav .nav li .icon a {
+    background-color: #000;
+  }
+/* Dropdown container - needed to position the dropdown content */
+.subnav {
+    float: left;
+    overflow: hidden;
+  }
+  
+
+  
+  /* Style the subnav content (hidden by default) */
+  .subnav-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 220px;
+    min-height: 400px;
+    border-radius: 10px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Style the links inside the subnav */
+  .subnav-content a {
+    float: none;
+    color: black;
+    padding: 12px 10%;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .nav li a:hover, .subnav:hover{
+    background-color: var(--secondary-color);
+    border-radius: 5px;
+    color: rgb(0, 0, 0);
+    
+  }
+  
+  .subnav-content a:hover {
+    border-radius: 10px;
+  }
+  
+  .subnav:hover .subnav-content {
+    display: block;
+  }
+  .thirnav:hover .thirdnav-content{
+    display: block;
+  }
+  .thirdnav-content {
+    display: none;
+  }
+  .thirdnav-content a{
+      padding-left: 20%;
+      font-size: 80%;
+  }
+  
+
+ 
+
 #banner{
    background-color: antiquewhite; 
    min-height: 500px;
@@ -192,14 +367,22 @@ html{
     border-collapse: collapse;
     
 }
-#table-info thead{
+.table-info{
+    overflow: hidden;
+
+}
+.table-info thead{
     font-weight: 700;
     margin-right: 40px;
 }
-#table-info tr td{
+.table-info thead td{
+    font-weight: 700;
+}
+.table-info tr td{
     padding-bottom: 1%;
+    font-weight: 200;
  }
-#table-info a{
+.table-info a{
    text-decoration: none;
    color: white;
 }
@@ -220,7 +403,13 @@ html{
     background-color: red;
 }
 
-#footer>.contact>#payment-info{
-    margin-top: 10px;
-    color: white;
+#footer>.contact>.payment-info{
+    margin-top: 1%;
+}
+#footer>.contact>.payment-info>p{
+    margin-bottom: 2%;
+    color: rgb(255, 255, 255);
+}
+#footer>.contact>.payment-info>#payment-img>img{
+    margin-inline-end: 2%;
 }
