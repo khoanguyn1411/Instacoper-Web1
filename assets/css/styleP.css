@@ -1,0 +1,88 @@
+.wrapper{
+    width: 1140px;
+    height: auto;
+    margin:auto;
+    padding: 0 20px;
+}
+
+/* CSS chung */
+p{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+/* -- Tên giày */
+p1{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 700;
+    font-size: 32px;
+}
+/* -- Giới tính */
+p2{
+    font-size: 22px;
+    font-weight: 400;
+    margin-top: 100px;
+    font-family: 'Source Sans Pro', sans-serif;
+
+}
+
+/* -- Price */
+p3{
+    font-weight: 700;
+    font-size: 25px;
+    font-family: 'Source Sans Pro', sans-serif;
+
+}
+
+p4{
+    font-weight: 700;
+    font-size: 15px;
+    font-family: 'Source Sans Pro', sans-serif;
+
+}
+
+/* normal text */
+p5{
+    font-size: 15px;
+    font-family: 'Source Sans Pro', sans-serif;
+
+}
+
+p6{
+    font-size: 16px;
+    font-weight: 600;
+    font-family: 'Source Sans Pro', sans-serif;
+
+}
+
+
+/* CSS cho top content */
+.top-content{
+    width: 100%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+}
+
+.top-content .rel{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+}
+
+.top-content .rel img{
+    width: 8px;
+    margin: 0px 5px 0px 5px;
+}
+
+
+/* CSS cho đường phân cách */
+.bottom-left{
+    width: 100%;
+    height: 1.5px;
+    margin-bottom: 10px;
+    background-color: rgba(188, 188, 188, 1);
+
+}
