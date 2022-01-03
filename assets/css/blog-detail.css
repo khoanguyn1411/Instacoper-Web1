@@ -1,0 +1,182 @@
+#banner{
+    min-height: 1900px;
+    width:1500px;
+    margin: auto;
+}
+
+.part-one{
+    float: left;
+    width: 88%;
+    margin-left: 6%;
+    width: 57%;
+    height: 1700px;
+    margin-top: 80px;
+}
+
+.part-two{
+    float: left;
+    width: 25%;
+    height: 450px;
+    margin-right: 6%;
+    margin-top: 80px;
+    margin-left: 80px;
+}
+
+.type{
+    height: 2%;
+}
+
+.type img {
+    float: left;
+}
+
+.type p{
+    float: left;
+    margin-left: 10px;
+    height:20px;
+    font-size: 12px;
+    font-weight: bold;
+    display: flex;
+    align-items: flex-end;
+}
+
+.title {
+    height: 4%;
+}
+
+.title p{
+    font-size: 27px;
+    font-weight: bold;
+    font-family: 'Playfair Display',sans-serif;
+}
+
+.text{
+    height: 95%;
+    margin-right: 40px;
+}
+
+.text-img1 img{
+    width: 600px;
+    height: 400px;
+    display: block;
+    margin-left: auto; 
+    margin-right: auto;
+    
+}
+
+.text-img1 p{
+    width: 700px;
+    height: 30px;
+    display: block;
+    margin-left: auto; 
+    margin-right: auto;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 14px;
+    color: #404040;
+
+}
+
+.text-video iframe{
+    width:560px;
+    height:315px;
+    display: block;
+    margin-left: auto; 
+    margin-right: auto;
+}
+
+.text-video p{
+    width: 700px;
+    height: 30px;
+    display: block;
+    margin-left: auto; 
+    margin-right: auto;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 14px;
+    color: #404040;
+}
+
+
+.text-img2 img{
+    width: 450px;
+    height: 300px;
+    display: block;
+    margin-left: auto; 
+    margin-right: auto;
+}
+
+.one{
+    height:10%;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.one img{
+    display: block;
+    margin-left: auto; 
+    margin-right: auto;
+    margin-top: 5px;
+}
+
+
+/* .one hr{
+    width: 230px;
+    display: block;
+    margin-left: auto; 
+    margin-right: auto;
+    margin-top: 4px;
+    border-style: solid;
+    color: #F54253;
+} */
+
+.two{
+    height:47%;
+
+}
+
+.two img{
+    width: 375px;
+}
+
+.three{
+    width: 100%;
+    height:7%;
+    margin-top: 10px;
+}
+
+.three img {
+    float: left;
+}
+
+.three p{
+    float: left;
+    margin-left: 10px;
+    height:20px;
+    font-size: 12px;
+    font-weight: bold;
+    display: flex;
+    align-items: flex-end;
+}
+
+.four{
+    height:15%;
+    font-weight: bold;
+    font-family: 'Playfair Display',sans-serif;
+
+}
+
+.five{
+    height: 14%;
+    font-size: 14px;
+}
+
+.six{
+    height:5%;
+    color: #F54253;
+    font-weight: bold;
+    font-style: italic;
+    font-family: Source Serif Pro;
+    font-size: 17px;
+}
