@@ -63,7 +63,7 @@ html{
     transform: translateX(-85%);
     width: 100%;
     height: 40px;
-    font-size: 1rem;
+    font-size: 1.25rem;
     outline: 0px;
     border: 0px;
     border-radius: 5px;
@@ -114,6 +114,7 @@ html{
     height: 50px;
     border: 1px solid black;
     border-radius: 50px;
+    font-size: 1.125rem;
 
 }
 .subcart>li>.cartlayout{
@@ -188,7 +189,7 @@ html{
   .sidebar a {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
-    font-size: 25px;
+    font-size: 1.5rem;
     color: #818181;
     display: block;
     transition: ease-in 0.1s;
@@ -215,7 +216,7 @@ html{
     .dropdown-btn {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
-    font-size: 22px;
+    font-size: 1.4rem;
     color: #818181;
     display: block;
     border: none;
@@ -238,9 +239,12 @@ html{
   /* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
   .dropdown-container {
     display: none;
-    background-color: #262626;
     padding-left: 8px;
   }
+  .dropdown-container a{
+    font-size: 1.25rem;
+  }
+  
   
   /* Optional: Style the caret down icon */
   .fa-caret-down {
@@ -253,6 +257,7 @@ html{
     display: flex;
     flex-direction: row;
     width: 60%;
+    font-size: 1.125rem;
 }
 #nav .nav li{
     margin-inline-end: 10%;
@@ -301,13 +306,10 @@ html{
     text-align: left;
   }
   
-  .nav li a:hover, .subnav:hover{
-    background-color: var(--secondary-color);
+  .nav li a:hover{
     border-radius: 5px;
-    color: rgb(0, 0, 0);
-    
-  }
-  
+    color: var(--secondary-color);
+    }
   .subnav-content a:hover {
     border-radius: 10px;
   }
@@ -323,7 +325,7 @@ html{
   }
   .thirdnav-content a{
       padding-left: 20%;
-      font-size: 80%;
+      font-size: 0.75rem;
   }
   
 
@@ -334,9 +336,9 @@ html{
 }
 
 #content{
-    padding: 2% 2% 5% 5%;    
-    background-color: antiquewhite; 
+    padding: 2% 5% 5% 5%;    
     min-height: 400px;
+    font-size: 1.125rem;
 }
 /* BreadScrumb */
 ul.breadcrumb {
@@ -344,7 +346,7 @@ ul.breadcrumb {
   }
   ul.breadcrumb li {
     display: inline;
-    font-size: 1rem;
+    font-size: 1.125rem;
     font-weight: 800;
   }
   ul.breadcrumb li::after {
@@ -367,7 +369,10 @@ ul.breadcrumb {
   }
 /* BreadScrumb */
 .FAQs-content{
-    padding: 2% 0 2% 0;
+    padding: 2% 0% 2% 0;
+}
+.FAQs-content h2{
+  padding: 0% 0% 2% 0;
 }
 .FAQs-content p{
     padding: 1% 0 1% 0;
@@ -378,6 +383,125 @@ ul.breadcrumb {
 .video-SizeGuide{
   padding: 1% 0 2% 0;
 }
+.FAQs-content>.FAQ-box{
+  display: flex;
+  height: 25rem;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); 
+  border: 2px solid #818181;
+  border-radius: 5px;
+  
+}
+.FAQs-content>.FAQ-box> .FAQ-Form{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-inline-start: 1%;
+  margin-top: 2%;
+  width: 30%;
+}
+.FAQs-content>.FAQ-box> .FAQ-Form> label ~ label{
+  text-align: left;
+  margin-bottom: 2%;
+  font-size: 1.25rem;
+}
+.FAQs-content>.FAQ-box> .FAQ-Form> label:first-child{
+  margin: 0 0 4% 0;
+  font-size: 1.875rem;
+  font-weight: 600;
+  
+}
+.FAQs-content>.FAQ-box> .FAQ-Form> input{
+  margin-bottom: 5%;
+  height: 12%;
+  width: 95%;
+  border-radius: 3px;
+  border: 1px solid gray;
+  padding-left: 2%;
+}
+
+.FAQs-content>.FAQ-box> .FAQ-Form> button{
+  margin-left: 70%;
+  margin-top: 5%;
+  color: white;
+  background-color: var(--secondary-color);
+  width: 25%;
+  height: 10%;
+  border: none;
+  border-radius: 3px;
+}
+.vl {
+  border-left: 2px solid #8D8D8D;
+  height: 22rem;
+  left: 50%;
+  margin-left: 3%;
+  margin-top: 1.2rem;
+}
+.FAQ-info{
+  width: 65%;
+  margin-top: 2%;
+}
+.FAQ-info> p{
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  font-size: 1.875rem;
+  font-weight: 600;
+  
+}
+.FAQ-info>.FAQ-info-row{
+  display: flex;
+  flex-direction: row;
+}
+.FAQ-info-col1{
+  margin: 2% 6%;
+  width: 60%;
+  
+}
+.FAQ-info-col1 p{
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+  #orderCode> b{
+  color: var(--secondary-color);
+}
+.FAQ-info-col1 span{
+  font-size: 1.125rem;
+  font-weight: 500;
+}
+ .orderStatus{
+  color: var(--secondary-color);
+  font-size: 1.125rem;
+  font-style: italic;
+}
+
+.FAQ-info-col2{
+  margin: 2% 4% 2% 0%;
+  width: 70%;
+}
+.FAQ-info-col2 p{
+  font-size: 24px;
+  font-weight: 600;
+}
+.FAQ-info-col2> span{
+  font-size: 1.125rem;
+  font-weight: 500;
+}
+.FAQ-info-col2>.orderPrice{
+  display: flex;
+  margin-top: 12%;
+}
+.FAQ-info-col2>.orderPrice>p::after{
+  content: "\00a0 \00a0 \00a0";
+}
+.FAQ-info-col2>.orderPrice> p{
+  font-size: 1.5rem;
+  line-height: 0%;
+}
+.FAQ-info-col2>.orderPrice> p~ p{
+  color: var(--secondary-color);
+  font-size: 2.25rem;
+}
+
 #sldier{
     
 }
@@ -389,7 +513,7 @@ ul.breadcrumb {
 }
 #footer>.contact{
    
-    padding: 8% 6% 2% 6%;
+    padding: 6% 5% 6% 5%;
 
 
 }
@@ -430,8 +554,7 @@ ul.breadcrumb {
     margin-bottom: 3%;
     height: 3em;
     width: 400px;
-    
- 
+    padding-left: 2%;
 }
 #footer>.contact>.contact-info>.contact-form> button{
     height: 3em;
