@@ -35,6 +35,8 @@ footer{
     display: flex;
     align-items: center;
 
+    
+
 }
 
 
@@ -111,6 +113,7 @@ div, input{
     width: 25%;
     height: 600px;
     float: left;
+
     
 }
 
@@ -119,6 +122,7 @@ div, input{
     height: inherit;
     float: right;
     display: block;
+
 }
 
 
@@ -320,6 +324,8 @@ div, input{
     float: left;
     width: 20%;
     height: 25%;
+    padding: 8px;
+    box-sizing: border-box;
 }
 
 
@@ -328,13 +334,26 @@ div, input{
 
 
 .content-product .item .img{
-    margin: 8px;
+    width: 100%;
+    padding-top: 100%; 
     position: relative;
 
 }
 
+.content-product .item .img >img{
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+
+}
+
+
+
 .content-product .item .text{
-    margin: 8px;
+    margin-top: 8px;
 }
 
 
@@ -353,7 +372,7 @@ div, input{
     background-color: #F54253;
     opacity: 0.6;
     position: absolute;
-    bottom: 5px;
+    bottom: 0;
     transition: .3s ease;
 }
 
@@ -362,7 +381,7 @@ div, input{
     font-size: 0px;
     opacity: 1;
     position: absolute;
-    bottom: 12px;
+    bottom: 8px;
     left: 30%;
     display: none;
     color: white;
@@ -472,7 +491,15 @@ Xem thêm */
 
 
 @media only screen and (max-width: 46.1875em){
-    /* footer{
+
+    
+    
+    .content{
+        width: 100%;
+        height: auto;
+        margin: auto;
+    }
+    footer{
         width: 100%;
         float: left;
         margin-top: 100px;
@@ -522,7 +549,7 @@ Xem thêm */
 
     .main-side{
         width: 100%;
-    } */
+    }
     
 }
 

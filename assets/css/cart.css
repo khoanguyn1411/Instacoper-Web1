@@ -1,4 +1,13 @@
 
+.wrapper{
+    width: 1140px;
+    height: auto;
+    margin:auto;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+
 div{
     font-family: 'Source Sans Pro', sans-serif;
 }
@@ -67,7 +76,6 @@ div{
     height: 100%;
     float: left;
     display: flex;
-    align-items: center;
     
 }
 
@@ -76,15 +84,19 @@ div{
     height: 80%;
     width: 80%;
     float: left;
+
 }
 .item .item-content >div:last-child {
     height: 80%;
     width: 20%;
+    float: left;
 }
 
 .item .item-content >div:last-child >div{
     float: right;
     height: 100%;
+    margin-top: 5px;
+
 }
 
 
@@ -223,6 +235,12 @@ div{
     float: left;
 }
 
+.right-content-wrapper .content >p4{
+    width: 100%;
+    float: left;
+}
+
+
 .right-content-wrapper .price{
     width: 50%;
     float: left;
@@ -317,6 +335,9 @@ div{
 
     .wrapper{
         width: 100%;
+        height: auto;
+        margin:auto;
+        padding: 0px 10px;
     }
 
   
@@ -325,7 +346,7 @@ div{
     }
 
     .item-content p4{
-        font-size: 14px;
+        font-size: 12px;
     }
 
     .item-content .name{
