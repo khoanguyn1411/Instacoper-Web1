@@ -1,0 +1,555 @@
+
+
+
+
+.content{
+    width: 1250px;
+    height: auto;
+    margin: auto;
+}
+
+body{
+    width: 100%;
+    float: left;
+}
+
+footer{
+    width: 100%;
+    float: left;
+    margin-top: 100px;
+
+}
+
+  
+.top-side{
+    width: 100%;
+    height: 60px;
+    float: left;
+    display: flex;
+    align-items: center;
+
+}
+
+.top-side-main{
+    width: 100%;
+    display: flex;
+    align-items: center;
+
+    
+
+}
+
+
+div, input{
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.top-content-left-spacing{
+    width: 5%;
+    height: 35%;
+    float: left;
+
+}
+
+.top-content-left{
+    width: 55%;
+    max-height: 35%;
+    float: left;
+    line-height: 2;
+}
+
+
+
+
+
+
+
+
+.top-content-right{
+    float: right;
+    height: 35%;
+    width: 37.5%;
+
+
+}
+
+
+.top-content-right> div>div{
+    width: fit-content;
+    float: right;
+    margin-left: 15px;
+  
+}
+
+
+.top-content-right img{
+    max-height: 12px;
+    float: right;
+    margin-left: 6px;
+    margin-top: 3px;
+}
+
+
+
+.top-content-right .sort-by-type{
+    display: none;
+    background-color: #FAFBFB;
+    position: absolute;
+    margin-left: 353px;
+    border: 1px solid #BCBCBC;
+    margin-top: 30px;
+    list-style-type: none;
+    padding: 7px;
+}
+
+
+
+
+
+
+
+
+.left-side{
+    width: 25%;
+    height: 600px;
+    float: left;
+
+    
+}
+
+.left-side-main{
+    width: 80%;
+    height: inherit;
+    float: right;
+    display: block;
+
+}
+
+
+/* CSS cho chung cho 4 search fields */
+.head-left .title{
+    float: left;
+    width: fit-content;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.img-title{
+    float: right;
+    text-align: center;
+    top: 25%;
+    position: absolute;
+    right: 0%;
+
+}
+
+.head-left{
+    width: 95%;
+    float: left;
+    margin-bottom: 5px;
+    position: relative;
+}
+.bottom-left{
+    height: 0.75px;
+    width: 95%;
+    background-color: rgba(188, 188, 188, 1);
+    margin-top: 15px;
+    float: left;
+
+}
+
+
+/* CSS cho nhãn hiệu */
+.nhanhieu{
+    height: 280px;
+    width: 100%;
+
+}
+
+.nhanhieu .head-left{
+    margin-bottom: 10px;
+
+}
+
+
+/* CSS cho khoảng giá */
+.khoanggia{
+    height: 95px;
+    width: 100%;
+    
+}
+.rangslider-content{
+    height: initial;
+    width: 95%;
+    float: left;
+}
+.rangeslider-content2{
+    height: 30px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+
+}
+
+
+.rangeslider-price{
+    height: 3px;
+    width: 100%;
+    border-radius: 5px;
+    background-color: rgba(188, 188, 188, 1);
+    position: relative;
+    margin-top: 10px;
+}
+
+
+.rangeslider-price .progress{
+    height: 3px;
+    border-radius: 5px;
+    background-color: black;
+    left: 0%;
+    right: 0%;
+    position: absolute;
+}
+
+
+.range-input{
+    position: relative;
+}
+.range-input input{
+    position: absolute;
+    top: -5px;
+    height: 5px;
+    width: 100%;
+    -webkit-appearance: none;
+    pointer-events: none;
+    background: none;
+}
+
+.range-input input::-webkit-slider-thumb{
+    height: 12px;
+    width: 12px;
+    pointer-events: auto;
+    border: none;
+    -webkit-appearance: none;
+    border-radius: 50%;
+    background-color: black;
+}
+
+
+
+
+.rangeslider-inputnum{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.output-num{
+    width: 60%;
+    display: flex;
+    justify-content: center;
+}
+
+.output-num input{
+    width: 90px;
+    border: none;
+    text-align: center;
+    display: inline-block;
+    font-size: 15px;
+    margin: 0px 5px 0px 5px;
+
+}
+
+
+/* CSS cho size */
+.size{
+    height: 150px;
+    width: 100%;
+}
+.content-size{
+    float: left;
+    line-height: 2.3;
+}
+
+
+
+
+
+
+/* CSS cho giới tính */
+.gioitinh{
+    height: 150px;
+    width: 100%;
+    margin-top: 15px;
+}
+
+.content-gender{
+    width: 95%;
+    height: inherit;
+    float: left;
+}
+
+
+
+
+
+/* CSS cho main side */
+.main-side{
+    width: 75%;
+    height: 1100px;
+    float: left;
+}
+
+.main-side .seperate{
+    width: 1px;
+    height: 100%;
+    float: left;
+    background-color: rgba(188, 188, 188, 1);
+}
+.product-shopping{
+    width: 99%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.content-product{
+    width: 97%;
+    height: 100%;
+}
+
+
+.content-product .item{
+    float: left;
+    width: 20%;
+    height: 25%;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+
+
+
+
+
+.content-product .item .img{
+    width: 100%;
+    padding-top: 100%; 
+    position: relative;
+
+}
+
+.content-product .item .img >img{
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+
+}
+
+
+
+.content-product .item .text{
+    margin-top: 8px;
+}
+
+
+.content-product .item .img:hover .xemnhanh{
+    height: 20%;
+}
+
+.content-product .item .img:hover .xemnhanh-content{
+    font-size: 15px;
+    display: block;
+}
+
+.content-product .img .xemnhanh{
+    width: 100%;
+    height: 0%;
+    background-color: #F54253;
+    opacity: 0.6;
+    position: absolute;
+    bottom: 0;
+    transition: .3s ease;
+}
+
+.content-product .img .xemnhanh-content{
+    width: 100%;
+    font-size: 0px;
+    opacity: 1;
+    position: absolute;
+    bottom: 8px;
+    left: 30%;
+    display: none;
+    color: white;
+}
+
+
+
+
+.content-product .item .text .title{
+    font-size: 10px;
+    color: #F54253;
+    font-weight: bold;
+}
+.content-product .item .text .name{
+    font-size: 14px;
+    color: black;
+    font-weight: bold;
+}
+
+.content-product .item .text .gender{
+    font-size: 14px;
+    color: black;
+}
+
+.content-product .item .text .price{
+    font-size: 12px;
+    color: black;
+    margin-top: 3px;
+    font-weight: bold;
+    width: 100%;
+   
+}
+
+
+
+
+
+
+.content-product .item .text .price .pre-price{
+    font-size: 12px;
+    color: #8D8D8D;
+    margin-top: 3px;
+    text-decoration: underline;
+    font-weight: bold;
+    width: 50%;
+    margin-left: 5px;
+    display: inline;
+
+}
+
+
+.content-product .item .text  .price .aft-price{
+    font-size: 12px;
+    color: black;
+    margin-top: 3px;
+    font-weight: bold;
+    display: inline;
+
+}
+
+.content-product .item .text .sale{
+    color: #41A139;
+    font-weight: bold;
+    font-size: 12px;
+    width: 100%;
+
+}
+
+
+.content-product .item .img img{
+    height: 100%;
+    width: 100%;
+    border-radius: 3px;
+
+}
+
+/* 
+Xem thêm */
+.watchmore{
+    height: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-left: 0.75px solid rgba(188, 188, 188, 1);
+
+}
+
+.watchmore div{
+    text-decoration: underline;
+    font-weight: bold;
+   
+}
+
+
+
+/* Mobile reponsive */
+
+
+
+
+@media only screen and  (min-width: 46.1875em) and (max-width: 65.1875em){
+    
+
+
+}
+
+
+@media only screen and (max-width: 46.1875em){
+
+    
+    
+    .content{
+        width: 100%;
+        height: auto;
+        margin: auto;
+    }
+    footer{
+        width: 100%;
+        float: left;
+        margin-top: 100px;
+    
+    }
+
+    .main-side .seperate{
+        display: none;
+    }
+
+    .watchmore{
+        border-left: none;
+    }
+
+   
+    .main-side{
+        height: 8650px;
+    }
+    .content{
+        width: 100%;
+        height: auto;
+        background-color: red;
+        margin: auto;
+    }
+    
+    .content-product{
+        display: block;
+        text-align: center;
+        justify-content: center;
+        width: initial;
+        height: 1700px;
+    }
+
+    .content-product .item{
+        display: block;
+        float: none;
+        width: 100%;
+        height: 25%;
+    }
+  
+    .top-side{
+        display: none;
+    }
+    .left-side{
+        display: none;
+    }   
+
+    .main-side{
+        width: 100%;
+    }
+    
+}
+

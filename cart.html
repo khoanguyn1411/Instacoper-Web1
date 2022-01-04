@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/base.css">
+    <link rel="stylesheet" href="assets/css/styleP.css">
+    <link rel="stylesheet" href="assets/css/cart.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins:600&display=swap" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/a81368914c.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;1,200;1,300;1,400&display=swap" rel="stylesheet">
+
+    <title>Document</title>
+</head>
+
+
+<script>
+
+    function getDropdownListSize(){
+        var i, k;
+        var arrSize = [35.5, 36, 37, 37.5 , 38, 39, 40, 41, 42, 43, 44, 45];
+        var selectSize = document.getElementsByClassName("selectSize");
+        for(k = 0; k<4;k++){
+            for (i=0; i<arrSize.length;i++){
+            selectSize[k].options[selectSize[k].options.length] = new Option(arrSize[i],i);
+            }
+        }
+    }
+
+</script>
+
+<body onload="getDropdownListSize()">
+
+    <div class="wrapper">
+        <div class="top-content">
+            <div class="rel">
+                <p>Trang chủ</p>
+                <img src="assets/img/right_arrow.svg">
+
+                <p>Giỏ hàng</p>
+            </div>
+        </div>
+
+        <div class="left-content">
+            <div class="cart-top-content">
+                <div><p3>Giỏ hàng của bạn</p3></div> 
+                <div><p4>Bạn có 4 sản phẩm trong giỏ hàng</p4></div>
+            </div>
+
+            <div class="cart-item">
+                
+                <div class="item">
+                    <div class="img">
+                        <div class="container">
+                            <img src="assets/img/shoes/5.png">
+                        </div>
+                    </div>
+                    <div class="item-content">
+                        <div>
+                            <div class="name"><p4>Adidas Continental 80</p4></div>
+                            <div class="gender"><p>Giày nam</p></div>
+                            <div class="size">
+                                <p>Kích thước:</p>
+                                <select class="selectSize"></select>
+                           </div>
+                            <div class="quantity">
+                                <p>Số lượng:</p>
+                                <input type="number" value="1" min="1"  oninput="this.value = Math.abs(this.value)">
+                           </div>
+                        </div>
+
+                        <div>
+                            <div>
+                                <div><p4>2.699.000₫</p4></div> 
+                                <div><img src="assets/img/icon/ic_delete.svg"></div>
+                            </div>
+                        </div>
+
+                    </div>  
+                
+                </div>
+                <div class="bottom-left"></div>
+
+                <div class="item">
+                    <div class="img">
+                        <div class="container">
+                            <img src="assets/img/shoes/8.png">
+                        </div>
+                    </div>
+                    <div class="item-content">
+                        <div>
+                            <div class="name"><p4>Adidas ZX 2K Boost Pure</p4></div>
+                            <div class="gender"><p>Giày nữ</p></div>
+                            <div class="size">
+                                <p>Kích thước:</p>
+                               <select class="selectSize"></select>
+                           </div>
+                            <div class="quantity">
+                                <p>Số lượng:</p>
+                                <input type="number" value="1" min="1"  oninput="this.value = Math.abs(this.value)">
+                           </div>
+                        </div>
+
+                        <div>
+                            <div>
+                                <div><p4>6.290.000₫</p4></div> 
+                                <div><img src="assets/img/icon/ic_delete.svg"></div>
+                            </div>
+                        </div>
+
+                    </div>  
+                
+                </div>
+                <div class="bottom-left"></div>
+
+                <div class="item">
+                    <div class="img">
+                        <div class="container">
+                            <img src="assets/img/shoes/6.png">
+                        </div>
+                    </div>
+                    <div class="item-content">
+                        <div>
+                            <div class="name"><p4>Adidas NMD R1</p4></div>
+                            <div class="gender"><p>Giày nam</p></div>
+                            <div class="size">
+                                <p>Kích thước:</p>
+                                <select class="selectSize"></select>
+                           </div>
+                            <div class="quantity">
+                                <p>Số lượng:</p>
+                                <input type="number" value="1" min="1"  oninput="this.value = Math.abs(this.value)">
+                           </div>
+                        </div>
+
+                        <div>
+                            <div>
+                                <div><p4>3.330.000₫</p4></div> 
+                                <div><img src="assets/img/icon/ic_delete.svg"></div>
+                            </div>
+                        </div>
+
+                    </div>  
+                
+                </div>
+                <div class="bottom-left"></div>
+
+                <div class="item">
+                    <div class="img">
+                        <div class="container">
+                            <img src="assets/img/shoes/15.png">
+                        </div>
+                    </div>
+                    <div class="item-content">
+                        <div>
+                            <div class="name"><p4>VANS Old Skool Classic</p4></div>
+                            <div class="gender"><p>Giày nam</p></div>
+                            <div class="size">
+                                <p>Kích thước:</p>
+                                <select class="selectSize"></select>
+                           </div>
+                            <div class="quantity">
+                                <p>Số lượng:</p>
+                                <input type="number" value="1" min="1"  oninput="this.value = Math.abs(this.value)">
+                           </div>
+                        </div>
+
+                        <div>
+                            <div>
+                                <div><p4>1.490.000đ</p4></div> 
+                                <div><img src="assets/img/icon/ic_delete.svg"></div>
+                            </div>
+                        </div>
+
+                    </div>  
+                
+                </div>
+                <div style="height: 0.5px;" class="bottom-left"></div>
+            </div>
+
+        </div>
+
+
+        <div class="right-content">
+            <div class="right-content-wrapper">
+                <div class="title"><p3>Đơn hàng</p3></div>
+                <div class="money">
+                    <div class="content">
+                        <p4>Tổng thanh toán: </p4>
+                        <p4>Tiết kiệm</p4>
+                    </div>
+    
+                    <div class="price">
+                        <p4>13.809.000đ</p4>
+                        <p4>925.000đ</p4>
+                    </div>
+            
+                </div>
+                <div class="money-total">
+                    <div class="bottom-left"></div>
+                    <div class="content">
+                        <p4>Tổng cộng: </p4>
+                    </div>
+    
+                    <div class="price">
+                        <p4>13.809.000đ</p4>
+                    </div>
+                    <div class="bottom-left"></div>
+                </div>
+                
+                <div class="order">
+                    <div class="button-order">Đặt hàng</div>
+                </div>
+              
+            </div>
+        </div>
+
+        <div class="bottom-content"></div>
+
+
+    
+
+
+    </div>
+    
+</body>
+</html>

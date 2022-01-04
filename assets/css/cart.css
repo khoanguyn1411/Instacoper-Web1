@@ -1,0 +1,413 @@
+
+.wrapper{
+    width: 1140px;
+    height: auto;
+    margin:auto;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+
+div{
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+
+.cart-top-content{
+    display: block ;
+}
+
+/* CSS cho left content */
+
+.left-content{
+    width: 65%;
+    height: 950px;
+    float: left;
+}
+
+.cart-top-content >div{
+    width: 100%;
+}
+
+
+.cart-top-content >div:last-child{
+    margin-top: 15px;
+}
+
+
+.cart-item{
+    width: 100%;
+    height: 80%;
+    margin-top: 20px;
+    
+}
+
+.cart-item .item{
+    width: 100%;
+    height: 25%;
+    margin-top: 30px;
+}
+
+.item .img {
+    width: 23%;
+    height: 100%;
+    float: left;
+    display: flex;
+    align-items: center;
+}
+
+.item .img .container{
+    width: 100%;
+    padding-top: 100%; 
+    position: relative;
+   
+}
+
+.item .img .container > img{
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+.item .item-content {
+    width: 77%;
+    height: 100%;
+    float: left;
+    display: flex;
+    
+}
+
+.item .item-content >div:first-child {
+    padding-left: 10%;
+    height: 80%;
+    width: 80%;
+    float: left;
+
+}
+.item .item-content >div:last-child {
+    height: 80%;
+    width: 20%;
+    float: left;
+}
+
+.item .item-content >div:last-child >div{
+    float: right;
+    height: 100%;
+    margin-top: 5px;
+
+}
+
+
+
+.item .item-content >div:last-child >div >div {
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.item .item-content >div:last-child > div >div:last-child{
+    margin-top:50%;
+}
+
+.item .item-content >div:last-child >div:last-child >div img  {
+    width: 40%;
+}
+
+
+
+
+
+
+.item-content p4{
+    font-size: 18px;
+}
+
+.name{
+    margin-top: 10px;
+}
+
+.gender{
+    margin-top: -5px;
+}
+
+.size{
+    margin-top: -10px;
+}
+
+.quantity{
+    margin-top: -10px;
+
+}
+
+.item-content .size select{
+    display: inline-block;
+    border: none;
+    font-weight: 700;
+
+}
+
+
+
+.item-content .size p , .item-content .quantity p{
+    width: 17%;
+
+}
+
+.item-content .size select{
+    display: inline-block;
+    border: none;
+    font-weight: 700;
+
+}
+
+.item-content .size select option{
+    font-weight: 600;
+    margin: 10px;
+
+}
+
+
+
+
+.item-content .size p{
+    display: inline-block;
+    text-decoration: underline;
+}
+
+.item-content .quantity p{
+    display: inline-block;
+    text-decoration: underline;
+
+}
+
+.item-content .quantity input{
+    display: inline-block;
+    width: 10%;
+    font-weight: 700;
+    border: none;
+
+    
+}
+
+
+
+/* CSS cho right content */
+
+.right-content{
+    width: 35%;
+    float: left;
+
+}
+
+.right-content-wrapper{
+    float: right;
+    width: 75%;
+    height: 30%;
+}
+
+.right-content-wrapper p4{
+    font-size: 18px;
+}
+
+.right-content-wrapper .title{
+    margin-bottom: 15px;
+}
+
+.right-content-wrapper .money{
+    height: inherit;
+    width: 100%;
+    margin-top: 8px;
+    line-height: 1.5;
+   
+}
+
+.right-content-wrapper .money-total{
+    width: 100%;
+    margin-top: 8px;
+    line-height: 1.5;
+
+}
+
+.right-content-wrapper .content{
+    width: 50%;
+    float: left;
+}
+
+.right-content-wrapper .content >p4{
+    width: 100%;
+    float: left;
+}
+
+
+.right-content-wrapper .price{
+    width: 50%;
+    float: left;
+
+}
+
+.right-content-wrapper .price > p4{
+    width: 100%;
+    text-align: right;
+    display: block;
+}
+
+.bottom-left{
+    float: left;
+    margin-top: 10px;
+}
+
+
+.order{
+    height: 40px;
+    width: 100%;
+    float: left;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.button-order{
+    width: 85%;
+    height: 100%;
+    border-radius: 30px;
+    background-color: black;
+    border: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.button-order:hover{
+    background-color: #F54253;
+}
+
+
+
+
+
+
+.bottom-content{
+    float: left;
+    height: 300px;
+    width: 100%;
+}
+
+
+
+@media only screen and (max-width: 46.1875em){
+
+    p{
+        font-size: 10px;
+    }
+    
+    /* -- Tên giày */
+    p1{
+        font-size: 28px;
+    }
+    /* -- Giới tính */
+    p2{
+        font-size: 18px;
+    }
+    
+    /* -- Price */
+    p3{
+        font-size: 21px;
+    }
+    
+    p4{
+        font-size: 11px;
+    }
+    
+    /* normal text */
+    p5{
+        font-size: 11px;
+    }
+    
+    p6{
+        font-size: 12px;
+        font-weight: 600;
+    }
+
+    .wrapper{
+        width: 100%;
+        height: auto;
+        margin:auto;
+        padding: 0px 10px;
+    }
+
+  
+    .right-content-wrapper p4{
+        font-size: 14px;
+    }
+
+    .item-content p4{
+        font-size: 12px;
+    }
+
+    .item-content .name{
+        margin-top: 0;
+    }
+
+    .item .item-content >div:last-child >div >div {
+        width: 100%;
+        text-align: center;
+        margin-top: -5px;
+    }
+
+    .item .item-content >div:last-child {
+        height: 100%;
+        width: 20%;
+    }
+
+    .item-content .size select{
+        font-size: 11px;
+    
+    }
+
+    .item-content .quantity input{
+        font-size: 11px;
+    
+    }
+    
+    .item-content .size select option{
+        font-size: 11px;
+    }
+    
+
+
+    .left-content {
+        width: 100%;
+    }
+
+    .item-content .size p , .item-content .quantity p{
+        width: inherit;
+    
+    }
+
+    .left-content{
+        width: 100%;
+        height: inherit;
+        float: left;
+    }
+
+    
+
+    .right-content{
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .right-content-wrapper{
+        width: 100%;
+    }
+
+    .bottom-content{
+        height: 50px;
+    }
+    
+}

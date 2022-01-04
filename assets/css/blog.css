@@ -1,0 +1,560 @@
+#banner{
+    min-height: 2100px;
+    width:1500px;
+    margin: auto;
+ 
+}
+
+.part-one{
+    float: left;
+    width: 88%;
+    margin-left: 6%;
+    margin-right: 6%;
+    height: 270px;
+    margin-top: 80px;
+}
+
+.part-two{
+    float: left;
+    width: 88%;
+    margin-left: 6%;
+    margin-right: 6%;    
+    height: 10%;
+    margin-top: 50px;
+}
+
+.part-three{
+    float: left;
+    width: 88%;
+    margin-left: 6%;
+    margin-right: 6%;    
+    height: 15%;
+    margin-top: 50px;
+}
+
+.part-four{
+    float: left;
+    width: 88%;
+    margin-left: 6%;
+    margin-right: 6%;    
+    height: 15%;
+    margin-top: 50px;
+}
+
+.part-five{
+    float: left;
+    width: 88%;
+    margin-left: 6%;
+    margin-right: 6%;    
+    height: 15%;
+    margin-top: 50px;
+}
+
+.part-six{
+    float: left;
+    width: 88%;
+    margin-left: 6%;
+    margin-right: 6%;    
+    height: 20%;
+    margin-top: 100px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+
+
+/* -----Phần long blog----- */
+
+.long-image{
+    width: 35,5%;
+    height: 270px;
+    float: left;
+}
+
+.long-image img{
+    width: 470px;
+    height: 270px;
+}
+
+.long-content{
+    width: 59%;
+    float: left;
+    height: 270px;
+    margin-left: 40px;
+}
+
+.long-content img{
+    float: left;
+}
+
+.long-type{
+    height: 10%;
+}
+
+.long-type p{
+    margin-left: 10px;
+    float: left;
+    height:20px;
+    font-size: 12px;
+    font-weight: bold;
+    display: flex;
+    align-items: flex-end;
+}
+
+.long-title{
+    height: 35%;
+
+}
+.long-title p{
+    padding-top: 10px;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: 'Playfair Display',sans-serif;
+}
+
+.long-text{
+    height: 45%;
+}
+
+.long-text p{
+    padding-top: 10px;
+    font-size: 14px;
+}
+
+.long-more {
+    display: flex;
+    height: 10%;
+}
+
+.long-more p{
+    font-size: 16px;
+    display: flex;
+    align-items: flex-end;
+    font-style: italic;
+    text-decoration: 1px underline;
+    font-family: Source Serif Pro;
+    font-weight: bold;
+}
+
+/* -----Phần short blog----- */
+
+.short-one {
+    width: 33.3%;
+    height: 356px;
+    float: left;
+}
+
+
+.short-one-content{
+    width: 90%;
+    height: 356px;
+
+}
+
+.short-two {
+    width: 33.3%;
+    height: 356px;
+    float: left;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.short-two-content{
+    height: 356px;
+    width: 90%;
+}
+
+.short-three {
+    width: 33.3%;
+    height: 356px;
+    float: left;
+    display: flex;
+    align-items: center;
+    justify-content:end;
+    
+}
+
+.short-three-content{
+    width: 90%;
+    height: 356px;
+}
+
+
+
+
+.sh-one-image {
+    height: 62%;
+}
+
+.sh-one-image img{
+    width: 396px;
+    height: 215px;
+}
+
+.sh-one-content {
+    height: 38%;
+}
+
+.sh-one-type{
+    height: 15%;
+    position: relative;
+}
+
+.sh-one-type img{
+    float: left;
+    width: 5px;
+    height: 15px;
+    position: absolute;
+    top:20%;
+}
+
+.sh-one-type p{
+    float: left;  
+    height: 20px;
+    font-size: 10px;
+    font-weight: bold; 
+    margin-left: 10px;
+    display: flex;
+    align-items: flex-end; 
+
+}
+
+
+.sh-one-title{
+    height: 30%;
+    position: relative;
+}
+
+.sh-one-title p{
+    font-size: 16px;
+    font-weight: bold;
+    position: absolute;
+    top:10%;
+    font-family: 'Playfair Display',sans-serif;
+}
+
+.sh-one-text{
+    height: 45%;
+    position: relative;
+}
+
+.sh-one-text p{
+    position: absolute;
+    top:30%;
+    font-size:11px;
+}
+
+.sh-one-more{
+    height: 10%;
+    position: relative;
+
+}
+
+.sh-one-more p{
+    font-size:12px;
+    height:10px;
+    position: absolute;
+    top:20%;
+    font-style: italic;
+    text-decoration: 1px underline;
+    font-family: Source Serif Pro;
+    font-weight: bold;
+
+}
+
+.pages{
+    background-color: rgb(255, 255, 255);    
+    align-items: center;
+}
+
+.pages-back{
+    width: 40px;
+    height: 40px;
+    background-color: rgb(255, 255, 255);
+    float: left;
+    display: table;
+}
+
+.pages-back img{
+    display: table-cell;
+    vertical-align: middle;
+    justify-content: start;
+}
+
+.pages-num1{
+    width: 40px;
+    height: 40px;
+    background-color: rgb(255, 255, 255);
+    float: left;
+    border:2px solid #CCCCCC;
+    border-radius: 3px;
+    display: table;
+
+}
+
+.pages-num1 div{
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    font-weight: bold;
+
+}
+
+.pages-num2 {
+    width: 40px;
+    height: 40px;
+    background-color: #F54253;
+    float: left;
+    border:2px solid #F54253;
+    border-radius: 3px;
+    display: table;
+    margin-left: 10px;
+}
+
+.pages-num2 div{
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+}
+
+.pages-num3{
+    width: 40px;
+    height: 40px;
+    background-color: rgb(255, 255, 255);
+    float: left;
+    border:2px solid #CCCCCC;
+    border-radius: 3px;
+    display: table;
+    margin-left: 10px;
+
+}
+
+.pages-num3 div{
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    font-weight: bold;
+
+}
+
+.pages-num4 {
+    width: 40px;
+    height: 40px;
+    background-color: rgb(255, 255, 255);
+    float: left;
+    border:2px solid #CCCCCC;
+    border-radius: 3px;
+    display: table;
+    margin-left: 10px;
+
+}
+
+.pages-num4 div{
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    font-weight: bold;
+
+}
+
+.pages-num5 {
+    width: 40px;
+    height: 40px;
+    background-color: rgb(255, 255, 255);
+    float: left;
+    border:2px solid #CCCCCC;
+    border-radius: 3px;
+    display: table;
+    margin-left: 10px;
+
+}
+
+.pages-num5 div{
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    font-weight: bold;
+
+}
+
+.pages-etc {
+    width: 40px;
+    height: 40px;
+    background-color: rgb(255, 255, 255);
+    float: left;
+    display: table;
+    margin-left: 10px;
+
+}
+
+.pages-etc div{
+    display: table-cell;
+    vertical-align:bottom;
+    text-align: center;
+    font-weight: bold;
+
+}
+
+
+.pages-num20 {
+    width: 40px;
+    height: 40px;
+    background-color: rgb(255, 255, 255);
+    float: left;
+    border:2px solid #CCCCCC;
+    border-radius: 3px;
+    display: table;
+    margin-left: 10px;
+
+}
+
+.pages-num20 div{
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    font-weight: bold;
+
+}
+
+.pages-next {
+    width: 40px;
+    height: 40px;
+    background-color: rgb(255, 255, 255);
+    float: left;
+    display: table;
+}
+
+.pages-next img{
+    display: table-cell;
+    vertical-align: middle;
+    justify-content: start;
+}
+
+/*Mobile: width <740px */
+@media only screen and (max-width: 46.1875em ){
+    .part-two{
+        float: left;
+        width: 88%;
+        margin-left: 6%;
+        margin-right: 6%;
+        height: 270px;
+        margin-top: 80px;
+    }
+
+    .short-one {
+        
+    }
+    
+    
+    .short-one-content{
+        
+    
+    }
+    
+    .short-two {
+        
+    }
+    
+    .short-two-content{
+        
+    }
+    
+    .short-three {
+        
+    }
+    
+    .short-three-content{
+        
+    }
+
+
+
+
+    .sh-one-image{
+        width: 35,5%;
+        height: 270px;
+        float: left;
+    }
+    
+    .sh-one-image img{
+        width: 470px;
+        height: 270px;
+    }
+    
+    .sh-one-content{
+        width: 59%;
+        float: left;
+        height: 270px;
+        margin-left: 40px;
+    }
+    
+    .sh-one-content img{
+        float: left;
+    }
+    
+    .sh-one-type{
+        height: 10%;
+    }
+    
+    .sh-one-type p{
+        margin-left: 10px;
+        float: left;
+        height:20px;
+        font-size: 12px;
+        font-weight: bold;
+        display: flex;
+        align-items: flex-end;
+    }
+    
+    .sh-one-title{
+        height: 35%;
+    
+    }
+    .sh-one-title p{
+        padding-top: 10px;
+        font-size: 25px;
+        font-weight: bold;
+        font-family: 'Playfair Display',sans-serif;
+    }
+    
+    .sh-one-text{
+        height: 45%;
+    }
+    
+    .sh-one-text p{
+        padding-top: 10px;
+        font-size: 14px;
+    }
+    
+    .sh-one-more {
+        display: flex;
+        height: 10%;
+    }
+    
+    .sh-one-more p{
+        font-size: 16px;
+        display: flex;
+        align-items: flex-end;
+        font-style: italic;
+        text-decoration: 1px underline;
+        font-family: Source Serif Pro;
+        font-weight: bold;
+    }
+    
+}
+
+/*Tablet: width >=740px and width < 1024px  */
+@media only screen and (max-width: 46.25em) and (max-width: 63.9375em) {
+    
+}
+
+
+
+
+
+
+

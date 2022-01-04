@@ -1,0 +1,680 @@
+
+
+
+/* CSS chung */
+p{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+/* -- Tên giày */
+p1{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 700;
+    font-size: 32px;
+}
+/* -- Giới tính */
+p2{
+    font-size: 22px;
+    font-weight: 400;
+    margin-top: 100px;
+    font-family: 'Source Sans Pro', sans-serif;
+
+}
+
+/* -- Price */
+p3{
+    font-weight: 700;
+    font-size: 25px;
+    font-family: 'Source Sans Pro', sans-serif;
+
+}
+
+p4{
+    font-weight: 700;
+    font-size: 15px;
+    font-family: 'Source Sans Pro', sans-serif;
+
+}
+
+/* normal text */
+p5{
+    font-size: 15px;
+    font-family: 'Source Sans Pro', sans-serif;
+
+}
+
+p6{
+    font-size: 16px;
+    font-weight: 600;
+    font-family: 'Source Sans Pro', sans-serif;
+
+}
+
+
+/* CSS cho top content */
+.top-content{
+    width: 100%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+}
+
+.top-content .rel{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+}
+
+.top-content .rel img{
+    width: 8px;
+    margin: 0px 5px 0px 5px;
+}
+
+
+/* CSS cho đường phân cách */
+.bottom-left{
+    width: 100%;
+    height: 1.5px;
+    margin-bottom: 10px;
+    background-color: rgba(188, 188, 188, 1);
+
+}
+
+
+
+
+
+
+/* CSS cho left content */
+.wrapper{
+    width: 1140px;
+    height: auto;
+    margin:auto;
+    padding: 0 20px;
+    box-sizing: border-box;
+   
+}
+
+.left-content{
+    width: 55%;
+    height: 740px;
+    float: left;
+}
+/* -- CSS cho phần ảnh */
+
+.left-content-img{
+    height: 80%;
+    width: 100%;
+}
+
+.left-content-img img{
+    height: 100%;
+    width: 100%;
+}
+
+.left-content-slider{
+    height: 20%;
+    width: 100%;
+
+}
+
+.left-content-slider-content{
+    height: 65%;
+    width: 100%;
+    position: relative;
+    margin-top: 10px;
+}
+
+.left-content-slider-content .arrow-left-background{
+    position: absolute;
+    width: 3%;
+    height: 100%;
+    background-color: white;
+    opacity: 20%;
+    filter: blur(7px);
+}
+
+
+.left-content-slider-content .arrow-right-background{
+    position: absolute;
+    width: 3%;
+    height: 100%;
+    right: 0;
+    background-color: white;
+    filter: blur(7px);
+}
+
+
+
+.left-content-slider-content .arrow-left{
+    position: absolute;
+    width: 3%;
+    height: 100%;
+    width: 8px;
+    margin-left: 5px;
+
+}
+
+.left-content-slider-content .arrow-right{
+    position: absolute;
+    width: 3%;
+    height: 100%;
+    right: 0;
+    width: 8px;
+    margin-right: 5px;
+
+}
+
+
+
+.left-content-slider-more-img{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: hidden;
+    justify-content: space-between;
+}
+
+.left-content-slider-more-img .item{
+    height: 100%;
+    min-width: 15%;
+    margin-right: 13px ;
+}
+
+.left-content-slider-more-img > .item:last-child{
+    margin-right: 0px ;
+}
+
+
+
+.left-content-slider-more-img .item img{
+    width: 100%;
+    height: 100%;
+}
+
+
+/* --CSS cho hover more image */
+
+.thumb:hover{
+    opacity: 0.75;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* -- CSS cho phần xem thêm hình ảnh */
+
+
+/* CSS cho thông tin */
+.right-content{
+    width: 45%;
+    height: 740px;
+    float: left;
+}
+
+.right-content-pa{
+    width: 93%;
+    height: 100%;
+    float: right;
+    display: block;
+}
+
+.right-content-pa > div{
+    width: 100%;
+}
+
+
+.add-to-cart{
+    width: 100%;
+    height: 55px;
+    display: flex;
+    justify-content: center;
+}
+
+.button-add-to-cart{
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+    background-color: black;
+    border: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.button-add-to-cart:hover{
+    background-color: #F54253;
+}
+
+
+.button-add-to-cart div{
+    font-size: 18px;
+    color: white;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+.button-add-to-cart img{
+    height: 20px;
+    width: 20px;
+    margin-right: 10px;
+}
+
+
+.head-left{
+    width: 100%;
+    margin-bottom: 5px;
+    position: relative;
+}
+
+.img-title{
+    float: right;
+    text-align: center;
+    top: 25%;
+    position: absolute;
+    right: 0%;
+}
+
+
+.img-title2{
+    float: right;
+    text-align: center;
+    top: 10%;
+    position: absolute;
+    right: 5%;
+    height: 18px;
+}
+
+
+.bottom-left{
+    width: 100%;
+    height: 1.5px;
+    margin-bottom: 10px;
+    background-color: rgba(188, 188, 188, 1);
+
+}
+
+.danhgia-vote img{
+    height: 18px;
+    margin-right: 10px;
+}
+
+.danhgia-vote{
+    display: inline-flex;
+    width: 100%;
+
+}
+
+.viet-danhgia p6{
+    text-decoration: underline;
+    font-size: 14px;
+}
+
+.name{
+    height: auto;
+}
+.gender-price{
+    height: auto;
+    margin-top: 5px;
+}
+
+.masanpham-thuonghieu{
+    height: auto;
+    margin-top: 3px;
+}
+
+.size{
+    height: auto;
+    margin-top: 10px;
+}
+
+.add-to-cart{
+    margin-top: 40px;
+    margin-bottom: 10px;
+}
+.mota-sanpham{
+    margin-top: 15px;
+}
+
+.mota-sanpham p{
+    margin-top: 4px;
+}
+
+.chinhsach{
+    margin-top: 20px;
+}
+
+.chinhsach ul{
+    margin-left: 30px;
+}
+
+
+.danhgia{
+    margin-top: 30px;
+}
+
+
+
+.bottom-content{
+    width: 100%;
+    height: 400px;
+    float: left;
+}
+
+.bottom-content p6{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.bottom-content .top{
+    width: 100%;
+}
+
+
+.bottom-content .offer{
+    width: 100%;
+    height: 70%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+
+}
+
+.bottom-content .offer .item{
+    width: 15.5%;
+    height: 100%;
+}
+
+
+.bottom-content .offer .item img{
+    width: 100%;
+}
+
+.bottom-content .offer .item .img{
+    width: 100%;
+    position: relative;
+}
+
+.bottom-content .item .img:hover .xemnhanh{
+    height: 20%;
+}
+
+.bottom-content .item .img:hover .xemnhanh-content{
+    font-size: 15px;
+    display: block;
+}
+
+.bottom-content .img .xemnhanh{
+    width: 100%;
+    height: 0%;
+    background-color: #F54253;
+    opacity: 0.6;
+    position: absolute;
+    bottom: 5px;
+    transition: .3s ease;
+}
+
+.bottom-content .img .xemnhanh-content{
+    width: 100%;
+    font-size: 0px;
+    opacity: 1;
+    position: absolute;
+    bottom: 12px;
+    left: 30%;
+    display: none;
+    color: white;
+}
+
+
+
+.bottom-content .offer .item .text{
+    margin-top: 8px;
+}
+
+.bottom-content .offer .item .text .title{
+    font-size: 10px;
+    color: #F54253;
+    font-weight: bold;
+}
+.bottom-content .offer .item .text .name{
+    font-size: 16px;
+    color: black;
+    font-weight: bold;
+}
+
+.bottom-content .offer .item .text .gender{
+    font-size: 16px;
+    color: black;
+}
+
+.bottom-content .offer .item .text .price{
+    font-size: 14px;
+    color: black;
+    margin-top: 3px;
+    font-weight: 600;
+    width: 100%;
+   
+}
+
+/* CSS cho reponsive */
+@media only screen and  (min-width: 46.1875em) and (max-width: 65.1875em){
+    
+
+
+}
+
+
+@media only screen and (max-width: 46.1875em){
+
+    p{
+        font-size: 10px;
+    }
+    
+    /* -- Tên giày */
+    p1{
+        font-size: 28px;
+    }
+    /* -- Giới tính */
+    p2{
+        font-size: 18px;
+    }
+    
+    /* -- Price */
+    p3{
+        font-size: 21px;
+    }
+    
+    p4{
+        font-size: 11px;
+    }
+    
+    /* normal text */
+    p5{
+        font-size: 11px;
+    }
+    
+    p6{
+        font-size: 12px;
+        font-weight: 600;
+    }
+    
+
+
+    .wrapper{
+        width: 100%;
+        height: auto;
+        margin:auto;
+        padding: 0px 10px;
+        
+    }
+
+    
+
+    .top-content{
+        padding: 0px 20px;
+        width: 100%;
+    }
+
+    .left-content-img{
+        position: relative;
+        width: 100%;
+        padding-top: 100%;
+        height: 0;
+    }
+
+    .left-content-img img{
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+    }
+
+    .left-content-slider{
+        height: 13%;
+        width: 100%;
+    
+    }
+    
+    
+
+    .left-content{
+        width: 100%;
+        height: inherit;
+        float: none;
+        padding: 0px 20px;
+    }
+
+    .left-content-slider-content{
+        min-height: 60px;   
+        max-height: 65%;   
+    }
+
+   
+
+  
+    .left-content-slider-content{
+        height: 100%;
+        width: 100%;
+        position: relative;
+        margin-top: 10px;
+    }
+
+
+    .right-content{
+        width: 100%;
+        float: none;
+    }
+
+    .right-content-pa{
+        width: 100%;
+        float: none;
+        padding: 20px
+    }
+
+
+
+    .right-content .size{
+        width: 100%;
+    }
+
+    .right-content .button-add-to-cart{
+        width: 70%;
+    }
+    
+    .bottom-content .item .img:hover .xemnhanh{
+        height: 20%;
+    }
+    
+    .bottom-content .item .img:hover .xemnhanh-content{
+        font-size: 11px;
+    }
+
+        
+    .bottom-content .img .xemnhanh-content{
+        bottom: 10px;
+        left: 27%;
+    }
+
+    
+
+        
+    .button-add-to-cart div{
+        font-size: 14px;
+        color: white;
+        font-weight: bold;
+        margin-left: 10px;
+    }
+
+    .button-add-to-cart img{
+        height: 16px;
+        width: 16px;
+        margin-right: 10px;
+    }
+
+    
+
+
+    .bottom-content{
+        padding: 0px 20px;
+        height: inherit;
+        padding-bottom: 30px;
+    }
+
+    .bottom-content .offer .item:last-child{
+        display: none;
+    }
+
+    
+    .bottom-content .offer .item .text .title{
+        font-size: 6px;
+        color: #F54253;
+        font-weight: bold;
+    }
+    .bottom-content .offer .item .text .name{
+        font-size: 12px;
+        color: black;
+        font-weight: bold;
+    }
+
+    .bottom-content .offer .item .text .gender{
+        font-size: 12px;
+        color: black;
+    }
+
+    .bottom-content .offer .item .text .price{
+        font-size: 10px;
+        color: black;
+        margin-top: 3px;
+        font-weight: 600;
+        width: 100%;
+    
+    }
+
+    .wrapper{
+        width: 100%;
+        height: auto;
+        margin:auto;
+        padding: 0px;
+    }
+
+    
+
+    
+
+
+ 
+
+}
