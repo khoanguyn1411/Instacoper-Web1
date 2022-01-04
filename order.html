@@ -36,16 +36,25 @@
             </div>
             <div class="content">
                 <div class="input">
-                    <input type="text" placeholder="Họ và tên">
-                    <input type="tel" placeholder="Số điện thoại">
-                    <input type="email" placeholder="Email (tùy chọn)">
-                    <input type="text" placeholder="Địa chỉ" class="address">
+                    <input type="text" placeholder="Họ và tên" id="txtName">
+                    <div class="error" id="txtErrorName">
+                        * Vui lòng nhập họ và tên
+                    </div>
+                    <input type="tel" placeholder="Số điện thoại" id="txtPhone">
+                    <div class="error" id="txtErrorPhone">
+                        * Vui lòng nhập số điện thoại
+                    </div>
+                    <input type="email" placeholder="Email (tùy chọn)" id="txtEmail">
+                    <input type="text" placeholder="Địa chỉ" class="address" id="txtAddress">
+                    <div class="error" id="txtErrorAddress">
+                        * Vui lòng nhập địa chỉ
+                    </div>
                 </div>
                
              
 
                 <div class="custom-select">
-                    <select class="address">
+                    <select class="address" id="selectProvince">
                         <option value="0">Tỉnh / Thành phố</option>
                         <option value="An Giang">An Giang
                             <option value="Bà Rịa - Vũng Tàu">Bà Rịa - Vũng Tàu
@@ -114,9 +123,12 @@
                             <option value="TP  HCM">TP HCM
                     </select>
                 </div>
+                <div class="error" id="txtErrorProvince">
+                    * Vui lòng chọn Tỉnh/ Thành
+                </div>
 
                 <div class="custom-select">
-                    <select class="address" name="calc_shipping_district">
+                    <select class="address" id="selectDistrict">
                         <option value="0">Quận / Huyện</option>
                         <option value="1">Quận 1</option>
                         <option value="2">Quận 2</option>
@@ -132,24 +144,37 @@
                         <option value="4">Quận Gò Vấp</option>
                     </select>
                 </div>
+                <div class="error" id="txtErrorDistrict">
+                    * Vui lòng chọn Quận/ Huyện
+                </div>
 
                 <input class="billing_address_1" name="" type="hidden" value="">
                 <input class="billing_address_2" name="" type="hidden" value="">
 
 
                 <div class="custom-select">
-                    <select class="address">
+                    <select class="address" id="selectWard" onchange="some()">
                         <option value="0">Phường/ Xã</option>
                         <option value="1">Tân Hưng Thuận</option>
                         <option value="2">Đông Hưng Thuận</option>
                         <option value="3">An Phú Đông</option>
-                        <option value="4">Hiệp Thành</option>
-                        <option value="4">Tân Thời Nhất</option>
-                        <option value="4">Thời An</option>
-                        <option value="4">Thạnh Lộc</option>
-                        <option value="4">Thạnh Xuân</option>
-                        <option value="4">Trung Mỹ Tây</option>
+                        <option value="5">Hiệp Thành</option>
+                        <option value="6">Tân Thời Nhất</option>
+                        <option value="7">Thời An</option>
+                        <option value="8">Thạnh Lộc</option>
+                        <option value="9">Thạnh Xuân</option>
+                        <option value="10">Trung Mỹ Tây</option>
                     </select>
+
+                    <script>
+                        function some(){
+                            alert("123123");
+                        }
+                    </script>
+             
+                </div>
+                <div class="error" id="txtErrorWard">
+                    * Vui lòng chọn Phường/ Xã
                 </div>
 
 
@@ -162,6 +187,53 @@
 
         <div class="middle-content">
             <div class="logo"></div>
+            <div class="title">
+                <p1>Vận chuyển</p1>
+            </div>
+
+            <div class="text1">
+                <div class="middle"><p>Giao hàng toàn quốc</p></div>
+                <div class="right" id="costShip"><p>30.000đ</p></div>
+            </div>
+            <div class="payment-method">
+                <div class="title">
+                    <p1>Thanh toán</p1>
+                </div>
+                <div class="payment">
+                    <div class="text1" id="btnCard">
+                        <div class="before"><p id="icCard"></p></div>
+                        <div class="middle"><p>Chuyển khoản qua ngân hàng</p></div>
+                        <div class="right"><img src="assets/img/iconKhoa/ic_cash.svg"></div>
+                        <div class="detail" id="detailCard">
+                            <p>
+                            Vui lòng ghi lại MÃ ĐƠN HÀNG và SỐ ĐIỆN THOẠI của bạn vào mục Nội dung thanh toán. Đơn hàng sẽ đươc giao sau khi tiền đã được chuyển.
+                            </p>
+                            <p class="info-account">Thông tin tài khoản:
+                            </p>
+                            <p>
+                                Trịnh Hoàng Tuyết Gia Anh - STK: 0123456789 - BIDV chi nhánh Tp. Hồ Chí Minh.
+                            </p>
+    
+                        </div>
+                    </div>
+        
+                    <div class="text1" id="btnCOD">
+                        <div class="before"><p id="icCOD"></p></div>
+                        <div class="middle"><p>Thanh toán khi nhận hàng</p></div>
+                        <div class="right"><img src="assets/img/iconKhoa/ic_cash.svg"></div>
+                        <div class="detail" id="detailCOD">
+                            <p>
+                                Bạn chỉ phải thanh toán khi nhận được hàng
+                            </p>
+                        </div>
+                   
+                    </div>
+                </div>
+            </div>
+
+           
+          
+
 
         </div>
 
@@ -225,7 +297,28 @@
                     </div>
                 </div>
             </div>
+            <div class="bottom"></div>
 
+            <div class="total-price">
+                <div class="left-side">
+                    <p>Tổng cộng:</p>
+                </div>
+
+                <div class="right-side">
+                    <p>3.530.000đ</p>
+                </div> 
+            </div>
+
+            <div class="action">
+                <div class="left-side">
+                    <img src="assets/img/left_arrow.svg">
+                    <a href="cart.html">Quay về giỏ hàng</a>
+                </div>
+
+                <div class="right-side">
+                    <div class="button-apply" id="btnOrder">Đặt hàng</div>
+                </div>
+            </div>
 
         </div>
     </div>
@@ -233,4 +326,7 @@
 </body>
 
 <script src="js/selectCustom.js"></script>
+<script src="js/validateOrder.js"></script>
+
+
 </html>

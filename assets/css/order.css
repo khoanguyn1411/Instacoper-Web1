@@ -20,9 +20,10 @@
 }
 
 .left-content{
-    height: 500px;
+    height: auto;
     width: 25%;
     float: left;
+    padding-bottom: 30px;
 }
 
 .logo{
@@ -63,7 +64,8 @@ input{
   
 }
 
-.left-content .content .input input:last-child{
+
+#txtAddress{
     margin-bottom: 0px;
 }
 
@@ -99,20 +101,32 @@ input{
     height: 80px;
 }
 
+.left-content .error{
+    margin: 3px 0px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 14px;
+    color: red;
+    display: none;
 
+}
 
+#txtErrorWard{
+    margin-bottom: 10px;
+}
 
-.middle-content{
-    height: 500px;
-    width: 40%;
-    background-color: violet;
-    float: left;
+#txtErrorAddress{
+    margin-top:10px;
+
 }
 
 
+
+
+/* CSS cho right content */
+
 .right-content{
     background-color: #FAFAFA;
-    height: 500px;
+    height: 700px;
     width: 35%;
     float: left;
     padding: 0px 12px;
@@ -124,6 +138,7 @@ input{
     height: 0.75px;
     background-color: black;
     margin-top: 8px;
+    float: left;
 }
 
 .right-content .show-info{
@@ -196,16 +211,15 @@ p{
 
 
 
-.show-info .price p{
-    width: 100%;
-    text-align: right;
-}
+
 
 
 
 .addition-price{
     width: 100%;
     margin-top: 8px;
+    height: auto;
+    background-color: #F54253;
 }
 
 .discount, .product-price, .ship-price{
@@ -216,7 +230,7 @@ p{
     width: 95%;
 }
 
-.discount .right-side .button-apply{
+.right-side .button-apply{
     width: 100%;
     height: 100%;
     margin: 5px 0px;
@@ -229,9 +243,10 @@ p{
     box-sizing: border-box;
     font-family: 'Source Sans Pro', sans-serif;
     border-radius: 2px;
+    user-select: none;
 }
 
-.discount .right-side .button-apply:hover{
+.right-side .button-apply:hover{
     background-color: #F54253;
     color: white;
 }
@@ -249,11 +264,177 @@ p{
     width: 35%;
     padding-top: 5px;
     padding-bottom: 5px;
+
 }
 
-.addition-price .right-side p{
+.right-side > p{
     width: 100%;
     text-align: right;
+}
+.total-price {
+    width: 100%;
+    float: left;
+    margin-top: 7px;
+}
+.total-price > .right-side > p{
+    color: #F54253;
+    font-weight: 700;
+}
+
+.total-price > .left-side > p{
+    font-weight: 700;
+
+}
+
+.action {
+    width: 100%;
+    float: left;
+
+}
+
+.action .button-apply {
+    padding: 7px;
+}
+
+.action .left-side{
+    display: flex;
+    align-items: center;
+}
+
+.action .right-side{
+}
+
+.action .left-side img, .action .left-side a{
+    display: inline-block;
+    margin: 5px 0px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    padding-right: 7px;
+
+}
+
+.action .left-side img{
+    width: 8px;
+}
+
+
+.action .left-side a{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: none;
+    color: black;
+}
+
+/* CSS cho middle content */
+.middle-content{
+    height: auto;
+    width: 40%;
+    float: left;
+    padding: 0 6%;
+    box-sizing: border-box;
+}
+.middle-content .text1 {
+    float: left;
+    border: 1.5px solid #8D8D8D;
+    margin: 5px 0px;
+    padding: 8px;
+    font-size: 15px;
+    width: 100%;
+    font-family: 'Source Sans Pro', sans-serif;
+    box-sizing: border-box;
+    border-radius: 3px;
+    
+}
+
+.payment .text1 .middle{
+    padding-left: 10px;
+    box-sizing: border-box;
+}
+
+.payment .text1 .middle >p{
+    user-select: none;
+}
+
+.middle-content .title{
+    margin-bottom: 8px;
+}
+
+
+
+
+.payment-method{
+    margin-top: 22%;
+}
+
+
+
+.middle-content .text1 .middle{
+    float: left;
+    width: 75%;
+}
+
+#costShip{
+    width: 25%;
+}
+
+.middle-content .text1 .right{
+    float: left;
+    width: 20%;
+    text-align: right;
+}
+
+.middle-content .text1 .detail{
+    float: left;
+    width: 100%;
+    margin-top: 3%;
+    transition: 5s ease;
+    display: none;
+    
+}
+
+
+.payment .text1 .detail p{
+    font-size: 12px;
+    text-align: justify;
+
+
+}
+
+.payment .text1 .detail .info-account{
+    font-weight: 700;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+}
+.payment .text1 .before{
+    float: left;
+    width: 5%;
+}
+
+.payment .text1 .before p{
+    content: '';
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    box-sizing: border-box;
+    -moz-border-radius: 7.5px;
+    -webkit-border-radius: 7.5px;
+    border-radius: 7.5px;
+    border: 0.75px solid black;
+}
+
+.payment .text1 .right{
+    display: flex;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    justify-content: flex-end;
+    align-items:  center;
+}
+
+.payment .text1 .right img{
+    width: 18px;
+
 }
 
 
