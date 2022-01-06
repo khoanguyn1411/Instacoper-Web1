@@ -1,6 +1,7 @@
 function dropdowncart(){
     document.getElementById("subcart").classList.toggle("show");
   }
+
   window.onclick = function(event) {
     if (!event.target.matches('#cart')) {
       var dropdowns = document.getElementsByClassName('subcart');
