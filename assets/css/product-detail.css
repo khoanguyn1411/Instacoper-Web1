@@ -531,6 +531,8 @@ p6{
 }
 
 
+
+
 @media only screen and (max-width: 46.1875em){
 
     p{
@@ -646,7 +648,7 @@ p6{
     }
 
     .right-content .button-add-to-cart{
-        width: 70%;
+        width: 100%;
     }
     
     .bottom-content .item .img:hover .xemnhanh{
