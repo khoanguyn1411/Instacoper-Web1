@@ -116,7 +116,7 @@ div, input{
     float: left;
     width: fit-content;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 17px;
     margin-top: 10px;
 }
 
@@ -487,6 +487,7 @@ div, input{
     .item{
         width: 24%;
         height: 300px;
+      
     }
     .content-product .item .img:hover .xemnhanh{
         display: none;
@@ -497,7 +498,7 @@ div, input{
 
     }
 }
-@media only screen  and (min-width: 321px) and (max-width: 593px){
+@media only screen  and (min-width: 460px) and (max-width: 593px){
     .wrapper{
         width: 100%;
     }
@@ -529,8 +530,52 @@ div, input{
     }
 
     .item{
-        width: 32%;
-        min-height: 220px;
+        width: 48%;
+        min-height: 370px;
+    }
+}
+
+
+@media only screen and (min-width: 320px) and (max-width: 460px){
+    .wrapper{
+        width: 100%;
+        min-width: 300px;
+
+    }
+    .left-side{
+        display: none;
+    }
+
+    #filter{
+        display: none;
+    }
+    .content-product .item .img:hover .xemnhanh{
+        display: none;
+    }
+    
+    .content-product .item .img:hover .xemnhanh-content{
+        display: none;
+
+    }
+
+
+
+    .main-side{
+        width: 100%;
+        border-left: none;
+    }
+
+    .content-product{
+        padding-left: 0;
+    }
+
+    .item{
+        width: 100%;
+        min-height: 480px;
+    }
+
+    .item{
+        text-align: center;
     }
 }
 
@@ -569,7 +614,12 @@ div, input{
     }
 
     .item{
-        width: 48%;
+        width: 100%;
+        min-height: 370px;
+    }
+
+    .item{
+        text-align: center;
     }
 }
 
