@@ -6,6 +6,7 @@
     height: auto;
     margin: auto;
     padding: 0 20px;
+    box-sizing: border-box;
 }
 
 
@@ -14,12 +15,6 @@ body{
     float: left;
 }
 
-footer{
-    width: 100%;
-    float: left;
-    margin-top: 100px;
-
-}
 
 .top-content-left .outside{
     width: 1140px;
@@ -107,7 +102,6 @@ div, input{
 
 .left-side{
     width: 20%;
-    height: 600px;
     float: left;
     height: auto;
 
@@ -289,6 +283,7 @@ div, input{
     height: auto;
     float: left;
     border-left: 1px solid rgba(188, 188, 188, 1);
+    box-sizing: border-box;
 }
 
 .content-product{
@@ -455,6 +450,14 @@ div, input{
         width: 23.5%;
         height: 280px;
     }
+    .content-product .item .img:hover .xemnhanh{
+        display: none;
+    }
+    
+    .content-product .item .img:hover .xemnhanh-content{
+        display: none;
+
+    }
 }
 
 @media only screen  and (min-width: 594px) and (max-width: 949px){
@@ -485,6 +488,14 @@ div, input{
         width: 24%;
         height: 300px;
     }
+    .content-product .item .img:hover .xemnhanh{
+        display: none;
+    }
+    
+    .content-product .item .img:hover .xemnhanh-content{
+        display: none;
+
+    }
 }
 @media only screen  and (min-width: 321px) and (max-width: 593px){
     .wrapper{
@@ -499,7 +510,14 @@ div, input{
     }
 
 
+    .content-product .item .img:hover .xemnhanh{
+        display: none;
+    }
+    
+    .content-product .item .img:hover .xemnhanh-content{
+        display: none;
 
+    }
 
     .main-side{
         width: 100%;
@@ -530,7 +548,14 @@ div, input{
     #filter{
         display: none;
     }
+    .content-product .item .img:hover .xemnhanh{
+        display: none;
+    }
+    
+    .content-product .item .img:hover .xemnhanh-content{
+        display: none;
 
+    }
 
 
 

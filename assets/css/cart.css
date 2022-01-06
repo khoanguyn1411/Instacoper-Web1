@@ -18,6 +18,10 @@ div{
     display: block ;
 }
 
+p{
+    margin: 0;
+}
+
 /* CSS cho left content */
 
 .left-content{
@@ -130,15 +134,15 @@ div{
 }
 
 .gender{
-    margin-top: -5px;
+    margin-top: 10px;
 }
 
 .size{
-    margin-top: -10px;
+    margin-top: 10px;
 }
 
 .quantity{
-    margin-top: -10px;
+    margin-top: 10px;
 
 }
 
@@ -152,7 +156,7 @@ div{
 
 
 .item-content .size p , .item-content .quantity p{
-    width: 17%;
+    width: 30%;
 
 }
 
@@ -206,6 +210,8 @@ div{
     float: right;
     width: 75%;
     height: 30%;
+    background-color: #FAFAFA;
+    padding: 20px 20px 100px 20px;
 }
 
 .right-content-wrapper p4{
@@ -519,6 +525,7 @@ div{
 
     .right-content-wrapper{
         width: 100%;
+        padding-bottom: 20px;
     }
 
     .bottom-content{

@@ -52,6 +52,10 @@ p6{
 
 }
 
+div{
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
 
 /* CSS cho top content */
 .top-content{
@@ -89,15 +93,16 @@ p6{
 
 
 /* CSS cho left content */
+
 .wrapper{
     width: 100%;
     max-width: 1140px;
     height: auto;
-    margin:auto;
+    margin: auto;
     padding: 0 20px;
     box-sizing: border-box;
-   
 }
+
 
 .left-content{
     width: 55%;
@@ -569,18 +574,9 @@ p6{
     
 
 
-    .wrapper{
-        width: 100%;
-        height: auto;
-        margin:auto;
-        padding: 0px 10px;
-        
-    }
-
     
 
     .top-content{
-        padding: 0px 20px;
         width: 100%;
     }
 
@@ -611,7 +607,6 @@ p6{
         width: 100%;
         height: inherit;
         float: none;
-        padding: 0px 20px;
     }
 
     .left-content-slider-content{
@@ -638,7 +633,6 @@ p6{
     .right-content-pa{
         width: 100%;
         float: none;
-        padding: 20px
     }
 
 
@@ -685,7 +679,6 @@ p6{
 
     
     .bottom-content{
-        padding: 0px 20px;
         height: inherit;
         padding-bottom: 30px;
     }
@@ -724,7 +717,7 @@ p6{
         width: 100%;
         height: auto;
         margin:auto;
-        padding: 0px;
+        padding: 20px;
         min-width: 300px;
     }
     .bottom-content .img .xemnhanh{
