@@ -3,7 +3,13 @@ function dropdowncart(){
   }
 
   window.onclick = function(event) {
-    if (!event.target.matches('#cart')) {
+
+    const isSubcart = event.target.closest('#cart')
+
+    if (isSubcart && event.target.matches("#subcart")!=null ){
+     return;
+    } 
+    if(!event.target.matches('#subcart')){
       var dropdowns = document.getElementsByClassName('subcart');
       var i;
       for (i = 0; i < dropdowns.length; i++) {

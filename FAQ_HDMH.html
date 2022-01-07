@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -26,8 +27,8 @@
             <i class="fas fa-user" id="user">
                 
             </i>
-            <i class="fas fa-cart-plus" id="cart" onclick="dropdowncart()">
-                <ul class="subcart" id="subcart">
+            <i class="fas fa-cart-plus" id="cart" onclick="dropdowncart()" data-toggle-cart-icon>
+                <ul class="subcart" id="subcart" data-toggle-cart>
                     <li>
                         <div class="cartlayout">
                             <div class="productcart">
@@ -171,19 +172,118 @@
                 </li>
                 <li>
                     <div class="subnav">
-                        <a href=""> Về chúng tôi</a>            
+                        <a href="" class="dropbtn" id="aboutnav"> Về chúng tôi</a>            
                     </div>
                 </li>
                 <li>
                     <div class="subnav">
-                        <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
-        
+                        <div class="dropdown-mobile" data-dropdown-mobile>
+                            <a href="#" onclick="openNavMobile()"  data-dropdown-mobileBtn class="dropdown-mobile-button" id="MobileTopNav"><i class="fas fa-bars"></i></a>
+                        </div>
                     </div>
                 </li>
-                <!-- <li>
-                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
-                </li> -->
             </ul>
+            <div id="mySidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNavMobile()">&times;</a>
+                <button class="dropdown-btn">
+                    <i class="fa fa-caret-down"></i>
+                    Sản phẩm   
+                  </button>
+                <div class="dropdown-container">
+                    <button class="dropdown-btn" >
+                        <i class="fa fa-caret-down" ></i>
+                        Thương Hiệu  
+                      </button>
+                      <div class="dropdown-container">
+                        <a href="#">Adidas</a>
+                        <a href="#">Converse</a>
+                        <a href="#">VANS</a>
+                        <a href="#">New Blance</a>
+                        <a href="#">MLB</a>
+                        <a href="#">Puma</a>
+                        <a href="#">Asics</a>
+                        <a href="#">Skechers</a>
+                      </div>
+                      <br>
+                      <button class="dropdown-btn">
+                        Khuyến mãi
+                      </button> 
+                      <button class="dropdown-btn">
+                        Hàng mới về
+                      </button> 
+                      <button class="dropdown-btn">
+                        Bán chạy nhất
+                      </button> 
+                      <button class="dropdown-btn">
+                        Sneaker nữ
+                      </button> 
+                      <button class="dropdown-btn">
+                        <i class="fa fa-caret-down"></i>
+                        Phụ kiện 
+                      </button>
+                    <div class="dropdown-container">
+                        <a href="#">Tất/vớ</a>
+                        <a href="#">Dây giày</a>
+                        <a href="#">Stickers</a>
+                      </div>
+                      <br>
+                  </div>
+                  <button class="dropdown-btn">
+                    <i class="fa fa-caret-down"></i>
+                    Blog
+                  </button> 
+                  <div class="dropdown-container">
+                    <button class="dropdown-btn">
+                        <i class="fa fa-caret-down"></i>
+                        Chủ đề
+                      </button> 
+                    <div class="dropdown-container">
+                        <a href="#">Xu hướng thời trang</a>
+                        <a href="#">Sao & Styles</a>
+                        <a href="#">Tin tức thời trang</a>
+                        <a href="#">Sneaker Tips</a>
+                    </div>  
+                    <br>
+                    <button class="dropdown-btn">
+                        Blog mới nhất
+                      </button> 
+                      <button class="dropdown-btn">
+                        Xem nhiều nhất
+                      </button> 
+                  </div>
+                  <button class="dropdown-btn">
+                    <i class="fa fa-caret-down"></i>
+                    FAQs
+                  </button> 
+                  <div class="dropdown-container">
+                    <button class="dropdown-btn">
+                        <i class="fa fa-caret-down"></i>
+                        Hỗ trợ khách hàng
+                      </button> 
+                    <div class="dropdown-container">
+                        <a href="#">Hướng dẫn mua hàng</a>
+                        <a href="#">Hướng dẫn thanh toán</a>
+                        <a href="#">Tin tức thời trang</a>
+                        <a href="#">Hướng dẫn chọn size</a>
+                        <a href="#">Theo dõi đơn hàng</a>
+                    </div>  
+                    <br>
+                    <button class="dropdown-btn">
+                        <i class="fa fa-caret-down" ></i>
+                        Chính sách
+                      </button> 
+                      <div class="dropdown-container">
+                        <a href="#">Chính sách bảo mật</a>
+                        <a href="#">Hướng dẫn thanh toán</a>
+                        <a href="#">Chính sách đổi trả</a>
+                        <a href="#">Cam kết & Bảo hành</a>
+                    </div>  
+                    <br>
+                      <button class="dropdown-btn">
+                        Liên hệ
+                      </button> 
+                  </div>
+              </div>
         </div>
 <hr>
         <div id="banner">
@@ -278,6 +378,7 @@
     function firstFocus(){
         document.getElementById("searchValue").focus();
     } 
+
 </script>
 <script src="https://kit.fontawesome.com/a81368914c.js"></script>
 <script src="js/main.js"></script>
@@ -287,6 +388,7 @@
 <script src="/js/dropdownSP.js" defer></script>
 <script src="js/dropdownBlog.js"></script>
 <script src="js/dropdownFAQ.js"></script>
+<script src="js/moblleSubnav.js"></script>
 <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script> -->
