@@ -11,7 +11,7 @@
   document.addEventListener('click', e => {
     const isDropdownButton = e.target.matches("[data-dropdown-button]")
     const isDropdownContent = e.target.matches('[data-dropdownn-content]')
-    if(!isDropdownButton &&isDropdownContent!=null ) return
+    if(!isDropdownButton && isDropdownContent!=null ) return
 
     let currentDropdown
     if(isDropdownButton){
@@ -24,3 +24,8 @@
       dropdown.classList.remove('showSubnav');
     })
   })
+
+
+
+
+

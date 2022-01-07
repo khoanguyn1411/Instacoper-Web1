@@ -1,5 +1,5 @@
 /* Mobile: width <739px */
-@media only screen and (max-width: 46.1875em) {
+@media only screen and (max-width: 50em) {
     #header{
         width: 100%;
         --height: 80px;
@@ -53,18 +53,9 @@
     .searhvia> i {
         position: absolute;
         top: 30%;
-        right: 110%;
+        right: 115%;
         z-index: 1000;
-    }
-    .fa-user{
-        position: relative;
-        }
-    #cart{
-        position: relative;
-        cursor: pointer;
-    }
-    
-    
+    }     
      .subcart{  
         width: 400px; 
         --height: 300px;
@@ -95,7 +86,7 @@
         border: 1px solid black;
         border-radius: 50px;
         font-size: 1.125rem;
-    
+        
     }
     .subcart>li>.cartlayout{
         display: flex;
@@ -132,64 +123,23 @@
         color: white;
     }
     #nav{
-    display: flex;
     align-items: center;
     height: 80px;
     background-color: rgb(255, 255, 255);
 }
-#nav> #portfolio-bar{
-    display: flex;
-    align-items: center;
-    justify-content: center;    
-    margin-inline-end: 5%;
-    margin-inline-start: 5%;
-    height: 60%;
-    width: 15%;
-    background-color: var(--primary-color);
-    color: rgb(255, 255, 255);
-    border-radius: 5px;
-    cursor: pointer;
+
+
+.dropbtn{
+    display: none;
 }
-.sidebar {
-    height: 100%;
-    width: 0;
-    position: fixed;
-    z-index: 1000;
-    top: 0;
-    left: 0;
-    background-color: #111;
-    overflow-x: hidden;
-    transition: 0.4s;
-    padding-top: 60px;
-  }
-  
-  .sidebar a {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 1.5rem;
-    color: #818181;
-    display: block;
-    transition: ease-in 0.1s;
-  }
-  
-  .sidebar a:hover {
-    color: #f1f1f1;
-  }
-  
-  .sidebar .closebtn {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
-  }
-  @media screen and (max-height: 450px) {
-    .sidebar {padding-top: 15px;}
-    .sidebar a {font-size: 18px;}
-    
-  }
-  
-  /* Style the sidenav links and the dropdown button */
+#MobileTopNav{
+    visibility: visible;
+    margin-inline-start: 20%;
+}
+#nav> #portfolio-bar{
+    display: none;
+}
+    /* Style the sidenav links and the dropdown button */
     .dropdown-btn {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
@@ -213,7 +163,6 @@
     color: white;
   }
   
-  /* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
   .dropdown-container {
     display: none;
     padding-left: 8px;
@@ -221,107 +170,89 @@
   .dropdown-container a{
     font-size: 1.25rem;
   }
-  
-  /* Optional: Style the caret down icon */
-  .fa-caret-down {
-    float: right;
-    padding-right: 8px;
-  }
-  /* ////Class Nav Chữ///// */
-#nav> .nav{
-    margin-inline-start: 5%;
-    display: flex;
-    flex-direction: row;
-    width: 60%;
-    font-size: 1.125rem;
-}
-#nav .nav li{
-    margin-inline-end: 10%;
+  #nav .nav li{
+    margin-inline-end: 12%;
     list-style: none;
     text-decoration: none;
     cursor: pointer;
 }
-#nav .nav li a{ 
-    text-decoration: none;
-    font-weight: 500;
-    color: #000;   
+#nav> .nav{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    font-size: 1.125rem;
 }
-#nav .nav li a:hover{ 
-  color: var(--secondary-color);
-  font-weight: 700;
+#MobileTopNav{
+  width: 60%;
 }
-#nav .nav li .icon  {
-    display: none;
-  }
-  #nav .nav li .icon a {
-    background-color: #000;
-  }
-/* Dropdown container - needed to position the dropdown content */
-.subnav {
-    float: left;
-    overflow: hidden;
-  }
-  
-  /* Style the subnav content (hidden by default) */
-  .subnav-content {
-    display: none;
+.sidenav {
+    display: block;
+    height: 600%;
+    width: 0;
     position: absolute;
-    top: 25%;
-    background-color: #f9f9f9;
-    min-width: 220px;
-    min-height: 400px;
-    border-radius: 10px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
+    top: 80px;
+    right: 0;
+    background-color: #111;
+    overflow-y: scroll;
+    transition: 0.5s;
+    padding-top: 60px;
+    
   }
   
-  /* Style the links inside the subnav */
-  .subnav-content a {
-    float: none;
-    color: black;
-    padding: 12px 10%;
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
     text-decoration: none;
+    font-size: 1.5rem;
+    color: white;
     display: block;
-    text-align: left;
-  }
-  .nav li a:hover{
-    border-radius: 5px;
-    color: var(--secondary-color);
-    }
-  .subnav-content a:hover {
-    border-radius: 10px;
+    transition: 0.3s;
   }
   
- 
-  .thirdnav-content {
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+  
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  .dropdown-btn {
+    color: #f1f1f1;
+  }
+  .active {
+    background-color: var(--secondary-color);
+    color: white;
+  }
+  .dropdown-container {
     display: none;
+    padding-left: 8px;
   }
-  .thirdnav-content a{
-      padding-left: 20%;
-      font-size: 0.75rem;
+  .dropdown-container a{
+    font-size: 1.1rem;
+  }
+  .dropdown-container-third{
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 1.4rem;
+    color: #818181;
+    display: block;
+    border: none;
+    background: none;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    outline: none;
+  }
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
   }
   
-  .showsubnavSP{
-    display: block;
-}
-.showBrandSP{
-  display: block
-}
-.showPhuKienSP{
-  display: block;
-}
-.showsubnavBlog{
-  display: block;
-}
-.showChuDeBlog{
-  display: block;
-}
-.showsubnavFAQ{
-  display: block;
-}
-.showFAQChinhSach{
-  display: block;
-}
+
 
     #footer{
         height: 62em;
@@ -374,6 +305,7 @@
         background-color: red;
       
     }
+    
     /* ///iphone 5SE/// */
     @media screen and (max-height: 569px) and (min-height:320px){
         .searhvia{
@@ -405,8 +337,85 @@
             right: 110%;
             z-index: 1000;
         }
-      
-      
+        #nav .nav li{
+            margin-inline-end: 11%;
+            list-style: none;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        #nav> .nav{
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            font-size: 1.125rem;
+        }
+        .sidenav {
+            display: block;
+            height: 600%;
+            width: 0;
+            position: absolute;
+            z-index: 1;
+            top: 14%;
+            right: 0;
+            background-color: #111;
+            overflow-y: scroll;
+            transition: 0.5s;
+            padding-top: 60px;
+            
+          }
+          
+          .sidenav a {
+            padding: 8px 8px 8px 32px;
+            text-decoration: none;
+            font-size: 1.5rem;
+            color: white;
+            display: block;
+            transition: 0.3s;
+          }
+          
+          .sidenav a:hover {
+            color: #f1f1f1;
+          }
+          
+          .sidenav .closebtn {
+            position: absolute;
+            top: 0;
+            right: 25px;
+            font-size: 36px;
+            margin-left: 50px;
+          }
+          .dropdown-btn {
+            color: #f1f1f1;
+          }
+          .active {
+            background-color: var(--secondary-color);
+            color: white;
+          }
+          .dropdown-container {
+            display: none;
+            padding-left: 8px;
+          }
+          .dropdown-container a{
+            font-size: 1.1rem;
+          }
+          .dropdown-container-third{
+            padding: 8px 8px 8px 32px;
+            text-decoration: none;
+            font-size: 1.4rem;
+            color: #818181;
+            display: block;
+            border: none;
+            background: none;
+            width: 100%;
+            text-align: left;
+            cursor: pointer;
+            outline: none;
+          }
+          @media screen and (max-height: 450px) {
+            .sidenav {padding-top: 15px;}
+            .sidenav a {font-size: 18px;}
+          }
+          
         #footer>.contact>.contact-info>.contact-form> input{
             height: 30%;
             width: 300px;
@@ -418,9 +427,7 @@
             background-color: red;}
         
       }
-    hr{
-        display: none;
-    }
+
     #footer>.contact>.payment-info{
         margin-top: 5%;
         text-align: center;
@@ -437,9 +444,9 @@
         width: 20%;
     }
 }
-
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ */
 /* Tablet: width >= 740px  and <1024px*/
-@media only screen and (min-width: 37.5em) and (max-width: 71.25em) {
+@media only screen and (min-width: 40em) and (max-width: 90em) {
   
     #logo{
         height: 40px;
@@ -550,8 +557,7 @@
     
     }
     #cart-btn{
-        background-color: white;
-        
+        background-color: white;        
     }
 
   .subnav-content {
@@ -566,6 +572,130 @@
     opacity: 0;
     transition: opacity 150ms ease-in-out ;
   }
+  .dropbtn{
+    display: none;
+}
+#MobileTopNav{
+    visibility: visible;
+    margin-inline-start: 20%;
+}
+#nav> #portfolio-bar{
+    display: none;
+}
+    /* Style the sidenav links and the dropdown button */
+    .dropdown-btn {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 1.4rem;
+    color: #818181;
+    display: block;
+    border: none;
+    background: none;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    outline: none;
+  }
+  
+  /* On mouse-over */
+ .dropdown-btn:hover {
+    color: #f1f1f1;
+  }
+  .active {
+    background-color: var(--secondary-color);
+    color: white;
+  }
+  
+  .dropdown-container {
+    display: none;
+    padding-left: 8px;
+  }
+  .dropdown-container a{
+    font-size: 1.25rem;
+  }
+  #nav .nav li{
+    margin-inline-end: 14.5%;
+    list-style: none;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#nav> .nav{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    font-size: 1.125rem;
+}
+#MobileTopNav{
+  width: 60%;
+}
+.sidenav {
+    display: block;
+    height: 600%;
+    width: 0;
+    position: absolute;
+    z-index: 1;
+    top: 80px;
+    right: 0;
+    background-color: #111;
+    overflow-y: scroll;
+    transition: 0.5s;
+    padding-top: 60px;
+    
+  }
+  
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: white;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+  
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  .dropdown-btn {
+    color: #f1f1f1;
+  }
+  .active {
+    background-color: var(--secondary-color);
+    color: white;
+  }
+  .dropdown-container {
+    display: none;
+    padding-left: 8px;
+  }
+  .dropdown-container a{
+    font-size: 1.1rem;
+  }
+  .dropdown-container-third{
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 1.4rem;
+    color: #818181;
+    display: block;
+    border: none;
+    background: none;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    outline: none;
+  }
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+  
 
 
     #footer{
@@ -621,9 +751,7 @@
         color: white;
         background-color: red;
     }
-    hr{
-        display: none;
-    }
+   
     #footer>.contact>.payment-info{
         margin-top: 5%;
         text-align: center;
@@ -642,3 +770,4 @@
 
 
 }
+  
