@@ -1,0 +1,96 @@
+/* The container must be positioned relative: */
+.custom-select {
+    position: relative;
+    font-family: 'Source Sans Pro', sans-serif;
+    width: 100%;
+    margin: 10px 0px;
+  }
+
+
+
+
+  
+  .custom-select select {
+    display: none; /*hide original SELECT element: */
+  
+    
+  }
+  
+  .select-selected {
+    background-color: white;
+    box-sizing: border-box;
+    color: black;
+
+  }
+  
+  /* Style the arrow inside the select element: */
+  .select-selected:after {
+    position: absolute;
+    content: "";
+    top: 14px;
+    right: 10px;
+    width: 0;
+    height: 0;
+    border: 6px solid transparent;
+    border-color: black transparent transparent transparent;
+  }
+  
+  /* Point the arrow upwards when the select box is open (active): */
+  .select-selected.select-arrow-active:after {
+    border-color: transparent transparent black transparent;
+    top: 7px;
+  }
+  
+  /* style the items (options), including the selected item: */
+   .select-selected {
+    color: black;
+    font-size: 14px;
+    width: 100%;
+    padding: 7px;
+    border: 1px solid transparent;
+    border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+    cursor: pointer;
+    border: 1.5px solid #8D8D8D;
+    border-radius: 3px;
+
+  }
+
+  .select-items div{
+    color: black;
+    font-size: 14px;
+    padding: 7px;
+    border: 1px solid transparent;
+    border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+    cursor: pointer;
+  }
+
+  .select-items div:first-child{
+    margin-top: 3px;
+  }
+  
+  /* Style items (options): */
+  .select-items {
+    position: absolute;
+    background-color: white;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 99;
+    border: 1px solid #F68A94;
+    margin-top: 3px;
+
+    max-height: 150px;
+    overflow-y: scroll;
+  
+  }
+
+
+  
+  /* Hide the items when the select box is closed: */
+  .select-hide {
+    display: none;
+  }
+  
+  .select-items div:hover, .same-as-selected {
+    background-color: #F68A94;
+  }
