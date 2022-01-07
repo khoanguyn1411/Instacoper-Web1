@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/base.css">
     <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/footer.css">
     <link rel="stylesheet" href="assets/css/blog-detail.css">
     <link href="https://fonts.googleapis.com/css?family=Poppins:600&display=swap" rel="stylesheet">
 	<script src="https://kit.fontawesome.com/a81368914c.js"></script>
@@ -21,72 +22,13 @@
     <title>Blog: Chi tiết</title>
 </head>
 <body>
-   <div id="main">
-        <div id="header" >
-            <img src="/assets/img/Product1.png" alt="" id="logo" >
-            <div class="searhvia" onclick="firstFocus()">
-                <i class="fas fa-search" style="color: black;"></i>
-                <input type="text" placeholder="Tìm kiếm" id="searchValue">
-            </div>
-            <i class="fas fa-user" id="user">
-                
-            </i>
-            <i class="fas fa-cart-plus" id="cart">
-                <ul class="subcart">
-                    <li></li>
-                    <li><button type="button" class="subcart-button" id="cart-btn">Giỏ hàng </button>
-                        <button type="button" class="subcart-button" id="pay-btn">Thanh toán </button>
-                    </li>
-                </ul>
-            </i>
-        </div>
-        <div style="height: 80px;"></div>
-        <div id="nav">
-                <i class="fas fa-bars" id="portfolio-bar"> &nbsp; Danh mục sản phẩm</i>
-            <ul class="nav">
-                <li>
-                    <a href="">Trang Chủ</a>
-                </li>
-                <li>
-                    Sản phẩm 
-                    <ul class="subnav">
-                        <li>
-
-                        </li>
-                    </ul>
-                </li>
-                <li>
-                    Blog
-                    <ul class="subnav">
-                        <li>
-
-                        </li>
-                    </ul>
-                </li>
-                <li>
-                    FAQs
-                    <ul class="subnav">
-                        <li>
-
-                        </li>
-                    </ul>
-                </li>
-                <li>
-                    <a href=""><b>Về chúng tôi</b></a>
-                </li>
-                
-            </ul>
-        </div>
-<hr>
-        <div id="banner">
+        <div class="wrapper">
 
             
-<!-- Phần bên trái -->
+
             <div class="part-one">
                 <div class="type">
-                    <div>
-                        <img src="assets/img/blog/Bullet.jpg"/>
-                    </div>
+                    <img src="assets/img/blog/Bullet.jpg"/>
                     <p>TIN TỨC THỜI TRANG</p>
                 </div>
                 <div class="title">
@@ -154,108 +96,113 @@
             </div>
 
 
-<!-- Phần bên phải -->
+
             <div class="part-two">
                 <div class="one">
                     <p>Bài viết liên quan</p>
                     <img src="assets/img/blog/Line.png"/>
                 </div>
-                <div class="two">
-                    <img src="assets/img/blog/2-blog.png"/>
-                </div>
-                <div class="three">
-                    <div>
+                <div class="content-blog">
+                    <div class="two">
+                        <img src="assets/img/blog/2-blog.png"/>
+                    </div>
+                    <div class="three">
                         <img src="assets/img/blog/Bullet.jpg"/>
+                        <p>TIN TỨC THỜI TRANG</p>
                     </div>
-                    <p>TIN TỨC THỜI TRANG</p>
+                    <div class="four">
+                        <p>
+                            Cotton On lần đầu ra mắt BST Peanuts x Yale - Khi chú chó Snoopy vào đại học Yale
+                        </p>
+                    </div>
+                    <div class="five">
+                        <p>
+                            Lần đầu tiên, thương hiệu thời trang Cotton On đưa chú chó Snoopy trong bộ phim hoạt hình Peanuts...
+                        </p>
+                    </div>
+                    <div class="six">
+                        <p>Xem thêm...</p>
+                    </div>   
                 </div>
-                <div class="four">
-                    <p>
-                        Cotton On lần đầu ra mắt BST Peanuts x Yale - Khi chú chó Snoopy vào đại học Yale
-                    </p>
-                </div>
-                <div class="five">
-                    <p>
-                        Lần đầu tiên, thương hiệu thời trang Cotton On đưa chú chó Snoopy trong bộ phim hoạt hình Peanuts...
-                    </p>
-                </div>
-                <div class="six">
-                    <p>Xem thêm...</p>
-                </div>
+             
             </div>
 
-
-        
-
-
         </div>
         
-        <!-- <div id="content">
-        
-        </div>
-        
-        <div id="sldier">
-        
-        </div> -->
-        
-        <div id="footer">
-            <div class="contact">
-                <div class="contact-info">
-                    <div class="text-info">                     
-                        <div class="footernav">
-                            <a href="#"><b>Trang chủ</b></a>
-                            <a href="#">Sản phẩm</a>
-                            <a href="#">Blogs</a>
-                            <a href="#">FAQs</a>
-                            <a href="#">Về chúng tôi</a>
-                        </div>  
-                        <div class="footernav">
-                            <p><b>Thông tin liên hệ</b></p> 
-                            <br>
-                            <p>Số 669 Quốc lộ 1, khu phố 3 <br>
-                                phường Linh Xuân, quận Thủ Đức <br>
-                                Thành phố Hồ Chí Minh
-                                </p>
-                                <br><br>
-                            <p>Email : support@instacoper.com</p>
-                            <p>Hotline: 0123456789</p>
-                        </div>
-                        <div class="footernav">
-                            <a href="#"><b>Hỗ trợ khách hàng</b></a>
-                            <br>
-                            <a href="#">Hướng dẫn mua hàng</a>
-                            <a href="#">Hướng dẫn thanh toán</a>
-                            <a href="#">Chính sách bảo mật</a>
-                            <a href="#">Chính sách đổi trả</a>
-                            <a href="#">Giao hàng & Vận chuyển</a>
-                        </div>                  
-                    </div>
-                <form class="contact-form">
-                    <p>Đăng ký nhận thông tin mới nhất!</p>
-                    <input type="text" id="email-input" required placeholder="Nhập Email của bạn tại đây">
-                    <button type="submit">Đăng ký ngay!</button>
-                </form>
-                </div>
-                <hr>
-                <div class="payment-info">
-                    <p>Hỗ trợ thanh toán</p>
-                    <div id="payment-img">
-                        <img src="/assets/img/mastercard.svg" alt="">
-                        <img src="assets/img/Visapay.svg" alt="">
-                        <img src="assets/img/momo.svg" alt="">
-                        <img src="assets/img/VNpay.svg" alt="">                       
-                    </div>
-                </div>
-            </div>
-        </div>
-   </div>
-
-
 
 </body>
+
 <script>
     function firstFocus(){
         document.getElementById("searchValue").focus();
     }
 </script>
+<footer>
+    <div class="wrapper" style="padding-top: 20px; padding-bottom: 20px;">
+        <div class="footer-content">
+            <div class="footer-content-1">
+                <div class="ft-main-content">
+                    <ul>
+                        <li style="font-weight: bold;"><a href="index.html">Trang chủ</a></li>
+                        <li><a href="product.html">Sản phẩm</a></li>
+                        <li><a href="blog.html">Blogs</a></li>
+                        <li><a href="FAQ.html">FAQs</a></li>
+                        <li><a href="member.html">Về chúng tôi</a></li>
+                    </ul>          
+                </div>
+            
+            </div>
+
+            <div class="footer-content-2">
+                <div class="ft-main-content">
+                    <p  class="ft-title">Thông tin liên hệ</p> 
+                    <br>
+                    <p>Số 669 Quốc lộ 1, khu phố 3, phường Linh Xuân, quận Thủ Đức, Thành phố Hồ Chí Minh
+                        </p>
+                        <br/>
+                    <p>Email : support@instacoper.com</p>
+                    <p>Hotline: 0123456789</p>
+                </div>
+            </div>
+
+            <div class="footer-content-3">
+                <p class="ft-title" id="support">Hỗ trợ khách hàng</p>
+                <div class="ft-main-content">
+                    <ul class="ft-main-content">
+                        <li><a href="FAQ_HDMH.html">Hướng dẫn mua hàng </a></li>
+                        <li><a href="FAQ_HDTT.html">Hướng dẫn thanh toán</a></li>
+                        <li><a href="FAQ_CSBaoMat.html">Chính sách bảo mật</a></li>
+                        <li><a href="FAQ_DoiTra.html">Chính sách đổi trả</a></li>
+                        <li><a href="FAQ_GHVC.html">Giao hàng & Vận chuyển</a></li>
+                    </ul>          
+                </div>
+            </div>
+          
+        </div>
+
+        <div class="footer-register">
+            <div>
+                <p>Đăng ký nhận thông tin mới nhất!</p>
+                <form>
+                    <input required placeholder="Nhập email của bạn tại đây">
+                    <button>Đăng ký ngay!</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="footer-payment">
+            <div class="ft-seperate"></div>
+            <div class="ft-payment-content">
+                <div>Hỗ trợ thanh toán</div>
+                <div class="ft-img">
+                    <img src="assets/img/footer_order/image 1.svg">
+                    <img src="assets/img/footer_order/image 2.svg">
+                    <img src="assets/img/footer_order/image 3.svg">
+                    <img src="assets/img/footer_order/image 4.svg">
+                    <img src="assets/img/footer_order/image 5.png">
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
 </html>

@@ -19,18 +19,10 @@
     <title>Document</title>
 </head>
 
-<script>
-       function addItemID(){
-        var items = document.getElementsByClassName("item");
-        var numItems = items.length;
 
-        for(i = 0;i<numItems;i++){
-            items[i].id = i;
-        }
-    }
-</script>
 
-<body onload="addItemID()">
+<body>
+    
     <div class="wrapper">
         <div class="top-side">
                 <div class="top-content-left">
@@ -560,9 +552,18 @@
         </div>
 
     </div>
-
+    <script>
+        btns = document.getElementsByClassName("img");
+                 for (var i = 0; i < btns.length; i++) {
+                 btns[i].addEventListener("click", function () {
+                    window.location = "detail-product.html";
+                });
+            }
+    
+    </script>
    
    <script> 
+   
     btns = document.getElementById("filter");
     btnSort = document.getElementById("sort-by");
     var i;

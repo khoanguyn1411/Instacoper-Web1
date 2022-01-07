@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<div lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,6 +7,10 @@
     <link rel="stylesheet" href="assets/css/base.css">
     <link rel="stylesheet" href="assets/css/main.css">
     <link rel="stylesheet" href="assets/css/blog.css">
+    <link rel="stylesheet" href="assets/css/footer.css">
+    <link rel="stylesheet" href="assets/css/styleP.css">
+    <link rel="stylesheet" href="assets/css/radio.css">
+    <link rel="stylesheet" href="assets/css/product.css">
     <link href="https://fonts.googleapis.com/css?family=Poppins:600&display=swap" rel="stylesheet">
 	<script src="https://kit.fontawesome.com/a81368914c.js"></script>
 
@@ -20,77 +24,41 @@
 
     <title>Blog</title>
 </head>
+
 <body>
-   <div id="main">
-        <div id="header" >
-            <img src="/assets/img/Product1.png" alt="" id="logo" >
-            <div class="searhvia" onclick="firstFocus()">
-                <i class="fas fa-search" style="color: black;"></i>
-                <input type="text" placeholder="Tìm kiếm" id="searchValue">
+    <div class="wrapper">
+        <div class="top-side" style="margin: 50px 0px 0px 0px; width: 100%;">
+            <div class="top-content-left">
+                <div class="outside">
+                    <input type="radio" name = "cate" id = "allPro">
+                    <label for = "allPro">Instacoper News</label>
+
+                    <input type="radio" name = "cate" id = "newPro">
+                    <label for = "newPro">Xu hướng thời trang</label>
+
+                    <input type="radio" name = "cate" id = "topSale">
+                    <label for = "topSale">Sao & Styles</label>
+
+                    <input type="radio" name = "cate" id = "skeakerNam">
+                    <label for = "skeakerNam">Tin tức thời trang</label>
+
+                    <input type="radio" name = "cate" id = "skeakerNu">
+                    <label for = "skeakerNu">Sneaker Tips</label>
+
+                  
+                </div>
+               
+                
             </div>
-            <i class="fas fa-user" id="user">
-                
-            </i>
-            <i class="fas fa-cart-plus" id="cart">
-                <ul class="subcart">
-                    <li></li>
-                    <li><button type="button" class="subcart-button" id="cart-btn">Giỏ hàng </button>
-                        <button type="button" class="subcart-button" id="pay-btn">Thanh toán </button>
-                    </li>
-                </ul>
-            </i>
         </div>
-        <div style="height: 80px;"></div>
-        <div id="nav">
-                <i class="fas fa-bars" id="portfolio-bar"> &nbsp; Danh mục sản phẩm</i>
-            <ul class="nav">
-                <li>
-                    <a href="">Trang Chủ</a>
-                </li>
-                <li>
-                    Sản phẩm 
-                    <ul class="subnav">
-                        <li>
 
-                        </li>
-                    </ul>
-                </li>
-                <li>
-                    Blog
-                    <ul class="subnav">
-                        <li>
-
-                        </li>
-                    </ul>
-                </li>
-                <li>
-                    FAQs
-                    <ul class="subnav">
-                        <li>
-
-                        </li>
-                    </ul>
-                </li>
-                <li>
-                    <a href=""><b>Về chúng tôi</b></a>
-                </li>
-                
-            </ul>
-        </div>
-<hr>
-        <div id="banner">
-
-            
-<!-- Phần long blog -->
         <div class="part-one"><a href="blog-detail.html"></a>
             <div class="long-image">
                 <img src="assets/img/blog/part1.jpg"/>
             </div>
             <div class="long-content">
                 <div class="long-type">
-                    <div>
-                        <img src="assets/img/blog/Bullet.jpg"/>
-                    </div>
+                    <img src="assets/img/blog/Bullet.jpg"/>
                     <p>TIN TỨC THỜI TRANG</p>
                 </div>
                 <div class="long-title">
@@ -101,9 +69,10 @@
                         HLV Wowy còn truyền cảm hứng đến các thành viên trong cách ăn mặc khi vừa qua thầy trò team này đã có một kỷ niệm shopping 
                         khó quên tại cửa hàng Nike Saigon Centre để chuẩn bị cho vòng đối đầu đầy rẫy thử thách tại Rap Việt mùa 2...</p>
                 </div>
-                <div class="long-more">
-                    <p>Xem thêm</p>
-                </div>
+               
+            </div>
+            <div class="long-more">
+                <p>Xem thêm</p>
             </div>
         </div>
 
@@ -111,108 +80,92 @@
 <!-- Phần short blog -->
         <div class="part-two">
             <div class="short-one">
-            <div class="short-one-content">
-                <div class="sh-one-image">
-                    <img src="assets/img/blog/2short-one.png"/>
-                </div>
-                <div class="sh-one-content">
-                    <div class="sh-one-type">
-                        <div>
+                <div class="short-one-content">
+                    <div class="sh-one-image">
+                        <img src="assets/img/blog/2short-one.png"/>
+                    </div>
+                    <div class="sh-one-content">
+                        <div class="sh-one-type">
                             <img src="assets/img/blog/Bullet.jpg"/>
+                                <p>SNEAKER TIPS</p>
                         </div>
-                        <div>
-                            <p>SNEAKER TIPS</p>
+                        <div class="sh-one-title">
+                            <p>
+                                Nike tips: 4 cách buộc dây giày Jordan 1 độc đáo và đẹp mắt
+                            </p>
                         </div>
-                    </div>
-                    <div class="sh-one-title">
-                        <p>
-                            Nike tips: 4 cách buộc dây giày Jordan 1 độc đáo và đẹp mắt
-                        </p>
-                    </div>
-                    <div class="sh-one-text">
-                        <p>Jordan 1 chính là một trong những mẫu giày thể thao đang làm mưa làm gió 
-                            của Nike với thiết kế nổi bật và đặc sắc. Tuy nhiên...</p>
-                    </div>
-                    <div class="sh-one-more">
-                        <p>Xem thêm</p>
+                        <div class="sh-one-text">
+                            <p>Jordan 1 chính là một trong những mẫu giày thể thao đang làm mưa làm gió 
+                                của Nike với thiết kế nổi bật và đặc sắc. Tuy nhiên...</p>
+                        </div>
+                        <div class="sh-one-more">
+                            <p>Xem thêm</p>
+                        </div>
                     </div>
                 </div>
-            </div>
             </div>
             
 
-            <div class="short-two">
-            <div class="short-two-content">
-                <div class="sh-one-image">
-                    <img src="assets/img/blog/2short-two.png"/>
-                </div>
-                <div class="sh-one-content">
-                    <div class="sh-one-type">
-                        <div>
+            <div class="short-one">
+                <div class="short-one-content">
+                    <div class="sh-one-image">
+                        <img src="assets/img/blog/2short-two.png"/>
+                    </div>
+                    <div class="sh-one-content">
+                        <div class="sh-one-type">
                             <img src="assets/img/blog/Bullet.jpg"/>
+                                <p>SNEAKER TIPS</p>
                         </div>
-                        <div>
-                            <p>INSTACOPER NEWS</p>
+                        <div class="sh-one-title">
+                            <p>
+                                Nike gia tăng trải nghiệm mua sắm mới hậu Covid-19
+                            </p>
                         </div>
-                    </div>
-                    <div class="sh-one-title">
-                        <p>
-                            Nike gia tăng trải nghiệm mua sắm mới hậu Covid-19
-                        </p>
-                    </div>
-                    <div class="sh-one-text">
-                        <p>Đại dịch Covid-19 đã ảnh hưởng đến hầu hết mọi khía cạnh của cuộc sống, 
-                            thói quen mua sắm và sinh hoạt của mọi người...</p>
-                    </div>
-                    <div class="sh-one-more">
-                        <p>Xem thêm</p>
+                        <div class="sh-one-text">
+                            <p>Đại dịch Covid-19 đã ảnh hưởng đến hầu hết mọi khía cạnh của cuộc sống, thói quen mua sắm và sinh hoạt của mọi người...</p>
+                        </div>
+                        <div class="sh-one-more">
+                            <p>Xem thêm</p>
+                        </div>
                     </div>
                 </div>
-            </div>
             </div>
 
 
-            <div class="short-three">
-            <div class="short-three-content">
-                <div class="sh-one-image">
-                    <img src="assets/img/blog/2short-three.png"/>
-                </div>
-                <div class="sh-one-content">
-                    <div class="sh-one-type">
-                        <div>
+            <div class="short-one">
+                <div class="short-one-content">
+                    <div class="sh-one-image">
+                        <img src="assets/img/blog/2short-three.png"/>
+                    </div>
+                    <div class="sh-one-content">
+                        <div class="sh-one-type">
                             <img src="assets/img/blog/Bullet.jpg"/>
+                                <p>SNEAKER TIPS</p>
                         </div>
-                        <div>
-                            <p>SNEAKER TIPS</p>
+                        <div class="sh-one-title">
+                            <p>
+                                15 cách buộc dây giày đẹp "chất lừ", làm mới phong cách mỗi ngày của bạn
+                            </p>
                         </div>
-                    </div>
-                    <div class="sh-one-title">
-                        <p>
-                            15 cách buộc dây giày đẹp "chất lừ", làm mới phong cách mỗi ngày của bạn
-                        </p>
-                    </div>
-                    <div class="sh-one-text">
-                        <p>Đôi giày sneaker sẽ trở nên thú vị và luôn mới mẻ 
-                            nếu bạn biết cách thay đổi các cách buộc dây giày thường xuyên. Những bộ...</p>
-                    </div>
-                    <div class="sh-one-more">
-                        <p>Xem thêm</p>
+                        <div class="sh-one-text">
+                            <p>Đôi giày sneaker sẽ trở nên thú vị và luôn mới mẻ nếu bạn biết cách thay đổi các cách buộc dây giày thường xuyên. Những bộ...</p>
+                        </div>
+                        <div class="sh-one-more">
+                            <p>Xem thêm</p>
+                        </div>
                     </div>
                 </div>
-            </div>
             </div>
 
         </div>
 
-        <div class="part-three">
+        <div class="part-one">
             <div class="long-image">
                 <img src="assets/img/blog/part3.png"/>
             </div>
             <div class="long-content">
                 <div class="long-type">
-                    <div>
-                        <img src="assets/img/blog/Bullet.jpg"/>
-                    </div>
+                    <img src="assets/img/blog/Bullet.jpg"/>
                     <p>TIN TỨC THỜI TRANG</p>
                 </div>
                 <div class="long-title">
@@ -223,13 +176,14 @@
                         nơi mà bạn có thể tìm mua cho mình và người thân những món đồ chất lượng cao với mức giá hợp lý. 
                         Nhằm đáp ứng nhu cầu tìm kiếm những sản phẩm chính hãng để phục vụ nhu cầu tập luyện...</p>
                 </div>
-                <div class="long-more">
-                    <p>Xem thêm</p>
-                </div>
+               
+            </div>
+            <div class="long-more">
+                <p>Xem thêm</p>
             </div>
         </div>
 
-        <div class="part-four">
+        <div class="part-two">
             <div class="short-one">
                 <div class="short-one-content">
                     <div class="sh-one-image">
@@ -237,12 +191,8 @@
                     </div>
                     <div class="sh-one-content">
                         <div class="sh-one-type">
-                            <div>
-                                <img src="assets/img/blog/Bullet.jpg"/>
-                            </div>
-                            <div>
+                            <img src="assets/img/blog/Bullet.jpg"/>
                                 <p>XU HƯỚNG THỜI TRANG</p>
-                            </div>
                         </div>
                         <div class="sh-one-title">
                             <p>
@@ -250,30 +200,25 @@
                             </p>
                         </div>
                         <div class="sh-one-text">
-                            <p>Với thiết kế độc đáo, những mẫu giày Nike Jordan 1 nhận được sự yêu thích của cả nam lẫn nữ. 
-                                Jordan Brand đã ra mắt vô vàn...</p>
+                            <p>Đại dịch Covid-19 đã ảnh hưởng đến hầu hết mọi khía cạnh của cuộc sống, thói quen mua sắm và sinh hoạt của mọi người...</p>
                         </div>
                         <div class="sh-one-more">
                             <p>Xem thêm</p>
                         </div>
                     </div>
                 </div>
-                </div>
+            </div>
+
                 
-    
-                <div class="short-two">
-                <div class="short-two-content">
+            <div class="short-one">
+                <div class="short-one-content">
                     <div class="sh-one-image">
                         <img src="assets/img/blog/4short-two.png"/>
                     </div>
                     <div class="sh-one-content">
                         <div class="sh-one-type">
-                            <div>
-                                <img src="assets/img/blog/Bullet.jpg"/>
-                            </div>
-                            <div>
+                            <img src="assets/img/blog/Bullet.jpg"/>
                                 <p>SAO & STYLES</p>
-                            </div>
                         </div>
                         <div class="sh-one-title">
                             <p>
@@ -281,30 +226,25 @@
                             </p>
                         </div>
                         <div class="sh-one-text">
-                            <p>Phong cách Grunge là xu hướng thời trang cực thịnh đầu những năm 90 thế kỷ trước. 
-                                Mặc dù bước đầu không được các chuyên...</p>
+                            <p>Phong cách Grunge là xu hướng thời trang cực thịnh đầu những năm 90 thế kỷ trước. Mặc dù bước đầu không được các chuyên...</p>
                         </div>
                         <div class="sh-one-more">
                             <p>Xem thêm</p>
                         </div>
                     </div>
                 </div>
-                </div>
+            </div>
+
     
-    
-                <div class="short-three">
-                <div class="short-three-content">
+            <div class="short-one">
+                <div class="short-one-content">
                     <div class="sh-one-image">
                         <img src="assets/img/blog/4short-three.png"/>
                     </div>
                     <div class="sh-one-content">
                         <div class="sh-one-type">
-                            <div>
-                                <img src="assets/img/blog/Bullet.jpg"/>
-                            </div>
-                            <div>
+                            <img src="assets/img/blog/Bullet.jpg"/>
                                 <p>XU HƯỚNG THỜI TRANG</p>
-                            </div>
                         </div>
                         <div class="sh-one-title">
                             <p>
@@ -312,18 +252,14 @@
                             </p>
                         </div>
                         <div class="sh-one-text">
-                            <p>Nike Cortez không chỉ thay đổi cuộc chơi của các vận động viên trong quá khứ,
-                                 mẫu giày thể thao hơn 45 tuổi này còn trở...</p>
+                            <p>Nike Cortez không chỉ thay đổi cuộc chơi của các vận động viên trong quá khứ, mẫu giày thể thao hơn 45 tuổi này còn trở...</p>
                         </div>
                         <div class="sh-one-more">
                             <p>Xem thêm</p>
                         </div>
                     </div>
                 </div>
-                </div>
-        </div>
-
-        <div class="part-five">
+            </div>
             <div class="short-one">
                 <div class="short-one-content">
                     <div class="sh-one-image">
@@ -331,12 +267,8 @@
                     </div>
                     <div class="sh-one-content">
                         <div class="sh-one-type">
-                            <div>
-                                <img src="assets/img/blog/Bullet.jpg"/>
-                            </div>
-                            <div>
+                            <img src="assets/img/blog/Bullet.jpg"/>
                                 <p>INSTACOPER NEWS</p>
-                            </div>
                         </div>
                         <div class="sh-one-title">
                             <p>
@@ -351,22 +283,16 @@
                         </div>
                     </div>
                 </div>
-                </div>
-                
-    
-                <div class="short-two">
-                <div class="short-two-content">
+            </div>
+            <div class="short-one">
+                <div class="short-one-content">
                     <div class="sh-one-image">
                         <img src="assets/img/blog/5short-two.png"/>
                     </div>
                     <div class="sh-one-content">
                         <div class="sh-one-type">
-                            <div>
-                                <img src="assets/img/blog/Bullet.jpg"/>
-                            </div>
-                            <div>
+                            <img src="assets/img/blog/Bullet.jpg"/>
                                 <p>XU HƯỚNG THỜI TRANG</p>
-                            </div>
                         </div>
                         <div class="sh-one-title">
                             <p>
@@ -374,30 +300,23 @@
                             </p>
                         </div>
                         <div class="sh-one-text">
-                            <p>Không chỉ có chị em mới yêu thích những góc máy selfie ảo diệu, 
-                                cánh mày râu hẳn cũng muốn bản thân trông thật ấn tượng và sành điệu trong những thước ảnh tự chụp trên mạng xã hội...</p>
+                            <p>Không chỉ có chị em mới yêu thích những góc máy selfie ảo diệu, cánh mày râu hẳn cũng muốn bản thân trông thật ấn tượng và sành điệu trong những thước ảnh tự chụp trên mạng xã hội...</p>
                         </div>
                         <div class="sh-one-more">
                             <p>Xem thêm</p>
                         </div>
                     </div>
                 </div>
-                </div>
-    
-    
-                <div class="short-three">
-                <div class="short-three-content">
+            </div>
+            <div class="short-one">
+                <div class="short-one-content">
                     <div class="sh-one-image">
                         <img src="assets/img/blog/5short-three.png"/>
                     </div>
                     <div class="sh-one-content">
                         <div class="sh-one-type">
-                            <div>
-                                <img src="assets/img/blog/Bullet.jpg"/>
-                            </div>
-                            <div>
+                            <img src="assets/img/blog/Bullet.jpg"/>
                                 <p>XU HƯỚNG THỜI TRANG</p>
-                            </div>
                         </div>
                         <div class="sh-one-title">
                             <p>
@@ -405,133 +324,140 @@
                             </p>
                         </div>
                         <div class="sh-one-text">
-                            <p>Đồ vest là item thời trang đạt chuẩn sang xịn mà hẳn cô nàng công sở nào cũng mê mẩn. 
-                                Khi phối vest với áo sơ mi có vẻ đã trở nên quá phổ biến, thì thay đổi một chút sẽ khiến nàng trở nên...</p>
+                            <p>Đồ vest là item thời trang đạt chuẩn sang xịn mà hẳn cô nàng công sở nào cũng mê mẩn. Khi phối vest với áo sơ mi có vẻ đã trở nên quá phổ biến, thì thay đổi một chút sẽ khiến nàng trở nên...</p>
                         </div>
                         <div class="sh-one-more">
                             <p>Xem thêm</p>
                         </div>
                     </div>
                 </div>
-                </div>
+            </div>
+
         </div>
 
-
-        <div class="part-six">
-            <div class="pages">
-                <div class="pages-back">
-                    <img src="assets/img/blog/back.svg"/>
-                </div>
-                <div class="pages-num1">
-                    <div>1</div>
-                </div>
-                <div class="pages-num2">
-                    <div>2</div>
-                </div>
-                <div class="pages-num1">
-                    <div>3</div>
-                </div>
-                <div class="pages-num1">
-                    <div>4</div>
-                </div>
-                <div class="pages-num1">
-                    <div>5</div>
-                </div>
-                <div class="pages-etc">
-                    <div>...</div>
-                </div>
-                <div class="pages-num1">
-                    <div>20</div>
-                </div>
-                <div class="pages-next">
-                    <img src="assets/img/blog/next.svg"/>
-                </div>
+        <div class="page-number">
+            <div class="page-number-content">
+                <img src="assets/img/left_arrow.svg">
+                <input type="radio" class="chk-size" name="rad" id="a1">
+                <label for = "a1">1</label>
+                <input type="radio" class="chk-size" name="rad" id="a2">
+                <label for = "a2">2</label>
+                <input type="radio" class="chk-size" name="rad" id="a3">
+                <label for = "a3">3</label>
+                <input type="radio" class="chk-size" name="rad" id="a4">
+                <label id = "a44" for = "a4">4</label>
+                <input type="radio" class="chk-size" name="rad" id="a5">
+                <label id = "a55" for = "a5">5</label>
+                <p>...</p>
+                <input type="radio" class="chk-size" name="rad" id="a20">
+                <label for = "a20">20</label>
+                <img src="assets/img/right_arrow.svg">
 
             </div>
-        </div>
-
 
         </div>
-        
-        <!-- <div id="content">
-        
-        </div>
-        
-        <div id="sldier">
-        
-        </div> -->
-        
-        <div id="footer">
-            <div class="contact">
-                <div class="contact-info">
-                    <div class="text-info">
-                     <table id="table-info">
-                         <thead>
-                             <td><a href="">Trang chủ</a></td>
-                             <td>Thông tin liên hệ</td>
-                             <td>Hỗ trợ khách hàng</td>
-                         </thead>
-                       <tr>
-                           <td><a href="">Sản phẩm</a></td>
-                           <td>Số 669 Quốc lộ 1, khu phố 3</td>
-                           <td>Hướng dẫn mua hàng</td>
-                       </tr>
-                       <tr>
-                           <td><a href="">Blogs</a></td>
-                           <td>phường Linh Xuân, quận Thủ Đức</td>
-                           <td>Hướng dẫn thanh toán</td>
-                       </tr>
-                       <tr>
-                           <td> <a href="">FAQs</a></td>
-                           <td></td>
-                           <td>Chính sách bảo mật</td>
-                       </tr>
-                       <tr>
-                           <td><a href="">Về chúng tôi</a></td>
-                           <td>Thành phố Hồ Chí Minh</td>
-                           <td>Chính sách đổi trả</td>
-                       </tr>
-                       <tr>
-                           <td></td>
-                           <td>Email: support@instacoper.com</td>
-                           <td style="font-weight: lighter;">Giao hàng & Vận chuyển</td>
-                       </tr>
-                       <tr>
-                        <td></td>
-                        <td>Hotline: 0123456789</td>
-                        <td></td>
-                    </tr>
-                     </table>
-                    
-                     
-                    </div>
-                <div class="contact-form">
-                    <p>Đăng ký nhận thông tin mới nhất!</p>
-                    <input type="text" id="email-input" placeholder="Nhập Email của bạn tại đây">
-                    <button type="submit">Đăng ký ngay!</button>
-                </div>
-                </div>
-                <hr>
-                <div class="payment-info">
-                    <p style="color: white;">Hỗ trợ thanh toán</p>
-                    <div id="hpayment-img">
-                        <img src="/assets/img/mastercard.svg" alt="">
-                        <img src="assets/img/Visapay.svg" alt="">
-                        <img src="assets/img/momo.svg" alt="">
-                        <img src="assets/img/VNpay.svg" alt="">
-                        
-                    </div>
-                </div>
-            </div>
-        </div>
-   </div>
-
-
-
+    </div>
+    </div>
 </body>
+
+
+
+
+
+<footer>
+    <div class="wrapper" style="padding-top: 20px; padding-bottom: 20px;">
+        <div class="footer-content">
+            <div class="footer-content-1">
+                <div class="ft-main-content">
+                    <ul>
+                        <li style="font-weight: bold;"><a href="index.html">Trang chủ</a></li>
+                        <li><a href="product.html">Sản phẩm</a></li>
+                        <li><a href="blog.html">Blogs</a></li>
+                        <li><a href="FAQ.html">FAQs</a></li>
+                        <li><a href="member.html">Về chúng tôi</a></li>
+                    </ul>          
+                </div>
+            
+            </div>
+
+            <div class="footer-content-2">
+                <div class="ft-main-content">
+                    <p  class="ft-title">Thông tin liên hệ</p> 
+                    <br>
+                    <p>Số 669 Quốc lộ 1, khu phố 3, phường Linh Xuân, quận Thủ Đức, Thành phố Hồ Chí Minh
+                        </p>
+                        <br/>
+                    <p>Email : support@instacoper.com</p>
+                    <p>Hotline: 0123456789</p>
+                </div>
+            </div>
+
+            <div class="footer-content-3">
+                <p class="ft-title" id="support">Hỗ trợ khách hàng</p>
+                <div class="ft-main-content">
+                    <ul class="ft-main-content">
+                        <li><a href="FAQ_HDMH.html">Hướng dẫn mua hàng </a></li>
+                        <li><a href="FAQ_HDTT.html">Hướng dẫn thanh toán</a></li>
+                        <li><a href="FAQ_CSBaoMat.html">Chính sách bảo mật</a></li>
+                        <li><a href="FAQ_DoiTra.html">Chính sách đổi trả</a></li>
+                        <li><a href="FAQ_GHVC.html">Giao hàng & Vận chuyển</a></li>
+                    </ul>          
+                </div>
+            </div>
+          
+        </div>
+
+        <div class="footer-register">
+            <div>
+                <p>Đăng ký nhận thông tin mới nhất!</p>
+                <form>
+                    <input required placeholder="Nhập email của bạn tại đây">
+                    <button>Đăng ký ngay!</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="footer-payment">
+            <div class="ft-seperate"></div>
+            <div class="ft-payment-content">
+                <div>Hỗ trợ thanh toán</div>
+                <div class="ft-img">
+                    <img src="assets/img/footer_order/image 1.svg">
+                    <img src="assets/img/footer_order/image 2.svg">
+                    <img src="assets/img/footer_order/image 3.svg">
+                    <img src="assets/img/footer_order/image 4.svg">
+                    <img src="assets/img/footer_order/image 5.png">
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
 <script>
-    function firstFocus(){
-        document.getElementById("searchValue").focus();
-    }
+    btns = document.getElementsByClassName("sh-one-image");
+    btn2 = document.getElementsByClassName("long-image");
+    btn3 = document.getElementsByClassName("long-title");
+    btn4 = document.getElementsByClassName("sh-one-title");
+    for (var i = 0; i < btns.length; i++) {
+                btns[i].addEventListener("click", function () {
+                    window.location = "blog-detail.html";
+                });
+            }
+            for (var i = 0; i < btn2.length; i++) {
+                btn2[i].addEventListener("click", function () {
+                    window.location = "blog-detail.html";
+                });
+            }                 
+       
+            for (var i = 0; i < btn3.length; i++) {
+                btn3[i].addEventListener("click", function () {
+                    window.location = "blog-detail.html";
+                });
+            }   
+            for (var i = 0; i < btn4.length; i++) {
+                btn4[i].addEventListener("click", function () {
+                    window.location = "blog-detail.html";
+                });
+            }   
+
 </script>
 </html>
