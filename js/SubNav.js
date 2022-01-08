@@ -21,16 +21,16 @@ $(document).bind("click", function () {
 $(document).ready(function(){
     $('#link-blog').click(function(event){
         event.stopPropagation();
-         $("#sub-sanpham").slideToggle("fast");
+         $("#sub-blog").slideToggle("fast");
     });
-    $("#sub-sanpham").bind("click", function (event) {
+    $("#sub-blog").bind("click", function (event) {
         event.stopPropagation();
     });
     
 });
 
 $(document).bind("click", function () {
-    $("#sub-sanpham").hide();
+    $("#sub-blog").hide();
 });
 
   
@@ -57,13 +57,28 @@ $(document).bind("click", function () {
 $(document.getElementById('link-sp')).bind("click", function () {
     $("#sub-blog").hide();
     $("#sub-FAQS").hide();
+    $(".hd-cart-menu").hide();
+    $("#sub-sanpham").hide();
+    $(".hd-user-container").hide();
 });
 
 
 $(document.getElementById('link-faq')).bind("click", function () {
     $("#sub-sanpham").hide();
-    $("#sub-FAQS").hide();
+    $("#sub-blog").hide();
+    $(".hd-cart-menu").hide();
+    $("#sub-sanpham").hide();
+    $(".hd-user-container").hide();
 });
+
+$(document.getElementById('link-blog')).bind("click", function () {
+    $("#sub-sanpham").hide();
+    $("#sub-FAQS").hide();
+    $(".hd-cart-menu").hide();
+    $("#sub-sanpham").hide();
+    $(".hd-user-container").hide();
+});
+
 
 
 
@@ -95,10 +110,6 @@ $(document.getElementById('link-phukien')).bind("click", function () {
 
 // Phụ kiện
 
-
-$(document).bind("click", function () {
-    $("#sub-phukien").hide();
-});
 $(document).ready(function(){
     $('#link-phukien').click(function(event){
         event.stopPropagation();
@@ -115,6 +126,22 @@ $(document).bind("click", function () {
 });
 $(document.getElementById('link-thuonghieu')).bind("click", function () {
     $("#sub-phukien").hide();
+});
+
+//Chủ đề
+$(document).ready(function(){
+    $('#link-chude').click(function(event){
+        event.stopPropagation();
+         $("#sub-chude").slideToggle("fast");
+    });
+    $("#sub-chude").bind("click", function (event) {
+        event.stopPropagation();
+    });
+    
+});
+
+$(document).bind("click", function () {
+    $("#sub-chude").hide();
 });
 
 
@@ -186,3 +213,46 @@ $(document).ready(function(){
 $(document).bind("click", function () {
     $(".hd-user-container").hide();
 });
+
+$(document.getElementById('btnOpenCart')).bind("click", function () {
+    $(".hd-user-container").hide();
+    $("#sub-blog").hide();
+    $("#sub-FAQS").hide();
+    $("#sub-sanpham").hide();
+});
+
+//Cart 
+
+
+$(document).ready(function(){
+    $('#btnOpenCart').click(function(event){
+        event.stopPropagation();
+         $(".hd-cart-menu").slideToggle("fast");
+    });
+    $(".hd-cart-menu").on("click", function (event) {
+        event.stopPropagation();
+    });
+});
+
+$(document).on("click", function () {
+    $(".hd-cart-menu").hide();
+});
+
+$(document.getElementById('btnUserResLog')).bind("click", function () {
+    $(".hd-cart-menu").hide();
+    $("#sub-blog").hide();
+    $("#sub-FAQS").hide();
+    $("#sub-sanpham").hide();
+});
+
+
+
+
+
+
+
+
+
+
+
+

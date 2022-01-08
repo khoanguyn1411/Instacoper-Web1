@@ -301,7 +301,9 @@ p, li, button{
 #sub-chinhsach{
     display: none;
 }
-
+#sub-chude{
+    display: none;
+}
 /* Hàm Click toggle Subnav */
 
 .sub-nav>li{
