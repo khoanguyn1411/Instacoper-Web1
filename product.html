@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/base.css">
     <link rel="stylesheet" href="assets/css/product.css">
     <link rel="stylesheet" href="assets/css/radio.css">
-    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/footer.css">
+    <link rel="stylesheet" href="assets/css/base.css">
 
     <link href="https://fonts.googleapis.com/css?family=Poppins:600&display=swap" rel="stylesheet">
 	<script src="https://kit.fontawesome.com/a81368914c.js"></script>
@@ -16,184 +16,17 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;400&display=swap" rel="stylesheet">
     
-    
-    
-    <title>Instacoper || Sản phẩm</title>
+    <title>Document</title>
 </head>
 
 
+
 <body>
-    <div id="header" style="z-index: 500;">
-        <img src="/assets/img/Product1.png" alt="" id="logo" >
-            <div class="searhvia" onclick="firstFocus()">
-                <i class="fas fa-search" style="color: black;"></i>
-                <input type="text" placeholder="Tìm kiếm" id="searchValue">
-            </div>
-            <i class="fas fa-user" id="user">
-                
-            </i>
-            <i class="fas fa-cart-plus" id="cart" onclick="dropdowncart()">
-                <ul class="subcart" id="subcart">
-                    <li>
-                        <div class="cartlayout">
-                            <div class="productcart">
-                                <div class="productcart-shoes">
-                                    <img src="/assets/img/jordanXanh.jpg" alt="" srcset="" id="giaydemo1">
-                                </div>
-                                <div class="productcart-info">
-                                    <h3>Nike Jordan</h3>
-                                    <p>Giày nam</p>
-                                    <p>Size: 40</p>
-                                    <h5>2.649.000đ</h5>
-                                </div>
-                            </div>
-                            <i class="fas fa-times-circle" style="color:var(--secondary-color)"></i>
-                        </div>
-                        <div class="cart-btn">
-                            <button type="button" class="subcart-button" id="cart-btn">Giỏ hàng </button>
-                            <button type="button" class="subcart-button" id="pay-btn">Thanh toán </button>
-                        </div>
-                    </li>
-                 
-                </ul>
-            </i>
-    </div>
-
-
-    <div class="content">
-        <div style="height: 80px;"></div>
-        <div id="nav">
-            <i class="fas fa-bars" id="portfolio-bar" onclick="openNav()"> &nbsp; Danh mục sản phẩm</i>
-            <div id="mySidebar" class="sidebar">
-                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
-                <button class="dropdown-btn">
-                    <i class="fa fa-caret-down"></i>
-                    Thương hiệu   
-                  </button>
-                <div class="dropdown-container">
-                    <a href="#">Nike</a>
-                    <a href="#">Adidas</a>
-                    <a href="#">Converse</a>
-                    <a href="#">VANS</a>
-                    <a href="#">New Blance</a>
-                    <a href="#">MLB</a>
-                    <a href="#">Puma</a>
-                    <a href="#">Asics</a>
-                    <a href="#">Skechers</a>
-                  </div>
-                <a href="#">Khuyến mãi</a>
-                <a href="#">Hàng mới về</a>
-                <a href="#">Bán chạy nhất</a>
-                <a href="#">Sneaker nữ</a>
-                <button class="dropdown-btn">
-                    <i class="fa fa-caret-down"></i>
-                    Phụ kiện 
-                  </button>
-                <div class="dropdown-container">
-                    <a href="#">Tất/vớ</a>
-                    <a href="#">Dây giày</a>
-                    <a href="#">Stickers</a>
-                  </div>
-              </div>               
-        <ul class="nav" id="mynav">
-            <li>
-                <a href="">Trang Chủ</a>
-            </li>
-            <li>
-                <div class="subnav">
-                    <a href="#" onclick="dropdownSPnav()" class="dropbtn" id="SPsubnav">Sản phẩm <i class="fas fa-chevron-down"></i> </a>
-                    <div class="subnav-content" id="subnavSp">
-                        <div class="thirnav">
-                            <a href="#" onclick="dropdownSPnavBrand()"><i class="fas fa-caret-right""></i> Thương hiệu</a>
-                            <div class="thirdnav-content" id="BranchSP">
-                                <a href="#"><i class="fas fa-caret-right"></i> Nike</a>
-                                <a href="#"><i class="fas fa-caret-right"></i> Adidas</a>
-                                <a href="#"><i class="fas fa-caret-right"></i> Converse</a>
-                                <a href="#"><i class="fas fa-caret-right"></i> VANS</a>
-                                <a href="#"><i class="fas fa-caret-right"></i> New Blance</a>
-                                <a href="#"><i class="fas fa-caret-right"></i> MLB</a>
-                                <a href="#"><i class="fas fa-caret-right"></i> Puma</a>
-                                <a href="#"><i class="fas fa-caret-right"></i> Asics</a>
-                                <a href="#"><i class="fas fa-caret-right"></i> Skechers</a>
-                            </div>
-                        </div>
-                        <a href="#"><i class="fas fa-caret-right"></i> Khuyến mãi</a>
-                        <a href="#"><i class="fas fa-caret-right"></i> Hàng mới về</a>
-                        <a href="#"><i class="fas fa-caret-right"></i> Bán chạy nhất</a>
-                        <a href="#"><i class="fas fa-caret-right"></i> Sneaker nam</a>
-                        <a href="#"><i class="fas fa-caret-right"></i> Sneaker nữ</a>
-                        <div class="thirnav">
-                            <a href="#" onclick="dropdownSPPhuKien()"><i class="fas fa-caret-right"></i> Phụ kiện</a>
-                            <div class="thirdnav-content" id="PhuKienSP">
-                                <a href="#"><i class="fas fa-caret-right"></i> Tất/Vớ</a>
-                                <a href="#"><i class="fas fa-caret-right"></i> Dây giày</a>
-                                <a href="#"><i class="fas fa-caret-right"></i> Stickers</a>
-                            </div>
-                        </div>
-                      </div>
-                </div>                    
-            </li>
-            <li>
-                <div class="subnav">
-                    <a href="#" onclick="dropdownBlognav()" class="dropbtn" id="Blogsubnav">Blog <i class="fas fa-chevron-down"></i></a>
-                    <div class="subnav-content" id="subnavBlog">
-                        <div class="thirnav">
-                            <a href="#" onclick="dropdownBlogChude()"><i class="fas fa-caret-right"></i> Chủ đề</a>
-                            <div class="thirdnav-content" id="ChuDeBlog">
-                                <a href="#"><i class="fas fa-caret-right"></i> Instacoper News</a>
-                                <a href="#"><i class="fas fa-caret-right"></i> Xu hướng thời trang</a>
-                                <a href="#"><i class="fas fa-caret-right"></i> Sao & Styles</a>
-                                <a href="#"><i class="fas fa-caret-right"></i> Tin tức thời trang</a>
-                                <a href="#"><i class="fas fa-caret-right"></i> Sneaker Tips</a>
-                            </div>
-                        </div>
-                        <a href="#"><i class="fas fa-caret-right"></i> Blog mới nhất</a>
-                        <a href="#"><i class="fas fa-caret-right"></i> Xem nhiều nhất</a>
-                      </div>
-                </div>
-            </li>
-            <li>
-                <div class="subnav">
-                    <a href="#" onclick="dropdownFAQnav()" class="dropbtn" id="FAQsubnav" >FAQ <i class="fas fa-chevron-down"></i></a>
-                    <div class="subnav-content" id="subnavFAQ">
-                        <div class="thirnav">
-                            <a href="#"><i class="fas fa-caret-right"></i> Hỗ trợ khách hàng</a>
-                            <div class="thirdnav-content">
-                                <a href="#"><i class="fas fa-caret-right"></i> Hướng dẫn mua hàng</a>
-                                <a href="#"><i class="fas fa-caret-right"></i> Hướng dẫn thanh toán</a>
-                                <a href="#"><i class="fas fa-caret-right"></i> Giao hàng & vận chuyển</a>
-                                <a href="#"><i class="fas fa-caret-right"></i> Hướng dẫn chọn size</a>
-                                <a href="#"><i class="fas fa-caret-right"></i> Theo dõi đơn hàng</a>
-                            </div>
-                        </div>
-                        <div class="thirnav">
-                            <a href="#" onclick="dropdownChinhSach()"><i class="fas fa-caret-right"></i> Chính sách</a>
-                            <div class="thirdnav-content" id="FAQChinhSach">
-                                <a href="#"><i class="fas fa-caret-right"></i> Chính sách bảo mật</a>
-                                <a href="#"><i class="fas fa-caret-right"></i> Chính sách đổi trả</a>
-                                <a href="#"><i class="fas fa-caret-right"></i> Cam kết & Bảo hành</a>
-                            </div>
-                        </div>
-                        <a href="#"><i class="fas fa-caret-right"></i> Liên hệ</a>
-                      </div>
-                </div>
-            </li>
-            <li>
-                <div class="subnav">
-                    <a href=""> Về chúng tôi</a>            
-                </div>
-            </li>
-            <!-- <li>
-                <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
-            </li> -->
-        </ul>
-    </div>
-<hr style="width: 100rem;">    
+    
+    <div class="wrapper">
         <div class="top-side">
-            <div class="top-side-main">
-                <div class="top-content-left-spacing"></div>
                 <div class="top-content-left">
-                    <div class="wrapper">
+                    <div class="outside">
                         <input type="radio" name = "cate" id = "allPro" checked>
                         <label for = "allPro">Tất cả</label>
     
@@ -218,21 +51,20 @@
                         <input type="radio" name = "cate" id = "converse">
                         <label for = "converse">Converse</label>
     
-                        <!-- <input type="radio" name = "cate" id = "VANS">
+                        <input type="radio" name = "cate" id = "VANS">
                         <label for = "VANS">VANS</label>
     
                         <input type="radio" name = "cate" id = "newBal">
                         <label for = "newBal">New Balance</label>
     
                         <input type="radio" name = "cate" id = "MLB">
-                        <label for = "MLB">MLB</label> -->
+                        <label for = "MLB">MLB</label>
                     </div>
                    
                     
                 </div>
-
-                <div class="top-content-right-spacing"></div>
-
+    
+    
                 <div class="top-content-right">
                     <div id="sort-by">
                         <img src="assets/img/down_arrow.svg">
@@ -248,72 +80,11 @@
                         <div id="hiddenFilter">Ẩn bộ lọc</div>
                     </div>
                  
-                    <script> 
-                        btns = document.getElementById("filter");
-                        btnSort = document.getElementById("sort-by");
-
-                        btns.addEventListener("click", function () {
-
-                            var displayFilter = document.getElementById("lsm");
-                            var mainside = document.getElementById("ms");
-                            var spr = document.getElementById("spr");
-                            var xemThem = document.getElementById("xemThem");
-                            var width = screen.width;
-                            if(displayFilter.style.display === "none"){
-                                mainside.style.width = "75%";
-                                mainside.style.marginLeft = "0px";
-                                mainside.style.height = "1100px";
-                                displayFilter.style.display = "block";
-                                spr.style.display = "block";
-                                xemThem.style.borderLeft = "0.75px";
-                            }
-                            else {
-                                displayFilter.style.display ="none";
-                                mainside.style.width = "97%";
-                                mainside.style.height = "1300px";
-                                mainside.style.marginLeft = "38px";
-                                spr.style.display = "none";
-                                xemThem.style.borderLeft = "0px";
-                            }
-                            
-                       });
-
-                       btnSort.addEventListener("click", function () {
-                            var displaySort = document.getElementById("sbt");
-                            if(displaySort.style.display === "none"){
-                                displaySort.style.display = "block";
-                            }
-                            else {
-                                displaySort.style.display ="none";
-                                }
-                            });
-                   </script>
-                    
-                    <!-- <script> 
-                        
-                        function reportWindowSize() {
-                            var width = window.innerHeight;
-                            var displayFilter = document.getElementById("lsm");
-                            var spr = document.getElementById("spr");
-                            var mainside = document.getElementById("ms");
-                            var item = document.getElementsByClassName("item");
-                            if(width<520){
-                                displayFilter.style.display = 'none';
-                            }
-
-                            else{
-                                displayFilter.style.display = 'block';
-
-                            }
-                        }
-                        window.onresize = reportWindowSize;
-                   </script> -->
                 </div>
-
-
-            </div>
-        </div>
     
+    
+        </div>
+
         <div class="left-side" id="lsm">
             <div class = "left-side-main">
                 <div class="nhanhieu">
@@ -466,405 +237,445 @@
                 
             </div>
         </div>
-    
+
         <div class="main-side" id="ms">
-            <div class="seperate" id="spr"></div>
-            <div class="product-shopping">
-                <div class="content-product">
-                    
-                    <div class="item">
-                        <div class="img">
-                            <img src="assets/img/shoes/1.png">
-                            <div class="xemnhanh"></div>
-                            <div class="xemnhanh-content">Xem nhanh</div>
-                        </div>
-                        <div class="text">
-                            <div class="title">Bestseller</div>
-                            <div class="name">Nike Air Force 1 Low</div>
-                            <div class="gender">Giày nam</div>
-                            <div class="price">
-                                <div class="aft-price">2.649.000₫</div>
-                            </div>
-                            <div class="discount"></div>
-                        </div>
-                     
+            <div class="content-product" id="ctp">
+                <div class="item">
+                    <div class="img">
+                        <img src="assets/img/shoes/1.png">
+                        <div class="xemnhanh"></div>
+                        <div class="xemnhanh-content">Xem nhanh</div>
                     </div>
-
-                    <div class="item">
-                        <div class="img">
-                            <img src="assets/img/shoes/2.png">
-                            <div class="xemnhanh"></div>
-                            <div class="xemnhanh-content">Xem nhanh</div>
+                    <div class="text">
+                        <div class="title">Bestseller</div>
+                        <div class="name">Nike Air Force 1 Low</div>
+                        <div class="gender">Giày nam</div>
+                        <div class="price">
+                            <div class="aft-price">2.649.000₫</div>
                         </div>
-                        <div class="text">
-                            <div class="name">Nike Air Max 90</div>
-                            <div class="gender">Giày nam</div>
-                            <div class="price">4.109.000₫</div>
-                        </div>
+                        <div class="discount"></div>
                     </div>
-
-                    <div class="item">
-                        <div class="img">
-                            <img src="assets/img/shoes/3.png">
-                            <div class="xemnhanh"></div>
-                            <div class="xemnhanh-content">Xem nhanh</div>
-                        </div>
-                        <div class="text">
-                            <div class="title">Bestseller</div>
-                            <div class="name">Nike Air Max 95</div>
-                            <div class="gender">Giày nữ</div>
-                            <div class="price">
-                                <div class="aft-price">4.751.099₫</div>
-                                <div class="pre-price">4.275.989₫</div>
-
-                            </div>
-                            <div class="sale">10% off</div>
-                        </div>
-                    </div>
-
-                    <div class="item">
-                        <div class="img">
-                            <img src="assets/img/shoes/Hình 3.1.png">
-                            <div class="xemnhanh"></div>
-                            <div class="xemnhanh-content">Xem nhanh</div>
-                        </div>
-                        <div class="text">
-                            <div class="title">Sản phẩm mới</div>
-                            <div class="name">Jordan Zoom Separate PF</div>
-                            <div class="gender">Giày nam</div>
-                            <div class="price">
-                                <div class="aft-price">4.751.099₫</div>
-                                <div class="pre-price">4.275.989₫</div>
-                            </div>
-                            <div class="sale">10% off</div>
-                        </div>
-                    </div>
-
-                    <div class="item">
-                        <div class="img">
-                            <img src="assets/img/shoes/4.png">
-                            <div class="xemnhanh"></div>
-                            <div class="xemnhanh-content">Xem nhanh</div>
-                        </div>
-                        <div class="text">
-                            <div class="name">Nike Air Zoom Pegasus 38</div>
-                            <div class="gender">Giày nữ</div>
-                            <div class="price">3.519.000₫</div>
-                        </div>
-                    </div>
-
-                    <div class="item">
-                        <div class="img">
-                            <img src="assets/img/shoes/5.png">
-                            <div class="xemnhanh"></div>
-                            <div class="xemnhanh-content">Xem nhanh</div>
-                        </div>
-                        <div class="text">
-                            <div class="title">Bestseller</div>
-                            <div class="name">Adidas Continental 80</div>
-                            <div class="gender">Giày nam</div>
-                            <div class="price">
-                                <div class="aft-price">2.699.000₫</div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="item">
-                        <div class="img">
-                            <img src="assets/img/shoes/6.png">
-                            <div class="xemnhanh"></div>
-                            <div class="xemnhanh-content">Xem nhanh</div>
-                        </div>
-                        <div class="text">
-                            <div class="name">Adidas NMD R1</div>
-                            <div class="gender">Giày nam</div>
-                            <div class="price">
-                                <div class="aft-price">3.330.000₫</div>
-                                <div class="pre-price">3.700.000₫</div>
-                            </div>
-                            <div class="sale">10% off</div>
-                        </div>
-                    </div>
-
-                    <div class="item">
-                        <div class="img">
-                            <img src="assets/img/shoes/7.png">
-                            <div class="xemnhanh"></div>
-                            <div class="xemnhanh-content">Xem nhanh</div>
-                        </div>
-                        <div class="text">
-                            <div class="name">Adidas Forum Exhibit Low</div>
-                            <div class="gender">Giày nữ</div>
-                            <div class="price">2.450.000₫</div>
-                            <div class="sale">15% off</div>
-                        </div>
-                    </div>
-
-                    <div class="item">
-                        <div class="img">
-                            <img src="assets/img/shoes/8.png">
-                            <div class="xemnhanh"></div>
-                            <div class="xemnhanh-content">Xem nhanh</div>
-                        </div>
-                        <div class="text">
-                            <div class="name">Adidas ZX 2K Boost Pure</div>
-                            <div class="gender">Giày nữ</div>
-                            <div class="price">
-                                <div class="aft-price">3.145.0000₫</div>
-                                <div class="pre-price"> 3.700.000₫</div>
-                            </div>
-                            <div class="sale">15% off</div>
-                        </div>
-                    </div>
-
-                    <div class="item">
-                        <div class="img">
-                            <img src="assets/img/shoes/9.png">
-                            <div class="xemnhanh"></div>
-                            <div class="xemnhanh-content">Xem nhanh</div>
-                        </div>
-                        <div class="text">
-                            <div class="name">Adidas Ultraboost 21</div>
-                            <div class="gender">Giày nam</div>
-                            <div class="price">4.999.000₫</div>
-                        </div>
-                    </div>
-
-                    <div class="item">
-                        <div class="img">
-                            <img src="assets/img/shoes/10.png">
-                            <div class="xemnhanh"></div>
-                            <div class="xemnhanh-content">Xem nhanh</div>
-                        </div>
-                        <div class="text">
-                            <div class="title">Bestseller</div>
-                            <div class="name">Converse Chuck Taylor Classic</div>
-                            <div class="gender">Giày nam</div>
-                            <div class="price">1.450.000₫</div>
-                        </div>
-                    </div>
-
-                    <div class="item">
-                        <div class="img">
-                            <img src="assets/img/shoes/11.png">
-                            <div class="xemnhanh"></div>
-                            <div class="xemnhanh-content">Xem nhanh</div>
-                        </div>
-                        <div class="text">
-                            <div class="title">Bestseller</div>
-                            <div class="name">Nike Air Force 1 Low</div>
-                            <div class="gender">Giày nam</div>
-                            <div class="price">
-                                <div class="aft-price">1.330.000₫</div>
-                                <div class="pre-price"> 1.900.000₫</div>
-                            </div>
-                            <div class="sale">30% off</div>
-                        </div>
-                    </div>
-
-                    <div class="item">
-                        <div class="img">
-                            <img src="assets/img/shoes/12.png">
-                            <div class="xemnhanh"></div>
-                            <div class="xemnhanh-content">Xem nhanh</div>
-                        </div>
-                        <div class="text">
-                            <div class="name">Converse x Keith Haring Run Star Hike High-Top</div>
-                            <div class="gender">Giày nữ</div>
-                            <div class="price">2.499.000₫</div>
-                        </div>
-                    </div>
-
-                    <div class="item">
-                        <div class="img">
-                            <img src="assets/img/shoes/13.png">
-                            <div class="xemnhanh"></div>
-                            <div class="xemnhanh-content">Xem nhanh</div>
-                        </div>
-                        <div class="text">
-                            <div class="title">Sản phẩm mới</div>
-                            <div class="name">Converse Chuck 70 Pride</div>
-                            <div class="gender">Giày nữ</div>
-                            <div class="price">
-                                <div class="aft-price">3.145.000₫</div>
-                                <div class="pre-price">3.700.000₫</div>
-                            </div>
-                            <div class="sale">15% off</div>
-                        </div>
-                    </div>
-
-                    <div class="item">
-                        <div class="img">
-                            <img src="assets/img/shoes/14.png">
-                            <div class="xemnhanh"></div>
-                            <div class="xemnhanh-content">Xem nhanh</div>
-                        </div>
-                        <div class="text">
-                            <div class="name">Chuck Taylor All Star Renew Canvas</div>
-                            <div class="gender">Giày nam</div>
-                            <div class="price">4.999.000₫</div>
-                        </div>
-                    </div>
-
-                    <div class="item">
-                        <div class="img">
-                            <img src="assets/img/shoes/15.png">
-                            <div class="xemnhanh"></div>
-                            <div class="xemnhanh-content">Xem nhanh</div>
-                        </div>
-                        <div class="text">
-                            <div class="title">Bestseller</div>
-                            <div class="name">VANS Old Skool Classic</div>
-                            <div class="gender">Giày nam</div>
-                            <div class="price">1.490.000₫</div>
-                        </div>
-                    </div>
-
-                    <div class="item">
-                        <div class="img">
-                            <img src="assets/img/shoes/16.png">
-                            <div class="xemnhanh"></div>
-                            <div class="xemnhanh-content">Xem nhanh</div>
-                        </div>
-                        <div class="text">
-                            <div class="name">VANS Vault OG Classic Slip On Checkerboard/Off White</div>
-                            <div class="gender">Giày nam</div>
-                            <div class="price">
-                                <div class="aft-price">2.340.000₫</div>
-                                <div class="pre-price">2.600.000₫</div>
-                            </div>
-                            <div class="sale">10% off</div>
-                        </div>
-                    </div>
-
-                    <div class="item">
-                        <div class="img">
-                            <img src="assets/img/shoes/17.png">
-                            <div class="xemnhanh"></div>
-                            <div class="xemnhanh-content">Xem nhanh</div>
-                        </div>
-                        <div class="text">
-                            <div class="name">VANS Vault OG Authentic LX Chili Pepper Red</div>
-                            <div class="gender">Giày nữ</div>
-                            <div class="price">2.450.000₫</div>
-                        </div>
-                    </div>
-
-                    <div class="item">
-                        <div class="img">
-                            <img src="assets/img/shoes/18.png">
-                            <div class="xemnhanh"></div>
-                            <div class="xemnhanh-content">Xem nhanh</div>
-                        </div>
-                        <div class="text">
-                            <div class="title">Sản phẩm mới</div>
-                            <div class="name">VANS Flame SK8-HI Reissue</div>
-                            <div class="gender">Giày nam</div>
-                            <div class="price">1.900.000₫</div>
-                        </div>
-                    </div>
-
-                    <div class="item">
-                        <div class="img">
-                            <img src="assets/img/shoes/20.png">
-                            <div class="xemnhanh"></div>
-                            <div class="xemnhanh-content">Xem nhanh</div>
-                        </div>
-                        <div class="text">
-                            <div class="name">VANS Era Packing Tape Black</div>
-                            <div class="gender">Giày nữ</div>
-                            <div class="price">1.800.000đ</div>
-                        </div>
-                    </div>
-
-                    
-
-               
-                
+                 
                 </div>
-                <script> 
-                 btns = document.getElementsByClassName("img");
+
+                <div class="item">
+                    <div class="img">
+                        <img src="assets/img/shoes/2.png">
+                        <div class="xemnhanh"></div>
+                        <div class="xemnhanh-content">Xem nhanh</div>
+                    </div>
+                    <div class="text">
+                        <div class="name">Nike Air Max 90</div>
+                        <div class="gender">Giày nam</div>
+                        <div class="price">4.109.000₫</div>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="img">
+                        <img src="assets/img/shoes/3.png">
+                        <div class="xemnhanh"></div>
+                        <div class="xemnhanh-content">Xem nhanh</div>
+                    </div>
+                    <div class="text">
+                        <div class="title">Bestseller</div>
+                        <div class="name">Nike Air Max 95</div>
+                        <div class="gender">Giày nữ</div>
+                        <div class="price">
+                            <div class="aft-price">4.751.099₫</div>
+                            <div class="pre-price">4.275.989₫</div>
+
+                        </div>
+                        <div class="sale">10% off</div>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="img">
+                        <img src="assets/img/shoes/Hình 3.1.png">
+                        <div class="xemnhanh"></div>
+                        <div class="xemnhanh-content">Xem nhanh</div>
+                    </div>
+                    <div class="text">
+                        <div class="title">Sản phẩm mới</div>
+                        <div class="name">Jordan Zoom Separate PF</div>
+                        <div class="gender">Giày nam</div>
+                        <div class="price">
+                            <div class="aft-price">4.751.099₫</div>
+                            <div class="pre-price">4.275.989₫</div>
+                        </div>
+                        <div class="sale">10% off</div>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="img">
+                        <img src="assets/img/shoes/4.png">
+                        <div class="xemnhanh"></div>
+                        <div class="xemnhanh-content">Xem nhanh</div>
+                    </div>
+                    <div class="text">
+                        <div class="name">Nike Air Zoom Pegasus 38</div>
+                        <div class="gender">Giày nữ</div>
+                        <div class="price">3.519.000₫</div>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="img">
+                        <img src="assets/img/shoes/5.png">
+                        <div class="xemnhanh"></div>
+                        <div class="xemnhanh-content">Xem nhanh</div>
+                    </div>
+                    <div class="text">
+                        <div class="title">Bestseller</div>
+                        <div class="name">Adidas Continental 80</div>
+                        <div class="gender">Giày nam</div>
+                        <div class="price">
+                            <div class="aft-price">2.699.000₫</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="img">
+                        <img src="assets/img/shoes/6.png">
+                        <div class="xemnhanh"></div>
+                        <div class="xemnhanh-content">Xem nhanh</div>
+                    </div>
+                    <div class="text">
+                        <div class="name">Adidas NMD R1</div>
+                        <div class="gender">Giày nam</div>
+                        <div class="price">
+                            <div class="aft-price">3.330.000₫</div>
+                            <div class="pre-price">3.700.000₫</div>
+                        </div>
+                        <div class="sale">10% off</div>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="img">
+                        <img src="assets/img/shoes/7.png">
+                        <div class="xemnhanh"></div>
+                        <div class="xemnhanh-content">Xem nhanh</div>
+                    </div>
+                    <div class="text">
+                        <div class="name">Adidas Forum Exhibit Low</div>
+                        <div class="gender">Giày nữ</div>
+                        <div class="price">2.450.000₫</div>
+                        <div class="sale">15% off</div>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="img">
+                        <img src="assets/img/shoes/8.png">
+                        <div class="xemnhanh"></div>
+                        <div class="xemnhanh-content">Xem nhanh</div>
+                    </div>
+                    <div class="text">
+                        <div class="name">Adidas ZX 2K Boost Pure</div>
+                        <div class="gender">Giày nữ</div>
+                        <div class="price">
+                            <div class="aft-price">3.145.0000₫</div>
+                            <div class="pre-price"> 3.700.000₫</div>
+                        </div>
+                        <div class="sale">15% off</div>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="img">
+                        <img src="assets/img/shoes/9.png">
+                        <div class="xemnhanh"></div>
+                        <div class="xemnhanh-content">Xem nhanh</div>
+                    </div>
+                    <div class="text">
+                        <div class="name">Adidas Ultraboost 21</div>
+                        <div class="gender">Giày nam</div>
+                        <div class="price">4.999.000₫</div>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="img">
+                        <img src="assets/img/shoes/10.png">
+                        <div class="xemnhanh"></div>
+                        <div class="xemnhanh-content">Xem nhanh</div>
+                    </div>
+                    <div class="text">
+                        <div class="title">Bestseller</div>
+                        <div class="name">Converse Chuck Taylor Classic</div>
+                        <div class="gender">Giày nam</div>
+                        <div class="price">1.450.000₫</div>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="img">
+                        <img src="assets/img/shoes/11.png">
+                        <div class="xemnhanh"></div>
+                        <div class="xemnhanh-content">Xem nhanh</div>
+                    </div>
+                    <div class="text">
+                        <div class="title">Bestseller</div>
+                        <div class="name">Nike Air Force 1 Low</div>
+                        <div class="gender">Giày nam</div>
+                        <div class="price">
+                            <div class="aft-price">1.330.000₫</div>
+                            <div class="pre-price"> 1.900.000₫</div>
+                        </div>
+                        <div class="sale">30% off</div>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="img">
+                        <img src="assets/img/shoes/12.png">
+                        <div class="xemnhanh"></div>
+                        <div class="xemnhanh-content">Xem nhanh</div>
+                    </div>
+                    <div class="text">
+                        <div class="name">Converse x Keith Haring Run Star Hike High-Top</div>
+                        <div class="gender">Giày nữ</div>
+                        <div class="price">2.499.000₫</div>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="img">
+                        <img src="assets/img/shoes/13.png">
+                        <div class="xemnhanh"></div>
+                        <div class="xemnhanh-content">Xem nhanh</div>
+                    </div>
+                    <div class="text">
+                        <div class="title">Sản phẩm mới</div>
+                        <div class="name">Converse Chuck 70 Pride</div>
+                        <div class="gender">Giày nữ</div>
+                        <div class="price">
+                            <div class="aft-price">3.145.000₫</div>
+                            <div class="pre-price">3.700.000₫</div>
+                        </div>
+                        <div class="sale">15% off</div>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="img">
+                        <img src="assets/img/shoes/14.png">
+                        <div class="xemnhanh"></div>
+                        <div class="xemnhanh-content">Xem nhanh</div>
+                    </div>
+                    <div class="text">
+                        <div class="name">Chuck Taylor All Star Renew Canvas</div>
+                        <div class="gender">Giày nam</div>
+                        <div class="price">4.999.000₫</div>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="img">
+                        <img src="assets/img/shoes/15.png">
+                        <div class="xemnhanh"></div>
+                        <div class="xemnhanh-content">Xem nhanh</div>
+                    </div>
+                    <div class="text">
+                        <div class="title">Bestseller</div>
+                        <div class="name">VANS Old Skool Classic</div>
+                        <div class="gender">Giày nam</div>
+                        <div class="price">1.490.000₫</div>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="img">
+                        <img src="assets/img/shoes/16.png">
+                        <div class="xemnhanh"></div>
+                        <div class="xemnhanh-content">Xem nhanh</div>
+                    </div>
+                    <div class="text">
+                        <div class="name">VANS Vault OG Classic Slip On Checkerboard/Off White</div>
+                        <div class="gender">Giày nam</div>
+                        <div class="price">
+                            <div class="aft-price">2.340.000₫</div>
+                            <div class="pre-price">2.600.000₫</div>
+                        </div>
+                        <div class="sale">10% off</div>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="img">
+                        <img src="assets/img/shoes/17.png">
+                        <div class="xemnhanh"></div>
+                        <div class="xemnhanh-content">Xem nhanh</div>
+                    </div>
+                    <div class="text">
+                        <div class="name">VANS Vault OG Authentic LX Chili Pepper Red</div>
+                        <div class="gender">Giày nữ</div>
+                        <div class="price">2.450.000₫</div>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="img">
+                        <img src="assets/img/shoes/18.png">
+                        <div class="xemnhanh"></div>
+                        <div class="xemnhanh-content">Xem nhanh</div>
+                    </div>
+                    <div class="text">
+                        <div class="title">Sản phẩm mới</div>
+                        <div class="name">VANS Flame SK8-HI Reissue</div>
+                        <div class="gender">Giày nam</div>
+                        <div class="price">1.900.000₫</div>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="img">
+                        <img src="assets/img/shoes/20.png">
+                        <div class="xemnhanh"></div>
+                        <div class="xemnhanh-content">Xem nhanh</div>
+                    </div>
+                    <div class="text">
+                        <div class="name">VANS Era Packing Tape Black</div>
+                        <div class="gender">Giày nữ</div>
+                        <div class="price">1.800.000đ</div>
+                    </div>
+                </div>
+            </div>
+            
+
+            <div class="watchmore"> Xem thêm
+            </div>
+        </div>
+
+    </div>
+    <script>
+        btns = document.getElementsByClassName("img");
                  for (var i = 0; i < btns.length; i++) {
                  btns[i].addEventListener("click", function () {
                     window.location = "detail-product.html";
                 });
             }
-            </script>
-               
-                
-            </div>
-
-            <div class="watchmore" id="xemThem">
-                <div class="">Xem thêm</div>
-                
-            </div>
-           
     
-        </div>
+    </script>
+   
+   <script> 
+   
+    btns = document.getElementById("filter");
+    btnSort = document.getElementById("sort-by");
+    var i;
+
+    btns.addEventListener("click", function () {
+
+        var displayFilter = document.getElementById("lsm");
+        var mainside = document.getElementById("ms");
+        var item = document.getElementsByClassName("item");
+        var contentProduct = document.getElementById("ctp");
+        var width = screen.width;
+        if(displayFilter.style.display === "none"){
+            mainside.style.width = "80%";
+            contentProduct.style.paddingLeft = "20px";
+            for(i =0; i<item.length;i++){
+                item[i].style.height = "275px";
+            }
+            displayFilter.style.display = "block";
+            mainside.style.borderLeft ="1px solid #bcbcbc";
+
+        }
+        else {
+            displayFilter.style.display ="none";
+            for(i =0; i<item.length;i++){
+                item[i].style.height = "320px";
+            }
+            mainside.style.width = "100%";
+            contentProduct.style.paddingLeft = "0px";
+            mainside.style.borderLeft ="none";
+
+        }
         
-    
-    
-    </div>
+   });
 
-    <script src="https://kit.fontawesome.com/a81368914c.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="js/main.js"></script>
-    <script src="js/header.js"></script>
-    <script src="js/danhmucSP.js"></script>
-    <script src="js/dropdownSubitem_Click.js"></script>
-    <script src="/js/dropdownSP.js"></script>
-    <script src="js/dropdownBlog.js"></script>
-    <script src="js/dropdownFAQ.js"></script>
+   btnSort.addEventListener("click", function () {
+        var displaySort = document.getElementById("sbt");
+        if(displaySort.style.display === "none"){
+            displaySort.style.display = "block";
+        }
+        else {
+            displaySort.style.display ="none";
+            }
+        });
+</script>
+
+    
 </body>
 
+
 <footer>
-    
-    <div id="footer">
-        <div class="contact">
-            <div class="contact-info">
-                <div class="text-info">                     
-                    <div class="footernav">
-                        <a href="#"><b>Trang chủ</b></a>
-                        <a href="#">Sản phẩm</a>
-                        <a href="#">Blogs</a>
-                        <a href="#">FAQs</a>
-                        <a href="#">Về chúng tôi</a>
-                    </div>  
-                    <div class="footernav">
-                        <p><b>Thông tin liên hệ</b></p> 
-                        <br>
-                        <p>Số 669 Quốc lộ 1, khu phố 3 <br>
-                            phường Linh Xuân, quận Thủ Đức <br>
-                            Thành phố Hồ Chí Minh
-                            </p>
-                            <br><br>
-                        <p>Email : support@instacoper.com</p>
-                        <p>Hotline: 0123456789</p>
-                    </div>
-                    <div class="footernav">
-                        <a href="#"><b>Hỗ trợ khách hàng</b></a>
-                        <br>
-                        <a href="#">Hướng dẫn mua hàng</a>
-                        <a href="#">Hướng dẫn thanh toán</a>
-                        <a href="#">Chính sách bảo mật</a>
-                        <a href="#">Chính sách đổi trả</a>
-                        <a href="#">Giao hàng & Vận chuyển</a>
-                    </div>                  
+    <div class="wrapper" style="padding-top: 20px; padding-bottom: 20px;">
+        <div class="footer-content">
+            <div class="footer-content-1">
+                <div class="ft-main-content">
+                    <ul>
+                        <li style="font-weight: bold;"><a href="index.html">Trang chủ</a></li>
+                        <li><a href="product.html">Sản phẩm</a></li>
+                        <li><a href="blog.html">Blogs</a></li>
+                        <li><a href="FAQ.html">FAQs</a></li>
+                        <li><a href="member.html">Về chúng tôi</a></li>
+                    </ul>          
                 </div>
-            <form class="contact-form">
-                <p>Đăng ký nhận thông tin mới nhất!</p>
-                <input type="text" id="email-input" required placeholder="Nhập Email của bạn tại đây">
-                <button type="submit">Đăng ký ngay!</button>
-            </form>
+            
             </div>
-            <hr>
-            <div class="payment-info">
-                <p>Hỗ trợ thanh toán</p>
-                <div id="payment-img">
-                    <img src="/assets/img/mastercard.svg" alt="">
-                    <img src="assets/img/Visapay.svg" alt="">
-                    <img src="assets/img/momo.svg" alt="">
-                    <img src="assets/img/VNpay.svg" alt="">                       
+
+            <div class="footer-content-2">
+                <div class="ft-main-content">
+                    <p  class="ft-title">Thông tin liên hệ</p> 
+                    <br>
+                    <p>Số 669 Quốc lộ 1, khu phố 3, phường Linh Xuân, quận Thủ Đức, Thành phố Hồ Chí Minh
+                        </p>
+                        <br/>
+                    <p>Email : support@instacoper.com</p>
+                    <p>Hotline: 0123456789</p>
+                </div>
+            </div>
+
+            <div class="footer-content-3">
+                <p class="ft-title" id="support">Hỗ trợ khách hàng</p>
+                <div class="ft-main-content">
+                    <ul class="ft-main-content">
+                        <li><a href="FAQ_HDMH.html">Hướng dẫn mua hàng </a></li>
+                        <li><a href="FAQ_HDTT.html">Hướng dẫn thanh toán</a></li>
+                        <li><a href="FAQ_CSBaoMat.html">Chính sách bảo mật</a></li>
+                        <li><a href="FAQ_DoiTra.html">Chính sách đổi trả</a></li>
+                        <li><a href="FAQ_GHVC.html">Giao hàng & Vận chuyển</a></li>
+                    </ul>          
+                </div>
+            </div>
+          
+        </div>
+
+        <div class="footer-register">
+            <div>
+                <p>Đăng ký nhận thông tin mới nhất!</p>
+                <form>
+                    <input required placeholder="Nhập email của bạn tại đây">
+                    <button>Đăng ký ngay!</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="footer-payment">
+            <div class="ft-seperate"></div>
+            <div class="ft-payment-content">
+                <div>Hỗ trợ thanh toán</div>
+                <div class="ft-img">
+                    <img src="assets/img/footer_order/image 1.svg">
+                    <img src="assets/img/footer_order/image 2.svg">
+                    <img src="assets/img/footer_order/image 3.svg">
+                    <img src="assets/img/footer_order/image 4.svg">
+                    <img src="assets/img/footer_order/image 5.png">
                 </div>
             </div>
         </div>

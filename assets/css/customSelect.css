@@ -94,3 +94,15 @@
   .select-items div:hover, .same-as-selected {
     background-color: #F68A94;
   }
+
+  
+@media only screen and (max-width: 46.1875em){
+  .select-selected {
+    font-size: 12px;
+
+  }
+
+  .select-items div{
+    font-size: 12px;
+  }
+}

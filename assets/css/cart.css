@@ -1,6 +1,7 @@
 
 .wrapper{
-    width: 1140px;
+    max-width: 1140px;
+    width: 100%;
     height: auto;
     margin:auto;
     padding: 0 20px;
@@ -15,6 +16,10 @@ div{
 
 .cart-top-content{
     display: block ;
+}
+
+p{
+    margin: 0;
 }
 
 /* CSS cho left content */
@@ -129,15 +134,15 @@ div{
 }
 
 .gender{
-    margin-top: -5px;
+    margin-top: 10px;
 }
 
 .size{
-    margin-top: -10px;
+    margin-top: 10px;
 }
 
 .quantity{
-    margin-top: -10px;
+    margin-top: 10px;
 
 }
 
@@ -151,7 +156,7 @@ div{
 
 
 .item-content .size p , .item-content .quantity p{
-    width: 17%;
+    width: 30%;
 
 }
 
@@ -205,6 +210,8 @@ div{
     float: right;
     width: 75%;
     height: 30%;
+    background-color: #FAFAFA;
+    padding: 20px 20px 100px 20px;
 }
 
 .right-content-wrapper p4{
@@ -338,6 +345,7 @@ div{
         height: auto;
         margin:auto;
         padding: 0px 10px;
+        min-width: 300px;
     }
 
   
@@ -410,4 +418,117 @@ div{
         height: 50px;
     }
     
+}
+
+@media only screen and (min-width: 46.187em) and (max-width: 1023px){
+
+    p{
+        font-size: 14px;
+    }
+    
+    /* -- Tên giày */
+    p1{
+        font-size: 32px;
+    }
+    /* -- Giới tính */
+    p2{
+        font-size: 22px;
+    }
+    
+    /* -- Price */
+    p3{
+        font-size: 25px;
+    }
+    
+    p4{
+        font-size: 15px;
+    }
+    
+    /* normal text */
+    p5{
+        font-size: 15px;
+    }
+    
+    p6{
+        font-size: 16px;
+        font-weight: 600;
+    }
+
+    .wrapper{
+        width: 100%;
+        height: auto;
+        margin:auto;
+        padding: 0px 10px;
+    }
+
+  
+    .right-content-wrapper p4{
+        font-size: 18px;
+    }
+
+    .item-content p4{
+        font-size: 20px;
+    }
+
+    .item-content .name{
+        margin-top: 0;
+    }
+
+    .item .item-content >div:last-child >div >div {
+        width: 100%;
+        text-align: center;
+        margin-top: -5px;
+    }
+
+    .item .item-content >div:last-child {
+        height: 100%;
+        width: 20%;
+    }
+
+    .item-content .size select{
+        font-size: 15px;
+    
+    }
+
+    .item-content .quantity input{
+        font-size: 15px;
+    
+    }
+    
+    .item-content .size select option{
+        font-size: 15px;
+    }
+    
+
+
+    .left-content {
+        width: 100%;
+    }
+
+    .item-content .size p , .item-content .quantity p{
+        width: inherit;
+    
+    }
+
+    .left-content{
+        width: 100%;
+        height: inherit;
+        float: left;
+    }
+
+    
+
+    .right-content{
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .right-content-wrapper{
+        width: 100%;
+        padding-bottom: 20px;
+    }
+
+    .bottom-content{
+        height: 50px;
+    }
 }

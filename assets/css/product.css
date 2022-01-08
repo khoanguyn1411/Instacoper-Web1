@@ -1,25 +1,26 @@
 
 
-
-
-.content{
-    width: 1250px;
+.wrapper{
+    width: 100%;
+    max-width: 1140px;
     height: auto;
     margin: auto;
+    padding: 0 20px;
+    box-sizing: border-box;
 }
+
 
 body{
     width: 100%;
     float: left;
 }
 
-footer{
-    width: 100%;
-    float: left;
-    margin-top: 100px;
 
+.top-content-left .outside{
+    width: 1140px;
+    height: auto;
+    margin: auto;
 }
-
   
 .top-side{
     width: 100%;
@@ -30,47 +31,48 @@ footer{
 
 }
 
-.top-side-main{
-    width: 100%;
-    display: flex;
-    align-items: center;
-
-    
-
-}
 
 
 div, input{
     font-family: 'Source Sans Pro', sans-serif;
 }
 
-.top-content-left-spacing{
-    width: 5%;
-    height: 35%;
-    float: left;
 
-}
 
 .top-content-left{
-    width: 55%;
-    max-height: 35%;
+    width: 100%;
     float: left;
     line-height: 2;
+    overflow-x: hidden;
+    
 }
-
-
-
-
 
 
 
 
 .top-content-right{
-    float: right;
+    float: left;
     height: 35%;
-    width: 37.5%;
+    width: 100%;
+    box-sizing: border-box;
 
 
+}
+
+#sort-by{
+    position: relative;
+}
+
+.top-content-right .sort-by-type{
+    display: none;
+    background-color: #FAFBFB;
+    position: absolute;
+    right: 0;
+    border: 1px solid #BCBCBC;
+    margin-top: 30px;
+    list-style-type: none;
+    padding: 7px;
+    z-index: 200;
 }
 
 
@@ -78,6 +80,7 @@ div, input{
     width: fit-content;
     float: right;
     margin-left: 15px;
+
   
 }
 
@@ -91,39 +94,21 @@ div, input{
 
 
 
-.top-content-right .sort-by-type{
-    display: none;
-    background-color: #FAFBFB;
-    position: absolute;
-    margin-left: 353px;
-    border: 1px solid #BCBCBC;
-    margin-top: 30px;
-    list-style-type: none;
-    padding: 7px;
+
+
+div, input{
+    font-family: 'Source Sans Pro', sans-serif;
 }
 
-
-
-
-
-
-
-
 .left-side{
-    width: 25%;
-    height: 600px;
+    width: 20%;
     float: left;
+    height: auto;
 
     
 }
 
-.left-side-main{
-    width: 80%;
-    height: inherit;
-    float: right;
-    display: block;
 
-}
 
 
 /* CSS cho chung cho 4 search fields */
@@ -131,7 +116,8 @@ div, input{
     float: left;
     width: fit-content;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 17px;
+    margin-top: 10px;
 }
 
 .img-title{
@@ -161,7 +147,7 @@ div, input{
 
 /* CSS cho nhãn hiệu */
 .nhanhieu{
-    height: 280px;
+    height: auto;
     width: 100%;
 
 }
@@ -174,7 +160,7 @@ div, input{
 
 /* CSS cho khoảng giá */
 .khoanggia{
-    height: 95px;
+    height: auto;
     width: 100%;
     
 }
@@ -264,7 +250,7 @@ div, input{
 
 /* CSS cho size */
 .size{
-    height: 150px;
+    height: auto;
     width: 100%;
 }
 .content-size{
@@ -279,7 +265,7 @@ div, input{
 
 /* CSS cho giới tính */
 .gioitinh{
-    height: 150px;
+    height: auto;
     width: 100%;
     margin-top: 15px;
 }
@@ -290,45 +276,31 @@ div, input{
     float: left;
 }
 
+/* CSS cho product side */
 
-
-
-
-/* CSS cho main side */
 .main-side{
-    width: 75%;
-    height: 1100px;
+    width: 80%;
+    height: auto;
     float: left;
-}
-
-.main-side .seperate{
-    width: 1px;
-    height: 100%;
-    float: left;
-    background-color: rgba(188, 188, 188, 1);
-}
-.product-shopping{
-    width: 99%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-}
-
-.content-product{
-    width: 97%;
-    height: 100%;
-}
-
-
-.content-product .item{
-    float: left;
-    width: 20%;
-    height: 25%;
-    padding: 8px;
+    border-left: 1px solid rgba(188, 188, 188, 1);
     box-sizing: border-box;
 }
 
+.content-product{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    padding-left: 20px;
 
+}
+
+.item{
+    height: 275px;
+    width: 19%;
+    margin-top: 10px;
+    box-sizing: border-box;
+}
 
 
 
@@ -458,98 +430,201 @@ div, input{
 
 }
 
-/* 
-Xem thêm */
 .watchmore{
     height: 100px;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    border-left: 0.75px solid rgba(188, 188, 188, 1);
-
-}
-
-.watchmore div{
     text-decoration: underline;
     font-weight: bold;
-   
-}
-
-
-
-/* Mobile reponsive */
-
-
-
-
-@media only screen and  (min-width: 46.1875em) and (max-width: 65.1875em){
-    
-
 
 }
 
-
-@media only screen and (max-width: 46.1875em){
-
-    
-    
-    .content{
+@media only screen and (min-width: 950px) and (max-width: 1023px){
+    .wrapper{
         width: 100%;
-        height: auto;
-        margin: auto;
-    }
-    footer{
-        width: 100%;
-        float: left;
-        margin-top: 100px;
-    
     }
 
-    .main-side .seperate{
+    .item{
+        width: 23.5%;
+        height: 280px;
+    }
+    .content-product .item .img:hover .xemnhanh{
         display: none;
     }
-
-    .watchmore{
-        border-left: none;
-    }
-
-   
-    .main-side{
-        height: 8650px;
-    }
-    .content{
-        width: 100%;
-        height: auto;
-        background-color: red;
-        margin: auto;
-    }
     
-    .content-product{
-        display: block;
-        text-align: center;
-        justify-content: center;
-        width: initial;
-        height: 1700px;
-    }
-
-    .content-product .item{
-        display: block;
-        float: none;
-        width: 100%;
-        height: 25%;
-    }
-  
-    .top-side{
+    .content-product .item .img:hover .xemnhanh-content{
         display: none;
+
+    }
+}
+
+@media only screen  and (min-width: 594px) and (max-width: 949px){
+    .wrapper{
+        width: 100%;
     }
     .left-side{
         display: none;
-    }   
+    }
+
+    #filter{
+        display: none;
+    }
+
+
+
 
     .main-side{
         width: 100%;
+        border-left: none;
+    }
+
+    .content-product{
+        padding-left: 0;
+    }
+
+    .item{
+        width: 24%;
+        height: 300px;
+      
+    }
+    .content-product .item .img:hover .xemnhanh{
+        display: none;
     }
     
+    .content-product .item .img:hover .xemnhanh-content{
+        display: none;
+
+    }
 }
+@media only screen  and (min-width: 460px) and (max-width: 593px){
+    .wrapper{
+        width: 100%;
+    }
+    .left-side{
+        display: none;
+    }
+
+    #filter{
+        display: none;
+    }
+
+
+    .content-product .item .img:hover .xemnhanh{
+        display: none;
+    }
+    
+    .content-product .item .img:hover .xemnhanh-content{
+        display: none;
+
+    }
+
+    .main-side{
+        width: 100%;
+        border-left: none;
+    }
+
+    .content-product{
+        padding-left: 0;
+    }
+
+    .item{
+        width: 48%;
+        min-height: 370px;
+    }
+}
+
+
+@media only screen and (min-width: 320px) and (max-width: 460px){
+    .wrapper{
+        width: 100%;
+        min-width: 300px;
+
+    }
+    .left-side{
+        display: none;
+    }
+
+    #filter{
+        display: none;
+    }
+    .content-product .item .img:hover .xemnhanh{
+        display: none;
+    }
+    
+    .content-product .item .img:hover .xemnhanh-content{
+        display: none;
+
+    }
+
+
+
+    .main-side{
+        width: 100%;
+        border-left: none;
+    }
+
+    .content-product{
+        padding-left: 0;
+    }
+
+    .item{
+        width: 100%;
+        min-height: 480px;
+    }
+
+    .item{
+        text-align: center;
+    }
+}
+
+
+@media only screen and (max-width: 320px){
+    .wrapper{
+        width: 100%;
+        min-width: 300px;
+
+    }
+    .left-side{
+        display: none;
+    }
+
+    #filter{
+        display: none;
+    }
+    .content-product .item .img:hover .xemnhanh{
+        display: none;
+    }
+    
+    .content-product .item .img:hover .xemnhanh-content{
+        display: none;
+
+    }
+
+
+
+    .main-side{
+        width: 100%;
+        border-left: none;
+    }
+
+    .content-product{
+        padding-left: 0;
+    }
+
+    .item{
+        width: 100%;
+        min-height: 370px;
+    }
+
+    .item{
+        text-align: center;
+    }
+}
+
+
+
+
+
 
