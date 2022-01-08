@@ -271,14 +271,16 @@ p, li, button{
 
 
 
-
-#sanpham:hover #sub-sanpham{
+ /* lược bỏ hover navigation */
+/* #sanpham:hover #sub-sanpham{
     display: block;
-}
+} */
 
-#FAQS:hover #sub-FAQS{
+/* lược bỏ hover navigation */
+
+/* #FAQS:hover #sub-FAQS{
     display: block;
-}
+} */
 
 
 .sub-nav{
@@ -293,8 +295,26 @@ p, li, button{
     border-radius: 3px;
     display: none;
     height: auto;
-
+    /* opacity: 0; */
 }
+/* Hàm Click toggle Subnav */
+
+#sub-thuonghieu{
+    display: none;
+}
+#sub-phukien{
+    display: none;
+}
+#sub-hotrokhachhang{
+    display: none;
+}
+#sub-chinhsach{
+    display: none;
+}
+#sub-chude{
+    display: none;
+}
+/* Hàm Click toggle Subnav */
 
 .sub-nav>li{
     list-style: none;
@@ -340,7 +360,6 @@ p, li, button{
     list-style: none;
     font-size: 13px;
     padding: 2px 0px;
-
 }
 
 .sub-nav-2>li:hover a{
@@ -456,7 +475,7 @@ p, li, button{
     
 }
 
-@media only screen and (max-width: 519px){
+@media only screen and (max-width: 538px){
     #navMenu{
         right: -40%;
         width: 40%;
@@ -759,7 +778,9 @@ p, li, button{
     border-radius: 3px;
     /* display: none; */
 }
-
+.hd-user-container{
+    display: none;
+}
 .hd-user-container>p{
     text-align: left;
     font-weight: 600;
@@ -775,3 +796,4 @@ p, li, button{
 .hd-user-container>p:hover{
     background-color: #F54253;
 }
+
