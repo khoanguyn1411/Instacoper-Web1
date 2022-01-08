@@ -110,14 +110,14 @@
                         <li><a id="btnCloseNav" href="#">X</a></li>
                         <li><a href="index.html">Trang chủ</a></li>
                         
-                        <li id="sanpham" >
-                            <a href="#">Sản phẩm</a>
+                        <li id="sanpham" class="dropdown">
+                            <a href="#" class="link" id="link-sp" >Sản phẩm</a>
                             <img src="assets/img/down_arrow.svg">
                             <ul class="sub-nav" id="sub-sanpham">
                              
-                                <li><i class="fas fa-caret-right"></i>Thương hiệu
+                                <li><i class="fas fa-caret-right"></i><a href="#" id="link-thuonghieu">Thương hiệu</a> 
                                 </li>
-                                <ul class="sub-nav-2" >
+                                <ul class="sub-nav-2" id="sub-thuonghieu">
                                     <li><i class="fas fa-caret-down"></i><a href="#">Nike</a></li>
                                     <li><i class="fas fa-caret-down"></i><a href="#">Adidas</a></li>
                                     <li><i class="fas fa-caret-down"></i><a href="#">Converse</a></li>
@@ -133,8 +133,8 @@
                                 <li><i class="fas fa-caret-right"></i><a href="#">Bán chạy nhất</a></li>
                                 <li><i class="fas fa-caret-right"></i><a href="#">Sneaker nam</a></li>
                                 <li><i class="fas fa-caret-right"></i><a href="#">Sneaker nữ</a></li>
-                                <li><i class="fas fa-caret-right"></i><a href="#">Phụ kiện</a></li>
-                                <ul class="sub-nav-2">
+                                <li><i class="fas fa-caret-right"></i><a href="#" id="link-phukien" >Phụ kiện</a></li>
+                                <ul class="sub-nav-2" id="sub-phukien">
                                     <li><i class="fas fa-caret-down"></i><a href="#">Tất/Vớ</a></li>
                                     <li><i class="fas fa-caret-down"></i><a href="#">Dây giày</a></li>
                                     <li><i class="fas fa-caret-down"></i><a href="#">Stickers</a></li>
@@ -143,13 +143,13 @@
                             </ul>                            
                         </li>
 
-                        <li><a class="on-use" href="blog.html">Blog</a><img src="assets/img/iconKhoa/ic_down_arrow_pink.svg"></li>
-                        <li id="FAQS"><a href="#">FAQs</a><img src="assets/img/down_arrow.svg">
-                            <ul class="sub-nav"  id="sub-FAQS">
+                        <li class="dropdown"><a class="on-use" href="blog.html" id="link-blog">Blog</a><img src="assets/img/iconKhoa/ic_down_arrow_pink.svg"></li>
+                        <li id="FAQS" class="dropdown"  ><a href="#" class="link" id="link-faq" >FAQs</a><img src="assets/img/down_arrow.svg">
+                            <ul class="sub-nav" id="sub-FAQS">
                              
-                                <li><i class="fas fa-caret-right"></i>Hỗ trợ khách hàng
+                                <li><i class="fas fa-caret-right"></i><a href="#" id="link-hotrokhachhang">Hỗ trợ khách hàng</a>
                                 </li>
-                                <ul class="sub-nav-2">
+                                <ul class="sub-nav-2" id="sub-hotrokhachhang">
                                     <li><i class="fas fa-caret-down"></i><a href="FAQ_HDMH.html">Hướng dẫn mua hàng</a></li>
                                     <li><i class="fas fa-caret-down"></i><a href="FAQ_HDTT.html">Hướng dẫn thanh toán</a></li>
                                     <li><i class="fas fa-caret-down"></i><a href="FAQ_GHVC.html">Giao hàng & vận chuyển</a></li>
@@ -157,8 +157,8 @@
                                     <li><i class="fas fa-caret-down"></i><a href="FAQ_TheoDoiDonHang.html">Theo dõi đơn hàng</a></li>
                                   
                                 </ul>
-                                <li><i class="fas fa-caret-right"></i><a href="#">Chính sách</a></li>
-                                <ul class="sub-nav-2">
+                                <li><i class="fas fa-caret-right"></i><a href="#" id="link-chinhsach">Chính sách</a></li>
+                                <ul class="sub-nav-2" id="sub-chinhsach">
                                     <li><i class="fas fa-caret-down"></i><a href="FAQ_CSBaoMat.html">Chính sách bảo mật</a></li>
                                     <li><i class="fas fa-caret-down"></i><a href="FAQ_DoiTra.html">Chính sách đổi trả</a></li>
                                     <li><i class="fas fa-caret-down"></i><a href="FAQ_CamKetBaoHanh.html">Cam kết & Bảo hành</a></li>
@@ -198,7 +198,8 @@
         </div>
 
         <script src="js/navMobileShow.js"></script>
-
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
+        <script src="js/SubNav.js"></script>
 </header>
 
 
