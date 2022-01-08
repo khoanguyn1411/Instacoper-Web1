@@ -4,15 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/base.css">
-    <link rel="stylesheet" href="assets/css/main.css">
     <link rel="stylesheet" href="assets/css/blog.css">
     <link rel="stylesheet" href="assets/css/footer.css">
     <link rel="stylesheet" href="assets/css/styleP.css">
     <link rel="stylesheet" href="assets/css/radio.css">
     <link rel="stylesheet" href="assets/css/product.css">
+    <link rel="stylesheet" href="assets/css/header.css">
     <link href="https://fonts.googleapis.com/css?family=Poppins:600&display=swap" rel="stylesheet">
 	<script src="https://kit.fontawesome.com/a81368914c.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -25,9 +25,188 @@
     <title>Blog</title>
 </head>
 
+<header>
+   
+      <div class="header-top">
+            <div class="wrapper">
+                <div class="header-logo">
+                    <div></div>
+                </div>
+        
+                <div class="header-search">
+                    <img src="assets/img/iconKhoa/ic_search.svg">
+                    <input placeholder="Tìm kiếm">
+                </div>
+        
+                <div class="header-right-content">
+                    <div class="hd-action">
+                        <img id = "btnUserResLog" src="assets/img/iconKhoa/ic_user.svg">
+                        <div class="hd-user-menu">
+                            <div class="hd-user-container">
+                                <p>Đăng nhập</p>
+                                <p>Đăng ký</p>
+                            </div>
+                        </div>
+                        <img id="btnOpenCart" src="assets/img/iconKhoa/ic_cart_2.svg">
+                        <div class="hd-cart-menu">
+                            <div class="hd-item-container">
+
+                                <div class="hd-item">
+                                    <div class="hd-item-img">
+                                        <img src="assets/img/shoes/12.png">
+                                    </div>
+                                    <div class="hd-item-main-content">
+                                        <p class="hd-item-title">Nike Air Force 1 Low</p>
+                                        <p class="hd-item-gender">Giày nam</p>
+                                        <p class="hd-item-size">Size: 40.5</p>
+                                        <p class="hd-item-price">2.649.000₫</p>
+                                    </div>
+                                    <div class="hd-item-delete">
+                                        <img src="assets/img/iconKhoa/ic_delete_cart.svg">
+                                    </div>
+                                </div>
+
+                                <div class="hd-bottom-seperate"></div>
+                                <div class="hd-item">
+                                    <div class="hd-item-img">
+                                        <img src="assets/img/shoes/4.png">
+                                    </div>
+                                    <div class="hd-item-main-content">
+                                        <p class="hd-item-title">Adidas NMD R1</p>
+                                        <p class="hd-item-gender">Giày nam</p>
+                                        <p class="hd-item-size">Size: 45</p>
+                                        <p class="hd-item-price">3.330.000₫</p>
+                                    </div>
+                                    <div class="hd-item-delete">
+                                        <img src="assets/img/iconKhoa/ic_delete_cart.svg">
+                                    </div>
+                                </div>
+                                <div class="hd-cart-button-container">
+                                    <button class="hd-cart-left-button">
+                                        Giỏ Hàng (2)
+                                    </button>
+                                    <button class="hd-cart-right-button">
+                                        Thanh toán
+                                    </button>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+            </div>
+         </div>
+        </div>  
+ 
+        <div class="header-bottom">
+            <div class="wrapper">
+                <div class="hd-danhmucsp">
+                    <div id="btnShowLeftMenu">
+                        <img src="assets/img/iconKhoa/ic_3gach.svg">
+                        <p>Danh mục sản phẩm</p>
+                    </div>
+                </div>
+                <div class="hd-nav"  id="navMenu">
+                    <ul>
+                        <li><a id="btnCloseNav" href="#">X</a></li>
+                        <li><a href="index.html">Trang chủ</a></li>
+                        
+                        <li id="sanpham" >
+                            <a href="#">Sản phẩm</a>
+                            <img src="assets/img/down_arrow.svg">
+                            <ul class="sub-nav" id="sub-sanpham">
+                             
+                                <li><i class="fas fa-caret-right"></i>Thương hiệu
+                                </li>
+                                <ul class="sub-nav-2" >
+                                    <li><i class="fas fa-caret-down"></i><a href="#">Nike</a></li>
+                                    <li><i class="fas fa-caret-down"></i><a href="#">Adidas</a></li>
+                                    <li><i class="fas fa-caret-down"></i><a href="#">Converse</a></li>
+                                    <li><i class="fas fa-caret-down"></i><a href="#">VANS</a></li>
+                                    <li><i class="fas fa-caret-down"></i><a href="#">New Blance</a></li>
+                                    <li><i class="fas fa-caret-down"></i><a href="#">MLB</a></li>
+                                    <li><i class="fas fa-caret-down"></i><a href="#">Puma</a></li>
+                                    <li><i class="fas fa-caret-down"></i><a href="#">Asics</a></li>
+                                    <li><i class="fas fa-caret-down"></i><a href="#">Skechers</a></li>
+                                </ul>
+                                <li><i class="fas fa-caret-right"></i><a href="#">Khuyến mãi</a></li>
+                                <li><i class="fas fa-caret-right"></i><a href="#">Hàng mới về</a></li>
+                                <li><i class="fas fa-caret-right"></i><a href="#">Bán chạy nhất</a></li>
+                                <li><i class="fas fa-caret-right"></i><a href="#">Sneaker nam</a></li>
+                                <li><i class="fas fa-caret-right"></i><a href="#">Sneaker nữ</a></li>
+                                <li><i class="fas fa-caret-right"></i><a href="#">Phụ kiện</a></li>
+                                <ul class="sub-nav-2">
+                                    <li><i class="fas fa-caret-down"></i><a href="#">Tất/Vớ</a></li>
+                                    <li><i class="fas fa-caret-down"></i><a href="#">Dây giày</a></li>
+                                    <li><i class="fas fa-caret-down"></i><a href="#">Stickers</a></li>
+                                </ul>
+
+                            </ul>                            
+                        </li>
+
+                        <li><a class="on-use" href="blog.html">Blog</a><img src="assets/img/iconKhoa/ic_down_arrow_pink.svg"></li>
+                        <li id="FAQS"><a href="#">FAQs</a><img src="assets/img/down_arrow.svg">
+                            <ul class="sub-nav"  id="sub-FAQS">
+                             
+                                <li><i class="fas fa-caret-right"></i>Hỗ trợ khách hàng
+                                </li>
+                                <ul class="sub-nav-2">
+                                    <li><i class="fas fa-caret-down"></i><a href="FAQ_HDMH.html">Hướng dẫn mua hàng</a></li>
+                                    <li><i class="fas fa-caret-down"></i><a href="FAQ_HDTT.html">Hướng dẫn thanh toán</a></li>
+                                    <li><i class="fas fa-caret-down"></i><a href="FAQ_GHVC.html">Giao hàng & vận chuyển</a></li>
+                                    <li><i class="fas fa-caret-down"></i><a href="FAQ_HDChonSize.html">Hướng dẫn chọn size</a></li>
+                                    <li><i class="fas fa-caret-down"></i><a href="FAQ_TheoDoiDonHang.html">Theo dõi đơn hàng</a></li>
+                                  
+                                </ul>
+                                <li><i class="fas fa-caret-right"></i><a href="#">Chính sách</a></li>
+                                <ul class="sub-nav-2">
+                                    <li><i class="fas fa-caret-down"></i><a href="FAQ_CSBaoMat.html">Chính sách bảo mật</a></li>
+                                    <li><i class="fas fa-caret-down"></i><a href="FAQ_DoiTra.html">Chính sách đổi trả</a></li>
+                                    <li><i class="fas fa-caret-down"></i><a href="FAQ_CamKetBaoHanh.html">Cam kết & Bảo hành</a></li>
+                                </ul>
+                                <li><i class="fas fa-caret-right"></i><a href="FAQ_ContactInfo.html">Liên hệ</a></li>
+                               
+
+                            </ul>         
+                        </li>
+                        <li><a href="#">Về chúng tôi</a></li>
+                    </ul>
+                </div>
+
+                <div class="hd-nav-res">
+                    <img id ="btnShowNav" src="assets/img/iconKhoa/ic_3gach_black.svg">
+
+                </div>
+               
+            </div>
+        </div>
+        
+        <div class="left-menu" id="leftMenu">
+            <div class="close-left-menu">
+                <a href="#" id="btnCloseLeftMenu">X</a>
+            </div>
+            <div class="left-menu-content">
+                <ul>
+                    <li><a href="#">Walking Style Shoes</a></li>
+                    <li><a href="#">Casual Shoes</a></li>
+                    <li><a href="#">Boat Shoes</a></li>
+                    <li><a href="#">Canvas Trendy Shoes</a></li>
+                    <li><a href="#">Basketball Style Shoes</a></li>
+                    <li><a href="#">Chunky Shoes</a></li>
+                    <li><a href="#">Other Trendy Shoes</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <script src="js/navMobileShow.js"></script>
+
+</header>
+
+
+
 <body>
+  
     <div class="wrapper">
-        <div class="top-side" style="margin: 50px 0px 0px 0px; width: 100%;">
+        <div class="top-side" style="margin: 80px 0px 0px 0px; width: 100%;">
             <div class="top-content-left">
                 <div class="outside">
                     <input type="radio" name = "cate" id = "allPro">
