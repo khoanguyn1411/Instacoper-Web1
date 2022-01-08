@@ -20,6 +20,15 @@ footer a, footer li, footer p, footer div, footer button{
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 14px;
 }
+.footer-wrapper{
+    max-width: 1140px;
+    width: 100%;
+    height: auto;
+    margin:auto;
+    padding: 0 20px;
+    box-sizing: border-box;
+    font-family: 'Source Sans Pro', sans-serif;
+}
 
 .footer-content p, .footer-register p{
     margin: 0;

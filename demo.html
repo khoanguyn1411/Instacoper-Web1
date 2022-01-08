@@ -5,76 +5,68 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/demo.css">
+    <link rel="stylesheet" href="assets/css/header.css">
+    <link rel="stylesheet" href="assets/css/product.css">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 
     <title>Document</title>
 </head>
-<header>
-    <div class="header-top">
-        <div class="wrapper">
-            <div class="ct1">
-                <div>asdhiasduioa</div>
-            </div>
+<script>
+        
+    function loadDoc() {
+        var xhttp = new XMLHttpRequest();
+        xhttp.onreadystatechange = function() {
+            if (this.readyState == 4 && this.status == 200) {
+            myFunction(this);
+            }      
+        };
+        xhttp.open("GET","assets/xml/product.xml", true);
+        xhttp.send();
+        console.log("123123");
+    }
 
-            <div class="hd-nav">
-                <ul>
-                    <li id="sanpham" >
-                        <a href="#">Sản phẩm</a>
-                        <img src="assets/img/down_arrow.svg">
-                        <ul class="sub-nav" id="sub-sanpham">
-                         
-                            <li><i class="fas fa-caret-right"></i>Thương hiệu
-                            </li>
-                            <ul class="sub-nav-2" >
-                                <li><i class="fas fa-caret-down"></i><a href="#">Nike</a></li>
-                                <li><i class="fas fa-caret-down"></i><a href="#">Adidas</a></li>
-                                <li><i class="fas fa-caret-down"></i><a href="#">Converse</a></li>
-                                <li><i class="fas fa-caret-down"></i><a href="#">VANS</a></li>
-                                <li><i class="fas fa-caret-down"></i><a href="#">New Blance</a></li>
-                                <li><i class="fas fa-caret-down"></i><a href="#">MLB</a></li>
-                                <li><i class="fas fa-caret-down"></i><a href="#">Puma</a></li>
-                                <li><i class="fas fa-caret-down"></i><a href="#">Asics</a></li>
-                                <li><i class="fas fa-caret-down"></i><a href="#">Skechers</a></li>
-                            </ul>
-                            <li><i class="fas fa-caret-right"></i><a href="#">Khuyến mãi</a></li>
-                            <li><i class="fas fa-caret-right"></i><a href="#">Hàng mới về</a></li>
-                            <li><i class="fas fa-caret-right"></i><a href="#">Bán chạy nhất</a></li>
-                            <li><i class="fas fa-caret-right"></i><a href="#">Sneaker nam</a></li>
-                            <li><i class="fas fa-caret-right"></i><a href="#">Sneaker nữ</a></li>
-                            <li><i class="fas fa-caret-right"></i><a href="#">Phụ kiện</a></li>
-                            <ul class="sub-nav-2">
-                                <li><i class="fas fa-caret-down"></i><a href="#">Nike</a></li>
-                                <li><i class="fas fa-caret-down"></i><a href="#">Adidas</a></li>
-                                <li><i class="fas fa-caret-down"></i><a href="#">Converse</a></li>
-                                <li><i class="fas fa-caret-down"></i><a href="#">VANS</a></li>
-                                <li><i class="fas fa-caret-down"></i><a href="#">New Blance</a></li>
-                                <li><i class="fas fa-caret-down"></i><a href="#">MLB</a></li>
-                                <li><i class="fas fa-caret-down"></i><a href="#">Puma</a></li>
-                                <li><i class="fas fa-caret-down"></i><a href="#">Asics</a></li>
-                                <li><i class="fas fa-caret-down"></i><a href="#">Skechers</a></li>
-                            </ul>
+    function myFunction(xml) {
+        var i;
+        var xmlDoc = xml.responseXML;
+        var html;
+        var thumb, title, name, gender, aft_price, pre_price,sale; 
+        html = "<div class='content-product' id='ctp'>";
+        var x = xmlDoc.getElementsByTagName("product");
+        for (i = 0; i <x.length; i++) {
+            thumb = x[i].getElementsByTagName("thumb")[0].childNodes[0].nodeValue;
+            title = x[i].getElementsByTagName("title")[0].childNodes[0].nodeValue;
+            name = x[i].getElementsByTagName("name")[0].childNodes[0].nodeValue;
+            gender = x[i].getElementsByTagName("gender")[0].childNodes[0].nodeValue;
+            aft_price = x[i].getElementsByTagName("aft-price")[0].childNodes[0].nodeValue;
+            pre_price = x[i].getElementsByTagName("pre-price")[0].childNodes[0].nodeValue;
+            sale = x[i].getElementsByTagName("sale")[0].childNodes[0].nodeValue;
 
-                        </ul>                            
-                    </li>
-                </ul>
-            </div>
+            html += "<div class='item'> <div class='img'> <img src=" + thumb +"> <div class='xemnhanh'></div> <div class='xemnhanh-content'>Xem nhanh</div> </div> <div class='text'> <div class='title'>"+title+"</div> <div class='name'>" + name+"</div> <div class='gender'>"+gender+"</div> <div class='price'> <div class='aft-price'>"+aft_price+"</div> <div class='pre-price'>"+pre_price+"</div>  </div> <div class='sale'>"+sale+"</div></div> </div> "
+        }
 
-            <div class="ct3">
-                <div>asdhiasduioa</div>
+        html += " </div>"
 
-            </div>
-        </div>
+        document.getElementById("ms").innerHTML = html;
+
+
+    }
+
+
+
+</script>
+
+
+
+
+<body onload="loadDoc()">
+    <div class="main-side" id="ms">
+     
     </div>
+        
 
-    <div class="header-bottom">
-        <div class="wrapper">
-
-        </div>
-
-    </div>
-</header>
-<body>
     
 </body>
 </html>
+

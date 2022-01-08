@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/base.css">
-    <link rel="stylesheet" href="assets/css/main.css">
-    <link rel="stylesheet" href="assets/css/Responsive.css">
+    <link rel="stylesheet" href="assets/css/footer.css">
+    <link rel="stylesheet" href="assets/css/FAQ/FAQ_HDTT.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto+Slab:wght@100&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;1,200;1,300;1,400;1,600&display=swap" rel="stylesheet">
+
     <link href="https://fonts.googleapis.com/css?family=Poppins:600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
@@ -18,175 +19,9 @@
 </head>
 
 <body>
-   <div id="main">
-        <div id="header" >
-            <img src="/assets/img/Product1.png" alt="" id="logo" >
-            <div class="searhvia" onclick="firstFocus()">
-                <i class="fas fa-search" style="color: black;"></i>
-                <input type="text" placeholder="Tìm kiếm" id="searchValue">
-            </div>
-            <i class="fas fa-user" id="user">
-                
-            </i>
-            <i class="fas fa-cart-plus" id="cart" onclick="dropdowncart()">
-                <ul class="subcart" id="subcart">
-                    <li>
-                        <div class="cartlayout">
-                            <div class="productcart">
-                                <div class="productcart-shoes">
-                                    <img src="/assets/img/jordanXanh.jpg" alt="" srcset="" id="giaydemo1">
-                                </div>
-                                <div class="productcart-info">
-                                    <h3>Nike Jordan 200</h3>
-                                    <p>Giày nam</p>
-                                    <p>Size: 40</p>
-                                    <h5>2.649.000đ</h5>
-                                </div>
-                            </div>
-                            <i class="fas fa-times-circle" style="color:var(--secondary-color)"></i>
-                        </div>
-                        <div class="cart-btn">
-                            <button type="button" class="subcart-button" id="cart-btn">Giỏ hàng </button>
-                            <button type="button" class="subcart-button" id="pay-btn">Thanh toán </button>
-                        </div>
-                    </li>
-                 
-                </ul>
-            </i>
-        </div>
-        <div style="height: 80px;"></div>
-        <div id="nav">
-            <i class="fas fa-bars" id="portfolio-bar" onclick="openNav()"> &nbsp; Danh mục sản phẩm</i>
-            <div id="mySidebar" class="sidebar">
-                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
-                <button class="dropdown-btn">
-                    <i class="fa fa-caret-down"></i>
-                    Thương hiệu   
-                  </button>
-                <div class="dropdown-container">
-                    <a href="#">Nike</a>
-                    <a href="#">Adidas</a>
-                    <a href="#">Converse</a>
-                    <a href="#">VANS</a>
-                    <a href="#">New Blance</a>
-                    <a href="#">MLB</a>
-                    <a href="#">Puma</a>
-                    <a href="#">Asics</a>
-                    <a href="#">Skechers</a>
-                  </div>
-                <a href="#">Khuyến mãi</a>
-                <a href="#">Hàng mới về</a>
-                <a href="#">Bán chạy nhất</a>
-                <a href="#">Sneaker nữ</a>
-                <button class="dropdown-btn">
-                    <i class="fa fa-caret-down"></i>
-                    Phụ kiện 
-                  </button>
-                <div class="dropdown-container">
-                    <a href="#">Tất/vớ</a>
-                    <a href="#">Dây giày</a>
-                    <a href="#">Stickers</a>
-                  </div>
-              </div>               
-        <ul class="nav" id="mynav">
-            <li>
-                <a href="">Trang Chủ</a>
-            </li>
-            <li>
-                <div class="subnav">
-                    <a href="#" onclick="dropdownSPnav()" class="dropbtn" id="SPsubnav">Sản phẩm <i class="fas fa-chevron-down"></i> </a>
-                    <div class="subnav-content" id="subnavSp">
-                        <div class="thirnav">
-                            <a href="#" onclick="dropdownSPnavBrand()"><i class="fas fa-caret-right""></i> Thương hiệu</a>
-                            <div class="thirdnav-content" id="BranchSP">
-                                <a href="#"><i class="fas fa-caret-right"></i> Nike</a>
-                                <a href="#"><i class="fas fa-caret-right"></i> Adidas</a>
-                                <a href="#"><i class="fas fa-caret-right"></i> Converse</a>
-                                <a href="#"><i class="fas fa-caret-right"></i> VANS</a>
-                                <a href="#"><i class="fas fa-caret-right"></i> New Blance</a>
-                                <a href="#"><i class="fas fa-caret-right"></i> MLB</a>
-                                <a href="#"><i class="fas fa-caret-right"></i> Puma</a>
-                                <a href="#"><i class="fas fa-caret-right"></i> Asics</a>
-                                <a href="#"><i class="fas fa-caret-right"></i> Skechers</a>
-                            </div>
-                        </div>
-                        <a href="#"><i class="fas fa-caret-right"></i> Khuyến mãi</a>
-                        <a href="#"><i class="fas fa-caret-right"></i> Hàng mới về</a>
-                        <a href="#"><i class="fas fa-caret-right"></i> Bán chạy nhất</a>
-                        <a href="#"><i class="fas fa-caret-right"></i> Sneaker nam</a>
-                        <a href="#"><i class="fas fa-caret-right"></i> Sneaker nữ</a>
-                        <div class="thirnav">
-                            <a href="#" onclick="dropdownSPPhuKien()"><i class="fas fa-caret-right"></i> Phụ kiện</a>
-                            <div class="thirdnav-content" id="PhuKienSP">
-                                <a href="#"><i class="fas fa-caret-right"></i> Tất/Vớ</a>
-                                <a href="#"><i class="fas fa-caret-right"></i> Dây giày</a>
-                                <a href="#"><i class="fas fa-caret-right"></i> Stickers</a>
-                            </div>
-                        </div>
-                      </div>
-                </div>                    
-            </li>
-            <li>
-                <div class="subnav">
-                    <a href="#" onclick="dropdownBlognav()" class="dropbtn" id="Blogsubnav">Blog <i class="fas fa-chevron-down"></i></a>
-                    <div class="subnav-content" id="subnavBlog">
-                        <div class="thirnav">
-                            <a href="#" onclick="dropdownBlogChude()"><i class="fas fa-caret-right"></i> Chủ đề</a>
-                            <div class="thirdnav-content" id="ChuDeBlog">
-                                <a href="#"><i class="fas fa-caret-right"></i> Instacoper News</a>
-                                <a href="#"><i class="fas fa-caret-right"></i> Xu hướng thời trang</a>
-                                <a href="#"><i class="fas fa-caret-right"></i> Sao & Styles</a>
-                                <a href="#"><i class="fas fa-caret-right"></i> Tin tức thời trang</a>
-                                <a href="#"><i class="fas fa-caret-right"></i> Sneaker Tips</a>
-                            </div>
-                        </div>
-                        <a href="#"><i class="fas fa-caret-right"></i> Blog mới nhất</a>
-                        <a href="#"><i class="fas fa-caret-right"></i> Xem nhiều nhất</a>
-                      </div>
-                </div>
-            </li>
-            <li>
-                <div class="subnav">
-                    <a href="#" onclick="dropdownFAQnav()" class="dropbtn" id="FAQsubnav" >FAQ <i class="fas fa-chevron-down"></i></a>
-                    <div class="subnav-content" id="subnavFAQ">
-                        <div class="thirnav">
-                            <a href="#"><i class="fas fa-caret-right"></i> Hỗ trợ khách hàng</a>
-                            <div class="thirdnav-content">
-                                <a href="#"><i class="fas fa-caret-right"></i> Hướng dẫn mua hàng</a>
-                                <a href="#"><i class="fas fa-caret-right"></i> Hướng dẫn thanh toán</a>
-                                <a href="#"><i class="fas fa-caret-right"></i> Giao hàng & vận chuyển</a>
-                                <a href="#"><i class="fas fa-caret-right"></i> Hướng dẫn chọn size</a>
-                                <a href="#"><i class="fas fa-caret-right"></i> Theo dõi đơn hàng</a>
-                            </div>
-                        </div>
-                        <div class="thirnav">
-                            <a href="#" onclick="dropdownChinhSach()"><i class="fas fa-caret-right"></i> Chính sách</a>
-                            <div class="thirdnav-content" id="FAQChinhSach">
-                                <a href="#"><i class="fas fa-caret-right"></i> Chính sách bảo mật</a>
-                                <a href="#"><i class="fas fa-caret-right"></i> Chính sách đổi trả</a>
-                                <a href="#"><i class="fas fa-caret-right"></i> Cam kết & Bảo hành</a>
-                            </div>
-                        </div>
-                        <a href="#"><i class="fas fa-caret-right"></i> Liên hệ</a>
-                      </div>
-                </div>
-            </li>
-            <li>
-                <div class="subnav">
-                    <a href=""> Về chúng tôi</a>            
-                </div>
-            </li>
-            <!-- <li>
-                <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
-            </li> -->
-        </ul>
-    </div>
-<hr>
-        <div id="banner">
-        
-        </div>
-        
-        <div id="content">
+   <div class="wrapper">
+
+        <div class="content">
 
             <ul class="breadcrumb">
                 <li><a href="#">Trang chủ</a></li>
@@ -197,97 +32,97 @@
 
             <div class="FAQs-content">
                 <h2>Giao hàng & Vận chuyển</h2>
-                <p><b>Phạm vi giao hàng:</b> <br>
+                <p><div class="FAQs-title"><b>Phạm vi giao hàng:</b></div></p>
                     Instacoper hỗ trợ ship COD (thanh toán sau khi nhận hàng) toàn quốc bằng dịch vụ Giao hàng tiết kiệm & Giao hàng nhanh.                </p>
-                <p><b>Thời gian giao hàng:</b> <br>
+                    <p><div class="FAQs-title"><b>Thời gian giao hàng:</b></div></p>
                     Khách hàng ở Sài Gòn sẽ nhận được sản phẩm trong vòng 1 đến 3 ngày, ở các tỉnh thành khác sẽ nhận được sản phẩm trong vòng 3 đến 5 ngày.
                 </p>
                 <p>Giao trong giờ hành chính từ thứ hai đến thứ bảy.</p>
                 <p>Thời gian giao hàng được bắt đầu tính sau khi đơn hàng của quý khách được xác nhận thành công bằng cuộc gọi từ nhân viên chăm sóc khách hàng của chúng tôi.</p>
-                <p><b>Phí giao hàng:</b></p>
+                <p><div class="FAQs-title"><b>Phí giao hàng:</b></div></p>
                 <ul>
                     <li>Nội thành: Phí giao hàng tầm 20-35k                    </li>
                     <li>Ngoại thành: Phí giao hàng tầm 30-45k
                     </li>
                     <li>Mỗi đơn hàng chỉ giao đến 1 địa chỉ duy nhất.</li>
                 </ul>
-                <p><b>Hủy đơn hàng:</b> <br>
+                <p><div class="FAQs-title"><b>Hủy đơn hàng:</b></div></p>
                     Đơn hàng sẽ bị hủy sau 03 lần nhân viên giao nhận không thể liên lạc với khách hàng.</p>
+                    <br/>
                 <p>Mọi thắc mắc vui lòng liên hệ bộ phận chăm sóc khách hàng tại hotline: 0123456789 để được giải đáp.</p>
             </div>
         </div>
         
-        <div id="sldier">
         
-        </div>
-        
-        <div id="footer">
-            <div class="contact">
-                <div class="contact-info">
-                    <div class="text-info">                     
-                        <div class="footernav">
-                            <a href="#"><b>Trang chủ</b></a>
-                            <a href="#">Sản phẩm</a>
-                            <a href="#">Blogs</a>
-                            <a href="#">FAQs</a>
-                            <a href="#">Về chúng tôi</a>
-                        </div>  
-                        <div class="footernav">
-                            <p><b>Thông tin liên hệ</b></p> 
-                            <br>
-                            <p>Số 669 Quốc lộ 1, khu phố 3 <br>
-                                phường Linh Xuân, quận Thủ Đức <br>
-                                Thành phố Hồ Chí Minh
-                                </p>
-                                <br><br>
-                            <p>Email : support@instacoper.com</p>
-                            <p>Hotline: 0123456789</p>
-                        </div>
-                        <div class="footernav">
-                            <a href="#"><b>Hỗ trợ khách hàng</b></a>
-                            <br>
-                            <a href="#">Hướng dẫn mua hàng</a>
-                            <a href="#">Hướng dẫn thanh toán</a>
-                            <a href="#">Chính sách bảo mật</a>
-                            <a href="#">Chính sách đổi trả</a>
-                            <a href="#">Giao hàng & Vận chuyển</a>
-                        </div>                  
-                    </div>
-                <form class="contact-form">
-                    <p>Đăng ký nhận thông tin mới nhất!</p>
-                    <input type="text" id="email-input" required placeholder="Nhập Email của bạn tại đây">
-                    <button type="submit">Đăng ký ngay!</button>
-                </form>
+      
+   </div>
+</body>
+<footer>
+    <div class="footer-wrapper" style="padding-top: 20px; padding-bottom: 20px;">
+        <div class="footer-content">
+            <div class="footer-content-1">
+                <div class="ft-main-content">
+                    <ul>
+                        <li style="font-weight: bold;"><a href="index.html">Trang chủ</a></li>
+                        <li><a href="product.html">Sản phẩm</a></li>
+                        <li><a href="blog.html">Blogs</a></li>
+                        <li><a href="FAQ.html">FAQs</a></li>
+                        <li><a href="member.html">Về chúng tôi</a></li>
+                    </ul>          
                 </div>
-                <hr>
-                <div class="payment-info">
-                    <p>Hỗ trợ thanh toán</p>
-                    <div id="payment-img">
-                        <img src="/assets/img/mastercard.svg" alt="">
-                        <img src="assets/img/Visapay.svg" alt="">
-                        <img src="assets/img/momo.svg" alt="">
-                        <img src="assets/img/VNpay.svg" alt="">                       
-                    </div>
+            
+            </div>
+
+            <div class="footer-content-2">
+                <div class="ft-main-content">
+                    <p  class="ft-title">Thông tin liên hệ</p> 
+                    <br>
+                    <p>Số 669 Quốc lộ 1, khu phố 3, phường Linh Xuân, quận Thủ Đức, Thành phố Hồ Chí Minh
+                        </p>
+                        <br/>
+                    <p>Email : support@instacoper.com</p>
+                    <p>Hotline: 0123456789</p>
+                </div>
+            </div>
+
+            <div class="footer-content-3">
+                <p class="ft-title" id="support">Hỗ trợ khách hàng</p>
+                <div class="ft-main-content">
+                    <ul class="ft-main-content">
+                        <li><a href="FAQ_HDMH.html">Hướng dẫn mua hàng </a></li>
+                        <li><a href="FAQ_HDTT.html">Hướng dẫn thanh toán</a></li>
+                        <li><a href="FAQ_CSBaoMat.html">Chính sách bảo mật</a></li>
+                        <li><a href="FAQ_DoiTra.html">Chính sách đổi trả</a></li>
+                        <li><a href="FAQ_GHVC.html">Giao hàng & Vận chuyển</a></li>
+                    </ul>          
+                </div>
+            </div>
+          
+        </div>
+
+        <div class="footer-register">
+            <div>
+                <p>Đăng ký nhận thông tin mới nhất!</p>
+                <form>
+                    <input required placeholder="Nhập email của bạn tại đây">
+                    <button>Đăng ký ngay!</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="footer-payment">
+            <div class="ft-seperate"></div>
+            <div class="ft-payment-content">
+                <div>Hỗ trợ thanh toán</div>
+                <div class="ft-img">
+                    <img src="assets/img/footer_order/image 1.svg">
+                    <img src="assets/img/footer_order/image 2.svg">
+                    <img src="assets/img/footer_order/image 3.svg">
+                    <img src="assets/img/footer_order/image 4.svg">
+                    <img src="assets/img/footer_order/image 5.png">
                 </div>
             </div>
         </div>
-   </div>
-   <script>
-    function firstFocus(){
-        document.getElementById("searchValue").focus();
-    }
-</script>
-<script src="https://kit.fontawesome.com/a81368914c.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script src="js/main.js"></script>
-<script src="js/header.js"></script>
-<script src="js/danhmucSP.js"></script>
-<script src="js/dropdownSubitem_Click.js"></script>
-<script src="/js/dropdownSP.js"></script>
-<script src="js/dropdownBlog.js"></script>
-<script src="js/dropdownFAQ.js"></script>
-<!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script> -->
-</body>
+    </div>
+</footer>
 </html>

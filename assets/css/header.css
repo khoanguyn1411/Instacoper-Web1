@@ -6,6 +6,15 @@
     
 }
 
+.header-wrapper{
+    max-width: 1140px;
+    width: 100%;
+    height: auto;
+    margin:auto;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
 
 
 html{
@@ -19,6 +28,7 @@ header{
     height: auto;
     z-index: 3;
     position: fixed;
+    top: 0;
 }
 body{
     z-index: 2;
@@ -588,6 +598,8 @@ p, li, button{
         display: none;
     }
 }
+
+
 
 /* CSS cho cart */
 .hd-cart-menu{

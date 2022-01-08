@@ -5,6 +5,9 @@
     margin:auto;
     padding: 0 20px;
     box-sizing: border-box;
+    min-height: 1024px;
+    margin-top: 160px;
+
 }
 
 .part-one{
@@ -77,7 +80,7 @@
     height: 35%;
 
 }
-.long-title p{
+.long-title p, .long-title a{
     padding-top: 10px;
     font-size: 22px;
     font-weight: bold;
@@ -88,6 +91,11 @@
     -webkit-line-clamp: 2; /* number of lines to show */
             line-clamp: 2; 
     -webkit-box-orient: vertical;
+    color: black;
+    text-decoration: none;
+}
+.long-title a:hover{
+    color: #F54253;
 }
 
 .long-text{
@@ -179,7 +187,7 @@
  
 }
 
-.sh-one-title >p{
+.sh-one-title >p, .sh-one-title >a{
     font-size: 16px;
     font-weight: bold;
     font-family: 'Playfair Display',sans-serif;
@@ -190,7 +198,12 @@
     -webkit-line-clamp: 2; /* number of lines to show */
             line-clamp: 2; 
     -webkit-box-orient: vertical;
+    text-decoration: none;
+    color: black;
 
+}
+.sh-one-title >a:hover{
+    color: #F54253;
 }
 
 .sh-one-text >p{

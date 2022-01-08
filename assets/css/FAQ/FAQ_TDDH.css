@@ -1,0 +1,249 @@
+
+
+.wrapper{
+    max-width: 1140px;
+    width: 100%;
+    height: auto;
+    margin:auto;
+    padding: 0 20px;
+    box-sizing: border-box;
+    min-width: 300px;
+    min-height: 1024px;
+    font-family: 'Source Sans Pro', sans-serif;
+
+}
+.content{
+    margin-top: 150px;
+    margin-bottom: 30px;
+}
+
+
+
+.FAQs-content p{
+    padding: 3px 0px;
+    line-height: 1.5;
+}
+
+.FAQs-content h2{
+    padding: 20px 0px;
+  }
+  .FAQs-title{
+    margin-top: 5px;
+    margin-bottom: 3px;
+  }
+
+
+
+.FAQs-content-box{
+    width: 100%;
+    -webkit-box-shadow: 1px 1px 5px rgb(0 0 0 / 0.4);
+    -moz-box-shadow: 1px 1px 5px rgb(0 0 0 / 0.4);
+    box-shadow: 1px 1px 5px rgb(0 0 0 / 0.4);
+    height: auto;
+    display: inline-block;
+    padding: 15px;
+    text-align: left;
+}
+
+ul.breadcrumb {
+    list-style: none;
+    padding-left: 0px;
+  }
+  ul.breadcrumb li {
+    display: inline;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 1.5;
+  }
+  ul.breadcrumb li::after {
+    display: inline;
+    font-size: 1rem;
+  }
+  ul.breadcrumb li+li:before {
+    padding: 8px;
+      color: black;
+      content: "\003e";
+  }
+  ul.breadcrumb li a {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: 500;
+  }
+  ul.breadcrumb li a:hover {
+    color: var(--secondary-color);
+    text-decoration: underline;
+  }
+
+.FAQs-content p{
+    padding: 3px 0px;
+    text-align: left;
+    line-height: 1.5;
+}
+
+
+
+.left-content{
+    width: 40%;
+    float: left;
+
+}
+.FAQs-content-box .title{
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.title img{
+    margin-right: 10px;
+}
+
+.content-input{
+    width: 100%;
+}
+.content-input input{
+    width: 80%;
+    padding: 6px;
+    margin-bottom: 10px;
+    border-radius: 3px;
+    border: 1px solid #8D8D8D;
+}
+
+.button-container{
+    width: 80%;
+    text-align: right;
+    margin-top: 10px;
+}
+
+.content-input button{
+    padding: 7px 20px;
+    background: #F54253;
+    border-radius: 3px;
+    border: none;
+    font-weight: bold;
+    color: white;
+
+}
+
+
+.right-content{
+    width: 60%;
+    height: 60px;
+    height: 100%;
+
+    float: left;
+    box-sizing: border-box;
+    border-left: 1px solid #8D8D8D;
+    padding-left: 20px;
+
+
+
+}
+
+.right-content-left{
+    width: 50%;
+    padding-right: 30px;
+    box-sizing: border-box;
+    float: left;
+}
+
+.content-donhang p{
+    font-size: 15px;
+    margin-top: -5px;
+}
+.tt1{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+span.pink{
+    color: #F54253;
+}
+.content-status .pink{
+    font-style: italic;
+    font-weight: 600;
+}
+
+
+
+.right-content-right{
+    width: 50%;
+    box-sizing: border-box;
+    float: left;
+
+}
+
+.FAQs-content-box span, .FAQs-content-box p, .FAQs-content-box b{
+    text-align: left;
+}
+
+#priceOrder{
+    font-weight: bold;
+    font-size: 25px;
+    margin-left: 10px;
+}
+
+
+@media only screen and (max-width: 1026px) {
+   
+    .FAQs-content-box .title{
+        display: block;
+        justify-content: left;
+        font-size: 20px;
+        font-weight: 600;
+    }
+    
+
+    .title img {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    .left-content{
+        padding-right: 20px;
+        box-sizing: border-box;
+    }
+    .content-input input{
+        width: 100%;
+    }
+
+    .button-container{
+        text-align: center;
+        width: 100%;
+    }
+
+    
+    .right-content-left{
+        width: 100%;
+    }
+
+    .right-content-right{
+        width: 100%;
+    }
+
+}
+
+
+@media only screen and (max-width: 533px) {
+    .left-content{
+        width: 100%;
+        padding-right: 0;
+
+    }
+
+    .right-content{
+        width: 100%;
+        border-left: none;
+        padding-left: 0;
+        margin-top: 30px;
+
+    }
+
+    .FAQs-content-box .title p{
+        width: 100%;
+        text-align: center;
+        margin-bottom: 10px;
+        font-size: 17px;
+        background: #F54253;
+    }
+}
