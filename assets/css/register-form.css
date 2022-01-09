@@ -1,4 +1,4 @@
-.modal {
+.modal2 {
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
   z-index: 1; /* Sit on top */
@@ -9,21 +9,21 @@
   overflow: auto; /* Enable scroll if needed */
   background-color: rgb(0,0,0); /* Fallback color */
   background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-  display: flex;
+  display: none;
   align-items: center;
   box-sizing: border-box;
-  display: none;
+  z-index: 11;
 
 }
 
-.close {
+.close2 {
   color: #aaa;
   float: right;
   font-size: 28px;
   font-weight: bold;
 }
 
-.modal-content {
+.modal-content2 {
   background-color: #fefefe;
   margin: auto;
   border: 1px solid #888;
@@ -31,7 +31,7 @@
   height: auto;
   border-radius: 10px;
   max-width: 500px;
-  padding: 20px 50px;
+  padding: 20px 30px;
   box-sizing: border-box;
 
 
@@ -41,7 +41,7 @@ div, input, a{
   font-family: 'Source Sans Pro', sans-serif;
 }
 
-.text1{
+.text2{
     font-weight: 700;
     width: 100%;
     text-align: center;
@@ -55,20 +55,20 @@ div, input, a{
 
 
 
-.logo-content{
+.logo-content2{
   width: 100%;
 }
 
-.register-content{
+.register-content2{
   width: 100%;
 
 }
 
-.register-content .info{
+.register-content2 .info2{
   width: 100%;
   box-sizing: border-box;
 }
-.register-content .info > input{
+.register-content2 .info2 > input{
   display: block;
   width: 100%;
   box-sizing: border-box;
@@ -78,7 +78,7 @@ div, input, a{
   border: 1px solid #8D8D8D;
 }
 
-.accpept-content{
+.accpept-content2{
   display: inline-block;
   margin-top: 10px;
   font-size: 14px;
@@ -88,7 +88,7 @@ div, input, a{
 
 
 
-.button-content{
+.button-content2{
 width: 100%;
 display: flex;
 justify-content: center;
@@ -96,7 +96,7 @@ margin-top: 20px;
 
 }
 
-.button-content >div{
+.button-content2 >div{
 color: white;
 background-color: black;
 width: 60%;
@@ -106,16 +106,18 @@ padding: 15px;
 font-size: 12px;
 font-weight: 600;
 user-select: none;
+min-width: 250px;
+
 
 }
 
 
-.button-content >div:hover{
+.button-content2 >div:hover{
 background-color: #F54253;
 
 }
 
-.seperate-content, .google-content{
+.seperate-content2, .google-content2{
 width: 100%;
 display: flex;
 justify-content: center;
@@ -123,11 +125,11 @@ margin-top: 12px;
 }
 
 
-.seperate-content >div{
+.seperate-content2 >div{
 color: #BCBCBC;
 }
 
-.seperate-content >div:before, .seperate-content >div::after{
+.seperate-content2 >div:before, .seperate-content2 >div::after{
 content: '\2014';
 margin-left: 5px;
 margin-right: 5px;
@@ -135,7 +137,7 @@ color: #BCBCBC;
 }
 
 
-.google-content >div{
+.google-content2 >div{
 border: 1px solid black;
 padding-left: 15px;
 padding-right: 15px;
@@ -145,14 +147,16 @@ border-radius: 25px;
 width: 60%;
 text-align: center;
 user-select: none;
+min-width: 250px;
+
 
 
 
 }
-.google-content >div:hover{
+.google-content2 >div:hover{
 background-color: yellow;
 }
-.google-content > div >div{
+.google-content2 > div >div{
 font-weight: 600;
 display: inline;
 font-size: 14px;
@@ -170,58 +174,57 @@ margin-right: 10px;
 display: inline;
 }
 
-.no-account-content{
+.no-account-content2{
 text-align: center;
 margin-top: 12px;
 }
-.no-account-content> div, .no-account-content> a{
+.no-account-content2> div, .no-account-content2> a{
 display: inline;
 }
 
-.no-account-content> a{
+.no-account-content2> a{
 color: #F68A94;
 }
 
 
 
-.close:hover,
-.close:focus {
+.close2:hover,
+.close2:focus {
   color: #000;
   text-decoration: none;
   cursor: pointer;
 }
 
-@media only screen and (min-width: 579px) and (max-width: 1025px){
-.modal-content {
+@media only screen and (max-width: 1025px){
+.modal-content2 {
   width: 70%;
   height: auto;
+  
 }
 }
 
-@media only screen and (min-width: 419px)  and (max-width: 578px){
-.modal-content {
-  width: 70%;
-  height: auto;
+@media only screen and (max-width: 578px){
+.modal-content2 {
   padding: 30px 20px;
+  
 }
+.button-content2>div{
+  width: 100%;
 }
+
+.google-content2>div{
+  width: 100%;
+}
+
+}
+
 
 @media only screen and (max-width: 419px){
 
-  .button-content>div{
-    width: 100%;
-  }
+ 
 
-  .google-content>div{
-    width: 100%;
-  }
-
-  .modal-content {
-    width: 80%;
-    height: auto;
-    padding: 30px 20px;
+  .modal-content2 {
     min-width: 300px;
-
   }
 }
 

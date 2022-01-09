@@ -5,6 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/header.css">
+    <link rel="stylesheet" href="assets/css/register-form.css">
+    <link rel="stylesheet" href="assets/css/login-form.css">
+    <link rel="stylesheet" href="assets/css/radio.css">
+
     <link href="https://fonts.googleapis.com/css?family=Poppins:600&display=swap" rel="stylesheet">
 	<script src="https://kit.fontawesome.com/a81368914c.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -37,8 +41,8 @@
                       <img id = "btnUserResLog" src="assets/img/iconKhoa/ic_user.svg">
                       <div class="hd-user-menu">
                           <div class="hd-user-container">
-                              <p>Đăng nhập</p>
-                              <p>Đăng ký</p>
+                              <p id="txtLogin">Đăng nhập</p>
+                              <p id="txtRegister">Đăng ký</p>
                           </div>
                       </div>
                       <img id="btnOpenCart" src="assets/img/iconKhoa/ic_cart_2.svg">
@@ -267,6 +271,188 @@
           }
 
    </script>
+
+   <script> 
+ 
+   </script> 
+
 </header>
+<body>
+    <div id="formLogin" class="modal">
+    <link rel="stylesheet" href="assets/css/login-form.css">
+        <div class="modal-content">
+            <div class="logo-content">
+              <span class="close">&times;</span>
+    
+            </div>
+            <div class="text1">ĐĂNG NHẬP
+    
+            </div>
+    
+            <div class="register-content">
+                <div class="info">
+                  <input placeholder="Email" type="email" id="txtEmail">
+                  <input placeholder="Mật khẩu" type="password" id="txtPassword">
+                </div>
+            </div>
+    
+            <div class="forgotpass-content">
+                <div class="left-content">
+                  <div class="chk-thuonghieu">
+                    <input type="checkbox" id = "MLB">
+                    <label for = "MLB">Ghi nhớ mật khẩu</label>
+                  </div>
+                </div>
+    
+                <div class="right-content">
+                  <a href="#">Quên mật khẩu?</a>
+                </div>
+            </div>
+    
+            <div class="button-content">
+              <div>Đăng nhập</div>
+            </div>
+    
+            <div class="seperate-content">
+              <div>OR</div>
+            </div>
+    
+            <div class="google-content">
+              <div>
+                <i class="fab fa-google fa-1x"></i>
+                <div>Sign in with Google</div>
+              </div>
+            </div>
+    
+            <div class="no-account-content">
+              <div>Bạn chưa có tài khoản?</div>
+              <a href="#">Đăng ký</a>
+            </div>
+           
+        </div>
+        <script>
+            // Get the modal
+            var modal = document.getElementById("formLogin");
+            
+            // Get the button that opens the modal
+            var btn = document.getElementById("txtLogin");
+            
+            // Get the <span> element that closes the modal
+            var span = document.getElementsByClassName("close")[0];
+            
+            // When the user clicks the button, open the modal 
+            btn.onclick = function() {
+              modal.style.display = "flex";
+            }
+            
+            // When the user clicks on <span> (x), close the modal
+            span.onclick = function() {
+              modal.style.display = "none";
+            }
+            
+            // When the user clicks anywhere outside of the modal, close it
+            window.onclick = function(event) {
+              if (event.target == modal) {
+                modal.style.display = "none";
+              }
+            }
+        </script>
+    </div>
+    
+    <div id="formRegister" class="modal2">
+    
+        <div class="modal-content2">
+            <div class="logo-content2">
+              <span class="close2">&times;</span>
+  
+            </div>
+            <div class="text2">ĐĂNG KÝ
+  
+            </div>
+  
+            <div class="register-content2">
+                <div class="info2">
+                  <input placeholder="Email" type="email" id="txtEmail">
+                  <input placeholder="Mật khẩu" type="password" id="txtPassword">
+                  <input placeholder="Họ & Tên" type="text" id="txtName">
+                  <input placeholder="Số điện thoại" type="tel" id="txtPhone">
+                </div>
+            </div>
+  
+            <div class="accpept-content2">
+                <div class="top-content2">
+                  <div>Bằng cách tạo tài khoản, bạn có chấp nhận Chính sách bảo mật và Chính sách đổi trả của chúng tôi không?</div>
+                </div>
+                <div class="bottom-content2">
+                  <div class="chk-thuonghieu">
+                      <input type="checkbox" id = "MLB">
+                      <label for = "MLB">Tôi đồng ý</label>
+                    </div>
+                </div>
+            </div>
+  
+            <div class="button-content2">
+              <div>Đăng ký</div>
+            </div>
+  
+            <div class="seperate-content2">
+              <div>OR</div>
+            </div>
+  
+            <div class="google-content2">
+              <div>
+                <i class="fab fa-google fa-1x"></i>
+                <div>Đăng nhập bằng Google</div>
+              </div>
+            </div>
+  
+            <div class="no-account-content2">
+              <div>Đã có tài khoản?</div>
+              <a href="#">Đăng nhập ngay</a>
+            </div>
+           
+        </div>
+        <script>
+            // Get the modal
+            var modal2 = document.getElementById("formRegister");
+            
+            // Get the button that opens the modal
+            var btn2 = document.getElementById("txtRegister");
+            
+            // Get the <span> element that closes the modal
+            var span2 = document.getElementsByClassName("close2")[0];
+            
+            // When the user clicks the button, open the modal 
+            btn2.onclick = function() {
+              modal2.style.display = "flex";
+            }
+            
+            // When the user clicks on <span> (x), close the modal
+            span2.onclick = function() {
+              modal2.style.display = "none";
+            }
+            
+            // When the user clicks anywhere outside of the modal, close it
+            window.onclick = function(event) {
+              if (event.target == modal2) {
+                modal2.style.display = "none";
+              }
+            }
+            </script>
+      
+      </div>
+
+
+      
+
+</body>
+
+
+
+
+
+  
+
+
 
 </html>
