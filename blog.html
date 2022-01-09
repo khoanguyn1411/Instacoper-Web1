@@ -23,200 +23,17 @@
     <title>Blog</title>
 </head>
 
+
+
+<script src="//code.jquery.com/jquery-1.10.2.js"></script>
+    <script> 
+    $(function(){
+    $("header").load("header.html"); 
+    $("footer").load("footer.html"); 
+    });
+    </script> 
+
 <header>
-   
-      <div class="header-top">
-            <div class="header-wrapper">
-                <div class="header-logo">
-                    <div></div>
-                </div>
-        
-                <div class="header-search">
-                    <img src="assets/img/iconKhoa/ic_search.svg">
-                    <input placeholder="Tìm kiếm">
-                </div>
-        
-                <div class="header-right-content">
-                    <div class="hd-action">
-                        <img id = "btnUserResLog" src="assets/img/iconKhoa/ic_user.svg">
-                        <div class="hd-user-menu">
-                            <div class="hd-user-container">
-                                <p>Đăng nhập</p>
-                                <p>Đăng ký</p>
-                            </div>
-                        </div>
-                        <img id="btnOpenCart" src="assets/img/iconKhoa/ic_cart_2.svg">
-                        <div class="hd-cart-menu">
-                            <div class="hd-item-container">
-
-                                <div class="hd-item">
-                                    <div class="hd-item-img">
-                                        <img src="assets/img/shoes/12.png">
-                                    </div>
-                                    <div class="hd-item-main-content">
-                                        <p class="hd-item-title">Nike Air Force 1 Low</p>
-                                        <p class="hd-item-gender">Giày nam</p>
-                                        <p class="hd-item-size">Size: 40.5</p>
-                                        <p class="hd-item-price">2.649.000₫</p>
-                                    </div>
-                                    <div class="hd-item-delete">
-                                        <img src="assets/img/iconKhoa/ic_delete_cart.svg">
-                                    </div>
-                                </div>
-
-                                <div class="hd-bottom-seperate"></div>
-                                <div class="hd-item">
-                                    <div class="hd-item-img">
-                                        <img src="assets/img/shoes/4.png">
-                                    </div>
-                                    <div class="hd-item-main-content">
-                                        <p class="hd-item-title">Adidas NMD R1</p>
-                                        <p class="hd-item-gender">Giày nam</p>
-                                        <p class="hd-item-size">Size: 45</p>
-                                        <p class="hd-item-price">3.330.000₫</p>
-                                    </div>
-                                    <div class="hd-item-delete">
-                                        <img src="assets/img/iconKhoa/ic_delete_cart.svg">
-                                    </div>
-                                </div>
-                                <div class="hd-cart-button-container">
-                                    <button class="hd-cart-left-button">
-                                        Giỏ Hàng (2)
-                                    </button>
-                                    <button class="hd-cart-right-button">
-                                        Thanh toán
-                                    </button>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-            </div>
-         </div>
-        </div>  
- 
-        <div class="header-bottom">
-            <div class="header-wrapper">
-                <div class="hd-danhmucsp">
-                    <div id="btnShowLeftMenu">
-                        <img src="assets/img/iconKhoa/ic_3gach.svg">
-                        <p>Danh mục sản phẩm</p>
-                    </div>
-                </div>
-                <div class="hd-nav"  id="navMenu">
-                    <ul>
-                        <li><a id="btnCloseNav" href="#">X</a></li>
-                        <li><a href="index.html">Trang chủ</a></li>
-                        
-                        <li id="sanpham" class="dropdown">
-                            <a href="#" class="link" id="link-sp" >Sản phẩm</a>
-                            <img src="assets/img/down_arrow.svg">
-                            <ul class="sub-nav" id="sub-sanpham">
-                             
-                                <li><i class="fas fa-caret-right"></i><a href="#" id="link-thuonghieu">Thương hiệu</a> 
-                                </li>
-                                <ul class="sub-nav-2" id="sub-thuonghieu">
-                                    <li><i class="fas fa-caret-down"></i><a href="#">Nike</a></li>
-                                    <li><i class="fas fa-caret-down"></i><a href="#">Adidas</a></li>
-                                    <li><i class="fas fa-caret-down"></i><a href="#">Converse</a></li>
-                                    <li><i class="fas fa-caret-down"></i><a href="#">VANS</a></li>
-                                    <li><i class="fas fa-caret-down"></i><a href="#">New Blance</a></li>
-                                    <li><i class="fas fa-caret-down"></i><a href="#">MLB</a></li>
-                                    <li><i class="fas fa-caret-down"></i><a href="#">Puma</a></li>
-                                    <li><i class="fas fa-caret-down"></i><a href="#">Asics</a></li>
-                                    <li><i class="fas fa-caret-down"></i><a href="#">Skechers</a></li>
-                                </ul>
-                                <li><i class="fas fa-caret-right"></i><a href="#">Khuyến mãi</a></li>
-                                <li><i class="fas fa-caret-right"></i><a href="#">Hàng mới về</a></li>
-                                <li><i class="fas fa-caret-right"></i><a href="#">Bán chạy nhất</a></li>
-                                <li><i class="fas fa-caret-right"></i><a href="#">Sneaker nam</a></li>
-                                <li><i class="fas fa-caret-right"></i><a href="#">Sneaker nữ</a></li>
-                                <li><i class="fas fa-caret-right"></i><a href="#" id="link-phukien" >Phụ kiện</a></li>
-                                <ul class="sub-nav-2" id="sub-phukien">
-                                    <li><i class="fas fa-caret-down"></i><a href="#">Tất/Vớ</a></li>
-                                    <li><i class="fas fa-caret-down"></i><a href="#">Dây giày</a></li>
-                                    <li><i class="fas fa-caret-down"></i><a href="#">Stickers</a></li>
-                                </ul>
-
-                            </ul>                            
-                        </li>
-
-                        <li class="dropdown"><a class="on-use" href="#" id="link-blog">Blog</a><img src="assets/img/iconKhoa/ic_down_arrow_pink.svg">
-                        
-                            <ul class="sub-nav" id="sub-blog">
-                             
-                                <li><i class="fas fa-caret-right"></i><a href="#" id="link-chude">Chủ đề</a>
-                                </li>
-                                <ul class="sub-nav-2" id="sub-chude">
-                                    <li><i class="fas fa-caret-down"></i><a href="FAQ_HDMH.html">Instacoper News</a></li>
-                                    <li><i class="fas fa-caret-down"></i><a href="FAQ_HDTT.html">Xu hướng thời trang</a></li>
-                                    <li><i class="fas fa-caret-down"></i><a href="FAQ_GHVC.html">Sao & Styles</a></li>
-                                    <li><i class="fas fa-caret-down"></i><a href="FAQ_HDChonSize.html">Tin tức thời trang</a></li>
-                                    <li><i class="fas fa-caret-down"></i><a href="FAQ_TheoDoiDonHang.html">Sneaker Tips</a></li>
-                                  
-                                </ul>
-                                <li><i class="fas fa-caret-right"></i><a href="#">Blog mới nhất</a></li>
-                                <li><i class="fas fa-caret-right"></i><a href="#">Xem nhiều nhất</a></li>
-                            </ul> 
-
-                        </li>
-                        <li id="FAQS" class="dropdown"  ><a href="#" class="link" id="link-faq" >FAQs</a><img src="assets/img/down_arrow.svg">
-                            <ul class="sub-nav" id="sub-FAQS">
-
-                                <li><i class="fas fa-caret-right"></i><a href="#" id="link-hotrokhachhang">Hỗ trợ khách hàng</a>
-                                </li>
-                                <ul class="sub-nav-2" id="sub-hotrokhachhang">
-                                    <li><i class="fas fa-caret-down"></i><a href="FAQ_HDMH.html">Hướng dẫn mua hàng</a></li>
-                                    <li><i class="fas fa-caret-down"></i><a href="FAQ_HDTT.html">Hướng dẫn thanh toán</a></li>
-                                    <li><i class="fas fa-caret-down"></i><a href="FAQ_GHVC.html">Giao hàng & vận chuyển</a></li>
-                                    <li><i class="fas fa-caret-down"></i><a href="FAQ_HDChonSize.html">Hướng dẫn chọn size</a></li>
-                                    <li><i class="fas fa-caret-down"></i><a href="FAQ_TheoDoiDonHang.html">Theo dõi đơn hàng</a></li>
-                                  
-                                </ul>
-                                <li><i class="fas fa-caret-right"></i><a href="#" id="link-chinhsach">Chính sách</a></li>
-                                <ul class="sub-nav-2" id="sub-chinhsach">
-                                    <li><i class="fas fa-caret-down"></i><a href="FAQ_CSBaoMat.html">Chính sách bảo mật</a></li>
-                                    <li><i class="fas fa-caret-down"></i><a href="FAQ_DoiTra.html">Chính sách đổi trả</a></li>
-                                    <li><i class="fas fa-caret-down"></i><a href="FAQ_CamKetBaoHanh.html">Cam kết & Bảo hành</a></li>
-                                </ul>
-                                <li><i class="fas fa-caret-right"></i><a href="FAQ_ContactInfo.html">Liên hệ</a></li>
-                               
-
-                            </ul>         
-                        </li>
-                        <li><a href="#">Về chúng tôi</a></li>
-                    </ul>
-                </div>
-
-                <div class="hd-nav-res">
-                    <img id ="btnShowNav" src="assets/img/iconKhoa/ic_3gach_black.svg">
-
-                </div>
-               
-            </div>
-        </div>
-        
-        <div class="left-menu" id="leftMenu">
-            <div class="close-left-menu">
-                <a href="#" id="btnCloseLeftMenu">X</a>
-            </div>
-            <div class="left-menu-content">
-                <ul>
-                    <li><a href="#">Walking Style Shoes</a></li>
-                    <li><a href="#">Casual Shoes</a></li>
-                    <li><a href="#">Boat Shoes</a></li>
-                    <li><a href="#">Canvas Trendy Shoes</a></li>
-                    <li><a href="#">Basketball Style Shoes</a></li>
-                    <li><a href="#">Chunky Shoes</a></li>
-                    <li><a href="#">Other Trendy Shoes</a></li>
-                </ul>
-            </div>
-        </div>
-
-        <script src="js/navMobileShow.js"></script>
-        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
-        <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
-        <script src="js/SubNav.js"></script>
 </header>
 
 
@@ -557,76 +374,11 @@
 
 
 
-
-
 <footer>
-    <div class="footer-wrapper" style="padding-top: 20px; padding-bottom: 20px;">
-        <div class="footer-content">
-            <div class="footer-content-1">
-                <div class="ft-main-content">
-                    <ul>
-                        <li style="font-weight: bold;"><a href="index.html">Trang chủ</a></li>
-                        <li><a href="product.html">Sản phẩm</a></li>
-                        <li><a href="blog.html">Blogs</a></li>
-                        <li><a href="FAQ.html">FAQs</a></li>
-                        <li><a href="member.html">Về chúng tôi</a></li>
-                    </ul>          
-                </div>
-            
-            </div>
-
-            <div class="footer-content-2">
-                <div class="ft-main-content">
-                    <p  class="ft-title">Thông tin liên hệ</p> 
-                    <br>
-                    <p>Số 669 Quốc lộ 1, khu phố 3, phường Linh Xuân, quận Thủ Đức, Thành phố Hồ Chí Minh
-                        </p>
-                        <br/>
-                    <p>Email : support@instacoper.com</p>
-                    <p>Hotline: 0123456789</p>
-                </div>
-            </div>
-
-            <div class="footer-content-3">
-                <p class="ft-title" id="support">Hỗ trợ khách hàng</p>
-                <div class="ft-main-content">
-                    <ul class="ft-main-content">
-                        <li><a href="FAQ_HDMH.html">Hướng dẫn mua hàng </a></li>
-                        <li><a href="FAQ_HDTT.html">Hướng dẫn thanh toán</a></li>
-                        <li><a href="FAQ_CSBaoMat.html">Chính sách bảo mật</a></li>
-                        <li><a href="FAQ_DoiTra.html">Chính sách đổi trả</a></li>
-                        <li><a href="FAQ_GHVC.html">Giao hàng & Vận chuyển</a></li>
-                    </ul>          
-                </div>
-            </div>
-          
-        </div>
-
-        <div class="footer-register">
-            <div>
-                <p>Đăng ký nhận thông tin mới nhất!</p>
-                <form>
-                    <input required placeholder="Nhập email của bạn tại đây">
-                    <button>Đăng ký ngay!</button>
-                </form>
-            </div>
-        </div>
-
-        <div class="footer-payment">
-            <div class="ft-seperate"></div>
-            <div class="ft-payment-content">
-                <div>Hỗ trợ thanh toán</div>
-                <div class="ft-img">
-                    <img src="assets/img/footer_order/image 1.svg">
-                    <img src="assets/img/footer_order/image 2.svg">
-                    <img src="assets/img/footer_order/image 3.svg">
-                    <img src="assets/img/footer_order/image 4.svg">
-                    <img src="assets/img/footer_order/image 5.png">
-                </div>
-            </div>
-        </div>
-    </div>
 </footer>
+
+
+
 <script>
     btns = document.getElementsByClassName("sh-one-image");
     btn2 = document.getElementsByClassName("long-image");

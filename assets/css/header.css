@@ -13,6 +13,7 @@
     margin:auto;
     padding: 0 20px;
     box-sizing: border-box;
+    min-width: 300px;
 }
 
 
@@ -214,14 +215,19 @@ p, li, button{
 }
 
 .hd-nav>ul> li>a:hover{
-    font-weight: 600;
+    color: #F54253;
 }
+
+
+
 
 .hd-nav>ul> li> a{
     text-decoration: none;
     color: black;
     transition: 0.3s;
 }
+
+
 
 .hd-nav>ul> li>img{
     display: inline;
@@ -257,16 +263,8 @@ p, li, button{
 }
 
 
-#navMenu>ul>li>a:hover:after{
-    content: "";
-    width: 30%;
-    height: 2px;
-    background-color: black;
-    position: absolute;
-    bottom: 7px;
-    left: 0;
 
-}
+
 
 
 

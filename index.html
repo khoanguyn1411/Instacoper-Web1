@@ -4,244 +4,99 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/base.css">
-    <link rel="stylesheet" href="assets/css/main.css">
-    <link rel="stylesheet" href="assets/css/Responsive.css">
+    <link rel="stylesheet" href="assets/css/index.css">
+    <link rel="stylesheet" href="assets/css/styleP.css">
+    
     <link href="https://fonts.googleapis.com/css?family=Poppins:600&display=swap" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/a81368914c.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
-    <!--[if lt IE 9 ]>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/js-polyfills/0.1.43/polyfill.min.js" integrity="sha512-lvWiOP+aMKHllm4THsjzNleVuGOh0WGniJ3lgu/nvCbex1LlaQSxySUjAu/LTJw9FhnSL/PVYoQcckg1Q03+fQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <![endif]-->
-    <script src="/js/dropdownSubitem.js"></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;1,200;1,300;1,400&display=swap" rel="stylesheet">
     <title>Trang Chủ</title>
 </head>
+<script src="//code.jquery.com/jquery-1.10.2.js"></script>
+    <script> 
+    $(function(){
+    $("header").load("header.html"); 
+    $("footer").load("footer.html"); 
+    });
+    </script> 
 
+<header>
+</header>
 <body>
-   <div id="main">
-        <div id="header" >
-            <img src="/assets/img/Product1.png" alt="" id="logo" >
-            <div class="searhvia" onclick="firstFocus()">
-                <i class="fas fa-search" style="color: black;"></i>
-                <input type="text" placeholder="Tìm kiếm" id="searchValue">
-            </div>
-            <i class="fas fa-user" id="user">
-                
-            </i>
-            <i class="fas fa-cart-plus" id="cart" onclick="dropdowncart()">
-                <ul class="subcart" id="subcart">
-                    <li>
-                        <div class="cartlayout">
-                            <div class="productcart">
-                                <div class="productcart-shoes">
-                                    <img src="/assets/img/jordanXanh.jpg" alt="" srcset="" id="giaydemo1">
-                                </div>
-                                <div class="productcart-info">
-                                    <h3>Nike Jordan</h3>
-                                    <p>Giày nam</p>
-                                    <p>Size: 40</p>
-                                    <h5>2.649.000đ</h5>
-                                </div>
-                            </div>
-                            <i class="fas fa-times-circle" style="color:var(--secondary-color)"></i>
-                        </div>
-                        <div class="cart-btn">
-                            <button type="button" class="subcart-button" id="cart-btn">Giỏ hàng </button>
-                            <button type="button" class="subcart-button" id="pay-btn">Thanh toán </button>
-                        </div>
-                    </li>
-                 
-                </ul>
-            </i>
-        </div>
-        <div style="height: 80px;"></div>
-        <div id="nav">
-                <i class="fas fa-bars" id="portfolio-bar" onclick="openNav()"> &nbsp; Danh mục sản phẩm</i>
-                <div id="mySidebar" class="sidebar">
-                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
-                    <button class="dropdown-btn">
-                        <i class="fa fa-caret-down"></i>
-                        Thương hiệu   
-                      </button>
-                    <div class="dropdown-container">
-                        <a href="#">Nike</a>
-                        <a href="#">Adidas</a>
-                        <a href="#">Converse</a>
-                        <a href="#">VANS</a>
-                        <a href="#">New Blance</a>
-                        <a href="#">MLB</a>
-                        <a href="#">Puma</a>
-                        <a href="#">Asics</a>
-                        <a href="#">Skechers</a>
-                      </div>
-                    <a href="#">Khuyến mãi</a>
-                    <a href="#">Hàng mới về</a>
-                    <a href="#">Bán chạy nhất</a>
-                    <a href="#">Sneaker nữ</a>
-                    <button class="dropdown-btn">
-                        <i class="fa fa-caret-down"></i>
-                        Phụ kiện 
-                      </button>
-                    <div class="dropdown-container">
-                        <a href="#">Tất/vớ</a>
-                        <a href="#">Dây giày</a>
-                        <a href="#">Stickers</a>
-                      </div>
-                  </div>               
-            <ul class="nav" id="mynav">
-                <li>
-                    <a href="">Trang Chủ</a>
-                </li>
-                <li>
-                    <div class="subnav">
-                        <a href="">Sản phẩm <i class="fas fa-chevron-down"></i> </a>
-                        <div class="subnav-content">
-                            <div class="thirnav">
-                                <a href="#"><i class="fas fa-caret-right"></i> Thương hiệu</a>
-                                <div class="thirdnav-content">
-                                    <a href="#"><i class="fas fa-caret-right"></i> Nike</a>
-                                    <a href="#"><i class="fas fa-caret-right"></i> Adidas</a>
-                                    <a href="#"><i class="fas fa-caret-right"></i> Jordan</a>
-                                </div>
-                            </div>
-                            <a href="#"><i class="fas fa-caret-right"></i> Khuyến mãi</a>
-                            <a href="#"><i class="fas fa-caret-right"></i> Hàng mới về</a>
-                            <a href="#"><i class="fas fa-caret-right"></i> Bán chạy nhất</a>
-                            <a href="#"><i class="fas fa-caret-right"></i> Sneaker nam</a>
-                            <a href="#"><i class="fas fa-caret-right"></i> Sneaker nữ</a>
-                            <div class="thirnav">
-                                <a href="#"><i class="fas fa-caret-right"></i> Phụ kiện</a>
-                                <div class="thirdnav-content">
-                                    <a href="#"><i class="fas fa-caret-right"></i> Tất/Vớ</a>
-                                    <a href="#"><i class="fas fa-caret-right"></i> Dây giày</a>
-                                    <a href="#"><i class="fas fa-caret-right"></i> Stickers</a>
-                                </div>
-                            </div>
-                          </div>
-                    </div>                    
-                </li>
-                <li>
-                    <div class="subnav">
-                        <a href="">Blog <i class="fas fa-chevron-down"></i></a>
-                        <div class="subnav-content">
-                            <a href="#"><i class="fas fa-caret-right"></i> Chủ đề</a>
-                            <a href="#"><i class="fas fa-caret-right"></i> Blog mới nhất</a>
-                            <a href="#"><i class="fas fa-caret-right"></i> Xem nhiều nhất</a>
-                          </div>
+    <div class="wrapper">
+        <div class="banner">
+            <div class="mySlides fade" id="banner1">
+                <div class="slide-wrapper">
+                    <div class="title">
+                        NIKE 2022’s COLLECTION
                     </div>
-                </li>
-                <li>
-                    <div class="subnav">
-                        <a href="">FAQ <i class="fas fa-chevron-down"></i></a>
-                        <div class="subnav-content">
-                            <div class="thirnav">
-                                <a href="#"><i class="fas fa-caret-right"></i> Hỗ trợ khách hàng</a>
-                                <div class="thirdnav-content">
-                                    <a href="#"><i class="fas fa-caret-right"></i> Hướng dẫn mua hàng</a>
-                                    <a href="#"><i class="fas fa-caret-right"></i> Hướng dẫn thanh toán</a>
-                                    <a href="#"><i class="fas fa-caret-right"></i> Giao hàng & vận chuyển</a>
-                                    <a href="#"><i class="fas fa-caret-right"></i> Hướng dẫn chọn size</a>
-                                    <a href="#"><i class="fas fa-caret-right"></i> Theo dõi đơn hàng</a>
-                                </div>
-                            </div>
-                            <div class="thirnav">
-                                <a href="#"><i class="fas fa-caret-right"></i> Chính sách</a>
-                                <div class="thirdnav-content">
-                                    <a href="#"><i class="fas fa-caret-right"></i> Chính sách bảo mật</a>
-                                    <a href="#"><i class="fas fa-caret-right"></i> Chính sách đổi trả</a>
-                                    <a href="#"><i class="fas fa-caret-right"></i> Cam kết & Bảo hành</a>
-                                </div>
-                            </div>
-                            <a href="#"><i class="fas fa-caret-right"></i> Liên hệ</a>
-                          </div>
+                    <div class="left-content">
+                        <div class="left-content-header">Nike Air Force 1</div>
+                        <p>New Look - 2022 Edition
+                            <br/>
+                            A brand new series of AF1 has been released for 2022,
+                            Discover with us!
+                        </p>
                     </div>
-                </li>
-                <li>
-                    <div class="subnav">
-                        <a href=""> Về chúng tôi</a>            
-                    </div>
-                </li>
-                <!-- <li>
-                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
-                </li> -->
-            </ul>
-        </div>
-<hr>
-        <div id="banner">
-        
-        </div>
-        
-        <div id="content">
-
-        </div>
-        
-        <div id="sldier">
-        
-        </div>
-        
-        <div id="footer">
-            <div class="contact">
-                <div class="contact-info">
-                    <div class="text-info">                     
-                        <div class="footernav">
-                            <a href="#"><b>Trang chủ</b></a>
-                            <a href="#">Sản phẩm</a>
-                            <a href="#">Blogs</a>
-                            <a href="#">FAQs</a>
-                            <a href="#">Về chúng tôi</a>
-                        </div>  
-                        <div class="footernav">
-                            <p><b>Thông tin liên hệ</b></p> 
-                            <br>
-                            <p>Số 669 Quốc lộ 1, khu phố 3 <br>
-                                phường Linh Xuân, quận Thủ Đức <br>
-                                Thành phố Hồ Chí Minh
-                                </p>
-                                <br><br>
-                            <p>Email : support@instacoper.com</p>
-                            <p>Hotline: 0123456789</p>
-                        </div>
-                        <div class="footernav">
-                            <a href="#"><b>Hỗ trợ khách hàng</b></a>
-                            <br>
-                            <a href="#">Hướng dẫn mua hàng</a>
-                            <a href="#">Hướng dẫn thanh toán</a>
-                            <a href="#">Chính sách bảo mật</a>
-                            <a href="#">Chính sách đổi trả</a>
-                            <a href="#">Giao hàng & Vận chuyển</a>
-                        </div>                  
-                    </div>
-                <form class="contact-form">
-                    <p>Đăng ký nhận thông tin mới nhất!</p>
-                    <input type="text" id="email-input" required placeholder="Nhập Email của bạn tại đây">
-                    <button type="submit">Đăng ký ngay!</button>
-                </form>
-                </div>
-                <hr>
-                <div class="payment-info">
-                    <p>Hỗ trợ thanh toán</p>
-                    <div id="payment-img">
-                        <img src="/assets/img/mastercard.svg" alt="">
-                        <img src="assets/img/Visapay.svg" alt="">
-                        <img src="assets/img/momo.svg" alt="">
-                        <img src="assets/img/VNpay.svg" alt="">                       
+                    <div class="button-container">
+                        <button>Khám phá BST mới</button>
+                        <button>Mua hàng ngay!</button>
                     </div>
                 </div>
+               
             </div>
-        </div>
-   </div>
-   <script>
-    function firstFocus(){
-        document.getElementById("searchValue").focus();
-    }
     
+            <div class="mySlides fade" id="banner2">
+            </div>
+    
+            <div class="mySlides fade" id="banner3">
+            </div>
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            <div class="dot-container">
+                <span class="dot" onclick="currentSlide(1)"></span> 
+                <span class="dot" onclick="currentSlide(2)"></span> 
+                <span class="dot" onclick="currentSlide(3)"></span> 
+                <span class="dot" onclick="currentSlide(4)"></span> 
+                <span class="dot" onclick="currentSlide(5)"></span> 
+              </div>
+        </div>
+   
+     
+    </div>
+    <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
 
-</script>
-   <script src="https://kit.fontawesome.com/a81368914c.js"></script>
-   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-   <script src="js/main.js"></script>
-   <script src="js/header.js"></script>
-   <script src="js/danhmucSP.js"></script>
-   <script src="js/dropdownSubitem_Click.js"></script>   
+        function plusSlides(n) {
+        showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+        showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            if (n > slides.length) {slideIndex = 1}    
+            if (n < 1) {slideIndex = slides.length}
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex-1].style.display = "block";  
+            dots[slideIndex-1].className += " active";
+        }
+
+    </script>
 </body>
+<footer>
+
+</footer>
 </html>

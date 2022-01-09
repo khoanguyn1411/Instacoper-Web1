@@ -4,9 +4,6 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/base.css">
-    <link rel="stylesheet" href="assets/css/main.css">
-    <link rel="stylesheet" href="assets/css/footer.css">
     <link rel="stylesheet" href="assets/css/blog-detail.css">
     <link href="https://fonts.googleapis.com/css?family=Poppins:600&display=swap" rel="stylesheet">
 	<script src="https://kit.fontawesome.com/a81368914c.js"></script>
@@ -21,6 +18,17 @@
     
     <title>Blog: Chi tiết</title>
 </head>
+<script src="//code.jquery.com/jquery-1.10.2.js"></script>
+    <script> 
+    $(function(){
+    $("header").load("header.html"); 
+    $("footer").load("footer.html"); 
+    });
+    </script> 
+
+<header>
+</header>
+
 <body>
         <div class="wrapper">
 
@@ -138,71 +146,6 @@
     }
 </script>
 <footer>
-    <div class="footer-wrapper" style="padding-top: 20px; padding-bottom: 20px;">
-        <div class="footer-content">
-            <div class="footer-content-1">
-                <div class="ft-main-content">
-                    <ul>
-                        <li style="font-weight: bold;"><a href="index.html">Trang chủ</a></li>
-                        <li><a href="product.html">Sản phẩm</a></li>
-                        <li><a href="blog.html">Blogs</a></li>
-                        <li><a href="FAQ.html">FAQs</a></li>
-                        <li><a href="member.html">Về chúng tôi</a></li>
-                    </ul>          
-                </div>
-            
-            </div>
-
-            <div class="footer-content-2">
-                <div class="ft-main-content">
-                    <p  class="ft-title">Thông tin liên hệ</p> 
-                    <br>
-                    <p>Số 669 Quốc lộ 1, khu phố 3, phường Linh Xuân, quận Thủ Đức, Thành phố Hồ Chí Minh
-                        </p>
-                        <br/>
-                    <p>Email : support@instacoper.com</p>
-                    <p>Hotline: 0123456789</p>
-                </div>
-            </div>
-
-            <div class="footer-content-3">
-                <p class="ft-title" id="support">Hỗ trợ khách hàng</p>
-                <div class="ft-main-content">
-                    <ul class="ft-main-content">
-                        <li><a href="FAQ_HDMH.html">Hướng dẫn mua hàng </a></li>
-                        <li><a href="FAQ_HDTT.html">Hướng dẫn thanh toán</a></li>
-                        <li><a href="FAQ_CSBaoMat.html">Chính sách bảo mật</a></li>
-                        <li><a href="FAQ_DoiTra.html">Chính sách đổi trả</a></li>
-                        <li><a href="FAQ_GHVC.html">Giao hàng & Vận chuyển</a></li>
-                    </ul>          
-                </div>
-            </div>
-          
-        </div>
-
-        <div class="footer-register">
-            <div>
-                <p>Đăng ký nhận thông tin mới nhất!</p>
-                <form>
-                    <input required placeholder="Nhập email của bạn tại đây">
-                    <button>Đăng ký ngay!</button>
-                </form>
-            </div>
-        </div>
-
-        <div class="footer-payment">
-            <div class="ft-seperate"></div>
-            <div class="ft-payment-content">
-                <div>Hỗ trợ thanh toán</div>
-                <div class="ft-img">
-                    <img src="assets/img/footer_order/image 1.svg">
-                    <img src="assets/img/footer_order/image 2.svg">
-                    <img src="assets/img/footer_order/image 3.svg">
-                    <img src="assets/img/footer_order/image 4.svg">
-                    <img src="assets/img/footer_order/image 5.png">
-                </div>
-            </div>
-        </div>
-    </div>
+  
 </footer>
 </html>

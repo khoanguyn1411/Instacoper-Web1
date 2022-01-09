@@ -13,59 +13,75 @@
 
     <title>Document</title>
 </head>
+
+<script src="//code.jquery.com/jquery-1.10.2.js"></script>
+    <script> 
+    $(function(){
+    $("header").load("header.html"); //set the path to your header file
+    $("footer").load("footer.html");  // set the path to your footer file
+    });
+    </script> 
+
+
+<header>
+
+</header>
+
 <script>
+
         
-    function loadDoc() {
-        var xhttp = new XMLHttpRequest();
-        xhttp.onreadystatechange = function() {
-            if (this.readyState == 4 && this.status == 200) {
-            myFunction(this);
-            }      
+    var xhttp = new XMLHttpRequest();
+    var html = "";
+    var i;
+    let myArr;
+    xhttp.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+                myArr = JSON.parse(this.responseText);
+                myFunction(myArr);
+            }
         };
-        xhttp.open("GET","assets/xml/product.xml", true);
-        xhttp.send();
-        console.log("123123");
-    }
+    xhttp.open("GET","assets/json/db_product.json", true);
+    xhttp.send();
 
-    function myFunction(xml) {
-        var i;
-        var xmlDoc = xml.responseXML;
-        var html;
-        var thumb, title, name, gender, aft_price, pre_price,sale; 
+    function myFunction(arr) {
         html = "<div class='content-product' id='ctp'>";
-        var x = xmlDoc.getElementsByTagName("product");
-        for (i = 0; i <x.length; i++) {
-            thumb = x[i].getElementsByTagName("thumb")[0].childNodes[0].nodeValue;
-            title = x[i].getElementsByTagName("title")[0].childNodes[0].nodeValue;
-            name = x[i].getElementsByTagName("name")[0].childNodes[0].nodeValue;
-            gender = x[i].getElementsByTagName("gender")[0].childNodes[0].nodeValue;
-            aft_price = x[i].getElementsByTagName("aft-price")[0].childNodes[0].nodeValue;
-            pre_price = x[i].getElementsByTagName("pre-price")[0].childNodes[0].nodeValue;
-            sale = x[i].getElementsByTagName("sale")[0].childNodes[0].nodeValue;
-
-            html += "<div class='item'> <div class='img'> <img src=" + thumb +"> <div class='xemnhanh'></div> <div class='xemnhanh-content'>Xem nhanh</div> </div> <div class='text'> <div class='title'>"+title+"</div> <div class='name'>" + name+"</div> <div class='gender'>"+gender+"</div> <div class='price'> <div class='aft-price'>"+aft_price+"</div> <div class='pre-price'>"+pre_price+"</div>  </div> <div class='sale'>"+sale+"</div></div> </div> "
+        for (i = 0; i <arr.product.length; i++) {
+            var sp = arr.product[i];
+            html += "<div class='item'> <div class='img'> <img onclick = openDetail(" + i + ") src=" + sp.thumb +"> <div class='xemnhanh'></div> <div class='xemnhanh-content'>Xem nhanh</div> </div> <div class='text'> <div class='title'>"+sp.title+"</div> <div class='name'>" + sp.name+"</div> <div class='gender'>"+sp.gender+"</div> <div class='price'> <div class='aft-price'>"+sp.aft_price+"</div> <div class='pre-price'>"+sp.pre_price+"</div>  </div> <div class='sale'>"+sp.sale+"</div></div> </div> "
         }
 
         html += " </div>"
 
         document.getElementById("ms").innerHTML = html;
 
+    }
 
+    function openDetail(i){
+        var sp = myArr.product[i];
+        localStorage.setItem("data",JSON.stringify(sp));
+        location.href = "demo_2.html";
+        console.log(i);
     }
 
 
 
+   
+
 </script>
 
 
+<footer>
+    
+</footer>
 
 
-<body onload="loadDoc()">
+<body">
     <div class="main-side" id="ms">
      
     </div>
-        
 
+
+        
     
 </body>
 </html>

@@ -35,6 +35,7 @@
     width: 35.5%;
     float: left;
     box-sizing: border-box;
+    cursor: pointer;
 
 }
 
@@ -64,6 +65,13 @@
 .long-type{
     height: 10%;
     display: inline;
+    cursor: pointer;
+    
+}
+
+.long-type:hover{
+    color: #F54253;
+    
 }
 
 .long-type p{
@@ -78,6 +86,7 @@
 
 .long-title{
     height: 35%;
+    cursor: pointer;
 
 }
 .long-title p, .long-title a{
@@ -135,6 +144,7 @@
     text-decoration: 1px underline;
     font-family: 'Source Serif Pro';
     font-weight: bold;
+    cursor: pointer;
 
 }
 
@@ -184,6 +194,12 @@
     font-size: 15px;
     font-weight: 600; 
     margin-left: 8px;
+    cursor: pointer;
+
+ 
+}
+.sh-one-type >p:hover{
+    color: #F54253;
  
 }
 
@@ -230,6 +246,8 @@
     text-decoration: 1px underline;
     font-family: 'Source Serif Pro';
     font-weight: bold;
+    cursor: pointer;
+
 
 }
 
