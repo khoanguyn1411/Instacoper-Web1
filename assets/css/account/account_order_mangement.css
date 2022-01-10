@@ -1,0 +1,245 @@
+
+body{
+    background:#FAFAFA;
+
+}
+
+.wrapper{
+    width: 100%;
+    height: auto;
+    margin:auto;
+    box-sizing: border-box;
+    min-height: 1024px;
+    max-width: 1140px;
+    position: relative;
+    padding-left:20px;
+    padding-right:20px;
+    font-family: 'Source Sans Pro', sans-serif;
+    background:#FAFAFA;
+
+}
+.right-side{
+    height: 1100px;
+    width: 75%;
+    float: left;
+}
+#btnOpenAccountNav{
+    display: none;
+}
+
+
+.right-side-content{
+    background: #FAFAFA;
+    width: 100%;
+    margin: auto;
+    margin-top: 150px;
+    height: 900px;
+}
+
+.right-side-content .tab{
+    display: flex;
+    width: 100%;
+}
+
+.right-side-content .tab > button{
+    width: 16.666667%;
+    padding: 15px 0px;
+    background: white;
+    border: none;
+    cursor: pointer;
+    font-size: 15px;
+
+}
+.right-side-content .tab > button>span{
+    color: #F54253;
+
+}
+
+.tab button.active {
+    border-bottom: 3px solid #F54253;
+  }
+
+  .tabcontent{
+      display: none;
+      width: 100%;
+  }
+
+
+
+.right-side-content .tab > button:hover{
+    background: pink;
+    transition: .3s;
+}
+
+.right-side-content .search{
+    width: 100%;
+    margin-top: 10px;
+    position: relative;
+}
+
+.right-side-content .search img{
+    width: 15px;
+    top: 13px;
+    left: 12px;
+    position: absolute;
+}
+
+.right-side-content .search>input{
+    width: 100%;
+    padding: 10px 40px;
+    background: #E5E5E5;
+    border: none;
+    font-size: 15px;
+
+}
+
+
+.tabcontent .part{
+    padding: 20px;
+    margin-top: 10px;
+    width: 100%;
+    display: inline-block;
+    background: white;
+}
+
+.title{
+    display: flex;
+    align-items: center;
+}
+
+.title >p{
+    margin-left: 10px;
+    font-size: 14px;
+}
+
+
+.title >img{
+    width: 14px;
+    color: #F54253;
+}
+
+.tabcontent .part .seperate{
+    width: 100%;
+    height: 1px;
+    background-color: #CCCCCC;
+    margin-top: 10px;
+}
+.tabcontent .part .order-content{
+    margin-top: 20px;
+    display: inline-block;
+    width: 100%;
+
+}
+
+.tabcontent .part .order-content>div{
+    float: left;
+}
+
+.tabcontent .part .order-content .img{
+    width: 10%;
+    position: relative;
+}
+
+.tabcontent .part .order-content .img > img{
+    width: 100%;
+}
+
+.tabcontent .part .order-content .img > p{
+    position: absolute;
+    bottom: 5px;
+    right: 0;
+    color: white;
+    background: #BCBCBC;
+    padding: 3px 8px;
+    font-weight: bold;
+    font-size: 10px;
+}
+
+
+.tabcontent .part .order-content .content{
+    width: 70%;
+    padding-left: 20px;
+}
+
+.tabcontent .part .order-content .price{
+    width: 20%;
+    text-align: right;
+}
+
+.tabcontent .part .order-content .price>p{
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.part .order-content .content .name{
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.part .order-content .content >p{
+    margin: 5px 0px;
+}
+
+.total{
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.total>div{
+    float: right;
+}
+
+
+.total>div:last-child{
+    margin-left: 30px;
+    margin-left: 30px;
+    font-weight: bold;
+    font-size: 18px;
+    color:  #F54253;
+}
+
+.button-container{
+    width: 100%;
+    margin-top: 20px;
+    text-align: right;
+}
+
+.button{
+    padding: 10px 20px;
+    background: black;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.button:hover{
+    background: #F54253;
+}
+
+
+.part1{
+    padding: 50px;
+    height: 500px;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.part1 > div{
+    text-align: center;
+}
+
+.part1 > div> img{
+    width: 50%;
+}
+
+.part1 > div> p{
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 20px;
+}

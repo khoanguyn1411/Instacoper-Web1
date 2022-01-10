@@ -1,0 +1,267 @@
+
+body{
+    background:#FAFAFA;
+
+}
+
+.wrapper{
+    width: 100%;
+    height: auto;
+    margin:auto;
+    box-sizing: border-box;
+    min-height: 1024px;
+    max-width: 1140px;
+    position: relative;
+    padding-left:20px;
+    padding-right:20px;
+    font-family: 'Source Sans Pro', sans-serif;
+    background:#FAFAFA;
+
+}
+
+.right-side{
+    height: 1100px;
+    width: 75%;
+    float: left;
+}
+#btnOpenAccountNav{
+    display: none;
+}
+
+
+.right-side-content{
+    background: white;
+    width: 90%;
+    margin: auto;
+    margin-top: 150px;
+    padding: 20px;
+    height: 900px;
+}
+
+.right-side-content .avatar{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+}
+.right-side-content .avatar .img{
+    position: relative;
+    width: 12%;
+}
+
+.right-side-content .avatar .img img:first-child{
+    border-radius: 50%;
+    width: 100%;
+}
+.right-side-content .avatar .img img:last-child{
+    width: 20%;
+    bottom: 5px;
+    right: 5px;
+    position: absolute;
+    cursor: pointer;
+}  
+
+.right-side-content .name-content{
+    width: 100%;
+    text-align: center;
+    margin-top: 5px;
+}
+
+
+.name-content >p{
+    font-size: 15px;
+}
+
+.name-content >p:first-child{
+    font-size: 20px;
+}
+
+
+.input-content{
+    width: 70%;
+    margin: auto;
+    margin-top: 15px;
+}
+
+.input-content .fil{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-top: 25px;
+}
+
+.input-content .fil .lable-left{
+    width: 18%;
+    float: left;
+}
+
+.input-content .fil .input-container{
+    width: 82%;
+    float: left;
+
+}
+
+.input-content .fil .input-container > input{
+    width: 100%;
+    padding: 7px 8px;
+    border: 1.5px solid #8D8D8D;
+    border-radius: 3px;
+}
+#seleteDate{
+    display: flex;
+    justify-content: space-between;
+}
+
+.input-content .fil .input-container .custom-select{
+    width: 32%;
+    margin: 0px 0px;
+}
+
+/* CSS cho gender */
+
+
+#gender{
+    display: flex;
+
+}
+#gender input{
+    display: none;
+}
+
+#gender label{
+    margin-right: 15px;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+
+}
+
+#gender input + label:before{
+    content: "\25CE";
+    display: inline-block;
+    margin-right: 8px;
+    vertical-align: bottom;
+    font-size: 17px;
+    color: transparent;
+    color: black;
+    cursor: pointer;
+}
+#gender input:checked + label:before{
+    color: #F54253;
+    font-size: 17px;
+
+    content: "\25C9";
+
+}
+
+.button-save{
+    width: 100%;
+    text-align: center;
+    margin-top: 25px;
+}
+
+.button-save button{
+    min-width: 100px;
+    background: black;
+    padding: 12px;
+    color: white;
+    cursor: pointer;
+    border-radius: 20px;
+    border: 0;
+    font-weight: bold;
+}
+
+.button-save button:hover{
+    background: #F54253;
+}
+
+
+
+
+
+@media only screen and (max-width: 1006px){
+    #btnOpenAccountNav{
+        background: black;
+        color: white;
+        width: 25px;
+        position: fixed;
+        margin-left: -20px;
+        padding: 5px 20px;
+        display: block;
+        top: 150px;
+
+    }
+    .activeNavAct{
+        left: 0;
+    }
+
+  
+    .left-container{
+        display: none;
+    }
+
+    .right-side{
+        width: 100%;
+    }
+    .wrapper{
+        min-width: 300px;
+    }
+    
+    
+}
+
+
+@media only screen and (max-width: 793px){
+   
+    .input-content{
+        width: 100%;
+    }
+
+}
+
+
+@media only screen and (max-width: 578px){
+  
+    .right-side{
+        width: 100%;
+    }
+
+    .right-side-content{
+        width: 100%;
+    }
+
+    #selectAccountAddress{
+        width: 100%;
+    }
+    .input-content .fil .lable-left{
+        min-width: 70px;
+        float: left;
+    }
+
+    #fil_gender{
+        align-items:  flex-start;
+    }
+
+    #fil_gender> .lable-left{
+        margin-top: 1.5px;
+    }
+  
+
+    #day{
+        width: 28%;
+    }
+    #month{
+        width: 28%;
+    }
+
+    #year{
+        width: 40%;
+    }
+}
+
+@media only screen and (max-width: 362px){
+    #gender{
+        display: block;
+    
+    }
+}

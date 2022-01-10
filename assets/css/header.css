@@ -109,6 +109,8 @@ body{
 
 .header-right-content > div >img{
     margin-left: 10px;
+   cursor: pointer;
+
 }
 
 
@@ -166,6 +168,8 @@ body{
     box-sizing: border-box;
     width: 50%;
     min-width: 180px;
+   cursor: pointer;
+
 }
 
 .header-bottom .hd-danhmucsp p, 
@@ -354,10 +358,14 @@ p, li, button{
 #sanpham:hover{
 
 }
+a{
+    cursor: pointer;
+}
 .sub-nav-2>li{
     list-style: none;
     font-size: 13px;
     padding: 2px 0px;
+
 }
 
 .sub-nav-2>li:hover a{
@@ -390,7 +398,7 @@ p, li, button{
 
 
 
-@media only screen and (max-width: 810px){
+@media only screen and (max-width: 835px){
     #navMenu{
         position: fixed;
         top: 0;
@@ -458,7 +466,6 @@ p, li, button{
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         padding-right: 25px;
         color: black;
-        text-shadow: 1px 2px 4px grey;
         background-color: #F54253;
         box-sizing: border-box;
     }
@@ -716,7 +723,8 @@ p, li, button{
     border-radius: 25px;
     padding: 12px;    
     box-sizing: border-box;
-    box-sizing: border-box;
+   cursor: pointer;
+
     
 }
 

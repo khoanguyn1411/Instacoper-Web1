@@ -1,0 +1,180 @@
+
+.wrapper{
+    width: 100%;
+    height: auto;
+    margin:auto;
+    box-sizing: border-box;
+    min-height: 1024px;
+    max-width: 1140px;
+    position: relative;
+    padding-left:20px;
+    padding-right:20px;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+
+
+.left-side{
+    background:#FAFAFA;
+    height: 100%;
+    position: absolute;
+    width: 25%;
+    left: 0;
+    padding-left: 25px;
+    padding-top:150px;
+    z-index: 1;
+
+}
+
+.content-container{
+    width: 100%;
+    margin-top: 70px;
+}
+
+.account-of>div{
+    float: left;
+    
+}
+
+.account-of .img{
+    width: 15%;
+}
+
+
+.account-of .img img{
+    width: 100%;
+    border-radius: 50%;
+}
+
+.account-of .info{
+    padding-left: 15px;
+    width: 85%;
+}
+
+
+.account-of{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    float: left;
+
+}
+
+.on-active{
+    font-weight: bold;
+}
+
+.ac-name{
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.nav-container{
+    margin-top: 20px;
+    width: 100%;
+    float: left;
+}
+
+.item-nav{
+    display: flex;
+    align-items: center;
+    padding: 7px 0px;
+}
+
+.item-nav .img{
+    width: 15%;
+    text-align: center;
+}
+
+.item-nav .img img{
+    width: 15px;
+    text-align: center;
+    
+}
+
+.item-nav .nav{
+    width: 70%;
+    margin-left: 20px;
+}
+
+.item-nav:hover{
+    background: #F54253;
+}
+@media only screen and (max-width: 1006px){
+    .breadcrumb{
+        display: none;
+    }
+
+    .account-of{
+        display: block;
+    
+    }
+    .left-side{
+        padding-left: 10px;
+        min-width: 200px;
+        padding-right: 10px;
+        position: fixed;
+        height: 100vh;
+        left: -250px;
+        transition: 0.3s;
+
+
+    }
+    .content-container{
+        margin-top: 0;
+    }
+
+ 
+
+    .account-of >div{
+        display: block ;
+    }
+    .account-of .img{
+        width: 100%;
+        text-align: center;
+    }
+    .account-of .img img{
+        width: 50%;
+    }
+    .account-of .info{
+        width: 100%;
+        text-align: center;
+        padding-left: 0;
+        margin-top: 10px;
+    }
+
+    .account-of .info > p:first-child{
+        display: none;
+    }
+    
+    #btnCloseAccountNav{
+        display: block;
+        margin-bottom: 10px;
+        width: 100%;
+        text-align: right;
+
+    }
+    
+    #btnCloseAccountNav a::after{
+        content: "\00d7";
+        font-size: 25px;
+        font-weight: bold;
+        background: #F54253;
+        padding: 0px 20px;
+        margin-right: -10px;
+
+    }
+
+
+
+
+
+  
+}
+
+
+
+
+
+
+

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/styleP.css">
+    <link rel="stylesheet" href="assets/css/account/account.css">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;1,200;1,300;1,400&display=swap" rel="stylesheet">
+
+
+    
+    <title>Document</title>
+</head>
+</head>
+
+<body>
+    
+    <div class="left-left">
+      
+        <ul class="breadcrumb">
+            <li><a href="#">Trang chủ</a></li>
+            <li>Thông tin tài khoản</li>
+        </ul>  
+        <div class="content-container">
+            <div id="btnCloseAccountNav">
+                <a></a>
+            </div>
+            <div class="account-of">
+                <div class="img">
+                    <img src="assets/img/account/suzy.jpg">
+                </div>
+                <div class="info">
+                    <p>Tài khoản của</p>
+                    <p class="ac-name">Tuyết Trinh</p>
+                </div>
+            </div>
+            <div class="nav-container">
+                <div class="item-nav">
+                    <div class="img">
+                        <img src="assets/img/iconKhoa/ic_account.svg">
+                    </div>
+                    <div class="nav">
+                        <a id="my_account">Tài khoản của tôi</a>
+                    </div>
+                </div>
+
+                <div class="item-nav">
+                    <div class="img">
+                        <img src="assets/img/iconKhoa/ic_order.svg">
+                    </div>
+                    <div class="nav">
+                        <a>Quản lý đơn hàng</a>
+                    </div>
+                </div>
+
+                <div class="item-nav">
+                    <div class="img">
+                        <img src="assets/img/iconKhoa/ic_notification.svg">
+                    </div>
+                    <div class="nav">
+                        <a>Thông báo của tôi</a>
+                    </div>
+                </div>
+
+                <div class="item-nav">
+                    <div class="img">
+                        <img src="assets/img/iconKhoa/ic_change_password.svg">
+                    </div>
+                    <div class="nav">
+                        <a>Thiết lập địa chỉ</a>
+                    </div>
+                </div>
+
+                <div class="item-nav">
+                    <div class="img">
+                        <img src="assets/img/iconKhoa/ic_address.svg">
+                    </div>
+                    <div class="nav">
+                        <a>Đổi mật khẩu</a>
+                    </div>
+                </div>
+                    
+            </div>
+        </div>    
+    </div>
+    <script>
+        const btnCloseAccountNav = document.getElementById("btnCloseAccountNav");
+        const navAccount = document.getElementById("left_side");
+
+        if(btnCloseAccountNav){
+            btnCloseAccountNav.addEventListener('click', () =>{
+                navAccount.style.left = "-250px";
+            })
+        }
+
+    </script>  
+    <script>
+          var my_account = document.getElementById("my_account"); 
+          var URLfull = window.location.href;
+          var arr = URLfull.split("/");
+          var link = arr[arr.length-1];
+
+          if(link === 'account_my_account.html'){
+            my_account.className = "on-active";
+            console.log(link); 
+          }
+
+    </script> 
+    
+</body>
+
+</html>

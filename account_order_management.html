@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/account/account_order_mangement.css">
+    <link rel="stylesheet" href="assets/css/customSelect.css">
+    <title>Document</title>
+</head>
+<script src="//code.jquery.com/jquery-1.10.2.js"></script>
+    <script> 
+    $(function(){
+    $("header").load("header.html"); 
+    $("footer").load("footer.html"); 
+    $("#left_side").load("account_left_side.html"); 
+    });
+    </script>   
+
+<header>
+</header>
+<body>
+    <div class="wrapper">
+        <div id="btnOpenAccountNav">
+            <a>&#10095;</a>
+       </div>
+       <div class="left-side" id="left_side">
+
+       </div>
+       <div class="left-container" style="width: 25%; float: left; height: 500px;">
+       </div>
+
+       <div class="right-side">
+            <div class="right-side-content">
+                <div class="tab">
+                    <button class="tablinks" onclick="openCity(event, 'TatCa')" id="defaultOpen">Tất cả</button>
+                    <button class="tablinks" onclick="openCity(event, 'ChoXacNhan')">Chờ xác nhận</button>
+                    <button class="tablinks" onclick="openCity(event, 'ChoLayHang')">Chờ lấy hàng <span>(2)</span> </button>
+                    <button class="tablinks" onclick="openCity(event, 'DangGiao')">Đang giao <span>(1)</span></button>
+                    <button class="tablinks" onclick="openCity(event, 'DaGiao')">Đã giao</button>
+                    <button class="tablinks" onclick="openCity(event, 'DaHuy')">Đã hủy</button>
+                  </div>
+                  <div class="search">
+                      <img src="assets/img/iconKhoa/ic_search_grey.svg">
+                    <input placeholder="Tìm kiếm theo tên shop, ID đơn hàng hoặc tên sản phẩm">
+                  </div>
+
+                  <div class="content">
+                    <div id="TatCa" class="tabcontent">
+                        <div class="part">
+                            <div class="title">
+                                <img src="assets/img/iconKhoa/ic_delivery.svg">
+                                <p>Đang giao</p>
+                            </div>
+                            <div class="seperate">
+                            </div>
+                            <div class="order-content">
+                                <div class="img">
+                                    <img src="assets/img/shoes/16.png">
+                                    <p>1</p>
+                                </div>
+
+                                <div class="content">
+                                    <p class="name">Adidas Continental 80</p>
+                                    <p class="gender">Giày nam</p>
+                                    <p class="size">Kích thước: <b>40</b></p>
+                                </div>
+
+                                <div class="price">
+                                    <p>2.699.000đ</p>
+                                </div>
+                            </div>
+
+                            <div class="seperate">
+                            </div>
+
+                            <div class="total">
+                                <div>Tổng số tiền: </div>
+                                <div>2.699.000đ</div>
+                            </div>
+
+                            <div class="button-container">
+                                <button class="button">
+                                    Xem chi tiết
+                                </button>
+                            </div>
+                            
+                        </div>
+                       
+                        <div class="part">
+                            <div class="title">
+                                <img src="assets/img/iconKhoa/ic_delivery.svg">
+                                <p>Chờ lấy hàng</p>
+                            </div>
+                            <div class="seperate">
+                            </div>
+                            <div class="order-content" >
+                                <div class="img">
+                                    <img src="assets/img/shoes/3.png">
+                                    <p>1</p>
+                                </div>
+
+                                <div class="content">
+                                    <p class="name">Adidas NMD R1</p>
+                                    <p class="gender">Giày nam</p>
+                                    <p class="size">Kích thước: <b>42</b></p>
+                                </div>
+
+                                <div class="price">
+                                    <p>3.330.000₫</p>
+                                </div>
+                            </div>
+                            
+
+                            <div class="seperate">
+                            </div>
+
+                            <div class="order-content">
+                                <div class="img">
+                                    <img src="assets/img/shoes/20.png">
+                                    <p>1</p>
+                                </div>
+
+                                <div class="content">
+                                    <p class="name">VANS Old Skool Classic</p>
+                                    <p class="gender">Giày nam</p>
+                                    <p class="size">Kích thước: <b>42</b></p>
+                                </div>
+
+                                <div class="price">
+                                    <p>2.699.000đ</p>
+                                </div>
+                            </div>
+                            
+
+                            <div class="seperate">
+                            </div>
+
+                            <div class="total">
+                                <div>Tổng số tiền: </div>
+                                <div>2.699.000đ</div>
+                            </div>
+
+                            <div class="button-container">
+                                <button class="button">
+                                    Xem chi tiết
+                                </button>
+                            </div>
+                            
+                        </div>
+                      </div>
+                      
+                      <div id="ChoXacNhan" class="tabcontent">
+                        <div class="part1">
+                            <div>
+                                <img src="assets/img/account/img_no_item.svg">
+                                <p>Chưa có đơn hàng</p>
+                            </div>
+                        
+                        </div>
+                      </div>
+                      
+                      <div id="ChoLayHang" class="tabcontent">
+                        <div class="part">
+                            <div class="title">
+                                <img src="assets/img/iconKhoa/ic_delivery.svg">
+                                <p>Chờ lấy hàng</p>
+                            </div>
+                            <div class="seperate">
+                            </div>
+                            <div class="order-content" >
+                                <div class="img">
+                                    <img src="assets/img/shoes/3.png">
+                                    <p>1</p>
+                                </div>
+
+                                <div class="content">
+                                    <p class="name">Adidas NMD R1</p>
+                                    <p class="gender">Giày nam</p>
+                                    <p class="size">Kích thước: <b>42</b></p>
+                                </div>
+
+                                <div class="price">
+                                    <p>3.330.000₫</p>
+                                </div>
+                            </div>
+                            
+
+                            <div class="seperate">
+                            </div>
+
+                            <div class="order-content">
+                                <div class="img">
+                                    <img src="assets/img/shoes/20.png">
+                                    <p>1</p>
+                                </div>
+
+                                <div class="content">
+                                    <p class="name">VANS Old Skool Classic</p>
+                                    <p class="gender">Giày nam</p>
+                                    <p class="size">Kích thước: <b>42</b></p>
+                                </div>
+
+                                <div class="price">
+                                    <p>2.699.000đ</p>
+                                </div>
+                            </div>
+                            
+
+                            <div class="seperate">
+                            </div>
+
+                            <div class="total">
+                                <div>Tổng số tiền: </div>
+                                <div>2.699.000đ</div>
+                            </div>
+
+                            <div class="button-container">
+                                <button class="button">
+                                    Xem chi tiết
+                                </button>
+                            </div>
+                            
+                        </div>
+                      </div>
+    
+                      <div id="DangGiao" class="tabcontent">
+                        <div class="part">
+                            <div class="title">
+                                <img src="assets/img/iconKhoa/ic_delivery.svg">
+                                <p>Đang giao</p>
+                            </div>
+                            <div class="seperate">
+                            </div>
+                            <div class="order-content">
+                                <div class="img">
+                                    <img src="assets/img/shoes/16.png">
+                                    <p>1</p>
+                                </div>
+
+                                <div class="content">
+                                    <p class="name">Adidas Continental 80</p>
+                                    <p class="gender">Giày nam</p>
+                                    <p class="size">Kích thước: <b>40</b></p>
+                                </div>
+
+                                <div class="price">
+                                    <p>2.699.000đ</p>
+                                </div>
+                            </div>
+
+                            <div class="seperate">
+                            </div>
+
+                            <div class="total">
+                                <div>Tổng số tiền: </div>
+                                <div>2.699.000đ</div>
+                            </div>
+
+                            <div class="button-container">
+                                <button class="button">
+                                    Xem chi tiết
+                                </button>
+                            </div>
+                            
+                        </div>
+                       
+                      </div>
+    
+                      <div id="DaGiao" class="tabcontent">
+                        <div class="part1">
+                            <div>
+                                <img src="assets/img/account/img_no_item.svg">
+                                <p>Chưa có đơn hàng</p>
+                            </div>
+                        
+                        </div>
+                      </div>
+    
+                      <div id="DaHuy" class="tabcontent">
+                        <div class="part1">
+                            <div>
+                                <img src="assets/img/account/img_no_item.svg">
+                                <p>Chưa có đơn hàng</p>
+                            </div>
+                        
+                        </div>
+                      </div>
+                  </div>
+
+                 
+
+            </div>
+        </div>
+    </div>
+  <script>
+        function openCity(evt, status) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(status).style.display = "block";
+            evt.currentTarget.className += " active";
+            }
+            document.getElementById("defaultOpen").click();
+</script>
+</body>
+<footer>
+
+</footer>
+</html>

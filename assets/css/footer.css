@@ -115,12 +115,15 @@ footer a, footer li, footer p, footer div, footer button{
     width: 100%;
     border: none;
     color: white;
+   cursor: pointer;
+
 }
 
 .footer-register >div> p, .footer-register >div> input, .footer-register >div> button{
 
     width: 100%;
     box-sizing: border-box;
+    
 }
 
 
