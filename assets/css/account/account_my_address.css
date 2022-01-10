@@ -1,0 +1,224 @@
+body{
+    background:#FAFAFA;
+
+}
+
+.wrapper{
+    width: 100%;
+    height: auto;
+    margin:auto;
+    box-sizing: border-box;
+    min-height: 1024px;
+    max-width: 1140px;
+    position: relative;
+    padding-left:20px;
+    padding-right:20px;
+    font-family: 'Source Sans Pro', sans-serif;
+    background:#FAFAFA;
+
+}
+.right-side{
+    height: auto;
+    width: 75%;
+    float: left;
+    margin-bottom: 20px;
+}
+#btnOpenAccountNav{
+    display: none;
+}
+
+
+.right-side-content{
+    background: #FAFAFA;
+    width: 100%;
+    margin: auto;
+    margin-top: 150px;
+}
+
+.top-content{
+    width: 100%;
+    text-align: center;
+    background-color: white;
+    padding: 20px;
+    border: 1px dashed #8D8D8D;
+    cursor: pointer;
+
+}
+
+.top-content:hover{
+    background-color: #EBEBEB;
+    transition: 0.3s;
+}   
+
+.top-content > *{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.top-content > p{
+    font-size: 18px;
+    font-weight: 600;
+    color: #F54253;
+    cursor: pointer;
+
+}
+.top-content > img{
+    width: 18px;
+
+    margin-right: 10px;
+}
+
+.item-address{
+    background-color: white;
+    padding: 20px;
+    margin-top: 10px;
+    display: inline-block;
+    width: 100%;
+}
+
+
+
+
+.item-address .item-left-content{
+    width: 85%;
+    display: inline-block;
+    vertical-align: middle;
+
+
+}
+
+.item-address .item-right-content{
+    width: 14%;
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+
+}
+.item-address .item-name {
+    width: 100%;
+    float: left;
+    margin-bottom: 8px;
+}
+.item-address .item-name > *{
+    display: inline-block;
+}
+.item-address .item-name p{
+    font-size: 15px;
+}
+.item-address .item-name p:last-child{
+    color: green;
+}
+
+
+.item-address .item-name img{
+    margin-left: 20px;
+    margin-right: 6px;
+    width: 15px;
+}
+span.span-grey{
+    color: #8D8D8D;
+}
+
+.item-contact>p{
+    margin-top: 8px;
+
+}
+
+.item-right-content .action > p:first-child{
+    color: green;
+    margin: 20px 0px;
+    cursor: pointer;
+    
+
+}
+
+.item-right-content .action > p:last-child{
+    color: #F54253;
+    margin: 20px 0px;
+    cursor: pointer;
+
+}
+
+@media only screen and (max-width: 1006px){
+    .left-container{
+        display: none;
+    }
+
+    .right-side{
+        width: 100%;
+    }
+
+    #btnOpenAccountNav{
+        background: black;
+        color: white;
+        width: 25px;
+        position: fixed;
+        margin-left: -20px;
+        padding: 5px 20px;
+        display: block;
+        top: 150px;
+        z-index: 2;
+
+    }
+
+    #btnOpenAccountNav > a{
+        color: white;
+        
+    }
+
+    .wrapper{
+        min-width: 300px;
+    }
+
+}
+
+
+
+@media only screen and (max-width: 535px){
+    .item-address{
+        display: block;
+    }
+    .item-address .item-left-content{
+        width: 100%;
+        display: block;
+        
+    
+    
+    }
+    
+    .item-address .item-right-content{
+        width: 100%;
+        display: block;
+        text-align: center;
+    
+    }
+
+    .item-contact>p{
+        text-align: justify ;
+    
+    }
+
+    .item-right-content .action > p:first-child{
+        margin: 5 0px;
+        
+    
+    }
+    
+    .item-right-content .action > p:last-child{
+        margin-top: 10px;
+        margin-bottom: 0;
+    
+    }
+    
+
+}
+
+
+
+
+
+
+
+
+
+

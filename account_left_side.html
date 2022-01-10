@@ -41,7 +41,7 @@
                         <img src="assets/img/iconKhoa/ic_account.svg">
                     </div>
                     <div class="nav">
-                        <a id="my_account">Tài khoản của tôi</a>
+                        <a href="account_my_account.html" id="my_account">Tài khoản của tôi</a>
                     </div>
                 </div>
 
@@ -50,7 +50,7 @@
                         <img src="assets/img/iconKhoa/ic_order.svg">
                     </div>
                     <div class="nav">
-                        <a>Quản lý đơn hàng</a>
+                        <a href="account_order_management.html" id="order_management">Quản lý đơn hàng</a>
                     </div>
                 </div>
 
@@ -59,7 +59,7 @@
                         <img src="assets/img/iconKhoa/ic_notification.svg">
                     </div>
                     <div class="nav">
-                        <a>Thông báo của tôi</a>
+                        <a href="account_notification.html" id="notification">Thông báo của tôi</a>
                     </div>
                 </div>
 
@@ -68,7 +68,7 @@
                         <img src="assets/img/iconKhoa/ic_change_password.svg">
                     </div>
                     <div class="nav">
-                        <a>Thiết lập địa chỉ</a>
+                        <a href="account_my_address.html" id="my_address">Thiết lập địa chỉ</a>
                     </div>
                 </div>
 
@@ -97,12 +97,36 @@
     </script>  
     <script>
           var my_account = document.getElementById("my_account"); 
+          var order_management = document.getElementById("order_management");
+
+          var notification = document.getElementById("notification");
+          var address = document.getElementById("my_address");
+
           var URLfull = window.location.href;
           var arr = URLfull.split("/");
           var link = arr[arr.length-1];
 
+
+          var arrAddress = "account_my_address.html, account_my_address_choose.html";
+
           if(link === 'account_my_account.html'){
             my_account.className = "on-active";
+            console.log(link); 
+          }
+
+          if(link === 'account_order_management.html'){
+            order_management.className = "on-active";
+            console.log(link); 
+          }
+
+          if(link === 'account_notification.html'){
+            notification.className = "on-active";
+            console.log(link); 
+          }
+
+          
+          if(arrAddress.includes(link)){
+            address.className = "on-active";
             console.log(link); 
           }
 

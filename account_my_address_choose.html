@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/account/account_my_address_choose.css">
+    <link rel="stylesheet" href="assets/css/customSelect.css">
+
+    <title>Document</title>
+</head>
+<script src="//code.jquery.com/jquery-1.10.2.js"></script>
+    <script> 
+    $(function(){
+    $("header").load("header.html"); 
+    $("footer").load("footer.html"); 
+    $("#left_side").load("account_left_side.html"); 
+    });
+    </script>   
+
+<header>
+</header>
+
+<body>
+    <div class="wrapper">
+        <div id="btnOpenAccountNav">
+            <a>&#10095;</a>
+       </div>
+       <div class="left-side" id="left_side">
+
+       </div>
+
+       <div class="left-container" style="width: 25%; float: left; height: 500px;">
+       </div>
+
+       <div class="right-side">
+            <div class="right-side-content">
+                <div class="input-content">
+                    <div class="fil">
+                        <div class="lable-left">
+                            <p>Họ và tên:</p>
+                        </div>
+    
+                        <div class="input-container">
+                            <input placeholder="Nhập họ và tên">
+                        </div>
+                    </div>
+
+                    <div class="fil">
+                        <div class="lable-left">
+                            <p>Số điện thoại: </p>
+                        </div>
+    
+                        <div class="input-container">
+                            <input placeholder="Nhập số điện thoại">
+                        </div>
+                    </div>
+                    
+                    <div class="fil">
+                        <div class="lable-left">
+                            <p>Tỉnh/Thành phố:</p>
+                        </div>
+    
+                        <div class="input-container">
+                            <div class="custom-select">
+                                <select class="address" id="selectProvince">
+                                    <option value="0">Chọn tỉnh / thành phố</option>
+                                    <option value="An Giang">An Giang
+                                        <option value="Bà Rịa - Vũng Tàu">Bà Rịa - Vũng Tàu
+                                        <option value="Bắc Giang">Bắc Giang
+                                        <option value="Bắc Kạn">Bắc Kạn
+                                        <option value="Bạc Liêu">Bạc Liêu
+                                        <option value="Bắc Ninh">Bắc Ninh
+                                        <option value="Bến Tre">Bến Tre
+                                        <option value="Bình Định">Bình Định
+                                        <option value="Bình Dương">Bình Dương
+                                        <option value="Bình Phước">Bình Phước
+                                        <option value="Bình Thuận">Bình Thuận
+                                        <option value="Bình Thuận">Bình Thuận
+                                        <option value="Cà Mau">Cà Mau
+                                        <option value="Cao Bằng">Cao Bằng
+                                        <option value="Đắk Lắk">Đắk Lắk
+                                        <option value="Đắk Nông">Đắk Nông
+                                        <option value="Điện Biên">Điện Biên
+                                        <option value="Đồng Nai">Đồng Nai
+                                        <option value="Đồng Tháp">Đồng Tháp
+                                        <option value="Đồng Tháp">Đồng Tháp
+                                        <option value="Gia Lai">Gia Lai
+                                        <option value="Hà Giang">Hà Giang
+                                        <option value="Hà Nam">Hà Nam
+                                        <option value="Hà Tĩnh">Hà Tĩnh
+                                        <option value="Hải Dương">Hải Dương
+                                        <option value="Hậu Giang">Hậu Giang
+                                        <option value="Hòa Bình">Hòa Bình
+                                        <option value="Hưng Yên">Hưng Yên
+                                        <option value="Khánh Hòa">Khánh Hòa
+                                        <option value="Kiên Giang">Kiên Giang
+                                        <option value="Kon Tum">Kon Tum
+                                        <option value="Lai Châu">Lai Châu
+                                        <option value="Lâm Đồng">Lâm Đồng
+                                        <option value="Lạng Sơn">Lạng Sơn
+                                        <option value="Lào Cai">Lào Cai
+                                        <option value="Long An">Long An
+                                        <option value="Nam Định">Nam Định
+                                        <option value="Nghệ An">Nghệ An
+                                        <option value="Ninh Bình">Ninh Bình
+                                        <option value="Ninh Thuận">Ninh Thuận
+                                        <option value="Phú Thọ">Phú Thọ
+                                        <option value="Quảng Bình">Quảng Bình
+                                        <option value="Quảng Bình">Quảng Bình
+                                        <option value="Quảng Ngãi">Quảng Ngãi
+                                        <option value="Quảng Ninh">Quảng Ninh
+                                        <option value="Quảng Trị">Quảng Trị
+                                        <option value="Sóc Trăng">Sóc Trăng
+                                        <option value="Sơn La">Sơn La
+                                        <option value="Tây Ninh">Tây Ninh
+                                        <option value="Thái Bình">Thái Bình
+                                        <option value="Thái Nguyên">Thái Nguyên
+                                        <option value="Thanh Hóa">Thanh Hóa
+                                        <option value="Thừa Thiên Huế">Thừa Thiên Huế
+                                        <option value="Tiền Giang">Tiền Giang
+                                        <option value="Trà Vinh">Trà Vinh
+                                        <option value="Tuyên Quang">Tuyên Quang
+                                        <option value="Vĩnh Long">Vĩnh Long
+                                        <option value="Vĩnh Phúc">Vĩnh Phúc
+                                        <option value="Yên Bái">Yên Bái
+                                        <option value="Phú Yên">Phú Yên
+                                        <option value="Tp.Cần Thơ">Tp.Cần Thơ
+                                        <option value="Tp.Đà Nẵng">Tp.Đà Nẵng
+                                        <option value="Tp.Hải Phòng">Tp.Hải Phòng
+                                        <option value="Tp.Hà Nội">Tp.Hà Nội
+                                        <option value="TP  HCM">TP HCM
+                                </select>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                    <div class="fil">
+                        <div class="lable-left">
+                            <p>Quận/Huyện:</p>
+                        </div>
+    
+                        <div class="input-container">
+                            <div class="custom-select">
+                                <select class="address" id="selectDistrict">
+                                    <option value="0">Chọn quận/huyện</option>
+                                    <option value="1">Quận 1</option>
+                                    <option value="2">Quận 2</option>
+                                    <option value="3">Quận 3</option>
+                                    <option value="4">Quận 4</option>
+                                    <option value="4">Quận 5</option>
+                                    <option value="4">Quận 7</option>
+                                    <option value="4">Quận 8</option>
+                                    <option value="4">Quận 10</option>
+                                    <option value="4">Quận 12</option>
+                                    <option value="4">Quận Bình Thạnh</option>
+                                    <option value="4">Quận Tân Phú</option>
+                                    <option value="4">Quận Gò Vấp</option>
+                                </select>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                    <div class="fil">
+                        <div class="lable-left">
+                            <p>Phường xã:</p>
+                        </div>
+    
+                        <div class="input-container">
+                            <div class="custom-select">
+                                <select class="address" id="selectDistrict">
+                                    <option value="0">Chọn phường xã</option>
+                                    <option value="1">Tân Hưng Thuận</option>
+                                    <option value="2">Đông Hưng Thuận</option>
+                                    <option value="3">An Phú Đông</option>
+                                    <option value="5">Hiệp Thành</option>
+                                    <option value="6">Tân Thời Nhất</option>
+                                    <option value="7">Thời An</option>
+                                    <option value="8">Thạnh Lộc</option>
+                                    <option value="9">Thạnh Xuân</option>
+                                    <option value="10">Trung Mỹ Tây</option>
+                                </select>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="fil">
+                        <div class="lable-left">
+                            <p>Địa chỉ: </p>
+                        </div>
+    
+                        <div class="input-container">
+                            <textarea placeholder="Nhập địa chỉ"></textarea>
+                        </div>
+
+                    </div>
+
+                    <div class="fil"  id="filLoaiDiaChi">
+                        <div class="lable-left">
+                            <p>Loại địa chỉ: </p>
+                        </div>
+    
+                        <div class="input-container" id="typeAddress">
+                            <input class="gender" type="radio" id="nam" name="gender">
+                            <label for="nam">Nhà riêng/ Chung cư</label>    
+
+                            <input class="gender" type="radio" id="nu" name="gender">
+                            <label for="nu">Cơ quan/Công ty</label>
+                        </div>
+                    </div>
+
+                    <div class="fil">
+                        <div class="input-container" id="chkDefaulAddress">
+                            <input class="gender" type="checkbox" id="defaltAddress" name="gender">
+                            <label for="defaltAddress">Đặt làm địa chỉ mặc định</label>
+                        </div>
+                    </div>
+
+                  </div>
+       
+                  <div class="button-save">
+                    <button>Lưu</button>
+                </div>
+             
+            </div>
+        </div>
+    </div>
+
+</body>
+ <script src="js/accountShowNav.js"></script>
+    <script src="js/selectCustom.js"></script>
+
+<footer></footer>

@@ -1,0 +1,290 @@
+body{
+    background:#FAFAFA;
+
+}
+
+.wrapper{
+    width: 100%;
+    height: auto;
+    margin:auto;
+    box-sizing: border-box;
+    min-height: 1024px;
+    max-width: 1140px;
+    position: relative;
+    padding-left:20px;
+    padding-right:20px;
+    font-family: 'Source Sans Pro', sans-serif;
+    background:#FAFAFA;
+
+}
+
+/* Đây là cái subnav cần làm */
+.sub-noti{
+    position: absolute;
+    right: 10px;
+    bottom: -60px;
+    background-color: white;
+    -webkit-box-shadow: 1px 1px 5px rgb(0 0 0 / 0.4);
+    -moz-box-shadow: 1px 1px 5px rgb(0 0 0 / 0.4);
+    box-shadow: 1px 1px 5px rgb(0 0 0 / 0.4);
+    text-align: center;
+    display: none;
+    height: 0;
+}
+
+.sub-noti.on-use{
+    display: block;
+    transition: 0.3s;
+    height: auto;
+
+}
+
+.sub-noti>p{
+    cursor: pointer;
+    font-size: 13px;
+    padding: 10px 15px;
+    width: 100%;
+    font-weight: 600;
+
+}
+
+.sub-noti>p:hover{
+    color: #F54253;
+    transition: 0.3s;
+}
+
+.sub-noti .seperate{
+    width: 60%;
+    height: 1px;
+    margin: auto;
+    background-color: #CCCCCC;
+}
+
+.right-side{
+    height: auto;
+    width: 75%;
+    float: left;
+    margin-bottom: 20px;
+}
+#btnOpenAccountNav{
+    display: none;
+}
+
+
+.right-side-content{
+    background: #FAFAFA;
+    width: 100%;
+    margin: auto;
+    margin-top: 150px;
+}
+
+
+.right-side-content .tab{
+    width: 100%;
+    background: white;
+    display: inline-flex;
+    position: relative;
+}
+
+.right-side-content .tab > button{
+    width: 15%;
+    padding: 10px 0px;
+    border: none;
+    cursor: pointer;
+    font-size: 15px;
+    min-width: 80px;
+    background: white;
+
+
+}
+.right-side-content .tab > button>img{
+    width: 25%;
+
+
+}
+.right-side-content .tab > button:hover{
+    background: pink;
+    transition: .3s;
+}
+
+.tab button.active {
+    border-bottom: 3px solid #F54253;
+  }
+
+  .tabcontent{
+      width: 100%;
+  }
+
+  .tab > img{
+      position: absolute;
+      right: 0;
+      height: 50%;
+      top: 25%;
+      cursor: pointer;
+  }
+
+  .tabcontent{
+      margin-top: 10px;
+  }
+
+  .item-notify{
+      display: flex;
+      width: 100%;
+      padding: 10px;
+      background-color: white;
+      box-sizing: border-box;
+      min-height: 150px;
+      align-items: center;
+      margin-top: 10px;
+
+  }
+  .item-notify:hover{
+    background-color: #faf0f0;
+    transition: 0.3s;
+
+}
+
+  .item-notify .container{
+      display: inline-block;
+      width: 100%;
+  }
+
+  .unread{
+    background-color: #EBEBEB;
+
+  }
+
+  
+  .item-notify>div>div{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.item-notify .date{
+    width: 15%;
+    text-align: center;
+
+}
+
+.item-notify .status{
+    width: 5%;
+}
+
+.item-notify .status > img{
+    width: 100%;
+}
+
+.item-notify .para{
+    width: 55%;
+    padding: 10px;
+}
+
+.item-notify .para>p{
+    text-align: justify;
+}
+
+
+.item-notify .action{
+    width: 22%;
+    text-align: center;
+}
+
+.item-notify .action >p:first-child{
+    color: green;
+    cursor: pointer;
+    margin:7px 0px;
+
+    
+}
+
+
+.item-notify .action >p:last-child{
+    color: #F54253;
+    cursor: pointer;
+    margin:7px 0px;
+    
+}
+
+span.detail{
+    color: green;
+    cursor: pointer;
+}
+
+
+
+@media only screen and (max-width: 1006px){
+    .left-container{
+        display: none;
+    }
+
+    .right-side{
+        width: 100%;
+    }
+
+    #btnOpenAccountNav{
+        background: black;
+        color: white;
+        width: 25px;
+        position: fixed;
+        margin-left: -20px;
+        padding: 5px 20px;
+        display: block;
+        top: 150px;
+        z-index: 2;
+
+    }
+
+    #btnOpenAccountNav > a{
+        color: white;
+        
+    }
+
+    .wrapper{
+        min-width: 300px;
+    }
+
+}
+@media only screen and (max-width: 580px){
+    .item-notify .status{
+        display: none;
+    }
+
+    .item-notify .para{
+        width: 60%;
+    }
+    
+}
+
+@media only screen and (max-width: 527px){
+    .item-notify .para{
+        width: 100%;
+    }
+
+    .item-notify .date{
+        width: 100%;
+    }
+    .item-notify .date > p{
+        font-weight: 600;
+    }
+    .item-notify .action{
+        width: 100%;
+    }
+    
+}
+
+@media only screen and (max-width: 403px){
+    .right-side-content .tab > button{
+        width: 15%;
+        padding: 15px 0px;
+        min-width: 50px;
+        background: white;
+    
+    
+    }
+    .right-side-content .tab > button>img{
+        width: 40%;
+    
+    
+    }
+}
+

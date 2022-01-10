@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/account/account_notification.css">
+    <title>Document</title>
+</head>
+<script src="//code.jquery.com/jquery-1.10.2.js"></script>
+    <script> 
+    $(function(){
+    $("header").load("header.html"); 
+    $("footer").load("footer.html"); 
+    $("#left_side").load("account_left_side.html"); 
+    });
+    </script>   
+
+<header>
+</header>
+<body>
+    <div class="wrapper">
+        <div id="btnOpenAccountNav">
+            <a>&#10095;</a>
+       </div>
+       <div class="left-side" id="left_side">
+
+       </div>
+
+       <div class="left-container" style="width: 25%; float: left; height: 500px;">
+       </div>
+
+       <div class="right-side">
+            <div class="right-side-content">
+                <div class="tab">
+                    <button class="tablinks" onclick="openCity(event, 'first')" id="defaultOpen"><img src="assets/img/iconKhoa/ic_home.svg  "></button>
+                    <button class="tablinks" onclick="openCity(event, 'second')"><img src="assets/img/iconKhoa/ic_gift.svg"></button>
+                    <button class="tablinks" onclick="openCity(event, 'third')"><img src="assets/img/iconKhoa/ic_cal.svg" alt=""></button>
+                    <button class="tablinks" onclick="openCity(event, 'fourth')"><img src="assets/img/iconKhoa/ic_read.svg  "></button>
+                    <img src="assets/img/iconKhoa/ic_more.svg" onclick="openMore()">
+                    <div class="sub-noti" id="sub_noti">
+                        <p>Đánh dấu đọc tất cả</p>
+                        <div class="seperate"></div>
+                        <p>Xóa tất cả</p>
+                    </div>
+                </div>
+                <div id="first" class="tabcontent">
+                    <div class="content">
+                        
+                        <div class="item-notify unread">
+                            <div class="container">
+                                <div class="date">
+                                    <p>07/01/2022</p>
+                                </div>
+    
+                                <div class="status">
+                                    <img src="assets/img/iconKhoa/ic_pink.svg">
+                                </div>
+    
+                                <div class="para">
+                                    <p>Hãy thay đổi mật khẩu thường xuyên để nâng cao bảo mật. Ngoài ra: 1) Không nên sử dụng chung mật khẩu của email với mật khẩu của các tài khoản khác. 2) Luôn đăng xuất khỏi các tài khoản sau khi sử dụng trên thiết bị công cộng hoặc thiết bị không phải của bản thân.</p>
+                                </div>
+                                <div class="action">
+                                    <p>Đánh dấu đã đọc</p>
+                                    <p>Xóa</p>
+                                </div>
+                            </div>
+                        </div>
+                            
+
+                        <div class="item-notify unread">
+                            <div class="container">
+                                <div class="date">
+                                    <p>08/12/2021</p>
+                                </div>
+    
+                                <div class="status">
+                                    <img src="assets/img/iconKhoa/ic_yellow.svg">
+                                </div>
+    
+                                <div class="para">
+                                    <p>Từ 02/01/2022, Intacoper miễn phí giao tiêu chuẩn cho đơn hàng từ 1.500.000đ, áp dụng phí 19k cho đơn hàng dưới 1.500.000đ. Thay đổi áp dụng cho khách hàng không phải là thành viên Intacoper. <span class="detail">Chi tiết</span> </p>
+                                </div>
+                                <div class="action">
+                                    <p>Đánh dấu đã đọc</p>
+                                    <p>Xóa</p>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="item-notify">
+                            <div class="container">
+                                <div class="date">
+                                    <p>12/11/2021</p>
+                                </div>
+    
+                                <div class="status">
+                                    <img src="assets/img/iconKhoa/ic_green.svg">
+                                </div>
+    
+                                <div class="para">
+                                    <p>Intacoper gửi lời xin lỗi chân thành vì đơn hàng #979498344 của quý khách sẽ giao trễ hơn dự kiến 2 ngày, chúng tôi sẽ giao hàng cho quý khách vào ngày 16/11/2021. </p>
+                                </div>
+                                <div class="action">
+                                    <p>Xóa</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="item-notify">
+                            <div class="container">
+                                <div class="date">
+                                    <p>07/01/2022</p>
+                                </div>
+    
+                                <div class="status">
+                                    <img src="assets/img/iconKhoa/ic_pink.svg">
+                                </div>
+    
+                                <div class="para">
+                                    <p>Nhập mã INTAVan giảm thêm 20% cho giày Van. Thời gian áp dụng từ 06 - 13/9 <span class="detail">Chi tiết</span></p>
+                                </div>
+                                <div class="action">
+                                    <p>Xóa</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        
+                        <div class="item-notify">
+                            <div class="container">
+                                <div class="date">
+                                    <p>07/01/2022</p>
+                                </div>
+    
+                                <div class="status">
+                                    <img src="assets/img/iconKhoa/ic_yellow.svg">
+                                </div>
+    
+                                <div class="para">
+                                    <p>Giảm ngay 300k khi mua đơn hàng trên 1,500 triệu. Số lượng cực kỳ có hạn <span class="detail">Chi tiết</span></p>
+                                </div>
+                                <div class="action">
+                                    <p>Xóa</p>
+                                </div>
+                            </div>
+                            
+                        </div>
+
+                        <div class="item-notify">
+                            <div class="container">
+                                <div class="date">
+                                    <p>07/01/2022</p>
+                                </div>
+    
+                                <div class="status">
+                                    <img src="assets/img/iconKhoa/ic_pink.svg">
+                                </div>
+    
+                                <div class="para">
+                                    <p>Nhập mã INTAVan giảm thêm 20% cho giày Van. Thời gian áp dụng từ 06 - 13/9 <span class="detail">Chi tiết</span></p>
+                                </div>
+                                <div class="action">
+                                    <p>Xóa</p>
+                                </div>
+
+                            </div>
+                            
+                        </div>
+
+                        <div class="item-notify">
+                            <div class="container">
+                                <div class="date">
+                                    <p>07/01/2022</p>
+                                </div>
+    
+                                <div class="status">
+                                    <img src="assets/img/iconKhoa/ic_pink.svg">
+                                </div>
+    
+                                <div class="para">
+                                    <p>Hãy thay đổi mật khẩu thường xuyên để nâng cao bảo mật. Ngoài ra: 1) Không nên sử dụng chung mật khẩu của email với mật khẩu của các tài khoản khác. 2) Luôn đăng xuất khỏi các tài khoản sau khi sử dụng trên thiết bị công cộng hoặc thiết bị không phải của bản thân.</p>
+                                </div>
+                                <div class="action">
+                                    <p>Xóa</p>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+
+                    </div>
+                </div>
+                
+                <div id="second" class="tabcontent">
+                    <div class="content">
+                        <div class="item-notify unread">
+                            <div class="container">
+                                <div class="date">
+                                    <p>28/12/2021</p>
+                                </div>
+    
+                                <div class="status">
+                                    <img src="assets/img/iconKhoa/ic_yellow.svg">
+                                </div>
+    
+                                <div class="para">
+                                    <p>Từ 02/01/2022, Intacoper miễn phí giao tiêu chuẩn cho đơn hàng từ 1.500.000đ, áp dụng phí 19k cho đơn hàng dưới 1.500.000đ. Thay đổi áp dụng cho khách hàng không phải là thành viên Intacoper. <span class="detail">Chi tiết</span></p>
+                                </div>
+                                <div class="action">
+                                    <p>Đánh dấu đã đọc</p>
+                                    <p>Xóa</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item-notify">
+                        <div class="container">
+                            <div class="date">
+                                <p>07/10/2021</p>
+                            </div>
+
+                            <div class="status">
+                                <img src="assets/img/iconKhoa/ic_yellow.svg">
+                            </div>
+
+                            <div class="para">
+                                <p>Giảm ngay 300k khi mua đơn hàng trên 1,500 triệu. Số lượng cực kỳ có hạn <span class="detail">Chi tiết</span></p>
+                            </div>
+                            <div class="action">
+                                <p>Xóa</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div id="third" class="tabcontent">
+                    <div class="content">
+                        <div class="item-notify">
+                            <div class="container">
+                                <div class="date">
+                                    <p>12/11/2021</p>
+                                </div>
+    
+                                <div class="status">
+                                    <img src="assets/img/iconKhoa/ic_green.svg">
+                                </div>
+    
+                                <div class="para">
+                                    <p>Intacoper gửi lời xin lỗi chân thành vì đơn hàng #979498344 của quý khách sẽ giao trễ hơn dự kiến 2 ngày, chúng tôi sẽ giao hàng cho quý khách vào ngày 16/11/2021. </p>
+                                </div>
+                                <div class="action">
+                                    <p>Xóa</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="fourth" class="tabcontent">
+                    <div class="content">
+                        <div class="item-notify unread">
+                            <div class="container">
+                                <div class="date">
+                                    <p>07/01/2022</p>
+                                </div>
+    
+                                <div class="status">
+                                    <img src="assets/img/iconKhoa/ic_pink.svg">
+                                </div>
+    
+                                <div class="para">
+                                    <p>Hãy thay đổi mật khẩu thường xuyên để nâng cao bảo mật. Ngoài ra: 1) Không nên sử dụng chung mật khẩu của email với mật khẩu của các tài khoản khác. 2) Luôn đăng xuất khỏi các tài khoản sau khi sử dụng trên thiết bị công cộng hoặc thiết bị không phải của bản thân.</p>
+                                </div>
+                                <div class="action">
+                                    <p>Đánh dấu đã đọc</p>
+                                    <p>Xóa</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="item-notify">
+                            <div class="container">
+                                <div class="date">
+                                    <p>12/07/2021</p>
+                                </div>
+    
+                                <div class="status">
+                                    <img src="assets/img/iconKhoa/ic_pink.svg">
+                                </div>
+    
+                                <div class="para">
+                                    <p>Nhập mã INTAVan giảm thêm 20% cho giày Van. Thời gian áp dụng từ 06 - 13/9 <span>Chi tiết</span> </p>
+                                </div>
+                                <div class="action">
+                                    <p>Xóa</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="item-notify">
+                            <div class="container">
+                                <div class="date">
+                                    <p>07/06/2022</p>
+                                </div>
+    
+                                <div class="status">
+                                    <img src="assets/img/iconKhoa/ic_pink.svg">
+                                </div>
+    
+                                <div class="para">
+                                    <p>Hãy thay đổi mật khẩu thường xuyên để nâng cao bảo mật. Ngoài ra: 1) Không nên sử dụng chung mật khẩu của email với mật khẩu của các tài khoản khác. 2) Luôn đăng xuất khỏi các tài khoản sau khi sử dụng trên thiết bị công cộng hoặc thiết bị không phải của bản thân.</p>
+                                </div>
+                                <div class="action">
+                                    <p>Xóa</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+           
+            </div>
+            
+
+         
+              
+        </div>
+
+
+    </div>
+    <script>
+        function openCity(evt, status) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(status).style.display = "block";
+            evt.currentTarget.className += " active";
+            }
+            document.getElementById("defaultOpen").click();
+</script>
+<script src="js/accountShowNav.js"></script>
+<script>
+    
+    var sub_noti = document.getElementById('sub_noti');
+    function openMore(){
+        if(sub_noti.classList.contains("on-use")){
+        sub_noti.classList.remove("on-use");
+            
+        }
+        else{
+        sub_noti.classList.add("on-use");
+
+        }
+        console.log(sub_noti.classList);
+    }
+
+   
+     
+</script>
+
+</body>
+<footer></footer>
+</html>
