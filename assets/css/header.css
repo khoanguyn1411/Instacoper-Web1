@@ -398,7 +398,7 @@ a{
 
 
 
-@media only screen and (max-width: 835px){
+@media only screen and (max-width: 838px){
     #navMenu{
         position: fixed;
         top: 0;
@@ -489,8 +489,8 @@ a{
 
 @media only screen and (max-width: 430px){
     #navMenu{
-        right: -50%;
-        width: 50%;
+        right: -180px;
+        width: 180px;
     }
     .hd-danhmucsp {
         display: none;

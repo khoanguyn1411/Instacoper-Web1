@@ -7,6 +7,7 @@
     box-sizing: border-box;
     min-height: 1024px;
     margin-top: 160px;
+    min-width: 300px;
 
 }
 
@@ -147,6 +148,20 @@
     cursor: pointer;
 
 }
+.top-content-left{
+    width: 100%;
+    float: left;
+    line-height: 2;
+    overflow-x: hidden;
+    
+}
+.top-content-left .outside{
+    width: 1140px;
+    height: auto;
+    margin: auto;
+}
+  
+
 
 /* -----Phần short blog----- */
 .part-two{

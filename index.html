@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;1,200;1,300;1,400&display=swap" rel="stylesheet">
+
     <title>Trang Chủ</title>
 </head>
 <script src="//code.jquery.com/jquery-1.10.2.js"></script>
@@ -27,52 +28,472 @@
 <body>
     <div class="wrapper">
         <div class="banner">
-            <div class="mySlides fade" id="banner1">
-                <div class="slide-wrapper">
-                    <div class="title">
-                        NIKE 2022’s COLLECTION
+            <div class="mySlide-container">
+                <div class="mySlides fade" id="banner1">
+                    <div class="slide-wrapper">
+                        <div class="title">
+                            NIKE 2022’s COLLECTION
+                        </div>
+                        <div class="left-content">
+                            <div class="left-content-header">Nike Air Force 1</div>
+                            <p>New Look - 2022 Edition
+                                <br/>
+                                A brand new series of AF1 has been released for 2022,
+                                Discover with us!
+                            </p>
+                        </div>
+                      
                     </div>
-                    <div class="left-content">
-                        <div class="left-content-header">Nike Air Force 1</div>
-                        <p>New Look - 2022 Edition
-                            <br/>
-                            A brand new series of AF1 has been released for 2022,
-                            Discover with us!
-                        </p>
+                    <div class="button-container">
+                        <div class="slide-wrapper">
+                            <button>Khám phá BST mới</button>
+                            <button>Mua hàng ngay!</button>
+                        </div>
+                
+                    </div>
+                   
+                </div>
+        
+                <div class="mySlides fade" id="banner2">
+                    <div class="slide-wrapper">
+                        <div class="title black">
+                            ADIDAS NMD COLLECTION
+                        </div>
+                        <div class="left-content">
+                            <div class="left-content-header">Adidas NMD</div>
+                            <p>
+                                A brand new series of AF1 has been released for 2022,
+                                Discover with us!
+                            </p>
+                        </div>
+                      
+                    </div>
+                    <div class="button-container">
+                        <div class="slide-wrapper">
+                            <button>Khám phá BST mới</button>
+                            <button>Mua hàng ngay!</button>
+                        </div>
+                
+                    </div>
+                </div>
+        
+                <div class="mySlides fade" id="banner3">
+                    <div class="slide-wrapper">
+                        <div class="title">
+                            CONVERSE CLASSIC - MEMORY OF 70s
+                        </div>
+                        <div class="left-content">
+                            <div class="left-content-header">Converse Chuck Taylor 70s</div>
+                            <p>
+                                A classical sneaker from Converse, bring back 
+                                history of sneakers from 70s...
+                            </p>
+                        </div>
+                      
+                    </div>
+                    <div class="button-container">
+                        <div class="slide-wrapper">
+                            <button>Khám phá BST mới</button>
+                            <button>Mua hàng ngay!</button>
+                        </div>
+                
+                    </div>
+                </div>
+    
+                <div class="mySlides fade" id="banner4">
+                    <div class="slide-wrapper">
+                        <div class="title">
+                            VANS OLD SKOOL - SKATEBOAR’s BUDDIES
+                        </div>
+                        <div class="left-content">
+                            <div class="left-content-header">Vans Old Skool</div>
+                            <p>
+                                VANS OLD SKOOL, no matter how much time has passed, still carries with it the charm as well as the lasting value.
+                            </p>
+                        </div>
+                      
+                    </div>
+                    <div class="button-container">
+                        <div class="slide-wrapper">
+                            <button>Khám phá BST mới</button>
+                            <button>Mua hàng ngay!</button>
+                        </div>
+                
+                    </div>
+                </div>
+    
+                <div class="mySlides fade" id="banner5">
+                    <div class="slide-wrapper">
+                        <div class="title">
+                            NEW BALANCE COLLECTION - ONE FOR ALL PURPOSE
+                        </div>
+                        <div class="left-content">
+                            <div class="left-content-header">New Balance Fresh Foam</div>
+                            <p>
+                                Independent since 1906, New Balance empower people through sport and craftsmanship to create positive change in communities around the world.
+                            </p>
+                        </div>
+                      
+                    </div>
+                    <div class="button-container">
+                        <div class="slide-wrapper">
+                            <button>Khám phá BST mới</button>
+                            <button>Mua hàng ngay!</button>
+                        </div>
+                
+                    </div>
+                </div>
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" id="btnNext" onclick="plusSlides(1)">&#10095;</a>
+                <div class="dot-container">
+                    <span class="dot" onclick="currentSlide(1)"></span> 
+                    <span class="dot" onclick="currentSlide(2)"></span> 
+                    <span class="dot" onclick="currentSlide(3)"></span> 
+                    <span class="dot" onclick="currentSlide(4)"></span> 
+                    <span class="dot" onclick="currentSlide(5)"></span> 
+                  </div>
+            </div>
+
+            <div class="sub-banner">
+                <div class="sub-banner-wrapper">
+                    <div class="img">
+                        <img src="assets/img/index/SubBanner1.png">
+                        <div class="text">
+                            <p>Khám phá</p>
+                            <img src="assets/img/right_arrow.svg">
+                            <p>Thương hiệu</p>
+                            <img src="assets/img/right_arrow.svg">
+                        </div>
+                    </div>
+                    <div class="img" id="subRightBanner">
+                        <img src="assets/img/index/SubBanner2.png">
+                        <div class="text">
+                            <p>Thương hiệu</p>
+                            <img src="assets/img/iconKhoa/ic_right_arrow_white.svg">
+                            <p>Săn deal ngay</p>
+                            <img src="assets/img/iconKhoa/ic_right_arrow_white.svg">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+       
+        </div>
+
+        <div class="blog-field">
+            <div class="wrapper-ins">
+                <div class="title-seperate">
+                    <div></div>
+                    <p>Blogs</p>
+                    <div></div>
+                </div>
+                <div class="blog-content">
+                    <div class="img">
+                        <img src="assets/img/index/blog1.png">
+                        <div class="border-out">
+
+                        </div>
+                        <div class="block-content">
+                            <div class="social-icon">
+                                <img src="assets/img/iconKhoa/ic_social_facebook.svg">
+                                <img src="assets/img/iconKhoa/ic_social_twitter.svg">
+                                <img src="assets/img/iconKhoa/ic_social_p.svg">
+                            </div>
+                            <div class="brand-name">
+                               <p>Instacoper News</p>
+                            </div>
+                            <div class="blog-title">
+                                <p>Adidas Stan Smith “Made To Be Remade” – Giày mang cũ gửi trả, adidas sẽ gửi lại đôi mới</p>
+                            </div>
+                            <div class="blog-intro">
+                                <p>Adidas Stan Smith “Made To Be Remade” là đôi sneakers được phát hành...</p>
+                                <p>Jan 9, 2022 | 5 mins read</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="img">
+                        <img src="assets/img/index/blog2.png">
+                        <div class="border-out">
+
+                        </div>
+                        <div class="block-content">
+                            <div class="social-icon">
+                                <img src="assets/img/iconKhoa/ic_social_facebook.svg">
+                                <img src="assets/img/iconKhoa/ic_social_twitter.svg">
+                                <img src="assets/img/iconKhoa/ic_social_p.svg">
+                            </div>
+                            <div class="brand-name">
+                               <p>Tin tức thời trang</p>
+                            </div>
+                            <div class="blog-title">
+                                <p>Skechers X JGoldcrown: Thông Điệp Về Sự Tích Cực Và Tình Yêu</p>
+                            </div>
+                            <div class="blog-intro">
+                                <p>Skechers hợp tác cùng nghệ sỹ vẽ tranh tường James Goldcrown ra mắt các...</p>
+                                <p>Jan 5, 2022 | 60 mins read</p>
+                            </div>
+                        </div>
                     </div>
                   
                 </div>
-                <div class="button-container">
-                    <div class="slide-wrapper">
-                        <button>Khám phá BST mới</button>
-                        <button>Mua hàng ngay!</button>
-                    </div>
-            
+                <div class="watchmore">
+                    <p>Xem thêm</p>
                 </div>
-               
             </div>
-    
-            <div class="mySlides fade" id="banner2">
-            </div>
-    
-            <div class="mySlides fade" id="banner3">
-            </div>
-            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-            <a class="next" onclick="plusSlides(1)">&#10095;</a>
-            <div class="dot-container">
-                <span class="dot" onclick="currentSlide(1)"></span> 
-                <span class="dot" onclick="currentSlide(2)"></span> 
-                <span class="dot" onclick="currentSlide(3)"></span> 
-                <span class="dot" onclick="currentSlide(4)"></span> 
-                <span class="dot" onclick="currentSlide(5)"></span> 
-              </div>
+
+          
+          
         </div>
-   
+
+        <div class="product-field">
+            <div class="wrapper-ins">
+                <div class="title">
+                    <p>Sản phẩm mới</p>
+                </div>
+                <div class="product-field-container">
+                    <div class="item-product-index">
+                        <div class="img-pro">
+                            <img src="assets/img/shoes/15.png">
+                            <div class="hover-favorite">
+                            </div>
+
+                            
+                            <div class="hover-whislist">
+                            </div>
+
+                            
+                            <div class="hover-detail">
+                            </div>
+                        </div>
+
+                        <div class="content">
+                            <p>Jordan Zoom Separate PF</p>
+                            <p>Giày nam</p>
+                            <p>4.750.000₫</p>
+                        
+                        </div>
+                    </div>
+                    <div class="item-product-index">
+                        <div class="img-pro">
+                            <img src="assets/img/shoes/7.png">
+                            
+                            <div class="hover-favorite">
+                            </div>
+
+                            
+                            <div class="hover-whislist">
+                            </div>
+
+                            
+                            <div class="hover-detail">
+                            </div>
+                        </div>
+
+                        <div class="content">
+                            <p>Jordan Zoom Separate PF</p>
+                            <p>Giày nam</p>
+                            <p>4.750.000₫</p>
+                        
+                        </div>
+
+                    </div>
+
+                    <div class="item-product-index">
+                        <div class="img-pro">
+                            <img src="assets/img/shoes/8.png">
+                            <div class="hover-favorite">
+                            </div>
+
+                            
+                            <div class="hover-whislist">
+                            </div>
+
+                            
+                            <div class="hover-detail">
+                            </div>
+                        </div>
+
+                        <div class="content">
+                            <p>Jordan Zoom Separate PF</p>
+                            <p>Giày nam</p>
+                            <p>4.750.000₫</p>
+                        
+                        </div>
+                    </div>
+
+                    <div class="item-product-index">
+                        <div class="img-pro">
+                            <img src="assets/img/shoes/14.png">
+                            <div class="hover-favorite">
+                            </div>
+
+                            
+                            <div class="hover-whislist">
+                            </div>
+
+                            
+                            <div class="hover-detail">
+                            </div>
+                        </div>
+
+                        <div class="content">
+                            <p>Jordan Zoom Separate PF</p>
+                            <p>Giày nam</p>
+                            <p>4.750.000₫</p>
+                        
+                        </div>
+                    </div>
+                    <div class="item-product-index">
+                        <div class="img-pro">
+                            <img src="assets/img/shoes/12.png">
+                            <div class="hover-favorite">
+                            </div>
+
+                            
+                            <div class="hover-whislist">
+                            </div>
+
+                            
+                            <div class="hover-detail">
+                            </div>
+                        </div>
+
+                        <div class="content">
+                            <p>Jordan Zoom Separate PF</p>
+                            <p>Giày nam</p>
+                            <p>4.750.000₫</p>
+                        
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="value-field">
+            <div class="wrapper-ins">
+                <div class="value-field-container">
+                    <div class="item-value add-border">
+                        <div class="content">
+                            <p>Free Shipping</p>
+                            <p class="value-detail">Khách hàng sẽ được miễn phí giao hàng
+                                với mỗi đơn hàng >= 5.000.000đ</p>
+                            <img src="assets/img/iconKhoa/ic_value_shipping.svg">
+                        </div>
+                    </div>
+
+                    <div class="item-value add-border">
+                        <div class="content">
+                            <p>Online Support</p>
+                            <p class="value-detail">Đội ngũ nhân viên hỗ trợ 
+                                chăm sóc khách hàng 24/7</p>
+                            <img src="assets/img/iconKhoa/ic_value_online_support.svg">
+                        </div>
+                    </div>
+
+                    <div class="item-value add-border">
+                        <div class="content">
+                            <p>Deals & Promotions</p>
+                            <p class="value-detail">Tiết kiệm ngân sách với những chính sách
+                                ưu đãi và giảm giá thường niên</p>
+                            <img src="assets/img/iconKhoa/ic_value_deal.svg">
+                        </div>
+                    </div>
+
+                    <div class="item-value">
+                        <div class="content">
+                            <p>Return Policy</p>
+                            <p class="value-detail">Nếu sản phẩm có bất kỳ lỗi gì
+                                Hoàn trả miễn phí trong vòng 7 ngày</p>
+                            <img src="assets/img/iconKhoa/ic_value_policy.svg">
+                        </div>
+                    </div>
+
+                    
+                </div>
+            </div>
+        </div>
+
+        <div class="our-story-field">
+            <div class="wrapper-ins">
+                <div class="title-seperate">
+                    <div></div>
+                    <p>Our Story</p>
+                    <div></div>
+                </div>
+
+                <div class="our-story-container">
+                    <div class="story-left-side">
+                        <img src="assets/img/index/outstory1.png">
+                    </div>
+                    <div class="story-right-side">
+                        <div class="item-row">
+                            <div class="item-story">
+                                <div class="content">
+                                    <p>Instacoper Team</p>
+                                    <p class="detail">The Day We Met!</p>
+                                    <img class="icon-right" src="assets/img/iconKhoa/ic_right_arrow_red.svg">
+                                </div>
+                            </div>
+    
+                            <div class="item-story">
+                                <img class="big-img" src="assets/img/index/story1.png">
+                            </div>
+    
+                        </div>
+
+                        <div class="item-row">
+                            <div class="item-story">
+                                <img class="big-img" src="assets/img/index/story2.png">
+                            </div>
+                            <div class="item-story">
+                                <div class="content">
+                                    <p>The Place For Passion</p>
+                                    <p class="detail">Has Been Founded!</p>
+                                    <img class="icon-right" src="assets/img/iconKhoa/ic_right_arrow_red.svg">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="item-row">
+                            <div class="item-story">
+                                <div class="content">
+                                    <p>Your Satisfaction</p>
+                                    <p class="detail">Is our #1 priority!</p>
+                                    <img class="icon-right" src="assets/img/iconKhoa/ic_right_arrow_red.svg">
+                                </div>
+                            </div>
+
+                            <div class="item-story">
+                                <img class="big-img" src="assets/img/index/story3.png">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="special-field">
+            <img src="assets/img/iconKhoa/ic_brand/image 10.svg">
+            <img src="assets/img/iconKhoa/ic_brand/image 11.svg">
+            <img src="assets/img/iconKhoa/ic_brand/image 12.svg">
+            <img src="assets/img/iconKhoa/ic_brand/image 13.svg">
+            <img src="assets/img/iconKhoa/ic_brand/image 14.svg">
+            <img src="assets/img/iconKhoa/ic_brand/image 16.svg">
+            <img src="assets/img/iconKhoa/ic_brand/image 17.svg">
+            <img src="assets/img/iconKhoa/ic_brand/image 18.svg">
+            <img src="assets/img/iconKhoa/ic_brand/image 19.svg">
+        </div>
      
     </div>
+
     <script>
         var slideIndex = 1;
+      
+
+
         showSlides(slideIndex);
+        autoSlides();
+
 
         function plusSlides(n) {
         showSlides(slideIndex += n);
@@ -81,6 +502,12 @@
         function currentSlide(n) {
         showSlides(slideIndex = n);
         }
+
+        function autoSlides() {
+            document.getElementById("btnNext").click();
+            setTimeout(autoSlides, 5000);
+        }
+
 
         function showSlides(n) {
             var i;
@@ -92,14 +519,18 @@
                 slides[i].style.display = "none";  
             }
             for (i = 0; i < dots.length; i++) {
-                dots[i].className = dots[i].className.replace(" active", "");
+                dots[i].className = dots[i].className.replace(" activeDot", "");
             }
             slides[slideIndex-1].style.display = "block";  
-            dots[slideIndex-1].className += " active";
+            dots[slideIndex-1].className += " activeDot";
         }
 
+
+       
     </script>
+
 </body>
+
 <footer>
 
 </footer>

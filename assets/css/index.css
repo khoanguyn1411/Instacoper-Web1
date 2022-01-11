@@ -10,23 +10,85 @@
 
 }
 
+
 .banner{
     position: relative;
     width: 100%;
-    height: 100vh;
-    max-height: 600px;
-   
+    display: inline-block;
+    height: 950px;
 
 }
 
-.banner .mySlides {
-    height: 100vh;
-    max-height: 600px;
+.sub-banner{
+    position: absolute;
+    top: 580px;
+    width: 100%;
+   
+
+}
+.sub-banner-wrapper{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 1140px;
+    margin: auto;
+
+
+}
+.sub-banner-wrapper >.img{
+    width: 40%;
+    position: relative;
+}
+
+.sub-banner-wrapper >.img>img{
+    width: 100%;
+}
+
+
+.sub-banner-wrapper >.img>.text{
+    position: absolute;
+    bottom: 6.5%;
+    left: 6%;
+    display: flex;
+}
+.sub-banner-wrapper >.img>.text>p{
+    font-weight: 600;
+}
+
+
+.sub-banner-wrapper >.img>.text>img{
+    margin: 0 10px;
+    width: 6px;
+}
+#subRightBanner> .text{
+    width: 100%;
+    box-sizing: border-box;
+    left: unset;
+    justify-content: right;
+    right: 2.5%;
+}
+#subRightBanner  p{
+    color: white;
+}
+
+
+
+.mySlide-container{
+    position: relative;
+    width: 100%;
+    height: 600px;
+   
+}
+
+
+
+.mySlide-container .mySlides {
+    height: 600px;
     background-size: cover;
     width: 100%;
     background-repeat: no-repeat;
     background-position: top 80% right 0;
-    position: absolute;
+    display: none;
 }
 .slide-wrapper{
     max-width: 1250px;
@@ -34,45 +96,40 @@
     padding: 0px 80px;
 }
 
-#banner1{
-    background-image: url("/assets/img/index/banner1.png");
-    position: relative;
-    
-}
 
-#banner1 .title{
+.mySlides .title{
     font-family: 'Source Sans Pro', sans-serif;
     width: 100%;
     text-align: center;
-    color: white;
+    color: black;
     padding-top: 50px;
-    font-size: 30px;
+    font-size: 25px;
     font-weight: 600;
     letter-spacing: 10px;
 }
 
-#banner1 .left-content{
+.mySlides .left-content{
     width: 32%;
     margin-top: 30px;
 }
 
-#banner1 .left-content p{
-    color: white;
+.mySlides .left-content p{
+    color: black;
     font-size: 15px;
     margin-top: 15px;
 }
 
 
 
-#banner1 .left-content-header{
-    color: white;
-    font-size: 30px;
+.mySlides .left-content-header{
+    color: black;
+    font-size: 40px;
     font-weight: bold;
 }
 
-#banner1 .button-container{
+.mySlides .button-container{
     position: absolute;
-    bottom: 70px;
+    bottom: 80px;
     margin-bottom: 50px;
     width: 100%;
     margin: auto;
@@ -82,7 +139,7 @@
 }
 
 
-#banner1 .button-container .slide-wrapper button{
+.mySlides .button-container .slide-wrapper button{
     padding: 15px 10px;
     width: 23%;
     min-width: 150px;
@@ -95,23 +152,23 @@
 
 }
 
-#banner1 .button-container .slide-wrapper button:first-child{
+.mySlides .button-container .slide-wrapper button:first-child{
     border: none;
     background: #F54253;
     margin-bottom: 15px;
 }
 
-#banner1 .button-container .slide-wrapper button:first-child:hover{
+.mySlides .button-container .slide-wrapper button:first-child:hover{
     background: white;
     transition: 0.5s;
     color: black;
 }
-#banner1 .button-container .slide-wrapper button:last-child{
+.mySlides .button-container .slide-wrapper button:last-child{
     border: 2px solid white;
     background: transparent;
     margin-bottom: 15px;
 }
-#banner1 .button-container .slide-wrapper button:last-child:hover{
+.mySlides .button-container .slide-wrapper button:last-child:hover{
     background: white;
     transition: 0.5s;
     color: black;
@@ -120,16 +177,52 @@
 
 
 
+#banner1{
+    background-image: url("/assets/img/index/banner1.png");
 
+    
+}
 
 #banner2{
-    background-image: url("/assets/img/shoes/1.png");
+    background-image: url("/assets/img/index/banner2.png");
+    background-position: top 0 right 0;
     
 }
 #banner3{
-    background-image: url("/assets/img/index/banner1.png");
+    background-image: url("/assets/img/index/banner3.png");
+    background-position: top 0 right 0;
     
 }
+
+#banner4{
+    background-image: url("/assets/img/index/banner4.png");
+    background-position: top 0 right 0;
+    
+}
+
+#banner5{
+    background-image: url("/assets/img/index/banner5.png");
+    background-position: top 50% right 0;
+    
+}
+
+#banner1 .title{
+    color: white;
+}
+
+
+
+#banner1 .left-content>*{
+    color: white;
+}
+
+#banner2 .title{
+    text-align: left;
+}
+
+
+
+
 
 
 
@@ -151,7 +244,7 @@
     background-position: center;
     backdrop-filter: blur(100px);
     -webkit-backdrop-filter: blur(100px);
-    
+    opacity: 0.5;
     margin: 0px 20px;
   }
 
@@ -163,6 +256,8 @@
     color: black;
     background: #F54253;
     -webkit-text-stroke-width: 0px;
+    opacity: 1;
+
 }  
 
 /* fading animation */
@@ -191,23 +286,835 @@
       text-align: center;
       position: absolute;
       bottom: 0;
-      margin-bottom: 20px;
+      margin-bottom: 40px;
   }
 
  .dot {
     cursor: pointer;
-    height: 12px;
-    width: 12px;
+    height: 10px;
+    width: 10px;
     margin: 0 2px;
     background-color: white;;
     border-radius: 50%;
     display: inline-block;
     transition: background-color 0.6s ease;
+    vertical-align: middle;
+    position: relative;
+
+
 }
   
-.active, .dot:hover {
+.dot:hover {
     background-color: #F54253
 }
+
+.activeDot{
+    height: 18px;
+    width: 18px;
+    background-color: #F54253;
+    border: 1.5px solid white;
+
+}
+
+.activeDot:before {
+    content: " ";
+    position: absolute;
+    top: 0.3px;
+    left: 0px;
+    border: 1.5px solid black;
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+  }
   
+
+/* CSS cho blog */
+
+.wrapper-ins{
+    max-width: 1140px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+ .title-seperate{
+    width: 100%;
+    text-align: center;
+    display: inline-block;
+
+
+}
+
+
+.title-seperate > *{
+    float: left;
+
+}
+
+.title-seperate > div{
+    width: 42%;
+    height: 1px;
+    background-color: black;
+    margin-top: 20px;
+
+}
+
+.title-seperate > p{
+    width: 16%;
+    font-size: 30px;
+    font-weight: bold;
+    box-sizing: border-box;
+}
+
+.blog-content{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+.blog-content .img{
+    width: 50%;
+    position: relative;
+}
+
+.blog-content .img:first-child{
+    width: 48.9%;
+}
+
+.blog-content .img >img{
+    width: 100%;
+}
+
+.blog-content .img >.border-out{
+    border: 2px solid black;
+    position: absolute;
+    width: 80%;
+    height: 40%;
+    margin: auto;
+    left: 0;
+    right: 10px;
+    top: 51%;
+}
+
+
+.blog-content .img >.block-content{
+    position: absolute;
+    width: 80%;
+    height: 40%;
+    background-color: white;
+    left: 0;
+    right: 0px;
+    top: 50%;
+    margin: auto;
+}
+
+.social-icon{
+    width: 100%;
+    text-align: center;
+    margin-top: 5%;
+}
+
+.social-icon > img{
+    margin: 0 5px;
+    cursor: pointer;
+
+}
+.brand-name{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 3%;
+}
+
+.brand-name > p{
+    text-align: center;
+    padding: 2px 12px;
+    font-weight: 600;
+    color: white;
+    background-color: #F54253;
+}
+
+.blog-title, .blog-intro{
+    width: 100%;
+    text-align: center;
+    margin-top: 3%;
+}
+
+.blog-title >p{
+    font-weight: bold;
+    font-family: 'Playfair Display',sans-serif;
+    padding: 0px 20px;
+    font-size: 16px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2; /* number of lines to show */
+            line-clamp: 2; 
+    -webkit-box-orient: vertical;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+
+.blog-title >p:hover{
+    color: #F54253;
+    transition: 0.5s;
+}
+
+.blog-intro>p{
+    padding: 0px 20px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2; /* number of lines to show */
+            line-clamp: 2; 
+    -webkit-box-orient: vertical;
+    font-size: 13px;
+}
+
+.blog-intro>p:last-child{
+    margin-top: 2%;
+    color: #8D8D8D;
+}
+
+.watchmore{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+
+}
+
+.watchmore>p{
+    font-size: 15px;
+    font-family: 'Playfair Display',sans-serif;
+    font-weight: bold;
+    font-style: italic;
+    cursor: pointer;
+    margin: auto;
+    transition: 0.5s;
+
+
+}
+
+.watchmore> p:hover{
+    color: #F54253;
+    transition: 0.5s;
+
+}
+
+
+
+/* CSS cho product field */
+.product-field{
+    width: 100%;
+    padding: 50px 0;
+    background-color: black;
+    margin-top: 60px;
+}
+
+.product-field .title{
+    color: white;
+    padding-bottom: 20px;
+    text-align: center;
+   
+}
+
+.product-field .title >p{
+    font-weight: 600;
+    font-size: 30px;
+}
+
+.product-field-container{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.item-product-index{
+    height: 280px;
+    width: 18%;
+    background-color: white;
+    border-radius: 3px;
+    padding: 10px;
+    margin-top: 30px;
+    transition: 0.5s;
+
+}
+
+.item-product-index .hover-favorite{
+    position: absolute;
+    height: 15%;
+    width: 15%;
+    background: #F54253;
+    top: 15%;
+    right: 0;
+    opacity: 0;
+
+
+}
+
+.item-product-index .hover-whislist{
+    position: absolute;
+    height: 15%;
+    width: 15%;
+    background: #F54253;
+    top: 40%;
+    right: 0;
+    opacity: 0;
+
+}
+
+
+.item-product-index .hover-detail{
+    position: absolute;
+    height: 15%;
+    width: 15%;
+    background: #F54253;
+    top: 65%;
+    right: 0;
+    opacity: 0;
+}
+
+
+.item-product-index:hover{
+    background: #f0e9e9;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.item-product-index:hover .hover-favorite{
+    opacity: 1;
+    transition: 0.5s;
+}
+
+.item-product-index:hover .hover-whislist{
+    opacity: 1;
+    transition: 0.7s;
+}
+
+.item-product-index:hover .hover-detail{
+    opacity: 1;
+    transition: 0.9s;
+}
+
+
+
+.item-product-index > .img-pro{
+    width: 100%;
+    position: relative;
+
+}
+
+
+
+.item-product-index > .img-pro > img{
+    width: 100%;
+}
+
+.item-product-index .content{
+    text-align: center;
+}
+
+.item-product-index .content >p:first-child{
+    font-weight: bold;
+    font-size: 15px;
+}
+
+
+.item-product-index .content >p:last-child{
+    font-weight: 600;
+    font-size: 15px;
+    margin-top: 10px;
+}
+
+
+/* CSS cho value */
+
+.value-field-container{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 60px;
+    margin-bottom: 50px;
+}
+
+.value-field-container .item-value{
+    width: 25%;
+    text-align: center;
+    padding: 0 10px;
+}
+
+
+
+.item-value .content > p:first-child{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.item-value .content .value-detail{
+    padding: 12px 10px;
+}
+
+.item-value .content > img{
+    height: 18px;
+}
+
+.add-border{
+    border-right: 1px solid #CCCCCC;
+}
+
+
+/* CSS cho our story */
+.our-story-container{
+    width: 100%;
+    margin-top: 40px;
+    display: inline-block;
+}
+.story-left-side, .story-right-side{
+    width: 50%;
+    float: left;
+}
+
+.story-left-side>img{
+    width: 100%;
+    max-height: 830px;
+}
+
+.story-right-side{
+    height: 100%; 
+}
+
+.item-story{
+    width: 50%;
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.item-story .content{
+    text-align: center;
+    margin-top: 38%;
+    }
+
+.item-story .content .detail{
+    font-size: 15px;
+    margin-bottom: 12px;
+}
+
+.item-story .content p:first-child{
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.item-story .content p:first-child:hover{
+    color: #F54253;
+    cursor: pointer;
+    transition: 0.5s;
+    
+}
+
+.item-story .icon-right{
+    width: 18px;
+    transition: 0.5s;
+    border-radius: 50%;
+
+}
+
+.item-story .icon-right:hover{
+    background: pink;
+    cursor: pointer;
+    transition: 0.5s;
+    width: 35px;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.item-story .big-img{
+    width: 100%;
+}
+
+.item-row{
+    display: inline-block;
+    width: 100%;
+    margin-top: -0.75%;
+}
+
+.item-row:first-child{
+    margin-top: 0;
+}
+
+/* CSS cho special field */
+
+.special-field{
+    width: 100%;
+    background: #F54253;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    margin-top: 30px;
+}
+
+.special-field > img{
+    width: 9%;
+    max-height: 35px;
+}
+
+
+@media only screen and (max-width: 1108px){
+    .blog-content .img >.border-out{
+        height: 45%;
+    }
+    
+    
+    .blog-content .img >.block-content{
+        height: 45%;
+    }
+
+    .banner{
+        height: 900px;
+    
+    }   
+
+}
+
+@media only screen and (max-width: 944px){
+    .blog-content .img >.border-out{
+        top: 25%;
+        height: 50%;
+    }
+    
+    
+    .blog-content .img >.block-content{
+        top: 26%;
+        height: 50%;
+
+    }
+
+    .title-seperate {
+        display: flex;
+        justify-content: center;
+        border-bottom: 1px solid black;
+        width: 40%;
+        margin: auto;
+        padding-bottom: 10px;
+    }
+ 
+    .title-seperate > div{
+        display: none;
+    
+    }
+    
+    .title-seperate > p{
+        width: 100%;
+    }
+
+}
+
+@media only screen and (max-width: 887px){
+
+    
+    .prev, .next {
+        display: none;
+    }
+
+    .slide-wrapper{
+        max-width: 1250px;
+        margin: auto;
+        padding: 0px 25px;
+    }
+
+
+    .blog-content .img >.border-out{
+        display: none;
+    }
+
+    .blog-content .img >.block-content{
+        top: 26%;
+        height: auto;
+        padding-bottom: 20px;
+
+    }
+    .banner{
+        height: auto;
+    
+    }
+
+    .sub-banner{
+        position: unset;
+        margin-bottom: 20px;
+        
+    }
+
+    .sub-banner-wrapper{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        max-width: 1140px;
+        margin: auto;
+    
+    
+    }
+    .sub-banner-wrapper >.img{
+        width: 50%;
+        position: relative;
+    }
+   
+    .product-field-container{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    
+    .item-product-index{
+        height: auto;
+        width: 48%;
+        
+        background-color: white;
+        border-radius: 3px;
+        padding: 10px;
+    }
+
+    .item-product-index:last-child{
+        display: none;
+    }
+
+
+
+    /* CSS lại cho banner */
+    .mySlides .button-container .slide-wrapper button{
+        padding: 15px 10px;
+        width: 30%;
+        min-width: 200px;
+        color: white;
+        border-radius: 25px;
+        font-weight: bold;
+        font-size: 15px;
+        cursor: pointer;
+    
+    }
+
+    .mySlides .title{
+        text-align: left;
+        padding-top: 50px;
+        font-size: 25px;
+        font-weight: 600;
+        letter-spacing: 10px;
+    }
+    
+
+    .mySlides .left-content{
+        width: 50%;
+        margin-top: 30px;
+    }
+    
+    .mySlides .left-content p{
+        color: black;
+        font-size: 15px;
+        margin-top: 15px;
+    }
+    
+    #banner1{
+        background-position: top 0 right 60%;
+
+    }
+
+    #banner1 .left-content{
+        width: 60%;
+
+    }
+
+    #banner2{
+        background-position: top 0 right 70%;
+        
+    }
+    #banner2 .title{
+        width: 40%;
+        
+    }
+    #banner3{
+        background-position: top 0 right 70%;
+        
+    }
+    #banner3 .left-content{
+        width: 60%;
+        
+    }
+    #banner4{
+        background-position: top 50% right 40%;
+        
+    }
+
+    
+    #banner3 .left-content{
+        width: 67%;
+
+    }
+
+    #banner5{
+        background-position: top 50% right 50%;
+        
+    }
+
+    #banner5 .left-content{
+        width: 75%;
+
+    }
+    
+    /* .mySlides .left-content-header{
+        color: black;
+        font-size: 40px;
+        font-weight: bold;
+    } */
+
+    /* CSS lại cho our story */
+    .story-left-side, .story-right-side{
+        width: 100%;
+        float: left;    
+    }
+
+    .story-right-side{
+        margin-top: -10px;
+    }
+
+    .value-field-container{
+        flex-wrap: wrap;
+    }
+   
+    .value-field-container .item-value{
+        width: 48%;
+        text-align: center;
+        padding: 10px 10px;
+        height: 150px;
+        margin-top: 20px;
+        
+        border: 2px solid #F54253;
+
+
+    }
+
+    .item-value .content .value-detail{
+        padding: 12px 0px;
+    }
+
+    .add-border{
+        border-right: none;
+    }
+       
+
+}
+@media only screen and (max-width: 618px){
+    .banner{
+        height: auto;
+    
+    }
   
+
+    .blog-content{
+        width: 100%;
+        display: block;
+        margin-top: 40px;
+    }
+
+    .blog-content .img{
+        width: 100%;
+        position: relative;
+    }
+
+    .blog-content .img:first-child{
+        width: 100%;
+        position: relative;
+        margin-bottom: 10px;
+    }
+
+
+    
+}
+@media only screen and (max-width: 566px){
+    .sub-banner-wrapper{
+        display: block;
+    }
+
+    .sub-banner-wrapper .img{
+        width: 100%;
+    }
+
+    .sub-banner-wrapper .img:last-child{
+        margin-top: -10px;
+    }
+}
+
+@media only screen and (max-width: 468px){
+    .mySlide-container{
+        height: 79vh;
+    }
+    .mySlide-container .mySlides {
+        height: 79vh;
+    }
+
+    .mySlides .title{
+        letter-spacing: 0px;
+        width: 100%;
+    }
+
+    #banner2 .title{
+        width: 100%;
+
+    }
+   
+    .value-field-container{
+        margin-top: 0px;
+    }
+   
+    .value-field-container .item-value{
+        width: 100%;
+        margin-top: 30px;
+        height: auto;
+        padding: 12px 0px;
+    }
+
+    .item-value .content .value-detail{
+        padding: 12px 30px;
+    }
+
+    .mySlides .title{
+        font-size: 20px;
+    }
+    
+    .left-content .left-content-header{
+        color: black;
+        font-size: 25px;
+    }
+
+    .mySlides .button-container{
+        display: none;
+        
+    }
+
+    
+    .title-seperate {
+        display: flex;
+        justify-content: center;
+        border-bottom: 1px solid black;
+        width: 60%;
+        margin: auto;
+        padding-bottom: 10px;
+    }
+
+    .blog-content .img >.block-content{
+        top: 15%;
+    }
+
+    .item-story .content > p:first-child{
+        font-size: 12px;
+    }
+
+    .item-story .content .detail{
+        font-size: 12px;
+    }
+
+
+}
 
