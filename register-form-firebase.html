@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/register-form.css">
+    <link rel="stylesheet" href="assets/css/radio.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a81368914c.js"></script>
+  
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;1,200;1,300;1,400&display=swap" rel="stylesheet">
+    <title>Đăng ký</title>
+</head>
+<body>
+    <div id="formRegister" class="modal2" style="display: block;">
+    
+      <div class="modal-content2">
+          <div class="logo-content2">
+            <span class="close2">&times;</span>
+
+          </div>
+          <div class="text2">ĐĂNG KÝ
+
+          </div>
+
+          <div class="register-content2">
+              <div class="info2">
+                <input placeholder="Email" type="email" id="txtEmailR">
+                <input placeholder="Mật khẩu" type="password" id="txtPasswordR">
+                <input placeholder="Họ & Tên" type="text" id="txtNameR">
+                <input placeholder="Số điện thoại" type="tel" id="txtPhoneR">
+              </div>
+          </div>
+
+          <div class="accpept-content2">
+              <div class="top-content2">
+                <div>Bằng cách tạo tài khoản, bạn có chấp nhận Chính sách bảo mật và Chính sách đổi trả của chúng tôi không?</div>
+              </div>
+              <div class="bottom-content2">
+                <div class="chk-thuonghieu">
+                    <input type="checkbox" id = "MLB">
+                    <label for = "MLB">Tôi đồng ý</label>
+                  </div>
+              </div>
+          </div>
+
+          <div class="button-content2">
+            <div id="registerbtn">Đăng ký </div>
+          </div>
+
+          <div class="seperate-content2">
+            <div>OR</div>
+          </div>
+
+          <div class="google-content2">
+            <div>
+              <i class="fab fa-google fa-1x"></i>
+              <div>Đăng nhập bằng Google</div>
+            </div>
+          </div>
+
+          <div class="no-account-content2">
+            <div>Đã có tài khoản?</div>
+            <a href="#">Đăng nhập ngay</a>
+          </div>
+         
+      </div>
+    
+    </div>
+    
+</body>
+<script>
+  // Get the modal
+  var modal = document.getElementById("formRegister");
+  
+  // Get the button that opens the modal
+  var btn = document.getElementById("myBtn");
+  
+  // Get the <span> element that closes the modal
+  var span = document.getElementsByClassName("close2")[0];
+  
+  // When the user clicks the button, open the modal 
+  btn.onclick = function() {
+    modal.style.display = "flex";
+  }
+  
+  // When the user clicks on <span> (x), close the modal
+  span.onclick = function() {
+    modal.style.display = "none";
+  }
+  
+  // When the user clicks anywhere outside of the modal, close it
+  window.onclick = function(event) {
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
+  }
+  </script>
+  <script src="js/firebaseregister.js" type="module"></script>
+</html>
