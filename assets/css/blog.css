@@ -67,11 +67,14 @@
     height: 10%;
     display: inline;
     cursor: pointer;
+    transition: 0.5s;
+
     
 }
 
 .long-type:hover{
     color: #F54253;
+    transition: 0.3s;
     
 }
 
@@ -103,9 +106,13 @@
     -webkit-box-orient: vertical;
     color: black;
     text-decoration: none;
+    transition: 0.3s;
+
 }
 .long-title a:hover{
     color: #F54253;
+    transition: 0.3s;
+
 }
 
 .long-text{
@@ -210,11 +217,15 @@
     font-weight: 600; 
     margin-left: 8px;
     cursor: pointer;
+    transition: 0.3s;
+
 
  
 }
 .sh-one-type >p:hover{
     color: #F54253;
+    transition: 0.3s;
+
  
 }
 
@@ -231,10 +242,14 @@
     -webkit-box-orient: vertical;
     text-decoration: none;
     color: black;
+    transition: 0.3s;
+
 
 }
 .sh-one-title >a:hover{
     color: #F54253;
+    transition: 0.3s;
+
 }
 
 .sh-one-text >p{

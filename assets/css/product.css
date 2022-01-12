@@ -299,7 +299,6 @@ div, input{
 }
 
 .item{
-    height: 275px;
     width: 19%;
     margin-top: 10px;
     box-sizing: border-box;
@@ -489,7 +488,6 @@ div, input{
 
     .item{
         width: 24%;
-        height: 300px;
       
     }
     .content-product .item .img:hover .xemnhanh{
@@ -534,7 +532,6 @@ div, input{
 
     .item{
         width: 48%;
-        min-height: 370px;
     }
 }
 
@@ -574,7 +571,6 @@ div, input{
 
     .item{
         width: 100%;
-        min-height: 480px;
     }
 
     .item{
@@ -618,7 +614,6 @@ div, input{
 
     .item{
         width: 100%;
-        min-height: 370px;
     }
 
     .item{
