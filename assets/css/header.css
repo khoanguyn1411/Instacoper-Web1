@@ -797,6 +797,7 @@ a{
     font-size: 16px;
     padding-bottom: 6px;
     padding-top: 6px;
+    cursor: pointer;
 }
 
 .hd-user-container>p:hover{

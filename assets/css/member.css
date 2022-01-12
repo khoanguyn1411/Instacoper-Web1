@@ -4,7 +4,7 @@
     height: auto;
     margin:auto;
     box-sizing: border-box;
-    min-height: 1024px;
+    min-height: 100vh;
     margin-top: 130px;
     font-family: 'Source Sans Pro', sans-serif;
     min-width: 300px;
@@ -521,5 +521,69 @@ ul.breadcrumb {
     .banner1 .title p{
         font-size: 40px;
     }
-    
+
+    #row1, #row2, #row3{
+        width: 100%;
+        display: inline-block;
+    }
+
+    #row1 .img, #row3 .img{
+        width: 40%;
+        float: left;
+    }
+
+    #row1 .img>img, #row3 .img>img{
+        width: 100%;
+    }
+
+    #row1 .content-row, #row3 .content-row{
+        width: 60%;
+        box-sizing: border-box;
+
+    }
+
+    #row1 .content-row .title p,  #row3 .content-row .title p{
+        margin-left: 10px;
+        
+    }
+
+    #row2{
+        margin: 20px 0px;
+    }
+
+    #row2 .content-row{
+        width: 60%;
+        float: left;
+        margin-right: 0;
+
+    }
+
+    #row2 .img{
+        width: 40%;
+        float: left;
+    }
+    #row2 .content-row .title {
+       float: left;
+       width: 100%;
+       margin-left: 0;
+       text-align: right;
+       margin-top: 10px;
+    }
+
+    #row2 .content-row .title p{
+        margin-left: 0;
+    }
+
+    #row2 .content-row .text {
+        float: left;
+       width: 100%;
+       padding-right:0 ;
+     }
+
+     
+    #row2 .content-row .text p {
+       margin-left:-20px ;
+       padding-right: 10px;
+     }
+
 }

@@ -641,7 +641,7 @@
         }
 
         function autoSlides() {
-            document.getElementById("btnNext").click();
+            showSlides(slideIndex += 1);
             setTimeout(autoSlides, 5000);
         }
 

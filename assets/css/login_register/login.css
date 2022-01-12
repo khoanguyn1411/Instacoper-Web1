@@ -1,42 +1,96 @@
-.modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    left: 0;
-    top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-    align-items: center;
-    box-sizing: border-box;
-    z-index: 11;
-
-  }
-
-  .close {
-    color: #aaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-  }
-
-  .modal-content {
-    background-color: #fefefe;
+.wrapper{
+    max-width: 1140px;
+    width: 100%;
     margin: auto;
-    border: 1px solid #888;
-    width: 33%;
-    height: auto;
-    border-radius: 10px;
-    max-width: 500px;
-    padding: 60px 50px;
-    box-sizing: border-box;
+    padding: 0 20px;
+    min-width: 300px;
+    margin-top: 100px;
+}
+
+.login-img, .login-form{
+    float: left;
+    padding-top: 50px;
+
+}
+
+.login-img{
+    width: 60%;
+    height: 100vh;
+    min-height: 600px;
+}
+
+.login-img .content{
+    width: 100%;
+
+}   
+
+.login-img .content .title {
+    width: 65%;
+}
+
+.login-img .content .title p:first-child{
+    font-weight: bold;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+.login-img .content .img {
+    display: flex;
+    justify-content: end;
+    width: 100%;
+    padding-right: 40px;
+    margin-top: 30px;
 
 
-  }
+}
 
-  div, input, a{
+.login-img .content .img > img{
+    height: 60vh;
+    max-height: 400px;
+    width: 100%;
+}
+
+.pink{
+    color: #F54253;
+    font-weight: bold;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+
+.login-form{
+    width: 40%;
+    background: #FAFAFA;
+    height: 100vh;
+    padding: 20px;
+    min-height: 600px;
+    padding-top: 50px;
+
+}
+
+.login-form .login-form-content{
+    width: 100%;
+}
+
+.logo-content{
+    display: flex;
+    justify-content: center;
+}
+
+.logo-content .img{
+    width: 20%;
+    min-width: 80px;
+}
+
+.logo-content .img>img{
+    width: 100%;
+}
+
+
+
+div, input, a{
     font-family: 'Source Sans Pro', sans-serif;
   }
 
@@ -50,7 +104,6 @@
   }
 
 
-  /* Modal Content */
 
 
   
@@ -118,6 +171,8 @@
   font-weight: 600;
   user-select: none;
   min-width: 200px;
+  cursor: pointer;
+  transition: .4s;
 
 
 }
@@ -125,6 +180,8 @@
 
 .button-content >div:hover{
   background-color: #F54253;
+  cursor: pointer;
+  transition: .4s;
 
 }
 
@@ -133,6 +190,7 @@
   display: flex;
   justify-content: center;
   margin-top: 12px;
+  
 }
 
 
@@ -159,6 +217,9 @@
   text-align: center;
   user-select: none;
 min-width: 200px;
+cursor: pointer;
+transition: .4s;
+
 
 
 
@@ -166,6 +227,9 @@ min-width: 200px;
 }
 .google-content >div:hover{
   background-color: yellow;
+  cursor: pointer;
+  transition: .4s;
+
 }
 .google-content > div >div{
   font-weight: 600;
@@ -206,38 +270,57 @@ min-width: 200px;
     cursor: pointer;
 }
 
-@media only screen and (min-width: 579px) and (max-width: 1025px){
-  .modal-content {
-    width: 70%;
-    height: auto;
-  }
+@media only screen and (max-width: 892px){
+    .login-form{
+        width: 50%;
+    }
+
+    .login-img{
+        width: 50%;
+    }
+
+    .login-img .content .img > img{
+        height: auto;
+        max-height: 400px;
+        width: 100%;
+    }
+
+    .login-img .content .title {
+        width: 100%;
+    }
+
+   
 }
 
-@media only screen and (min-width: 419px)  and (max-width: 578px){
-  .modal-content {
-    width: 70%;
-    height: auto;
-    padding: 50px 20px;
-  }
+@media only screen and (max-width: 733px){
+    .login-img{
+        display: none;
+    }
+
+    .login-form{
+        width:100%;
+    }
+
+    .forgotpass-content .left-content, .forgotpass-content .right-content{
+        width: 100%;
+      }
+
+      .button-content >div, .google-content>div{
+        width: 100%;
+      }
+      
+
 }
 
-@media only screen and (max-width: 419px){
-  .modal-content {
-    width: 80%;
-    height: auto;
-    padding: 50px 20px;
-    min-width: 300px;
-  }
-  .forgotpass-content{
-    display: inline-block;
-    height: auto;
-
-  }
-
-  .forgotpass-content .left-content, .forgotpass-content .right-content{
-    width: 100%;
-    text-align: center;
-  }
+@media only screen and (max-width: 434px){
+    .forgotpass-content{
+        display: inline-block;
+        height: auto;
+    
+      }
+    
+      .forgotpass-content .left-content, .forgotpass-content .right-content{
+        width: 100%;
+        text-align: right;
+      }
 }
-
-

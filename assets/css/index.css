@@ -3,7 +3,7 @@
     height: auto;
     margin:auto;
     box-sizing: border-box;
-    min-height: 1024px;
+    min-height: 100vh;
     min-width: 300px;
     margin-top: 120px;
     font-family: 'Source Sans Pro', sans-serif;

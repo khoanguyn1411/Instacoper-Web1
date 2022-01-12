@@ -9,7 +9,7 @@ body{
     height: auto;
     margin:auto;
     box-sizing: border-box;
-    min-height: 1024px;
+    min-height: 100vh;
     max-width: 1140px;
     position: relative;
     padding-left:20px;
@@ -20,7 +20,7 @@ body{
 }
 
 .right-side{
-    height: 1100px;
+    height: auto;
     width: 75%;
     float: left;
 }
@@ -35,7 +35,6 @@ body{
     margin: auto;
     margin-top: 150px;
     padding: 20px;
-    height: 900px;
 }
 
 .right-side-content .avatar{
