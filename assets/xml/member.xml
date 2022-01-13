@@ -8,15 +8,13 @@
         anh Chấn Khoa đền bù chứ shop chúng tôi không biết gì hết.</des>
         <srcAvatar>assets/img/team/CKhoa.png</srcAvatar>
     </member>
-
     <member>
-        <name>Nguyễn Hoàng Anh Khoa</name>
+        <name>Võ Thị Tuyết Trinh</name>
         <position>Co - founder</position>
-        <ID>K194111608</ID>
-        <des>Với hơn 10 năm kinh nghiệm cam giày và bán lại kiếm lời, đã từng sở hữu rất nhiều bằng khen danh giá  từ việc Resell giày trong giới rapper, và là nhà đồng sáng lập của thương hiệu.</des>
-        <srcAvatar>assets/img/team/AKhoa.png</srcAvatar>
+        <ID>K194111609</ID>
+        <des>Du học sinh tại Đông Lào về phân phối và quản lý quy trình  cung ứng sản phẩm, có 10 năm kinh nghiệm trong việc điều phối và quản trị logistic, hiện là đồng sáng lập của thương hiệu bán giày Instacoper.</des>
+        <srcAvatar>assets/img/team/Trinh.png</srcAvatar>
     </member>
-
     <member>
         <name>Trần Hoàng Gia Bảo</name>
         <position>CEO</position>
@@ -29,17 +27,19 @@
         <name>Trương Hoàng Ý</name>
         <position>Tạp vụ</position>
         <ID>K194111645</ID>
-        <des>Có nhiều năm kinh nghiệp trong việc quét dọn và lau nhà tại các tập đoàn lớn, hiện tại cô Ý đã sử dụng vốn kiến thức uyên thâm của mình để là tham gia điều hành thương hiệu Instacoper với vai trò là tạp vụ fulltime.</des>
+        <des>Có nhiều năm kinh nghiệp trong việc quét dọn và lau nhà tại các tập đoàn lớn, hiện tại cô Ý đã sử dụng vốn kiến thức uyên thâm của mình để tham gia điều hành thương hiệu với vai trò là tạp vụ fulltime.</des>
         <srcAvatar>assets/img/team/Heo.png</srcAvatar>
     </member>
 
     <member>
-        <name>Võ Thị Tuyết Trinh</name>
+        <name>Nguyễn Hoàng Anh Khoa</name>
         <position>Co - founder</position>
-        <ID>K194111609</ID>
-        <des>Du học sinh tại Đông Lào về phân phối và quản lý quy trình  cung ứng sản phẩm, có 10 năm kinh nghiệm trong việc điều phối và quản trị logistic, hiện là đồng sáng lập của thương hiệu bán giày Instacoper.</des>
-        <srcAvatar>assets/img/team/Trinh.png</srcAvatar>
+        <ID>K194111608</ID>
+        <des>Với hơn 10 năm kinh nghiệm cam giày và bán lại kiếm lời, đã từng sở hữu rất nhiều bằng khen danh giá  từ việc Resell giày trong giới rapper, và là nhà đồng sáng lập của thương hiệu.</des>
+        <srcAvatar>assets/img/team/AKhoa.png</srcAvatar>
     </member>
 
+
+   
 
 </members>

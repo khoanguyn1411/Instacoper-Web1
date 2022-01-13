@@ -408,6 +408,7 @@ ul.breadcrumb {
 .team-members .member-name>p{
     text-align: center;
     font-weight: bold;
+    font-size: 14px;
     font-family: 'Playfair Display',sans-serif;
 }
 
@@ -415,6 +416,7 @@ ul.breadcrumb {
 .team-members .member-des>p{
     font-size: 12px;
     text-align: justify;
+    color: black;
 }
 
 .team-members .member-position{
