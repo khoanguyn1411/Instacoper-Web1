@@ -5,8 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/header.css">
-    <link rel="stylesheet" href="assets/css/register-form.css">
-    <link rel="stylesheet" href="assets/css/login-form.css">
     <link rel="stylesheet" href="assets/css/radio.css">
 
     <link href="https://fonts.googleapis.com/css?family=Poppins:600&display=swap" rel="stylesheet">
@@ -297,10 +295,11 @@
           var arrProduct = "product.html, detail-product.html";
           var arrBlog = "blog.html, blog-detail.html";
 
-          var arrIndex = "instacoper-2667c.web.app, index.html";
+          var arrIndex = "index.html";
+
           
 
-          if(arrIndex.includes(link)){
+          if(link==='index.html'||fullURL==="https://instacoper-gr5.web.app/"){
             index.className = "on-use";
             console.log(link); 
           }
@@ -311,20 +310,20 @@
           }
 
 
-          if(arrFAQ.includes(link)){
+          if(arrFAQ.includes(link)&&link!==""){
             FAQs.className = "on-use";
             ic_drop_faq.src = 'assets/img/iconKhoa/ic_down_arrow_pink.svg'
             console.log(link); 
           }
 
           
-          if(arrProduct.includes(link)){
+          if(arrProduct.includes(link)&&link!==""){
             product.className = "on-use";
             ic_drop_product.src = 'assets/img/iconKhoa/ic_down_arrow_pink.svg'
             console.log(link); 
           }
 
-          if(arrBlog.includes(link)){
+          if(arrBlog.includes(link)&&link!==""){
             blog.className = "on-use";
             ic_drop_blog.src = 'assets/img/iconKhoa/ic_down_arrow_pink.svg'
             console.log(link); 
