@@ -76,7 +76,7 @@
     left: 0;
     right: 0;
     z-index: 99;
-    border: 1px solid #F68A94;
+    border: 1px solid pink;
     margin-top: 3px;
 
     max-height: 150px;
@@ -92,7 +92,7 @@
   }
   
   .select-items div:hover, .same-as-selected {
-    background-color: #F68A94;
+    background-color: pink;
   }
 
   

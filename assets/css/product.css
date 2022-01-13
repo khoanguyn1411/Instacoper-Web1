@@ -126,7 +126,7 @@ div, input{
 .img-title{
     float: right;
     text-align: center;
-    top: 25%;
+    top: 45%;
     position: absolute;
     right: 0%;
 
@@ -137,7 +137,9 @@ div, input{
     float: left;
     margin-bottom: 5px;
     position: relative;
+
 }
+
 .bottom-left{
     height: 0.75px;
     width: 95%;
@@ -263,7 +265,17 @@ div, input{
 
 
 
+#hiddenFilter, #sort{
+    cursor: pointer;
+    transition: 0.4s;
+}
 
+
+#hiddenFilter:hover, #sort:hover{
+    color: #F54253;
+    transition: 0.4s;
+
+}
 
 
 /* CSS cho giới tính */
@@ -311,6 +323,7 @@ div, input{
     width: 100%;
     padding-top: 100%; 
     position: relative;
+    cursor: pointer;
 
 }
 
@@ -352,11 +365,14 @@ div, input{
 
 .content-product .img .xemnhanh-content{
     width: 100%;
+    text-align: center;
     font-size: 0px;
     opacity: 1;
     position: absolute;
     bottom: 8px;
-    left: 30%;
+    left: 0;
+    right: 0;
+    margin: auto;
     display: none;
     color: white;
 }
@@ -373,7 +389,16 @@ div, input{
     font-size: 14px;
     color: black;
     font-weight: bold;
+    transition: 0.4s;
+
 }
+.content-product .item .text .name:hover{
+    color: #F54253;
+    cursor: pointer;
+    transition: 0.4s;
+
+}
+
 
 .content-product .item .text .gender{
     font-size: 14px;

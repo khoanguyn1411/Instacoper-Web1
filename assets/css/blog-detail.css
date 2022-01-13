@@ -144,6 +144,8 @@
 
 .two{
     margin-top: -10px;
+    cursor: pointer;
+
 }
 
 
@@ -174,12 +176,21 @@
 }
 
 
-.four{
+.four> p{
     font-weight: bold;
     font-family: 'Playfair Display',sans-serif;
     margin-top: 8px;
     padding: 0 5px;
 
+}
+.four{
+    transition: .4s;
+}
+
+.four:hover{
+    cursor: pointer;
+    color: #F54253;
+    transition: 0.4s;
 }
 
 .five{
@@ -188,14 +199,16 @@
     padding: 0 5px;
 }
 
-.six{
+.six>p{
     color: #F54253;
     font-weight: bold;
     font-style: italic;
-    font-family: 'Source Serif Pro';
-    font-size: 17px;
+    font-family: 'Playfair Display',sans-serif;
+    font-size: 14px;
     margin-top: 10px;
     padding: 5px 5px;
+    cursor: pointer;
+    
 }
 
 

@@ -18,6 +18,7 @@ label{
     background-color: rgba(250, 251, 251, 1);
     border-radius: 3px;
     margin-right: 5px;
+    cursor: pointer;
     
 }
 
@@ -28,6 +29,8 @@ label{
     -webkit-box-shadow: 2px 2px 2px #666;
     -moz-box-shadow: 2px 2px 2px #666;
     box-shadow: 2px 2px 2px #666;
+    cursor: pointer;
+
 }
 
 
@@ -38,6 +41,8 @@ label{
     margin: 3px 4px 4px 0px;
     font-size: 15px;
     margin-top: 5px;
+  
+
 
 }
 
@@ -58,6 +63,7 @@ label{
     padding-right: 4px;
     padding-bottom: 2px;
     border-radius: 3px;
+    cursor: pointer;
 }
 
 .chk-thuonghieu input:checked + label:before{
@@ -83,6 +89,7 @@ label{
     border-radius: 3px;
     margin-right: 5px;
     font-weight: bold;
+    cursor: pointer;
 }
 
 .content-size input:checked + label{
@@ -120,6 +127,7 @@ label{
     border-radius: 3px;
     font-weight: bold;
     text-align: center;
+    cursor: pointer;
 }
 
 .content-size-detail input:checked + label{

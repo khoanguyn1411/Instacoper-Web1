@@ -91,128 +91,88 @@ txtAddress.addEventListener("input",function(){
     }
 });
 
+btnOrder.addEventListener("click",function validation(){   
+    isClicked = true; 
+    function validateName(){
+        if(txtName.value===""){
+            txtErrorName.style.display = "block";
+            return false;
+        }
+        else{
+            txtErrorName.style.display = "none";
+            return true;
+        }
+    }
+    
+    function validatePhone(){
+        if(txtPhone.value===""){
+            txtErrorPhone.style.display = "block";
+            return false;
+        }
+        else{
+            txtErrorPhone.style.display = "none";
+            return true;
+        }
+    }
+    
+    function validateAddress(){
+        if(txtAddress.value ===""){
+            txtErrorAddress.style.display = "block";
+            return false;
+        }
+        else{
+            txtErrorAddress.style.display = "none";
+            return true;
+        }
+    }
+    
+    function validateProvince(){
+        if(selectProvince.value ==="0"){
+            txtErrorProvince.style.display = "block";
+            return false;
+        }
+        else{
+            txtErrorProvince.style.display = "none";
+            return true;
+        }
+    }
+    
+    function validateDistrict(){
+        if(selectDistrict.value==="0"){
+            txtErrorDistrict.style.display = "block";
+            return false;
+        }
+        else{
+            txtErrorDistrict.style.display = "none";
+            return true;
+        }
+    }
+    
+    function validateWard(){
+        if(selectWard.value==="0"){
+            txtErrorWard.style.display = "block";
+            return false;
+        }
+        else{
+            txtErrorWard.style.display = "none";
+            return true;
+        }
+    }
 
-document.addEventListener("mouseover",function(){
-    btnOrder.addEventListener("click",function validation(){   
-        isClicked = true; 
-        function validateName(){
-            if(txtName.value===""){
-                txtErrorName.style.display = "block";
-                return false;
-            }
-            else{
-                txtErrorName.style.display = "none";
-                return true;
-            }
-        }
-        
-        function validatePhone(){
-            if(txtPhone.value===""){
-                txtErrorPhone.style.display = "block";
-                return false;
-            }
-            else{
-                txtErrorPhone.style.display = "none";
-                return true;
-            }
-        }
-        
-        function validateAddress(){
-            if(txtAddress.value ===""){
-                txtErrorAddress.style.display = "block";
-                return false;
-            }
-            else{
-                txtErrorAddress.style.display = "none";
-                return true;
-            }
-        }
-        
-        function validateProvince(){
-            if(selectProvince.value ==="0"){
-                txtErrorProvince.style.display = "block";
-                return false;
-            }
-            else{
-                txtErrorProvince.style.display = "none";
-                return true;
-            }
-        }
-        
-        function validateDistrict(){
-            if(selectDistrict.value==="0"){
-                txtErrorDistrict.style.display = "block";
-                return false;
-            }
-            else{
-                txtErrorDistrict.style.display = "none";
-                return true;
-            }
-        }
-        
-        function validateWard(){
-            if(selectWard.value==="0"){
-                txtErrorWard.style.display = "block";
-                return false;
-            }
-            else{
-                txtErrorWard.style.display = "none";
-                return true;
-            }
-        }
-    
-        validateName();
-        validatePhone();
-        validateAddress();
-        validateProvince();
-        validateWard();
-        validateDistrict();
-    
-        if(validateName() && validatePhone() && validateAddress() 
-        && validateProvince() && validateWard()  && validateDistrict()
-        ){
-            alert("Đặt hàng thành công!");
-        }
-    })
-    document.addEventListener("click",function(){
-        function validateProvince(){
-            if(selectProvince.value ==="0"){
-                txtErrorProvince.style.display = "block";
-                return false;
-            }
-            else{
-                txtErrorProvince.style.display = "none";
-                return true;
-            }
-        }
-        
-        function validateDistrict(){
-            if(selectDistrict.value==="0"){
-                txtErrorDistrict.style.display = "block";
-                return false;
-            }
-            else{
-                txtErrorDistrict.style.display = "none";
-                return true;
-            }
-        }
-        
-        function validateWard(){
-            if(selectWard.value==="0"){
-                txtErrorWard.style.display = "block";
-                return false;
-            }
-            else{
-                txtErrorWard.style.display = "none";
-                return true;
-            }
-        }
-        validateProvince();
-        validateDistrict();
-        validateWard();
-    });
-       
+    validateName();
+    validatePhone();
+    validateAddress();
+    validateProvince();
+    validateWard();
+    validateDistrict();
+
+    if(validateName() && validatePhone() && validateAddress() 
+    && validateProvince() && validateWard()  && validateDistrict()
+    ){
+        alert("Đặt hàng thành công!");
+    }
 })
+
 
 
 

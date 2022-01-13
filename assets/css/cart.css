@@ -12,6 +12,20 @@
 
 }
 
+.money > .content >p4{
+    font-size: 16px;
+}
+
+
+.money > .price >p4{
+    font-size: 16px;
+}
+
+.money-total > .price >p4, 
+.money-total > .content > p4{
+    font-size: 16px;
+}
+
 
 div{
     font-family: 'Source Sans Pro', sans-serif;
@@ -29,7 +43,7 @@ p{
 /* CSS cho left content */
 
 .left-content{
-    width: 65%;
+    width: 60%;
     height: 950px;
     float: left;
 }
@@ -208,7 +222,7 @@ p{
 /* CSS cho right content */
 
 .right-content{
-    width: 35%;
+    width: 40%;
     float: left;
 
 }
@@ -291,13 +305,22 @@ p{
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    color: white;
     font-size: 15px;
     font-weight: 600;
+    cursor: pointer;
+    transition: .4s;
 }
+
+.button-order> a{
+    color: white;
+    text-decoration: none;
+}
+
 
 .button-order:hover{
     background-color: #F54253;
+    transition: .4s;
+
 }
 
 

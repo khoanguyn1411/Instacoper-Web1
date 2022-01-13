@@ -47,6 +47,8 @@ body{
     background: white;
     border: none;
     cursor: pointer;
+    transition: .3s;
+
     font-size: 15px;
 
 }
@@ -57,6 +59,8 @@ body{
 
 .tab button.active {
     border-bottom: 3px solid #F54253;
+    transition: .3s;
+
   }
 
   .tabcontent{
@@ -300,12 +304,12 @@ body{
     .right-side-content .tab > button{
         float: left;
         width: 50%;
+
     }
 
     .tab button.active {
         background-color: pink;
         border-bottom: 0;
-        
       }
     }
 @media only screen and (max-width: 392px){

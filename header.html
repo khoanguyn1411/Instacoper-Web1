@@ -28,7 +28,12 @@
     <div class="header-top">
           <div class="header-wrapper">
               <div class="header-logo">
-                  <div></div>
+                  <div class="header-logo-img">
+                    <img src="assets/img/logo.png">
+                  </div>
+                  <div class="header-brand-name">
+                    <p>INSTACOPER</p>
+                  </div>
               </div>
       
               <div class="header-search">
@@ -43,6 +48,12 @@
                           <div class="hd-user-container">
                               <p id="txtLogin" >Đăng nhập</p>
                               <p id="txtRegister">Đăng ký</p>
+                              <p id="txtMyAccount">Tài khoản của tôi</p>
+                              <p id="txtMyOrder">Quản lý đơn hàng</p>
+                              <p id="txtMyNotify">Thông báo của tôi <span class="pink">2</span> </p>
+                              <p id="txtMyAddress">Thiết lập địa chỉ</p>
+                              <p id="txtChangePassword">Đổi mật khẩu</p>
+                              <p id="txtLogout">Đăng xuất</p>
                              
                           </div>
                           <script>
@@ -52,6 +63,27 @@
                               document.getElementById('txtRegister').addEventListener('click',()=>{
                                 window.location.replace('register-form.html');
                               })
+
+                              document.getElementById('txtMyAccount').addEventListener('click',()=>{
+                                window.location.replace('account_my_account.html');
+                              })
+
+                              document.getElementById('txtMyOrder').addEventListener('click',()=>{
+                                window.location.replace('account_order_management.html');
+                              })
+
+                              document.getElementById('txtMyNotify').addEventListener('click',()=>{
+                                window.location.replace('account_notification.html');
+                              })
+
+                              document.getElementById('txtMyAddress').addEventListener('click',()=>{
+                                window.location.replace('account_my_address.html');
+                              })
+
+                              document.getElementById('txtChangePassword').addEventListener('click',()=>{
+                                window.location.replace('account_change_password.html');
+                              })
+                          
                           </script>
                       </div>
                       <img id="btnOpenCart" src="assets/img/iconKhoa/ic_cart_2.svg">
@@ -134,26 +166,26 @@
                               <li><i class="fas fa-caret-right"></i><a id="link-thuonghieu">Thương hiệu</a> 
                               </li>
                               <ul class="sub-nav-2" id="sub-thuonghieu">
-                                  <li><i class="fas fa-caret-down"></i><a href="#">Nike</a></li>
-                                  <li><i class="fas fa-caret-down"></i><a href="#">Adidas</a></li>
-                                  <li><i class="fas fa-caret-down"></i><a href="#">Converse</a></li>
-                                  <li><i class="fas fa-caret-down"></i><a href="#">VANS</a></li>
-                                  <li><i class="fas fa-caret-down"></i><a href="#">New Blance</a></li>
-                                  <li><i class="fas fa-caret-down"></i><a href="#">MLB</a></li>
-                                  <li><i class="fas fa-caret-down"></i><a href="#">Puma</a></li>
-                                  <li><i class="fas fa-caret-down"></i><a href="#">Asics</a></li>
-                                  <li><i class="fas fa-caret-down"></i><a href="#">Skechers</a></li>
+                                  <li><i class="fas fa-caret-down"></i><a href="product.html">Nike</a></li>
+                                  <li><i class="fas fa-caret-down"></i><a href="product.html">Adidas</a></li>
+                                  <li><i class="fas fa-caret-down"></i><a href="product.html">Converse</a></li>
+                                  <li><i class="fas fa-caret-down"></i><a href="product.html">VANS</a></li>
+                                  <li><i class="fas fa-caret-down"></i><a href="product.html">New Blance</a></li>
+                                  <li><i class="fas fa-caret-down"></i><a href="product.html">MLB</a></li>
+                                  <li><i class="fas fa-caret-down"></i><a href="product.html">Puma</a></li>
+                                  <li><i class="fas fa-caret-down"></i><a href="product.html">Asics</a></li>
+                                  <li><i class="fas fa-caret-down"></i><a href="product.html">Skechers</a></li>
                               </ul>
-                              <li><i class="fas fa-caret-right"></i><a href="#">Khuyến mãi</a></li>
-                              <li><i class="fas fa-caret-right"></i><a href="#">Hàng mới về</a></li>
-                              <li><i class="fas fa-caret-right"></i><a href="#">Bán chạy nhất</a></li>
-                              <li><i class="fas fa-caret-right"></i><a href="#">Sneaker nam</a></li>
-                              <li><i class="fas fa-caret-right"></i><a href="#">Sneaker nữ</a></li>
+                              <li><i class="fas fa-caret-right"></i><a href="product.html">Khuyến mãi</a></li>
+                              <li><i class="fas fa-caret-right"></i><a href="product.html">Hàng mới về</a></li>
+                              <li><i class="fas fa-caret-right"></i><a href="product.html">Bán chạy nhất</a></li>
+                              <li><i class="fas fa-caret-right"></i><a href="product.html">Sneaker nam</a></li>
+                              <li><i class="fas fa-caret-right"></i><a href="product.html">Sneaker nữ</a></li>
                               <li><i class="fas fa-caret-right"></i><a id="link-phukien" >Phụ kiện</a></li>
                               <ul class="sub-nav-2" id="sub-phukien">
-                                  <li><i class="fas fa-caret-down"></i><a href="#">Tất/Vớ</a></li>
-                                  <li><i class="fas fa-caret-down"></i><a href="#">Dây giày</a></li>
-                                  <li><i class="fas fa-caret-down"></i><a href="#">Stickers</a></li>
+                                  <li><i class="fas fa-caret-down"></i><a href="product.html">Tất/Vớ</a></li>
+                                  <li><i class="fas fa-caret-down"></i><a href="product.html">Dây giày</a></li>
+                                  <li><i class="fas fa-caret-down"></i><a href="product.html">Stickers</a></li>
                               </ul>
 
                           </ul>                            

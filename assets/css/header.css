@@ -54,6 +54,40 @@ body{
     height: 35px;
 
 }
+
+.header-logo-img, .header-brand-name{
+    float: left;
+}
+.header-logo-img{
+    width: 20%;
+}
+
+
+
+.header-logo-img img{
+    height: 35px;
+}
+
+.header-brand-name{
+    width: 80%;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    padding-left: 2.5%;
+    
+}
+
+.header-brand-name >p{
+    color: white;
+    text-shadow: 2.5px 2.5px #F54253;
+    font-size: 25px;
+    font-weight: bold;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #F54253;
+    
+}
+
+
 .header-search{
     width: 45%;
     box-sizing: border-box;
@@ -394,6 +428,15 @@ a{
 
 #btnCloseNav{
     display: none;
+}
+
+@media only screen and (max-width:1088px) {
+    
+    .header-brand-name{
+        display: none;
+        
+    }
+    
 }
 
 
@@ -775,7 +818,7 @@ a{
     right: 0;
     margin-top: 60px;
     margin-right: 40px;
-    width: 110px;
+    width: 160px;
     -webkit-box-shadow: 1px 1px 5px rgb(0 0 0 / 0.4);
     -moz-box-shadow: 1px 1px 5px rgb(0 0 0 / 0.4);
     box-shadow: 1px 1px 5px rgb(0 0 0 / 0.4);
@@ -788,7 +831,7 @@ a{
     display: none;
 }
 .hd-user-container>p{
-    text-align: left;
+    text-align: center;
     font-weight: 600;
     user-select: none;
     width: 100%;
@@ -798,6 +841,15 @@ a{
     padding-bottom: 6px;
     padding-top: 6px;
     cursor: pointer;
+    
+}
+
+.pink{
+    border-radius: 50%;
+    background-color: #F54253;
+    padding: 0px 3px;
+    color: white;
+    font-size: 8px;
 }
 
 .hd-user-container>p:hover{

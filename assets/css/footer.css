@@ -135,8 +135,11 @@ footer a, footer li, footer p, footer div, footer button{
     margin-top: 20px;
 }
 
+
+
 .ft-payment-content{
     float: left;
+    width: 100%;
 }
 
 .ft-payment-content >div:first-child{
@@ -144,20 +147,54 @@ footer a, footer li, footer p, footer div, footer button{
     margin-top: 15px;
 }
 
+.ft-paymemt-container{
+    width: 100%;
+    display: inline-block;
+}
+
+
+.ft-paymemt-container > *{
+    float: left;
+}
+
+.ft-paymemt-container > .ft-img{
+    width: 80%;
+}
+
+.ft-paymemt-container > .ft-certificate{
+    width: 20%;
+    padding: 20px 0px;
+    display: flex;
+    justify-content: right;
+}
+
+.ft-paymemt-container > .ft-certificate > img{
+    height: 35px;
+}
+
 .ft-img{
     padding: 20px 0px;
-    padding-bottom: 50px;
     line-height: 4;
 
 }
 
 .ft-img img{
     margin-right: 10px;
+    height: 35px;
 
+}
+@media only screen and (max-width: 925px){
+    .ft-paymemt-container > .ft-img{
+        width: 60%;
+    }
+    
+    .ft-paymemt-container > .ft-certificate{
+        width: 40%;
+    }
 }
 
 
-@media only screen and (min-width: 550px) and (max-width: 843px){
+@media only screen and (max-width: 843px){
     .footer-content{
         width: 100%;
     }
@@ -181,10 +218,22 @@ footer a, footer li, footer p, footer div, footer button{
     }
 }
 
-@media only screen and (max-width: 549px){
-    .footer-content{
+@media only screen and (max-width: 610px){
+    .ft-paymemt-container > .ft-img{
         width: 100%;
     }
+    
+    .ft-paymemt-container > .ft-certificate{
+        width: 100%;
+        padding-top: 0;
+        justify-content: start;
+    }
+}
+
+
+
+@media only screen and (max-width: 549px){
+
     .footer-content-3{
         width: 100%;
         margin-top: 20px;
@@ -192,8 +241,6 @@ footer a, footer li, footer p, footer div, footer button{
     }
 
     .footer-content-2{
-        padding-right: 40px;
-        width: 50%;
         padding-right: 0px;
 
     }
@@ -202,7 +249,5 @@ footer a, footer li, footer p, footer div, footer button{
         width: 50%;
 
     }
-    .footer-register{
-        width: 100%;
-    }
+ 
 }
