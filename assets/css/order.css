@@ -42,8 +42,14 @@
     display: flex;
 }
 .logo .img >img{
-    height: 80%;
+    height: 40%;
 }
+.logo .img >img:last-child{
+    margin-left: 3%;
+    height: 28%;
+}
+
+
 
 
 .left-content .title-main > img, p{
@@ -331,12 +337,14 @@ p{
     margin: 5px 0px;
     padding-top: 7px;
     padding-bottom: 7px;
-    padding-right: 7px;
 
 }
 
+
 .action .left-side img{
     width: 8px;
+    margin-right: 10px;
+    vertical-align: middle;
 }
 
 
@@ -346,6 +354,8 @@ p{
     font-weight: 500;
     text-decoration: none;
     color: black;
+    vertical-align: middle;
+
 }
 
 /* CSS cho middle content */
@@ -372,6 +382,7 @@ p{
 .payment .text1 .middle{
     padding-left: 10px;
     box-sizing: border-box;
+    cursor: pointer;
 }
 
 .payment .text1 .middle >p{

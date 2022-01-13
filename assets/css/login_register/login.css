@@ -13,6 +13,7 @@
 
 }
 
+
 .login-img{
     width: 60%;
     height: 100vh;
@@ -257,10 +258,11 @@ transition: .4s;
   display: inline;
 }
 
-.no-account-content> a{
-  color: #F68A94;
-}
 
+.no-account-content > a{
+  text-decoration: underline;
+  color: #F54253;
+}
   
   
   .close:hover,

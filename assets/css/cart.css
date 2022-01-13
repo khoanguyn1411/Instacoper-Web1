@@ -81,24 +81,21 @@ p{
 
 .item .img .container{
     width: 100%;
-    padding-top: 100%; 
-    position: relative;
    
 }
 
-.item .img .container > img{
-    position: absolute;
+.item .img .container>img{
     width: 100%;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
+   
 }
+
+
 .item .item-content {
     width: 77%;
     height: 100%;
     float: left;
     display: flex;
+    align-items: center;
 
     
 }

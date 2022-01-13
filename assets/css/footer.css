@@ -163,7 +163,8 @@ footer a, footer li, footer p, footer div, footer button{
 
 .ft-paymemt-container > .ft-certificate{
     width: 20%;
-    padding: 20px 0px;
+    padding-top: 20px;
+    padding-bottom: 40px;
     display: flex;
     justify-content: right;
 }

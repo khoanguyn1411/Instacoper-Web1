@@ -27,14 +27,20 @@
    
     <div class="header-top">
           <div class="header-wrapper">
-              <div class="header-logo">
+              <div class="header-logo" id="hd_logo">
                   <div class="header-logo-img">
                     <img src="assets/img/logo.png">
                   </div>
+                  
                   <div class="header-brand-name">
-                    <p>INSTACOPER</p>
+                    <img src="assets/img/brandNameWhite.svg">
                   </div>
               </div>
+              <script> 
+                document.getElementById("hd_logo").addEventListener('click',()=>{
+                    window.location.replace("index.html");
+                })
+              </script>
       
               <div class="header-search">
                   <img src="assets/img/iconKhoa/ic_search.svg">
@@ -50,7 +56,7 @@
                               <p id="txtRegister">Đăng ký</p>
                               <p id="txtMyAccount">Tài khoản của tôi</p>
                               <p id="txtMyOrder">Quản lý đơn hàng</p>
-                              <p id="txtMyNotify">Thông báo của tôi <span class="pink">2</span> </p>
+                              <p id="txtMyNotify">Thông báo của tôi <span class="pink-noti">2</span> </p>
                               <p id="txtMyAddress">Thiết lập địa chỉ</p>
                               <p id="txtChangePassword">Đổi mật khẩu</p>
                               <p id="txtLogout">Đăng xuất</p>
@@ -153,9 +159,11 @@
                       <p>Danh mục sản phẩm</p>
                   </div>
               </div>
+
               <div class="hd-nav"  id="navMenu">
+                <div  id="btnCloseNav"></div> 
+
                   <ul>
-                      <li><a id="btnCloseNav">X</a></li>
                       <li><a href="index.html" id="link-index">Trang chủ</a></li>
                       
                       <li id="sanpham" class="dropdown">
@@ -248,17 +256,17 @@
       
       <div class="left-menu" id="leftMenu">
           <div class="close-left-menu">
-              <a id="btnCloseLeftMenu">X</a>
+              <a id="btnCloseLeftMenu"></a>
           </div>
           <div class="left-menu-content">
               <ul>
-                  <li><a href="#">Walking Style Shoes</a></li>
-                  <li><a href="#">Casual Shoes</a></li>
-                  <li><a href="#">Boat Shoes</a></li>
-                  <li><a href="#">Canvas Trendy Shoes</a></li>
-                  <li><a href="#">Basketball Style Shoes</a></li>
-                  <li><a href="#">Chunky Shoes</a></li>
-                  <li><a href="#">Other Trendy Shoes</a></li>
+                  <li><a href="product.html">Walking Style Shoes</a></li>
+                  <li><a href="product.html">Casual Shoes</a></li>
+                  <li><a href="product.html">Boat Shoes</a></li>
+                  <li><a href="product.html">Canvas Trendy Shoes</a></li>
+                  <li><a href="product.html">Basketball Style Shoes</a></li>
+                  <li><a href="product.html">Chunky Shoes</a></li>
+                  <li><a href="product.html">Other Trendy Shoes</a></li>
               </ul>
           </div>
       </div>

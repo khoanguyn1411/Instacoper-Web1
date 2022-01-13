@@ -16,6 +16,7 @@ div, input, a{
   /* Modal Content */
   
   
+
   
   .logo-content2{
     width: 100%;
@@ -154,10 +155,10 @@ div, input, a{
   display: inline;
   }
   
-  .no-account-content2> a{
-  color: #F68A94;
+  .no-account-content2 > a{
+    text-decoration: underline;
+    color: #F54253;
   }
-  
   
   
   .close2:hover,

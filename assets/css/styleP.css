@@ -112,5 +112,4 @@ ul.breadcrumb {
   }
   ul.breadcrumb li a:hover {
     color: var(--secondary-color);
-    text-decoration: underline;
   }

@@ -170,6 +170,7 @@ btnOrder.addEventListener("click",function validation(){
     && validateProvince() && validateWard()  && validateDistrict()
     ){
         alert("Đặt hàng thành công!");
+        window.location.replace("index.html");
     }
 })
 
