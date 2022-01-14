@@ -16,7 +16,18 @@
     min-width: 300px;
 }
 
+#txtMyNotify{
+    position: relative;
+    padding-right: 10px;
 
+}
+
+#txtMyNotify span.pink-noti{
+    position: absolute;
+    top: 12.5px;
+    right: 5px;
+
+}
 
 html{
     width: 100%;

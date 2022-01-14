@@ -23,6 +23,10 @@ header{
 
 }
 
+#btnClick1, #btnClick2{
+    cursor: pointer;
+}
+
 
 
 .header-top-content .logo{
