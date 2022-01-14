@@ -316,8 +316,6 @@
 </script>
 
 <script>
-
-        
     var xhttp = new XMLHttpRequest();
     var html = "";
     var i;
@@ -330,7 +328,6 @@
         };
     xhttp.open("GET","assets/json/db_product.json", true);
     xhttp.send();
-
     function myFunction(arr) {
         html = "<div class='content-product' id='ctp'>";
         for (i = 0; i <arr.product.length; i++) {
@@ -339,22 +336,14 @@
         }
         html += "<div class='watchmore'> Xem thêm </div>";
         html += " </div>";
-
         document.getElementById("ms").innerHTML = html;
-
     }
-
     function openDetail(i){
         var sp = myArr.product[i];
         localStorage.setItem("data",JSON.stringify(sp));
         location.href = "detail-product.html";
         console.log(i);
     }
-
-
-
-   
-
 </script>
     
 </body>

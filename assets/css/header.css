@@ -6,6 +6,137 @@
     
 }
 
+/* CSS cho searchbar */
+.header-search{
+    width: 45%;
+    box-sizing: border-box;
+    float: left;
+    align-items: center;
+    display: flex;
+    position: relative;
+
+    
+}
+
+
+.search-result{
+    width: 100%;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    margin-top: 5px;
+    background-color: white;
+    border-radius: 3px;
+    -webkit-box-shadow: 1px 1px 5px rgb(0 0 0 / 0.4);
+    -moz-box-shadow: 1px 1px 5px rgb(0 0 0 / 0.4);
+    box-shadow: 1px 1px 5px rgb(0 0 0 / 0.4);
+    overflow-y: scroll;
+    max-height: 90vh;
+    transition: 0.4s;
+
+    
+}
+
+.search-result-item{
+    width: 100%;
+    display: inline-block;
+    border-bottom: 1px solid black;
+    transition: 0.4s;
+    cursor: pointer;
+    padding: 5px;
+}
+
+
+.search-result-item:hover{
+    background-color: #e4e4e4;
+    transition: 0.4s;
+
+}
+
+.search-item-img{
+    width: 20%;
+    float: left;
+}
+.search-item-img>img{
+    width: 100%;
+}
+
+.search-item-content{
+    padding-left: 20px;
+    float: left;
+    width: 80%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.search-item-name{
+    font-weight: bold;
+    font-size: medium;
+}
+
+.search-item-price{
+    padding: 3px 0;
+    font-size: 15px;
+}
+
+.search-item-gender{
+    font-style: italic;
+    font-size: 14px;
+}
+
+
+@media only screen and (max-width:904px) {
+    .search-item-img{
+        width: 30%;
+    }
+    .search-item-content{
+        width: 70%;
+    }
+
+}
+
+@media only screen and (max-width:648px) {
+    .search-result{
+        min-width: 220px;
+    }
+
+    .search-item-img{
+        width: 30%;
+    }
+    .search-item-content{
+        width: 70%;
+    }
+    .search-item-name{
+        font-weight: bold;
+        font-size: 15px;
+    }
+    
+    .search-item-price{
+        padding: 3px 0;
+        font-size: 14px;
+    }
+    
+    .search-item-gender{
+        font-style: italic;
+        font-size: 13px;
+    }
+    
+    
+
+}
+
+@media only screen and (max-width:348px) {
+    .search-result{
+        left: -20px;
+    }
+}
+
+
+
+
+/* -------- */
+
 .header-wrapper{
     max-width: 1140px;
     width: 100%;
@@ -113,7 +244,7 @@ body{
     border-radius: 3px;
 }
 
-.header-search img{
+.header-search>img{
     width: 100%;
     padding: 8px;
     border: none;
