@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/base.css">
+    <link rel="shortcut icon" type="image" href="assets/img/logo2.png">
+
     <link rel="stylesheet" href="assets/css/main.css">
     <link rel="stylesheet" href="assets/css/styleP.css">
     <link rel="stylesheet" href="assets/css/order.css">
@@ -27,9 +29,20 @@
         <div class="left-content">
             <div class="logo"> 
                 <div class="img">
-                    <img src="assets/img/logo.png">
-                    <img src="assets/img/brandNameBlack.svg">
+                    <img id="clickLogo" src="assets/img/logo.png">
+                    <img id="clickLogo2" src="assets/img/brandNameBlack.svg">
                 </div>
+
+                <script>
+                    document.getElementById("clickLogo").addEventListener("click",()=>{
+                        window.location.replace("index.html");
+                    })
+
+                    document.getElementById("clickLogo2").addEventListener("click",()=>{
+                        window.location.replace("index.html");
+                    })
+
+                </script>
             </div>
             <div class="title">
                 <p1>Thông tin mua hàng</p1>
