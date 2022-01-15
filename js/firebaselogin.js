@@ -42,7 +42,7 @@ document.getElementById('loginbtn').addEventListener("click" ,(e)=>{
       update(ref(database, 'users/' + user.uid),{
        last_login: dt,
      })
-     location.replace("member.html")
+     location.replace("index.html")
       alert('Đăng nhập thành công');
      // ...
    })

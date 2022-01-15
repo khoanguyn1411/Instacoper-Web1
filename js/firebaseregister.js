@@ -50,6 +50,8 @@
       phonenumber: phonenumber
     })
 
+    location.replace("index.html");
+
 
     alert('Đăng ký thành công');
     // ...
