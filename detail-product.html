@@ -153,7 +153,7 @@
                     </div>
                 </div>
 
-                <div class="add-to-cart">
+                <div class="add-to-cart" id="btnAddToCart">
                     <div class="button-add-to-cart">
                         <img src="assets/img/ic_cart.svg">
                         <div>Thêm vào giỏ hàng</div>
@@ -224,15 +224,87 @@
         
     </div>
     <script>
+        let btnAdd = document.getElementById('btnAddToCart');
+        btnAdd.addEventListener('click',()=>{
+            cartStore();
+            totalCost();
+        })
+
+        function cartStore(){
+            
+            let productNumber = localStorage.getItem("cartNumbers");
+                        
+            productNumber = parseInt(productNumber);
+
+            if(productNumber){
+                localStorage.setItem('cartNumbers',productNumber + 1);
+            }
+            else{
+                localStorage.setItem('cartNumbers',1);
+            }
+            location.reload();
+            alert("Thêm vào giỏ hàng thành công");
+            setItem();
+        }
+
+
+        function setItem(){
+            let product = JSON.parse(localStorage.getItem("data"));
+
+            let cartItem = JSON.parse(localStorage.getItem("productInCart"));
+            if(cartItem!=null){
+                if(cartItem[product.name] == undefined){
+                    cartItem = {
+                        ...cartItem,
+                        [product.name]: product
+                    }
+                }
+                cartItem[product.name].incart +=1;
+            }
+            else{
+                product.incart = 1;
+                cartItem = {
+                    [product.name]:product
+                }
+            }
+         
+            localStorage.setItem('productInCart',JSON.stringify(cartItem));
+        }
+
+        function totalCost(){
+            let product = JSON.parse(localStorage.getItem("data"));
+
+            let cartCost = localStorage.getItem('totalCost');
+           
+
+            if(cartCost != null){
+                cartCost = parseInt(cartCost);
+                localStorage.setItem('totalCost', cartCost + product.aft_price);
+            }else{
+                localStorage.setItem('totalCost',product.aft_price);
+
+            }
+            // console.log(product.aft_price);
+        }
+
+
+    </script>
+    
+    <script>
+      
         var x = JSON.parse(localStorage.getItem("data"));
+
+        x.aft_price = x.aft_price.toLocaleString('it-IT', {style : 'currency', currency : 'VND'});
+        x.aft_price = x.aft_price.replace("VND", "₫");
+        x.aft_price = x.aft_price.replace(/\s+/g, '');
+
         document.getElementById('productName').innerHTML = x.name;
         document.getElementById('productPrice').innerHTML = x.aft_price;
         document.getElementById('mainImage').src = x.thumb;
         document.getElementById('productGender').innerHTML = x.gender;
         document.getElementById('productDes').innerHTML = x.descript;
-      
 
-
+    
     </script>
 
     <script>
@@ -282,6 +354,10 @@
         html = "<div class='offer' id='offerProduct'>";
         for (i = 0; i <6; i++) {
             var sp = arr.product[i];
+            sp.aft_price = sp.aft_price.toLocaleString('it-IT', {style : 'currency', currency : 'VND'});
+            sp.aft_price = sp.aft_price.replace("VND", "₫");
+            sp.aft_price = sp.aft_price.replace(/\s+/g, '');
+
             html += "<div class='item'> <div class='img'> <img onclick = openDetail(" + i + ") src=" + sp.thumb +"> <div class='xemnhanh'></div> <div class='xemnhanh-content'>Xem nhanh</div> </div> <div class='text'> <div class='title'>"+sp.title+"</div> <div class='name'>" + sp.name+"</div> <div class='gender'>"+sp.gender+"</div> <div class='price'> <div class='aft-price'>"+sp.aft_price+"</div>   </div> </div> </div> "
         }
         html += " </div>";

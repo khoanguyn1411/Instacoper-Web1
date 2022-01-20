@@ -332,6 +332,10 @@
         html = "<div class='content-product' id='ctp'>";
         for (i = 0; i <arr.product.length; i++) {
             var sp = arr.product[i];
+            sp.aft_price = sp.aft_price.toLocaleString('it-IT', {style : 'currency', currency : 'VND'});
+            sp.aft_price = sp.aft_price.replace("VND", "₫");
+            sp.aft_price = sp.aft_price.replace(/\s+/g, '');
+
             html += "<div class='item'> <div class='img'> <img onclick = openDetail(" + i + ") src=" + sp.thumb +"> <div class='xemnhanh'></div> <div class='xemnhanh-content'>Xem nhanh</div> </div> <div class='text'> <div class='title'>"+sp.title+"</div> <div class='name'>" + sp.name+"</div> <div class='gender'>"+sp.gender+"</div> <div class='price'> <div class='aft-price'>"+sp.aft_price+"</div> <div class='pre-price'>"+sp.pre_price+"</div>  </div> <div class='sale'>"+sp.sale+"</div></div> </div> "
         }
         html += "<div class='watchmore'> Xem thêm </div>";
@@ -339,6 +343,7 @@
         document.getElementById("ms").innerHTML = html;
     }
     function openDetail(i){
+       
         var sp = myArr.product[i];
         localStorage.setItem("data",JSON.stringify(sp));
         location.href = "detail-product.html";

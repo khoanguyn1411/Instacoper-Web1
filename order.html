@@ -254,25 +254,9 @@
             </div>
             <div class="bottom"></div>
 
-            <div class="show-info">
-                <div class="img">
-                    <div class="container">
-                        <img src = "assets/img/shoes/5.png">
-                    </div>
-
-                </div>
-
-                <div class="content">
-                    <div class="info">
-                        <div><p4>Giày Sneaker Adidas NMD_R1</p4></div>
-                        <div><p>Hàng chính hãng</p></div>
-                        <div><p>Size: 40.5</p></div>
-                    </div>
-    
-                    <div class="price">
-                        <p>3.500.000đ</p>
-                    </div>
-                </div>
+            <div id="txtInfo" class="show-info">
+             
+               
             </div>
             <div class="bottom"></div>
 
@@ -293,7 +277,7 @@
                     </div>
 
                     <div class="right-side">
-                        <p>3.500.000đ</p>
+                        <p id = "txtTotal"></p>
                     </div>
                 </div>
 
@@ -315,7 +299,7 @@
                 </div>
 
                 <div class="right-side">
-                    <p>3.530.000đ</p>
+                    <p id = "txtTotalPayment"></p>
                 </div> 
             </div>
 
@@ -335,6 +319,65 @@
     </div>
     
 </body>
+
+<script>
+    displayCart();
+    function displayCart(){
+        let productInCart = JSON.parse(localStorage.getItem("productInCart"));
+
+   
+        let totalCost = localStorage.getItem('totalCost');
+        if(totalCost !=null){
+            totalCost = parseInt(totalCost);
+            totalPayment = totalCost + 30000;
+            totalCost = formatCurrency(totalCost);
+            totalPayment = formatCurrency(totalPayment);
+            document.getElementById('txtTotal').innerHTML = totalCost;
+            document.getElementById('txtTotalPayment').innerHTML = totalPayment;
+        }
+        Object.values(productInCart).map(item =>{
+            itemTotal = item.aft_price * item.incart;
+            itemTotal = formatCurrency(itemTotal);
+
+            document.getElementById('txtInfo').innerHTML += `
+            <div class = "item">
+                <div class="img">
+                    <img src = "${item.thumb}">
+
+                </div>
+
+                <div class="content">
+                    <div class="info">
+                        <div><p4>${item.name}</p4></div>
+                        <div><p>Hàng chính hãng</p></div>
+                        <div class="size"><p>Size: 40.5</p></div>
+                        <div style="font-size: small;"><p>Số lượng: <span>${item.incart}</span></p></div>
+                    </div>
+    
+                    <div class="price">
+                        <p></p>
+                    </div>
+                </div>
+            
+            </div>
+            `
+
+        })
+
+    }
+
+    function formatCurrency(number){
+        number = number.toLocaleString('it-IT', {style : 'currency', currency : 'VND'});
+        number = number.replace("VND", "₫");
+        number = number.replace(/\s+/g, '');
+        return number;
+    }
+
+    
+
+  
+    
+</script>
 
 <footer>
     <div class="bottom-content">

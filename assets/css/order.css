@@ -170,30 +170,24 @@ input{
 
 .right-content .show-info{
     width: 100%;
-    height: 100px;
     padding-top: 15px;
     padding-bottom: 0px;
 }
 
+.right-content .show-info .item{
+    display: inline-block;
+}
+
 .show-info .img{
-    width: 22%;
+    width: 30%;
     float: left;
 
 }
-.show-info .img .container{
-    width: 100%;
-    padding-top: 100%;
-    position: relative; 
-}
 
-.show-info .img .container > img{
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
+
+.show-info .img > img{
+    
     width: 100%;
-    border-radius: 3px;
 
 }
 
@@ -206,7 +200,7 @@ p{
 }
 
 .show-info .content{
-    width: 78%;
+    width: 70%;
     float: left;
     padding-top: 5px;
     padding-bottom: 5px;
@@ -232,13 +226,20 @@ p{
     
 }
 
-.show-info .info div:last-child p{
+.show-info .info .size p{
     font-style: italic;
     font-size: small;
-
 }
 
+#txtInfo .item{
+    
+    width: 100%;
+    margin-top: 5px;
+}
 
+#txtInfo {
+    display: inline-block;
+}
 
 
 
@@ -603,11 +604,6 @@ footer{
 
 
 
-    .show-info .content .info{
-        width: 60%;
-
-        
-    }
     
     .show-info .content .price{
         width: 40%;
@@ -665,6 +661,29 @@ footer{
     .bottom-right img{
         height: 18px;
     }
+    #txtInfo > .item{
+        display: inline-block;
+        width: 100%;
+    }
+
+    #txtInfo > .item .img{
+        width: 40%;
+    }
+
+    #txtInfo > .item .content{
+        width: 60%;
+        padding-right: 0;
+
+    }
+
+    
+    #txtInfo > .item .info{
+        width: 1000%;
+    }
+
+
+
+ 
   
 }
 
@@ -717,35 +736,15 @@ footer{
         display: none;
     }
 
+
+    #txtInfo > .item{
+        display: inline-block;
+        width: 100%;
+    }
+
+
  
 
-
-
-    .show-info .content .info{
-        width: 60%;
-
-        
-    }
-    
-    .show-info .content .price{
-        width: 40%;
-        display: flex;
-        justify-content: end;
-    }
-
-    .show-info .content .price > p{
-        font-size: 14px;
-    }
-
-    
-    .show-info .img{
-        margin-top: 7px;
-    }
-
-    footer{
-        min-width: 100%;
-        width: 100%;    
-    }
 
     .bottom-left1{
         width: 100%;

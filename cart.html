@@ -30,28 +30,11 @@
 <header>
 </header>
 
-<script>
- 
-
-    function getDropdownListSize(){
-        var i, k;
-        var arrSize = [35.5, 36, 37, 37.5 , 38, 39, 40, 41, 42, 43, 44, 45];
-        var selectSize = document.getElementsByClassName("selectSize");
-        for(k = 0; k<4;k++){
-            for (i=0; i<arrSize.length;i++){
-            selectSize[k].options[selectSize[k].options.length] = new Option(arrSize[i],i);
-            }
-        }
-    }
 
 
 
 
-    
-
-</script>
-
-<body onload="getDropdownListSize()">
+<body>
 
     <div id="wrapp" class="wrapper">
         <div class="top-content">
@@ -64,138 +47,11 @@
         <div class="left-content">
             <div class="cart-top-content">
                 <div><p3>Giỏ hàng của bạn</p3></div> 
-                <div><p4>Bạn có 4 sản phẩm trong giỏ hàng</p4></div>
+                <div><p4>Bạn có <span id = "num_item_incart">0</span> sản phẩm trong giỏ hàng</p4></div>
             </div>
 
-            <div class="cart-item">
-                
-                <div class="item">
-                    <div class="img">
-                        <div class="container">
-                            <img src="assets/img/shoes/5.png">
-                        </div>
-                    </div>
-                    <div class="item-content">
-                        <div>
-                            <div class="name"><p4>Adidas Continental 80</p4></div>
-                            <div class="gender"><p>Giày nam</p></div>
-                            <div class="size">
-                                <p>Kích thước:</p>
-                                <select class="selectSize"></select>
-                           </div>
-                            <div class="quantity">
-                                <p>Số lượng:</p>
-                                <input type="number" value="1" min="1"  oninput="this.value = Math.abs(this.value)">
-                           </div>
-                        </div>
+            <div class="cart-item" id="cart_item_container">
 
-                        <div>
-                            <div>
-                                <div><p4>2.699.000₫</p4></div> 
-                                <div><img src="assets/img/icon/ic_delete.svg"></div>
-                            </div>
-                        </div>
-
-                    </div>  
-                
-                </div>
-                <div class="bottom-left"></div>
-
-                <div class="item">
-                    <div class="img">
-                        <div class="container">
-                            <img src="assets/img/shoes/8.png">
-                        </div>
-                    </div>
-                    <div class="item-content">
-                        <div>
-                            <div class="name"><p4>Adidas ZX 2K Boost Pure</p4></div>
-                            <div class="gender"><p>Giày nữ</p></div>
-                            <div class="size">
-                                <p>Kích thước:</p>
-                               <select class="selectSize"></select>
-                           </div>
-                            <div class="quantity">
-                                <p>Số lượng:</p>
-                                <input type="number" value="1" min="1"  oninput="this.value = Math.abs(this.value)">
-                           </div>
-                        </div>
-
-                        <div>
-                            <div>
-                                <div><p4>6.290.000₫</p4></div> 
-                                <div><img src="assets/img/icon/ic_delete.svg"></div>
-                            </div>
-                        </div>
-
-                    </div>  
-                
-                </div>
-                <div class="bottom-left"></div>
-
-                <div class="item">
-                    <div class="img">
-                        <div class="container">
-                            <img src="assets/img/shoes/6.png">
-                        </div>
-                    </div>
-                    <div class="item-content">
-                        <div>
-                            <div class="name"><p4>Adidas NMD R1</p4></div>
-                            <div class="gender"><p>Giày nam</p></div>
-                            <div class="size">
-                                <p>Kích thước:</p>
-                                <select class="selectSize"></select>
-                           </div>
-                            <div class="quantity">
-                                <p>Số lượng:</p>
-                                <input type="number" value="1" min="1"  oninput="this.value = Math.abs(this.value)">
-                           </div>
-                        </div>
-
-                        <div>
-                            <div>
-                                <div><p4>3.330.000₫</p4></div> 
-                                <div><img src="assets/img/icon/ic_delete.svg"></div>
-                            </div>
-                        </div>
-
-                    </div>  
-                
-                </div>
-                <div class="bottom-left"></div>
-
-                <div class="item">
-                    <div class="img">
-                        <div class="container">
-                            <img src="assets/img/shoes/15.png">
-                        </div>
-                    </div>
-                    <div class="item-content">
-                        <div>
-                            <div class="name"><p4>VANS Old Skool Classic</p4></div>
-                            <div class="gender"><p>Giày nam</p></div>
-                            <div class="size">
-                                <p>Kích thước:</p>
-                                <select class="selectSize"></select>
-                           </div>
-                            <div class="quantity">
-                                <p>Số lượng:</p>
-                                <input type="number" value="1" min="1"  oninput="this.value = Math.abs(this.value)">
-                           </div>
-                        </div>
-
-                        <div>
-                            <div>
-                                <div><p4>1.490.000đ</p4></div> 
-                                <div><img src="assets/img/icon/ic_delete.svg"></div>
-                            </div>
-                        </div>
-
-                    </div>  
-                
-                </div>
-                <div style="height: 0.5px;" class="bottom-left"></div>
             </div>
 
         </div>
@@ -207,12 +63,12 @@
                 <div class="money">
                     <div class="content">
                         <p4>Tổng thanh toán: </p4>
-                        <p4>Tiết kiệm</p4>
+                        <p4 >Tiết kiệm</p4>
                     </div>
     
                     <div class="price">
-                        <p4>13.809.000đ</p4>
-                        <p4>925.000đ</p4>
+                        <p4  id="txtTotalPayment">0₫</p4>
+                        <p4 id="txtSave">0₫</p4>
                     </div>
             
                 </div>
@@ -223,14 +79,16 @@
                     </div>
     
                     <div class="price">
-                        <p4>13.809.000đ</p4>
+                        <p4  id="txtTotal">0₫</p4>
                     </div>
                     <div class="bottom-left"></div>
                 </div>
                 
                 <div class="order">
+                    <div class="button-order" style="margin-right: 10px;" id="btnDelete"><a href="#">Xóa tất cả</a></div>
                     <div class="button-order"><a href="order.html">Đặt hàng</a></div>
                 </div>
+                
               
             </div>
         </div>
@@ -244,6 +102,121 @@
     </div>
     
 </body>
+<script>
+
+    var btnDelete = document.getElementById('btnDelete');
+    btnDelete.addEventListener('click', ()=>{
+        window.localStorage.clear();
+        window.location.reload();
+    })
+
+    displayCart();
+    function displayCart(){
+        let productInCart = JSON.parse(localStorage.getItem("productInCart"));
+
+        let numItem = localStorage.getItem("cartNumbers");
+        document.getElementById('num_item_incart').innerHTML = numItem;
+   
+
+
+        let totalCost = localStorage.getItem('totalCost');
+        if(totalCost !=null){
+            totalCost = parseInt(totalCost);
+            totalCost = formatCurrency(totalCost);
+            document.getElementById('txtTotal').innerHTML = totalCost;
+            document.getElementById('txtTotalPayment').innerHTML = totalCost;
+            document.getElementById('txtTotalPayment').innerHTML = totalCost;
+            document.getElementById('txtSave').innerHTML = formatCurrency(925000);
+        }
+        Object.values(productInCart).map(item =>{
+            itemTotal = item.aft_price * item.incart;
+            itemTotal = formatCurrency(itemTotal);
+
+            document.getElementById('cart_item_container').innerHTML += `
+            <div class="item">
+                <div>
+                    <div class="img">
+                        <div class="container">
+                            <img src=${item.thumb}>
+                        </div>
+                    </div>
+                    <div class="item-content">
+                        <div>
+                            <div class="name"><p4>${item.name}</p4></div>
+                            <div class="gender"><p>${item.gender}</p></div>
+                            <div class="size">
+                                <p>Kích thước:</p>
+                                <select class="selectSize"></select>
+                           </div>
+                            <div class="quantity">
+                                <p>Số lượng:</p>
+                                <input class 'quantities' type="number" value="${item.incart}" min="1"  oninput="this.value = Math.abs(this.value)">
+                           </div>
+                        </div>
+
+                        <div>
+                            <div>
+                                <div><p4>${itemTotal}</p4></div> 
+                                <div><img onclick = "deleteItem('${item.name}')" src="assets/img/icon/ic_delete.svg"></div>
+                            </div>
+                        </div>
+
+                    </div>  
+                
+                </div>
+                <div class="bottom-left"></div>
+                </div>
+            
+            `
+        })
+
+    }
+    getDropdownListSize();
+    function getDropdownListSize(){
+        var i, k;
+        var arrSize = [35.5, 36, 37, 37.5 , 38, 39, 40, 41, 42, 43, 44, 45];
+        var selectSize = document.getElementsByClassName("selectSize");
+        for(k = 0; k<4;k++){
+            for (i=0; i<arrSize.length;i++){
+            selectSize[k].options[selectSize[k].options.length] = new Option(arrSize[i],i);
+            }
+        }
+    }
+
+    function formatCurrency(number){
+        number = number.toLocaleString('it-IT', {style : 'currency', currency : 'VND'});
+        number = number.replace("VND", "₫");
+        number = number.replace(/\s+/g, '');
+        return number;
+    }
+
+    // function deleteItem(productName){
+    //     let productInCart=JSON.parse( localStorage.getItem('productInCart'));
+    //     console.log(productInCart.length);
+
+        
+    //     let products = productInCart.filter(product => product.name !== productName );
+    //     localStorage.setItem('productInCart', JSON.stringify(products));
+        
+      
+    //     // Object.values(productInCart).map(item =>{
+    //     //     if(item.name ==productName){
+    //     //         console.log(typeof item);
+    //     //     }
+    //     // });
+
+    //     // var carts=JSON.parse(localStorage.getItem('productInCart'));
+    //     // var selectedItem=carts.product.findIndex(item => item.name === productName)
+    //     // carts.splice(selectedItem,1);
+    //     // localStorage.setItem('productInCart',JSON.stringify(carts));
+    // }
+
+    
+
+  
+    
+</script>
+
 <footer>
   
 </footer>

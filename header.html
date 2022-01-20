@@ -94,7 +94,9 @@
                           
                           </script>
                       </div>
-                      <img id="btnOpenCart" src="assets/img/iconKhoa/ic_cart_2.svg">
+                      <img id="btnOpenCart" src="assets/img/iconKhoa/ic_cart_3.svg">
+                      <div class="hd-num-item"><span id="txtNumItem">2</span></div>
+                 
                       <div class="hd-cart-menu">
                           <div class="hd-item-container">
 
@@ -130,7 +132,7 @@
                               </div>
                               <div class="hd-cart-button-container">
                                   <button class="hd-cart-left-button" id="btnOpenGioHang">
-                                      Giỏ Hàng (2)
+                                      Giỏ Hàng <span>(2)</span>
                                   </button>
                                   <button class="hd-cart-right-button" id="btnPay">
                                       Thanh toán
@@ -279,6 +281,25 @@
       <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
       <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
       <script src="js/SubNav.js"></script>
+
+      <script>
+        onLoadCartNumbers();
+        function onLoadCartNumbers(){
+            let productNumber = localStorage.getItem("cartNumbers");
+            var txtNumItem = document.getElementById('txtNumItem');
+
+            productNumber = parseInt(productNumber);
+            
+            if(productNumber){
+                txtNumItem.innerHTML = productNumber;
+            }
+            else{
+                txtNumItem.style.opacity='0';
+                txtNumItem.parentElement.style.opacity ='0';
+            }
+        }
+         </script>
+
       <script>
           var blog = document.getElementById("link-blog"); 
           var product = document.getElementById("link-sp");
@@ -336,6 +357,7 @@
           }
 
    </script>
+
    <script>
     var xhttp = new XMLHttpRequest();
     var html = "";

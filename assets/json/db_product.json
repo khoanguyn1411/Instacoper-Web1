@@ -5,201 +5,220 @@
         "title": "Bestseller",
         "name": "Nike Air Force 1 Low",
         "gender": "Giày nam",
-        "aft_price": "2.649.000₫",
+        "aft_price": 2649000,
         "pre_price":"",
         "sale": " ",
-        "descript": "Ra mắt vào năm 1982, AF-1 là đôi giày bóng rổ đầu tiên của Nike Air, đã cách mạng hóa trò chơi trong khi nhanh chóng thu hút được sức hút trên khắp thế giới. Ngày nay, Air Force 1 vẫn đúng với nguồn gốc của nó với cùng một lớp đệm mềm mại và có độ đàn hồi đã thay đổi lịch sử giày thể thao."
+        "descript": "Ra mắt vào năm 1982, AF-1 là đôi giày bóng rổ đầu tiên của Nike Air, đã cách mạng hóa trò chơi trong khi nhanh chóng thu hút được sức hút trên khắp thế giới. Ngày nay, Air Force 1 vẫn đúng với nguồn gốc của nó với cùng một lớp đệm mềm mại và có độ đàn hồi đã thay đổi lịch sử giày thể thao.",
+        "incart": 0
     },
     {
         "thumb": "assets/img/shoes/2.png",
         "title": "",
         "name": "Nike Air Max 90",
         "gender": "Giày nam",
-        "aft_price": "4.109.000₫",
+        "aft_price": 4109000,
         "pre_price":"",
         "sale": "",
-        "descript": "Ra mắt vào năm 1998, Air Max 90 là đôi giày đầu tiên của Nike Air, đã cách mạng hóa trò chơi trong khi nhanh chóng thu hút được sức hút trên khắp thế giới. Ngày nay, Air Max 90 vẫn đúng với nguồn gốc của nó với cùng một lớp đệm mềm mại và có độ đàn hồi đã thay đổi lịch sử giày thể thao."
+        "descript": "Ra mắt vào năm 1998, Air Max 90 là đôi giày đầu tiên của Nike Air, đã cách mạng hóa trò chơi trong khi nhanh chóng thu hút được sức hút trên khắp thế giới. Ngày nay, Air Max 90 vẫn đúng với nguồn gốc của nó với cùng một lớp đệm mềm mại và có độ đàn hồi đã thay đổi lịch sử giày thể thao.",
+        "incart": 0
     },
     {
         "thumb": "assets/img/shoes/3.png",
         "title": "",
         "name": "Nike Air Max 95",
         "gender": "Giày nữ",
-        "aft_price": "4.751.099₫",
+        "aft_price": 4751099,
         "pre_price":"4.751.099₫",
         "sale": "10% off",
         "descript": "Ra mắt vào năm 1989, Air Max 95 là đôi giày của Nike Air, đã cách mạng hóa trò chơi trong khi nhanh chóng thu hút được sức hút trên khắp thế giới. Ngày nay, Air Max 95 vẫn đúng với nguồn gốc của nó với cùng một lớp đệm mềm mại và có độ đàn hồi đã thay đổi lịch sử giày thể thao."
+        ,"incart": 0
     },
     {
         "thumb": "assets/img/shoes/4.png",
         "title": "Sản phẩm mới",
         "name": "Jordan Zoom Separate PF",
         "gender": "Giày nam",
-        "aft_price": "4.751.099₫",
+        "aft_price": 4751099,
         "pre_price":" 4.275.989₫",
         "sale": "10% off",
         "descript": "Ra mắt vào năm 1990, Jordan Zoom Separate PF là đôi giày bóng chày đầu tiên của Jordan, đã cách mạng hóa trò chơi trong khi nhanh chóng thu hút được sức hút trên khắp thế giới. Ngày nay, Jordan Zoom Separate PF vẫn đúng với nguồn gốc của nó với cùng một lớp đệm mềm mại và có độ đàn hồi đã thay đổi lịch sử giày thể thao."
+        ,"incart": 0
     },
     {
         "thumb": "assets/img/shoes/5.png",
         "title": "",
         "name": "Nike Air Zoom Pegasus 38",
         "gender": "Giày nữ",
-        "aft_price": "3.519.000₫",
+        "aft_price": 3519000,
         "pre_price":"",
         "sale": " ",
         "descript": "Ra mắt vào năm 1990, Nike Air Zoom Pegasus 38 là đôi giày bóng rổ đầu tiên của Nike Air, đã cách mạng hóa trò chơi trong khi nhanh chóng thu hút được sức hút trên khắp thế giới. Ngày nay, Nike Air Zoom Pegasus 38 vẫn đúng với nguồn gốc của nó với cùng một lớp đệm mềm mại và có độ đàn hồi đã thay đổi lịch sử giày thể thao."
+        ,"incart": 0
     },
     {
         "thumb": "assets/img/shoes/6.png",
         "title": "Bestseller",
         "name": "Adidas Continental 80",
         "gender": "Giày nam",
-        "aft_price": "2.699.000₫",
+        "aft_price": 2699000,
         "pre_price":"",
         "sale": " ",
         "descript": "Ra mắt vào năm 1990, Adidas Continental 80 là đôi giày đầu tiên của Adidas, đã cách mạng hóa trò chơi trong khi nhanh chóng thu hút được sức hút trên khắp thế giới. Ngày nay, Adidas Continental 80 vẫn đúng với nguồn gốc của nó với cùng một lớp đệm mềm mại và có độ đàn hồi đã thay đổi lịch sử giày thể thao."
+        ,"incart": 0
     },
     {
         "thumb": "assets/img/shoes/7.png",
         "title": "",
         "name": "Adidas NMD R1",
         "gender": "Giày nam",
-        "aft_price": "3.330.000₫",
+        "aft_price": 3330000,
         "pre_price":" 3.700.000₫",
         "sale": "10% off",
         "descript": "Ra mắt vào năm 1990, Adidas NMD R1 là đôi giày bóng chuyền đầu tiên của Adidas, đã cách mạng hóa trò chơi trong khi nhanh chóng thu hút được sức hút trên khắp thế giới. Ngày nay, Adidas NMD R1 vẫn đúng với nguồn gốc của nó với cùng một lớp đệm mềm mại và có độ đàn hồi đã thay đổi lịch sử giày thể thao."
+        ,"incart": 0
     },
     {
         "thumb": "assets/img/shoes/8.png",
         "title": "",
         "name": "Adidas Forum Exhibit Low",
         "gender": "Giày nữ",
-        "aft_price": "2.450.000₫",
+        "aft_price": 2450000,
         "pre_price":"",
         "sale": " ",
         "descript": "Ra mắt vào năm 1997, Adidas Forum Exhibit Low là đôi giày đầu tiên của Adidas, đã cách mạng hóa trò chơi trong khi nhanh chóng thu hút được sức hút trên khắp thế giới. Ngày nay, Adidas Forum Exhibit Low vẫn đúng với nguồn gốc của nó với cùng một lớp đệm mềm mại và có độ đàn hồi đã thay đổi lịch sử giày thể thao."
+        ,"incart": 0
     },
     {
         "thumb": "assets/img/shoes/9.png",
         "title": "Sản phẩm mới",
         "name": "Adidas ZX 2K Boost Pure",
         "gender": "Giày nữ",
-        "aft_price": "3.145.000₫",
+        "aft_price": 3145000,
         "pre_price":"3.700.000₫",
         "sale": "15% off",
         "descript": "Ra mắt vào năm 1990, Adidas ZX 2K Boost Pure là đôi giày của Adidas, đã cách mạng hóa trò chơi trong khi nhanh chóng thu hút được sức hút trên khắp thế giới. Ngày nay, Adidas ZX 2K Boost Pure vẫn đúng với nguồn gốc của nó với cùng một lớp đệm mềm mại và có độ đàn hồi đã thay đổi lịch sử giày thể thao."
-
+        ,"incart": 0
     },
     {
         "thumb": "assets/img/shoes/10.png",
         "title": "",
         "name": "Adidas Ultraboost 21",
         "gender": "Giày nam",
-        "aft_price": "4.999.000₫",
+        "aft_price":4999000,
         "pre_price":"",
         "sale": " ",
         "descript": "Ra mắt vào năm 1992, Adidas Ultraboost 21 là đôi giày của Adidas, đã cách mạng hóa trò chơi trong khi nhanh chóng thu hút được sức hút trên khắp thế giới. Ngày nay, Adidas Ultraboost 21 vẫn đúng với nguồn gốc của nó với cùng một lớp đệm mềm mại và có độ đàn hồi đã thay đổi lịch sử giày thể thao."
+        ,"incart": 0
     },
     {
         "thumb": "assets/img/shoes/11.png",
         "title": "Bestseller",
         "name": "Converse Chuck Taylor Classic",
         "gender": "Giày nam",
-        "aft_price": "1.450.000đ",
+        "aft_price":1450000,
         "pre_price":"",
         "sale": " ",
         "descript": "Ra mắt vào năm 2001, Converse Chuck Taylor Classic là đôi giày của Converse, đã cách mạng hóa trò chơi trong khi nhanh chóng thu hút được sức hút trên khắp thế giới. Ngày nay, Converse Chuck Taylor Classic vẫn đúng với nguồn gốc của nó với cùng một lớp đệm mềm mại và có độ đàn hồi đã thay đổi lịch sử giày thể thao."
+        ,"incart": 0
     },
     {
         "thumb": "assets/img/shoes/12.png",
         "title": "",
         "name": "Converse Chuck 70 Vintage Canvas Hi",
         "gender": "Giày nam",
-        "aft_price": "1.330.000₫",
+        "aft_price": 1330000,
         "pre_price":"1.900.000₫",
         "sale": "30% off",
         "descript": "Ra mắt vào năm 2002, Converse Chuck 70 Vintage Canvas Hi là đôi giày của Converse, đã cách mạng hóa trò chơi trong khi nhanh chóng thu hút được sức hút trên khắp thế giới. Ngày nay, Converse Chuck 70 Vintage Canvas Hi vẫn đúng với nguồn gốc của nó với cùng một lớp đệm mềm mại và có độ đàn hồi đã thay đổi lịch sử giày thể thao."
+        ,"incart": 0
     },
     {
         "thumb": "assets/img/shoes/13.png",
         "title": "",
         "name": "Converse x Keith Haring Run Star Hike High-Top",
         "gender": "Giày nữ",
-        "aft_price": "2.499.000₫",
+        "aft_price": 2499000,
         "pre_price":"",
         "sale": " ",
         "descript": "Ra mắt vào năm 1991, Converse x Keith Haring Run Star Hike High-Top là đôi giày của Converse, đã cách mạng hóa trò chơi trong khi nhanh chóng thu hút được sức hút trên khắp thế giới. Ngày nay, Converse x Keith Haring Run Star Hike High-Top vẫn đúng với nguồn gốc của nó với cùng một lớp đệm mềm mại và có độ đàn hồi đã thay đổi lịch sử giày thể thao."
+        ,"incart": 0
     },
     {
         "thumb": "assets/img/shoes/14.png",
         "title": "Sản phẩm mới",
         "name": "Converse Chuck 70 Pride",
         "gender": "Giày nữ",
-        "aft_price": "3.145.000₫",
+        "aft_price": 3145000,
         "pre_price":"3.700.000₫",
         "sale": "15% off",
         "descript": "Ra mắt vào năm 1997, Converse Chuck 70 Pride là đôi giày của Converse, đã cách mạng hóa trò chơi trong khi nhanh chóng thu hút được sức hút trên khắp thế giới. Ngày nay, Converse Chuck 70 Pride vẫn đúng với nguồn gốc của nó với cùng một lớp đệm mềm mại và có độ đàn hồi đã thay đổi lịch sử giày thể thao."
+        ,"incart": 0
     },
     {
         "thumb": "assets/img/shoes/15.png",
         "title": "",
         "name": "Chuck Taylor All Star Renew Canvas",
         "gender": "Giày nam",
-        "aft_price": "4.999.000₫",
+        "aft_price": 4999000,
         "pre_price":"",
         "sale": " ",
         "descript": "Ra mắt vào năm 1992, Chuck Taylor All Star Renew Canvas là đôi giày của Converse, đã cách mạng hóa trò chơi trong khi nhanh chóng thu hút được sức hút trên khắp thế giới. Ngày nay, Chuck Taylor All Star Renew Canvas vẫn đúng với nguồn gốc của nó với cùng một lớp đệm mềm mại và có độ đàn hồi đã thay đổi lịch sử giày thể thao."
+        ,"incart": 0
     },
     {
         "thumb": "assets/img/shoes/16.png",
         "title": "Bestseller",
         "name": "VANS Old Skool Classic",
         "gender": "Giày nam",
-        "aft_price": "1.490.000₫",
+        "aft_price": 1490000,
         "pre_price":"",
         "sale": " ",
         "descript": "Ra mắt vào năm 1995, VANS Old Skool Classic là đôi giày đầu tiên của Vans, đã cách mạng hóa trò chơi trong khi nhanh chóng thu hút được sức hút trên khắp thế giới. Ngày nay, VANS Old Skool Classic vẫn đúng với nguồn gốc của nó với cùng một lớp đệm mềm mại và có độ đàn hồi đã thay đổi lịch sử giày thể thao."
+        ,"incart": 0
     },
     {
         "thumb": "assets/img/shoes/17.png",
         "title": "",
         "name": "VANS Vault OG Classic Slip On Checkerboard/Off White",
         "gender": "Giày nam",
-        "aft_price": "2.340.000₫",
+        "aft_price": 2340000,
         "pre_price":"2.600.000₫",
         "sale": "10% off",
         "descript": "Ra mắt vào năm 1995, VANS Vault OG Classic Slip On Checkerboard/Off White là đôi giày đầu tiên của Vans, đã cách mạng hóa trò chơi trong khi nhanh chóng thu hút được sức hút trên khắp thế giới. Ngày nay, VANS Vault OG Classic Slip On Checkerboard/Off White vẫn đúng với nguồn gốc của nó với cùng một lớp đệm mềm mại và có độ đàn hồi đã thay đổi lịch sử giày thể thao."
+        ,"incart": 0
     },
     {
         "thumb": "assets/img/shoes/18.png",
         "title": "",
         "name": "VANS Vault OG Authentic LX Chili Pepper Red",
         "gender": "Giày nữ",
-        "aft_price": "2.450.000₫",
+        "aft_price": 2450000,
         "pre_price":"",
         "sale": " ",
         "descript": "Ra mắt vào năm 1993, VANS Vault OG Authentic LX Chili Pepper Red là đôi giày đầu tiên của Vans, đã cách mạng hóa trò chơi trong khi nhanh chóng thu hút được sức hút trên khắp thế giới. Ngày nay, VANS Vault OG Authentic LX Chili Pepper Red vẫn đúng với nguồn gốc của nó với cùng một lớp đệm mềm mại và có độ đàn hồi đã thay đổi lịch sử giày thể thao."
+        ,"incart": 0
     },
     {
         "thumb": "assets/img/shoes/19.png",
         "title": "Sản phẩm mới",
         "name": "VANS Flame SK8-HI Reissue",
         "gender": "Giày nam",
-        "aft_price": "1.900.000₫",
+        "aft_price": 1900000,
         "pre_price":"",
         "sale": " ",
         "descript": "Ra mắt vào năm 1993, VANS Flame SK8-HI Reissue là đôi giày đầu tiên của Vans, đã cách mạng hóa trò chơi trong khi nhanh chóng thu hút được sức hút trên khắp thế giới. Ngày nay, VANS Flame SK8-HI Reissue vẫn đúng với nguồn gốc của nó với cùng một lớp đệm mềm mại và có độ đàn hồi đã thay đổi lịch sử giày thể thao."
+        ,"incart": 0
     },
     {
         "thumb": "assets/img/shoes/20.png",
         "title": "",
         "name": "VANS Era Packing Tape Black",
         "gender": "Giày nữ",
-        "aft_price": "1.800.000₫",
+        "aft_price": 1800000,
         "pre_price":"",
         "sale": " ",
         "descript": "Ra mắt vào năm 1993, VANS Era Packing Tape Black là đôi giày đầu tiên của Vans, đã cách mạng hóa trò chơi trong khi nhanh chóng thu hút được sức hút trên khắp thế giới. Ngày nay, VANS Era Packing Tape Black vẫn đúng với nguồn gốc của nó với cùng một lớp đệm mềm mại và có độ đàn hồi đã thay đổi lịch sử giày thể thao."
+        ,"incart": 0
     }
 ]
 }

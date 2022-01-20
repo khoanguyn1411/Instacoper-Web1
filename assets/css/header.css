@@ -296,11 +296,29 @@ body{
 #btnOpenCart{
     width: 100%;
     text-align: right;
-    width: 30px;
+    width: 24px;
 }
+
+.hd-action> .hd-num-item{
+    position: absolute;
+    background-color: #F54253;
+    top: -9px;
+    right: -8px;
+    border-radius: 50%;
+    color: white;
+    font-weight: bold;
+    font-size: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 18px;
+    height: 18px;
+}
+
 
 .hd-action{
     position: relative;
+    margin-top: 6px;
 
 }
 
