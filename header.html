@@ -98,56 +98,26 @@
                       <div class="hd-num-item"><span id="txtNumItem">2</span></div>
                  
                       <div class="hd-cart-menu">
-                          <div class="hd-item-container">
-
-                              <div class="hd-item">
-                                  <div class="hd-item-img">
-                                      <img src="assets/img/shoes/12.png">
-                                  </div>
-                                  <div class="hd-item-main-content">
-                                      <p class="hd-item-title">Nike Air Force 1 Low</p>
-                                      <p class="hd-item-gender">Giày nam</p>
-                                      <p class="hd-item-size">Size: 40.5</p>
-                                      <p class="hd-item-price">2.649.000₫</p>
-                                  </div>
-                                  <div class="hd-item-delete">
-                                      <img src="assets/img/iconKhoa/ic_delete_cart.svg">
-                                  </div>
-                              </div>
-
-                              <div class="hd-bottom-seperate"></div>
-                              <div class="hd-item">
-                                  <div class="hd-item-img">
-                                      <img src="assets/img/shoes/4.png">
-                                  </div>
-                                  <div class="hd-item-main-content">
-                                      <p class="hd-item-title">Adidas NMD R1</p>
-                                      <p class="hd-item-gender">Giày nam</p>
-                                      <p class="hd-item-size">Size: 45</p>
-                                      <p class="hd-item-price">3.330.000₫</p>
-                                  </div>
-                                  <div class="hd-item-delete">
-                                      <img src="assets/img/iconKhoa/ic_delete_cart.svg">
-                                  </div>
-                              </div>
-                              <div class="hd-cart-button-container">
-                                  <button class="hd-cart-left-button" id="btnOpenGioHang">
-                                      Giỏ Hàng <span>(2)</span>
-                                  </button>
-                                  <button class="hd-cart-right-button" id="btnPay">
-                                      Thanh toán
-                                  </button>
-                                  <script>
-                                      document.getElementById('btnOpenGioHang').addEventListener('click',()=>{
-                                          window.location.replace("cart.html");
-                                      })
-
-                                      document.getElementById('btnPay').addEventListener('click',()=>{
-                                          window.location.replace("order.html");
-                                      })
-                                  </script>
-                              </div>
+                          <div class="hd-item-container" id="hd_item_product_container">
+                          
                           </div>
+                          <div class="hd-cart-button-container">
+                            <button class="hd-cart-left-button" id="btnOpenGioHang">
+                                Giỏ Hàng (<span id="txtNumItem2">0</span>) 
+                            </button>
+                            <button class="hd-cart-right-button" id="btnPay">
+                                Thanh toán
+                            </button>
+                            <script>
+                                document.getElementById('btnOpenGioHang').addEventListener('click',()=>{
+                                    window.location.replace("cart.html");
+                                })
+
+                                document.getElementById('btnPay').addEventListener('click',()=>{
+                                    window.location.replace("order.html");
+                                })
+                            </script>
+                        </div>
 
                       </div>
                   </div>
@@ -287,11 +257,13 @@
         function onLoadCartNumbers(){
             let productNumber = localStorage.getItem("cartNumbers");
             var txtNumItem = document.getElementById('txtNumItem');
+            var txtNumItem2 = document.getElementById('txtNumItem2');
 
             productNumber = parseInt(productNumber);
             
             if(productNumber){
                 txtNumItem.innerHTML = productNumber;
+                txtNumItem2.innerHTML = productNumber;
             }
             else{
                 txtNumItem.style.opacity='0';
@@ -420,7 +392,46 @@
 
 </script>
 
-   
+<script>
+    displayCart();
+    function displayCart(){
+        let productInCart = JSON.parse(localStorage.getItem("productInCart"));
+
+        
+        Object.values(productInCart).map(item =>{
+            item.aft_price = formatCurrency(item.aft_price);
+
+            document.getElementById('hd_item_product_container').innerHTML += `
+            <div class="hd-item">
+               <div class="hd-item-img">
+                                      <img src="${item.thumb}">
+                                  </div>
+                                  <div class="hd-item-main-content">
+                                      <p class="hd-item-title">${item.name}</p>
+                                      <p class="hd-item-gender">${item.gender}</p>
+                                      <p class="hd-item-size">Size: 40.5</p>
+                                      <p class="hd-item-price">${item.aft_price}</p>
+                                  </div>
+                                  <div class="hd-item-delete">
+                                      <img src="assets/img/iconKhoa/ic_delete_cart.svg">
+                                  </div>
+                              </div>
+
+                              <div class="hd-bottom-seperate"></div>
+                              </div>                   
+            `
+
+        })
+
+    }
+
+    function formatCurrency(number){
+        number = number.toLocaleString('it-IT', {style : 'currency', currency : 'VND'});
+        number = number.replace("VND", "₫");
+        number = number.replace(/\s+/g, '');
+        return number;
+    }
+</script>
 
 </header>
 

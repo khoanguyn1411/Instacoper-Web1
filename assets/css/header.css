@@ -315,6 +315,10 @@ body{
     height: 18px;
 }
 
+#hd_item_product_container{
+    max-height: 70vh;
+    overflow-y: auto;
+}
 
 .hd-action{
     position: relative;
@@ -839,6 +843,8 @@ a{
 
 .hd-item{
     display: inline-block;
+    padding: 0 10px;
+    height: auto;
 }
 .hd-item-img{
     width: 26%;
@@ -855,7 +861,6 @@ a{
     height: auto;
     float: left;
     position: relative;
-    height: 70px;
     padding-left: 10px;
     padding-right: 10px;
 }
@@ -880,8 +885,6 @@ a{
 
 .hd-item-price{
     font-weight: bold;
-    bottom: 0;
-    position: absolute;
 }
 
 
